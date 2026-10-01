@@ -1,10 +1,11 @@
-# 🔍 Code Review & Quality
+# 147 · Code Review & Quality
 
 > Judges, linters, coverage gates and review dashboards.
 
 21 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
+
 ### devagrawal09/jev-review
 
 - url: https://github.com/devagrawal09/jev-review
@@ -15,6 +16,7 @@
 - pushed_at: 2026-09-17
 - topics: ai, code-review, jev, typesafe-ai, typescript
 - use_cases: review code or pull requests; judge or verify an agent's output; learn how Jev works
+- rule: 147
 
 ### thruwire/foreman
 
@@ -25,6 +27,7 @@
 - license: MIT
 - pushed_at: 2026-09-28
 - use_cases: judge or verify an agent's output; review code or pull requests; benchmark or calibrate Jev
+- rule: 147
 
 ### lakeday-org/perch
 
@@ -36,6 +39,7 @@
 - pushed_at: 2026-09-30
 - topics: ai, cli, code-quality, code-review, devtools, linter
 - use_cases: review code or pull requests; call Jev from the command line; judge or verify an agent's output
+- rule: 147
 
 ### NiazMorshed2007/jev-review
 
@@ -47,6 +51,7 @@
 - pushed_at: 2026-09-17
 - topics: agent-plugin, ai-agents, claude-code, code-review, codex, coding-agents
 - use_cases: judge or verify an agent's output; serve Jev over MCP to any agent; review code or pull requests
+- rule: 147
 
 ### supercorp-ai/supercov
 
@@ -58,6 +63,7 @@
 - pushed_at: 2026-09-27
 - topics: coverage, jev, typesafe, gemini-cli-extension, claude-code, code-coverage
 - use_cases: judge or verify an agent's output; review code or pull requests; benchmark or calibrate Jev
+- rule: 147
 
 ### kyu1204/jgrep
 
@@ -68,6 +74,7 @@
 - license: MIT
 - pushed_at: 2026-09-30
 - use_cases: review code or pull requests; call Jev from the command line; judge or verify an agent's output
+- rule: 147
 
 ### Alurith/jeff
 
@@ -79,6 +86,7 @@
 - pushed_at: 2026-09-20
 - topics: golang, jev
 - use_cases: review code or pull requests; call Jev from the command line; judge or verify an agent's output
+- rule: 147
 
 ### devanshbatham/commit-miner
 
@@ -88,6 +96,7 @@
 - language: Rust
 - pushed_at: 2026-09-17
 - use_cases: review code or pull requests; label data or build a dataset; judge or verify an agent's output
+- rule: 147
 
 ### lukstei/slop-grader
 
@@ -99,6 +108,7 @@
 - pushed_at: 2026-09-24
 - topics: ai-agents, jev, no-ai-slop, system-one, ai-slop, ai-writing
 - use_cases: judge or verify an agent's output; call Jev from the command line; compare Jev with an LLM
+- rule: 147
 
 ### valentynkit/jev-commit
 
@@ -109,6 +119,7 @@
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: judge or verify an agent's output; call Jev from the command line; compare Jev with an LLM
+- rule: 147
 
 ### frostney/clean-code-review
 
@@ -120,6 +131,7 @@
 - pushed_at: 2026-09-23
 - topics: agents, ai, ai-gateway, ai-sdk, clean-code, code-quality
 - use_cases: review code or pull requests; judge or verify an agent's output; compare Jev with an LLM
+- rule: 147
 
 ### huntedman/JevLint
 
@@ -130,6 +142,7 @@
 - license: MIT
 - pushed_at: 2026-09-20
 - use_cases: judge or verify an agent's output; review code or pull requests; call Jev from the command line
+- rule: 147
 
 ### doeixd/jev-pref
 
@@ -141,6 +154,7 @@
 - pushed_at: 2026-09-18
 - topics: agent-skills, claude-code, code-review, jev, skills-sh, typesafe
 - use_cases: judge or verify an agent's output; review code or pull requests; pick which skill or prompt to load
+- rule: 147
 
 ### nozomi-koborinai/jev-spec
 
@@ -152,6 +166,7 @@
 - pushed_at: 2026-09-29
 - topics: ai, jev, linter, typesafe-ai, typescript, agent-skills
 - use_cases: call Jev from the command line; judge or verify an agent's output; review code or pull requests
+- rule: 147
 
 ### HexyeDEV/JevPR
 
@@ -163,6 +178,7 @@
 - pushed_at: 2026-09-25
 - topics: classification, jev, pull-requests, python
 - use_cases: judge or verify an agent's output; review code or pull requests; route between models by task difficulty
+- rule: 147
 
 ### stratonext/software-factory
 
@@ -173,6 +189,7 @@
 - license: MIT
 - pushed_at: 2026-09-30
 - use_cases: judge or verify an agent's output; run Jev on open models without the vendor; benchmark or calibrate Jev
+- rule: 147
 
 ### raihankhan-rk/diffjury
 
@@ -182,6 +199,7 @@
 - language: TypeScript
 - pushed_at: 2026-09-22
 - use_cases: review code or pull requests; judge or verify an agent's output; compact or prune agent context
+- rule: 147
 
 ### cephalization/jev-triage
 
@@ -192,6 +210,7 @@
 - license: MIT
 - pushed_at: 2026-09-29
 - use_cases: review code or pull requests; judge or verify an agent's output; voice or realtime decisions
+- rule: 147
 
 ### Ramneet-Singh/jevopt
 
@@ -202,6 +221,7 @@
 - license: GPL-3.0
 - pushed_at: 2026-09-21
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; judge or verify an agent's output
+- rule: 147
 
 ### allebee/pytest-jev
 
@@ -213,6 +233,7 @@
 - pushed_at: 2026-09-21
 - topics: jev, llm, llm-evaluation, pytest, pytest-plugin, python
 - use_cases: judge or verify an agent's output; compare Jev with an LLM; review code or pull requests
+- rule: 147
 
 ### fatwang2/jev-review-action
 
@@ -224,3 +245,4 @@
 - pushed_at: 2026-09-20
 - topics: automation, awesome-list, classification, github-action, jev, pull-request
 - use_cases: review code or pull requests; score or rank candidates in a pipeline; route requests through a gateway or proxy
+- rule: 147

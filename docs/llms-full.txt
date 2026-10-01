@@ -1,14 +1,15 @@
 # Awesome Jev — full export
 
-> The definitive, self-updating directory of everything built on Jev — TypeSafe AI’s System One model, the first model that answers with typed judgments and calibrated probabilities instead of prose.
+> Everything built on Jev — TypeSafe AI's System One model, the first model that answers with typed judgments and calibrated probabilities instead of prose. Generated from one data file in three languages, maintained by deterministic scripts and a free-AI reviewer.
 
-352 entries, 93,460 stars, 19 categories, refreshed 2026-10-01.
+352 entries, 93 460 stars, 19 rules, refreshed 2026-10-01.
 Source: https://github.com/hdjekuue/awesome-jev
 
-Format: one H3 per entry, followed by a YAML-ish bullet list of fields.
+Format: one H3 per entry, followed by a field list.
 
 ---
-## 🧭 Start Here
+
+## 001 · Start Here
 
 The spec sheet, the three primitives and the docs — read these before building.
 
@@ -17,98 +18,114 @@ The spec sheet, the three primitives and the docs — read these before building
 - url: https://docs.typesafe.ai/introduction
 - description: The mental model in two pages: state plus typed questions in, typed answers with probabilities out.
 - official: true
+- rule: 001
 
 ### Quick start
 
 - url: https://docs.typesafe.ai/introduction/quickstart
 - description: First request in Python, TypeScript, or curl.
 - official: true
+- rule: 001
 
 ### Primitives
 
 - url: https://docs.typesafe.ai/primitives
 - description: Choice, Score, and Noul, and when each one fits.
 - official: true
+- rule: 001
 
 ### State
 
 - url: https://docs.typesafe.ai/concepts/state
 - description: How to package what Jev judges, and why less is more.
 - official: true
+- rule: 001
 
 ### API reference
 
 - url: https://docs.typesafe.ai/api
 - description: The request and response contract.
 - official: true
+- rule: 001
 
 ### Models
 
 - url: https://docs.typesafe.ai/models
 - description: Aliases, current version, price, and rate limits.
 - official: true
+- rule: 001
 
 ### Model jaggedness: jev-1.13
 
 - url: https://docs.typesafe.ai/model-jaggedness/jev-1.13
 - description: Known failure modes, straight from the vendor.
 - official: true
+- rule: 001
 
 ### System One
 
 - url: https://docs.typesafe.ai/concepts/system-one
 - description: What the category means and how it differs from a chat model.
 - official: true
+- rule: 001
 
 ### How to build with System One
 
 - url: https://docs.typesafe.ai/concepts/how-to-build-with-system-one
 - description: Decompose a judgment into atomic questions and keep the control flow in code.
 - official: true
+- rule: 001
 
 ### Confidence
 
 - url: https://docs.typesafe.ai/confidence
 - description: What the confidence field means and how to turn it into act, review, or fall back.
 - official: true
+- rule: 001
 
 ### Patterns
 
 - url: https://docs.typesafe.ai/patterns
 - description: Speculative fan-out, confidence routing, composite scoring, intent routing.
 - official: true
+- rule: 001
 
 ### Use-case map
 
 - url: https://docs.typesafe.ai/concepts/use-case-map
 - description: The vendor's own catalogue of where Jev fits and where it does not.
 - official: true
+- rule: 001
 
 ### Cookbooks
 
 - url: https://docs.typesafe.ai/cookbooks/parallel_questions
 - description: Worked recipes, starting with batching many questions into one request; the sidebar has the rest.
 - official: true
+- rule: 001
 
 ### Workflow evals
 
 - url: https://evals.typesafe.ai/
 - description: The vendor's benchmark on four workflows, with the caveats printed on the page.
 - official: true
+- rule: 001
 
 ### llms.txt
 
 - url: https://docs.typesafe.ai/llms.txt
 - description: Every documentation page as plain Markdown, for feeding to an agent.
 - official: true
+- rule: 001
 
 ### Console
 
 - url: https://console.typesafe.ai/
 - description: Waitlist, API keys, and usage.
 - official: true
+- rule: 001
 
-## 🏛️ Official SDKs & Framework Support
+## 011 · Official SDKs & Framework Support
 
 Maintained by TypeSafe AI, plus the frameworks that ship Jev natively.
 
@@ -116,22 +133,24 @@ Maintained by TypeSafe AI, plus the frameworks that ship Jev natively.
 
 - url: https://github.com/vercel/eve
 - description: Vercel's agent framework; Jev is the typed judge in its evaluate step.
-- stars: 5,418
+- stars: 5 418
 - language: TypeScript
 - license: Apache-2.0
 - pushed_at: 2026-09-30
 - topics: agent, framework, harness, javascript, markdown, typescript
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; review code or pull requests
+- rule: 011
 
 ### typesafe-ai/skills
 
 - url: https://github.com/typesafe-ai/skills
 - description: Agent skills for designing questions, building workflows, and evaluating them.
-- stars: 2,469
+- stars: 2 469
 - license: MIT
 - official: true
 - pushed_at: 2026-09-12
 - use_cases: classify support tickets or messages; judge or verify an agent's output; pick which skill or prompt to load
+- rule: 011
 
 ### vercel-labs/ai-cli
 
@@ -141,6 +160,7 @@ Maintained by TypeSafe AI, plus the frameworks that ship Jev natively.
 - language: TypeScript
 - pushed_at: 2026-09-30
 - use_cases: judge or verify an agent's output; review code or pull requests; call Jev from the command line
+- rule: 011
 
 ### typesafe-ai/system-one-adapter-python
 
@@ -152,6 +172,7 @@ Maintained by TypeSafe AI, plus the frameworks that ship Jev natively.
 - official: true
 - pushed_at: 2026-09-22
 - use_cases: compare Jev with an LLM; benchmark or calibrate Jev; judge or verify an agent's output
+- rule: 011
 
 ### typesafe-ai/typesafe-sdk-js
 
@@ -163,6 +184,7 @@ Maintained by TypeSafe AI, plus the frameworks that ship Jev natively.
 - official: true
 - pushed_at: 2026-09-15
 - use_cases: review code or pull requests; judge or verify an agent's output; extract structured fields from text
+- rule: 011
 
 ### typesafe-ai/typesafe-sdk-python
 
@@ -174,6 +196,7 @@ Maintained by TypeSafe AI, plus the frameworks that ship Jev natively.
 - official: true
 - pushed_at: 2026-09-26
 - use_cases: review code or pull requests; judge or verify an agent's output; moderate content or detect abuse
+- rule: 011
 
 ### Agent skill
 
@@ -181,8 +204,9 @@ Maintained by TypeSafe AI, plus the frameworks that ship Jev natively.
 - description: How to install the official skill in Claude Code, Cursor, and friends.
 - official: true
 - use_cases: drive a browser or GUI with an agent; call Jev from a language SDK; pick which skill or prompt to load
+- rule: 011
 
-## 🤖 Coding Agents
+## 104 · Coding Agents
 
 Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 
@@ -190,12 +214,13 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 
 - url: https://github.com/nicobailon/pi-mcp-adapter
 - description: Opt-in typed evaluation and semantic search over MCP tool results, behind a per-server data-egress allowlist.
-- stars: 1,568
+- stars: 1 568
 - language: TypeScript
 - license: MIT
 - pushed_at: 2026-09-30
 - topics: ai, claude, coding-agent, extension, llm, mcp
 - use_cases: compact or prune agent context; judge or verify an agent's output; route requests through a gateway or proxy
+- rule: 104
 
 ### kerpopule/hermes-jev-skills
 
@@ -206,6 +231,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-29
 - use_cases: compact or prune agent context; pick which skill or prompt to load; route between models by task difficulty
+- rule: 104
 
 ### gargpratyush/jev-router
 
@@ -216,6 +242,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: route between models by task difficulty; call Jev from the command line; learn how Jev works
+- rule: 104
 
 ### jkudish/jev-mcp
 
@@ -226,6 +253,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-29
 - use_cases: serve Jev over MCP to any agent; score or rank candidates in a pipeline; extract structured fields from text
+- rule: 104
 
 ### notque/vexjoy-agent
 
@@ -237,6 +265,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-30
 - topics: ai, ai-agents, ai-skills, claude, claude-code, ai-pipelines
 - use_cases: gate or approve tool calls before they run; pick which skill or prompt to load; judge or verify an agent's output
+- rule: 104
 
 ### TianyuCodings/JevHarness
 
@@ -246,6 +275,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - language: Python
 - pushed_at: 2026-09-21
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; compare Jev with an LLM
+- rule: 104
 
 ### itsmostafa/typesafe-mcp
 
@@ -257,6 +287,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-30
 - topics: mcp, mcp-tools
 - use_cases: classify support tickets or messages; serve Jev over MCP to any agent; add Jev to a chat bot or Discord
+- rule: 104
 
 ### miuuyy/Astra-Ares
 
@@ -267,6 +298,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-23
 - use_cases: benchmark or calibrate Jev; review code or pull requests; learn how Jev works
+- rule: 104
 
 ### 0xNatoshi/jev-codex-router
 
@@ -279,6 +311,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-22
 - topics: ai, codex, jev, llm, macos, routing
 - use_cases: route between models by task difficulty; benchmark or calibrate Jev; review code or pull requests
+- rule: 104
 
 ### kitze/skillbox
 
@@ -289,6 +322,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: pick which skill or prompt to load; serve Jev over MCP to any agent; run Jev on open models without the vendor
+- rule: 104
 
 ### DevMortimer/pi-warden
 
@@ -300,6 +334,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-29
 - topics: guardrails, pi-extension, pi-package, typesafe, agent-guardrails
 - use_cases: stop an agent from finishing early; judge or verify an agent's output; detect prompt injection or risky commands
+- rule: 104
 
 ### y0usaf/pi-jev
 
@@ -311,6 +346,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-25
 - topics: guardrails, jev, pi-extension, pi-package, typesafe
 - use_cases: gate or approve tool calls before they run; judge or verify an agent's output; detect prompt injection or risky commands
+- rule: 104
 
 ### dbreunig/building-with-jev-skill
 
@@ -319,6 +355,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - stars: 145
 - pushed_at: 2026-09-17
 - use_cases: score or rank candidates in a pipeline; add Jev to a chat bot or Discord; pick which skill or prompt to load
+- rule: 104
 
 ### Dicklesworthstone/skillranker
 
@@ -330,6 +367,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-29
 - topics: agent-skills, ai-agents, asupersync, claude-code, cli, developer-tools
 - use_cases: pick which skill or prompt to load; benchmark or calibrate Jev; call Jev from the command line
+- rule: 104
 
 ### devagrawal09/jev-code
 
@@ -340,6 +378,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: judge or verify an agent's output; review code or pull requests; call Jev from the command line
+- rule: 104
 
 ### devagrawal09/stanley-code
 
@@ -350,6 +389,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: judge or verify an agent's output; review code or pull requests; call Jev from the command line
+- rule: 104
 
 ### fabricioctelles/skills
 
@@ -361,6 +401,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-27
 - topics: agentic-ai, agentic-skills, skills, steering, claude-code, claude-skills
 - use_cases: judge or verify an agent's output; pick which skill or prompt to load; classify support tickets or messages
+- rule: 104
 
 ### EliaAlberti/jev-rules
 
@@ -371,6 +412,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-27
 - use_cases: compact or prune agent context; learn how Jev works; pick which skill or prompt to load
+- rule: 104
 
 ### TheoOliveira/pi-jev
 
@@ -382,6 +424,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-24
 - topics: jev, pi-coding-agent, pi-extension, pi-package, system-one, tool-routing
 - use_cases: pick which skill or prompt to load; compact or prune agent context; judge or verify an agent's output
+- rule: 104
 
 ### DevMortimer/pi-typesafe
 
@@ -392,6 +435,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-30
 - use_cases: monitor or observe Jev usage and cost; call Jev from the command line; benchmark or calibrate Jev
+- rule: 104
 
 ### tacticocc/Jevbridge
 
@@ -403,6 +447,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-21
 - topics: acp, agent, claude, computer-use, grok, jev
 - use_cases: gate or approve tool calls before they run; run Jev on open models without the vendor; serve Jev over MCP to any agent
+- rule: 104
 
 ### shantanugoel/ask-jev-skill
 
@@ -413,6 +458,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: judge or verify an agent's output; score or rank candidates in a pipeline; compare Jev with an LLM
+- rule: 104
 
 ### shitianfang/jev-use
 
@@ -424,6 +470,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-22
 - topics: agent, ai-agents, claude-code, claude-code-plugin, codex, jev
 - use_cases: gate or approve tool calls before they run; compact or prune agent context; drive a browser or GUI with an agent
+- rule: 104
 
 ### jomatsu/pi-jev-auto-mode
 
@@ -435,6 +482,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-24
 - topics: auto-mode, coding-agent, guardrail, jev, permission, pi-coding-agent
 - use_cases: gate or approve tool calls before they run; detect prompt injection or risky commands; benchmark or calibrate Jev
+- rule: 104
 
 ### keeltrace/hermes-jev
 
@@ -445,6 +493,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-28
 - use_cases: gate or approve tool calls before they run; judge or verify an agent's output; run Jev on open models without the vendor
+- rule: 104
 
 ### compozy/yoshi
 
@@ -456,6 +505,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-18
 - topics: bun, claude-code, codex, context-window, jev, llm-proxy
 - use_cases: compact or prune agent context; route requests through a gateway or proxy; benchmark or calibrate Jev
+- rule: 104
 
 ### blakestone-x/jev-mcp
 
@@ -466,6 +516,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-16
 - use_cases: serve Jev over MCP to any agent; judge or verify an agent's output; score or rank candidates in a pipeline
+- rule: 104
 
 ### GodsBoy/jev-agent-skill-router
 
@@ -477,6 +528,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-16
 - topics: agentic-ai, ai-agents, hermes-agent, jev, python, skill-routing
 - use_cases: pick which skill or prompt to load; judge or verify an agent's output; benchmark or calibrate Jev
+- rule: 104
 
 ### Brainwires/jevwire
 
@@ -487,6 +539,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-21
 - use_cases: gate or approve tool calls before they run; serve Jev over MCP to any agent; judge or verify an agent's output
+- rule: 104
 
 ### valentynkit/jev-belay
 
@@ -497,6 +550,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-20
 - use_cases: judge or verify an agent's output; stop an agent from finishing early; benchmark or calibrate Jev
+- rule: 104
 
 ### anpicasso/hermes-jev-approvals
 
@@ -507,6 +561,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-22
 - use_cases: gate or approve tool calls before they run; detect prompt injection or risky commands; benchmark or calibrate Jev
+- rule: 104
 
 ### mejiasd3v/pi-jev-router
 
@@ -517,6 +572,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-22
 - use_cases: route requests through a gateway or proxy; route between models by task difficulty; call Jev from the command line
+- rule: 104
 
 ### DECRUX9812/typesafe-skill-router
 
@@ -528,6 +584,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-21
 - topics: ai-agents, hermes-agent, hermes-plugin, llm-agents, plugin-catalog, prompt-caching
 - use_cases: pick which skill or prompt to load; compact or prune agent context; review code or pull requests
+- rule: 104
 
 ### kubet/azdaja
 
@@ -539,6 +596,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-21
 - topics: agent-skills, jcode, recursive-language-models, rust, gemini-cli-extension, claude-code
 - use_cases: judge or verify an agent's output; compact or prune agent context; extract structured fields from text
+- rule: 104
 
 ### HyunjunJeon/pi-quiet-ask
 
@@ -549,6 +607,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: gate or approve tool calls before they run; judge or verify an agent's output; detect prompt injection or risky commands
+- rule: 104
 
 ### harshwasan/pi-jev-sentinel
 
@@ -559,6 +618,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-20
 - use_cases: gate or approve tool calls before they run; detect prompt injection or risky commands; judge or verify an agent's output
+- rule: 104
 
 ### 24601/Augustus
 
@@ -570,6 +630,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-28
 - topics: agent-skills, agent-workflows, ai-agents, calibrated-confidence, claude-code, decision-systems
 - use_cases: score or rank candidates in a pipeline; benchmark or calibrate Jev; rerank search results
+- rule: 104
 
 ### adarshmishra07/jcm-router
 
@@ -580,6 +641,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: route between models by task difficulty; route requests through a gateway or proxy; benchmark or calibrate Jev
+- rule: 104
 
 ### AbdelStark/bicameral
 
@@ -591,6 +653,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-16
 - topics: harness-engineering, hybrid-machine-learning, machine-learning
 - use_cases: gate or approve tool calls before they run; judge or verify an agent's output; detect prompt injection or risky commands
+- rule: 104
 
 ### ajensenwaud/hermes-jev-plugin
 
@@ -602,6 +665,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-19
 - topics: ai-agents, decision-making, hermes, hermes-agent, jev, typesafe
 - use_cases: judge or verify an agent's output; classify support tickets or messages; score or rank candidates in a pipeline
+- rule: 104
 
 ### HyunjunJeon/jev-judgment
 
@@ -612,6 +676,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: gate or approve tool calls before they run; judge or verify an agent's output; voice or realtime decisions
+- rule: 104
 
 ### 3clyp50/a0-typesafe-ai
 
@@ -622,6 +687,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: judge or verify an agent's output; score or rank candidates in a pipeline; add Jev to a chat bot or Discord
+- rule: 104
 
 ### bestagentkits/jev-skillful
 
@@ -633,6 +699,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-17
 - topics: agent-tooling, ai-agents, claude-code, codex, coding-agents, developer-tools
 - use_cases: compact or prune agent context; pick which skill or prompt to load; benchmark or calibrate Jev
+- rule: 104
 
 ### noplan-inc/limpet
 
@@ -644,6 +711,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - pushed_at: 2026-09-17
 - topics: ai-agents, claude-code, codex, hooks, jev
 - use_cases: stop an agent from finishing early; judge or verify an agent's output; benchmark or calibrate Jev
+- rule: 104
 
 ### suenot/codex-jev-router
 
@@ -654,6 +722,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-27
 - use_cases: judge or verify an agent's output; compact or prune agent context; compare Jev with an LLM
+- rule: 104
 
 ### legacybridge-tech/pi-typesafe-jev
 
@@ -664,6 +733,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: NOASSERTION
 - pushed_at: 2026-09-17
 - use_cases: judge or verify an agent's output; score or rank candidates in a pipeline; classify support tickets or messages
+- rule: 104
 
 ### BYK/jev-mcp
 
@@ -674,6 +744,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; classify support tickets or messages
+- rule: 104
 
 ### samtay32/jev-system-architect
 
@@ -683,10 +754,11 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: classify support tickets or messages; extract structured fields from text; score or rank candidates in a pipeline
+- rule: 104
 
-## 🚦 Routing & Gateways
+## 118 · Routing & Gateways
 
-Per-turn model and tool selection, behind a hard deadline.
+Per-turn model and tool selection, under a hard deadline.
 
 ### BillionsBobby/JevRouter
 
@@ -697,6 +769,7 @@ Per-turn model and tool selection, behind a hard deadline.
 - license: MIT
 - pushed_at: 2026-09-26
 - use_cases: gate or approve tool calls before they run; pick which skill or prompt to load; benchmark or calibrate Jev
+- rule: 118
 
 ### vinilana/jev-gateway
 
@@ -707,6 +780,7 @@ Per-turn model and tool selection, behind a hard deadline.
 - license: MIT
 - pushed_at: 2026-09-25
 - use_cases: gate or approve tool calls before they run; route requests through a gateway or proxy; compare Jev with an LLM
+- rule: 118
 
 ### juspay/neurolink
 
@@ -718,6 +792,7 @@ Per-turn model and tool selection, behind a hard deadline.
 - pushed_at: 2026-09-30
 - topics: ai, developer-tools, llm, mcp, model-context-protocol, agents
 - use_cases: compact or prune agent context; route between models by task difficulty; gate or approve tool calls before they run
+- rule: 118
 
 ### nidhi-singh02/agent-router
 
@@ -729,6 +804,7 @@ Per-turn model and tool selection, behind a hard deadline.
 - pushed_at: 2026-09-27
 - topics: agents, ai, cli, coding, developer-tools, herdr
 - use_cases: route between models by task difficulty; call Jev from the command line; review code or pull requests
+- rule: 118
 
 ### yusukebe/hono-jev-router
 
@@ -739,6 +815,7 @@ Per-turn model and tool selection, behind a hard deadline.
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; review code or pull requests
+- rule: 118
 
 ### xinyao27/jevonian
 
@@ -749,6 +826,7 @@ Per-turn model and tool selection, behind a hard deadline.
 - license: AGPL-3.0
 - pushed_at: 2026-09-29
 - use_cases: route between models by task difficulty; route requests through a gateway or proxy; monitor or observe Jev usage and cost
+- rule: 118
 
 ### prismhq/jev-router
 
@@ -759,6 +837,7 @@ Per-turn model and tool selection, behind a hard deadline.
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: route requests through a gateway or proxy; add Jev to a chat bot or Discord; compare Jev with an LLM
+- rule: 118
 
 ### iamvatsalpatel/tiershift
 
@@ -770,6 +849,7 @@ Per-turn model and tool selection, behind a hard deadline.
 - pushed_at: 2026-09-28
 - topics: agents, cost-optimization, jev, llm, model-routing, typesafe
 - use_cases: route between models by task difficulty; route requests through a gateway or proxy; monitor or observe Jev usage and cost
+- rule: 118
 
 ### FirasSX914/Janus
 
@@ -781,6 +861,7 @@ Per-turn model and tool selection, behind a hard deadline.
 - pushed_at: 2026-09-18
 - topics: benchmark, calibration, confidence, deepseek, jev, llm
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; judge or verify an agent's output
+- rule: 118
 
 ### daviddl9/jev-router
 
@@ -791,8 +872,9 @@ Per-turn model and tool selection, behind a hard deadline.
 - license: NOASSERTION
 - pushed_at: 2026-09-21
 - use_cases: route between models by task difficulty; compact or prune agent context; judge or verify an agent's output
+- rule: 118
 
-## 🗜️ Context & Compaction
+## 131 · Context & Compaction
 
 Decide what stays in the window before the model ever reads it.
 
@@ -800,11 +882,12 @@ Decide what stays in the window before the model ever reads it.
 
 - url: https://github.com/tamaratran/fast-jev-compaction
 - description: Replaces the compaction summary with Jev decisions: every tool call and result scored in one request, stale ones dropped, everything kept stays verbatim.
-- stars: 7,225
+- stars: 7 225
 - language: TypeScript
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: compact or prune agent context; judge or verify an agent's output; benchmark or calibrate Jev
+- rule: 131
 
 ### tamaratran/jev-pruner
 
@@ -815,6 +898,7 @@ Decide what stays in the window before the model ever reads it.
 - license: MIT
 - pushed_at: 2026-09-30
 - use_cases: compact or prune agent context; judge or verify an agent's output; review code or pull requests
+- rule: 131
 
 ### GhalebDweikat/winnow
 
@@ -826,6 +910,7 @@ Decide what stays in the window before the model ever reads it.
 - pushed_at: 2026-09-30
 - topics: claude-code, claude-code-plugin, context-management, jev, llm-agents, typesafe
 - use_cases: compact or prune agent context; judge or verify an agent's output; compare Jev with an LLM
+- rule: 131
 
 ### IAmUnbounded/save-token-jev-clean
 
@@ -836,6 +921,7 @@ Decide what stays in the window before the model ever reads it.
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: compact or prune agent context; judge or verify an agent's output; run Jev on open models without the vendor
+- rule: 131
 
 ### joelhooks/pi-fast-jev-compaction
 
@@ -846,6 +932,7 @@ Decide what stays in the window before the model ever reads it.
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: compact or prune agent context; benchmark or calibrate Jev; compare Jev with an LLM
+- rule: 131
 
 ### Nyarlathoteppppp/pi-heed
 
@@ -857,8 +944,9 @@ Decide what stays in the window before the model ever reads it.
 - pushed_at: 2026-09-19
 - topics: ai-agents, coding-agent, guardrails, jev, pi-coding-agent, pi-package
 - use_cases: gate or approve tool calls before they run; compact or prune agent context; judge or verify an agent's output
+- rule: 131
 
-## 🔍 Code Review & Quality
+## 147 · Code Review & Quality
 
 Judges, linters, coverage gates and review dashboards.
 
@@ -872,6 +960,7 @@ Judges, linters, coverage gates and review dashboards.
 - pushed_at: 2026-09-17
 - topics: ai, code-review, jev, typesafe-ai, typescript
 - use_cases: review code or pull requests; judge or verify an agent's output; learn how Jev works
+- rule: 147
 
 ### thruwire/foreman
 
@@ -882,6 +971,7 @@ Judges, linters, coverage gates and review dashboards.
 - license: MIT
 - pushed_at: 2026-09-28
 - use_cases: judge or verify an agent's output; review code or pull requests; benchmark or calibrate Jev
+- rule: 147
 
 ### lakeday-org/perch
 
@@ -893,6 +983,7 @@ Judges, linters, coverage gates and review dashboards.
 - pushed_at: 2026-09-30
 - topics: ai, cli, code-quality, code-review, devtools, linter
 - use_cases: review code or pull requests; call Jev from the command line; judge or verify an agent's output
+- rule: 147
 
 ### NiazMorshed2007/jev-review
 
@@ -904,6 +995,7 @@ Judges, linters, coverage gates and review dashboards.
 - pushed_at: 2026-09-17
 - topics: agent-plugin, ai-agents, claude-code, code-review, codex, coding-agents
 - use_cases: judge or verify an agent's output; serve Jev over MCP to any agent; review code or pull requests
+- rule: 147
 
 ### supercorp-ai/supercov
 
@@ -915,6 +1007,7 @@ Judges, linters, coverage gates and review dashboards.
 - pushed_at: 2026-09-27
 - topics: coverage, jev, typesafe, gemini-cli-extension, claude-code, code-coverage
 - use_cases: judge or verify an agent's output; review code or pull requests; benchmark or calibrate Jev
+- rule: 147
 
 ### kyu1204/jgrep
 
@@ -925,6 +1018,7 @@ Judges, linters, coverage gates and review dashboards.
 - license: MIT
 - pushed_at: 2026-09-30
 - use_cases: review code or pull requests; call Jev from the command line; judge or verify an agent's output
+- rule: 147
 
 ### Alurith/jeff
 
@@ -936,6 +1030,7 @@ Judges, linters, coverage gates and review dashboards.
 - pushed_at: 2026-09-20
 - topics: golang, jev
 - use_cases: review code or pull requests; call Jev from the command line; judge or verify an agent's output
+- rule: 147
 
 ### devanshbatham/commit-miner
 
@@ -945,6 +1040,7 @@ Judges, linters, coverage gates and review dashboards.
 - language: Rust
 - pushed_at: 2026-09-17
 - use_cases: review code or pull requests; label data or build a dataset; judge or verify an agent's output
+- rule: 147
 
 ### lukstei/slop-grader
 
@@ -956,6 +1052,7 @@ Judges, linters, coverage gates and review dashboards.
 - pushed_at: 2026-09-24
 - topics: ai-agents, jev, no-ai-slop, system-one, ai-slop, ai-writing
 - use_cases: judge or verify an agent's output; call Jev from the command line; compare Jev with an LLM
+- rule: 147
 
 ### valentynkit/jev-commit
 
@@ -966,6 +1063,7 @@ Judges, linters, coverage gates and review dashboards.
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: judge or verify an agent's output; call Jev from the command line; compare Jev with an LLM
+- rule: 147
 
 ### frostney/clean-code-review
 
@@ -977,6 +1075,7 @@ Judges, linters, coverage gates and review dashboards.
 - pushed_at: 2026-09-23
 - topics: agents, ai, ai-gateway, ai-sdk, clean-code, code-quality
 - use_cases: review code or pull requests; judge or verify an agent's output; compare Jev with an LLM
+- rule: 147
 
 ### huntedman/JevLint
 
@@ -987,6 +1086,7 @@ Judges, linters, coverage gates and review dashboards.
 - license: MIT
 - pushed_at: 2026-09-20
 - use_cases: judge or verify an agent's output; review code or pull requests; call Jev from the command line
+- rule: 147
 
 ### doeixd/jev-pref
 
@@ -998,6 +1098,7 @@ Judges, linters, coverage gates and review dashboards.
 - pushed_at: 2026-09-18
 - topics: agent-skills, claude-code, code-review, jev, skills-sh, typesafe
 - use_cases: judge or verify an agent's output; review code or pull requests; pick which skill or prompt to load
+- rule: 147
 
 ### nozomi-koborinai/jev-spec
 
@@ -1009,6 +1110,7 @@ Judges, linters, coverage gates and review dashboards.
 - pushed_at: 2026-09-29
 - topics: ai, jev, linter, typesafe-ai, typescript, agent-skills
 - use_cases: call Jev from the command line; judge or verify an agent's output; review code or pull requests
+- rule: 147
 
 ### HexyeDEV/JevPR
 
@@ -1020,6 +1122,7 @@ Judges, linters, coverage gates and review dashboards.
 - pushed_at: 2026-09-25
 - topics: classification, jev, pull-requests, python
 - use_cases: judge or verify an agent's output; review code or pull requests; route between models by task difficulty
+- rule: 147
 
 ### stratonext/software-factory
 
@@ -1030,6 +1133,7 @@ Judges, linters, coverage gates and review dashboards.
 - license: MIT
 - pushed_at: 2026-09-30
 - use_cases: judge or verify an agent's output; run Jev on open models without the vendor; benchmark or calibrate Jev
+- rule: 147
 
 ### raihankhan-rk/diffjury
 
@@ -1039,6 +1143,7 @@ Judges, linters, coverage gates and review dashboards.
 - language: TypeScript
 - pushed_at: 2026-09-22
 - use_cases: review code or pull requests; judge or verify an agent's output; compact or prune agent context
+- rule: 147
 
 ### cephalization/jev-triage
 
@@ -1049,6 +1154,7 @@ Judges, linters, coverage gates and review dashboards.
 - license: MIT
 - pushed_at: 2026-09-29
 - use_cases: review code or pull requests; judge or verify an agent's output; voice or realtime decisions
+- rule: 147
 
 ### Ramneet-Singh/jevopt
 
@@ -1059,6 +1165,7 @@ Judges, linters, coverage gates and review dashboards.
 - license: GPL-3.0
 - pushed_at: 2026-09-21
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; judge or verify an agent's output
+- rule: 147
 
 ### allebee/pytest-jev
 
@@ -1070,6 +1177,7 @@ Judges, linters, coverage gates and review dashboards.
 - pushed_at: 2026-09-21
 - topics: jev, llm, llm-evaluation, pytest, pytest-plugin, python
 - use_cases: judge or verify an agent's output; compare Jev with an LLM; review code or pull requests
+- rule: 147
 
 ### fatwang2/jev-review-action
 
@@ -1081,8 +1189,9 @@ Judges, linters, coverage gates and review dashboards.
 - pushed_at: 2026-09-20
 - topics: automation, awesome-list, classification, github-action, jev, pull-request
 - use_cases: review code or pull requests; score or rank candidates in a pipeline; route requests through a gateway or proxy
+- rule: 147
 
-## 🌐 Browser & Computer Use
+## 152 · Browser & Computer Use
 
 Jev picks the operation and the DOM element; a small LLM only writes the text.
 
@@ -1090,22 +1199,24 @@ Jev picks the operation and the DOM element; a small LLM only writes the text.
 
 - url: https://github.com/browser-use/jev-ultrafast
 - description: One request picks both the operation and the target element from an indexed DOM table; a small LLM only writes typed text. Zürich to London booked in 7.1 seconds.
-- stars: 21,495
+- stars: 21 495
 - language: Python
 - license: MIT
 - pushed_at: 2026-09-30
 - use_cases: drive a browser or GUI with an agent; benchmark or calibrate Jev; learn how Jev works
+- rule: 152
 
 ### awlevin/typesafe-computer-use
 
 - url: https://github.com/awlevin/typesafe-computer-use
 - description: OCR the screen, classify the next action, click; about $0.0002 a step on macOS.
-- stars: 1,097
+- stars: 1 097
 - language: Python
 - license: MIT
 - pushed_at: 2026-09-29
 - topics: ai-agents, automation, computer-use, macos, ocr, typesafe
 - use_cases: drive a browser or GUI with an agent; learn how Jev works; benchmark or calibrate Jev
+- rule: 152
 
 ### wy-coliney/jev-browser-use
 
@@ -1116,6 +1227,7 @@ Jev picks the operation and the DOM element; a small LLM only writes the text.
 - license: MIT
 - pushed_at: 2026-09-23
 - use_cases: drive a browser or GUI with an agent; judge or verify an agent's output; learn how Jev works
+- rule: 152
 
 ### Sac-Y/Jev-cu
 
@@ -1126,6 +1238,7 @@ Jev picks the operation and the DOM element; a small LLM only writes the text.
 - license: MIT
 - pushed_at: 2026-09-22
 - use_cases: gate or approve tool calls before they run; drive a browser or GUI with an agent; learn how Jev works
+- rule: 152
 
 ### moritzkremb/jev-voice-browser
 
@@ -1136,6 +1249,7 @@ Jev picks the operation and the DOM element; a small LLM only writes the text.
 - license: MIT
 - pushed_at: 2026-09-21
 - use_cases: drive a browser or GUI with an agent; voice or realtime decisions; compare Jev with an LLM
+- rule: 152
 
 ### jkudish/jev-browser
 
@@ -1146,6 +1260,7 @@ Jev picks the operation and the DOM element; a small LLM only writes the text.
 - license: MIT
 - pushed_at: 2026-09-29
 - use_cases: call Jev from the command line; drive a browser or GUI with an agent; benchmark or calibrate Jev
+- rule: 152
 
 ### YUTA-fywoo/jev-gui-delegate
 
@@ -1155,6 +1270,7 @@ Jev picks the operation and the DOM element; a small LLM only writes the text.
 - language: Python
 - pushed_at: 2026-09-27
 - use_cases: drive a browser or GUI with an agent; judge or verify an agent's output; monitor or observe Jev usage and cost
+- rule: 152
 
 ### socai-io/jev-social
 
@@ -1166,6 +1282,7 @@ Jev picks the operation and the DOM element; a small LLM only writes the text.
 - pushed_at: 2026-09-30
 - topics: jev, social-media, ai-agents, browser-automation, instagram, research-agent
 - use_cases: judge or verify an agent's output; drive a browser or GUI with an agent; gate or approve tool calls before they run
+- rule: 152
 
 ### savka777/jev-use
 
@@ -1177,6 +1294,7 @@ Jev picks the operation and the DOM element; a small LLM only writes the text.
 - pushed_at: 2026-09-21
 - topics: ai, browser-use, computer-use, harness, jev, typesafe-ai
 - use_cases: drive a browser or GUI with an agent; call Jev from the command line; voice or realtime decisions
+- rule: 152
 
 ### Ying-Kai-Liao/jev-browser
 
@@ -1188,6 +1306,7 @@ Jev picks the operation and the DOM element; a small LLM only writes the text.
 - pushed_at: 2026-09-29
 - topics: browser-automation, llm-agents, mcp, mcp-server, playwright
 - use_cases: drive a browser or GUI with an agent; call Jev from the command line; gate or approve tool calls before they run
+- rule: 152
 
 ### hqman/JevScout
 
@@ -1197,6 +1316,7 @@ Jev picks the operation and the DOM element; a small LLM only writes the text.
 - language: Python
 - pushed_at: 2026-09-18
 - use_cases: drive a browser or GUI with an agent; call Jev from the command line; compare Jev with an LLM
+- rule: 152
 
 ### romaluev/jev-ego
 
@@ -1208,6 +1328,7 @@ Jev picks the operation and the DOM element; a small LLM only writes the text.
 - pushed_at: 2026-09-17
 - topics: ai-agent, browser-agent, cdp, cli, ego-browser, ego-lite
 - use_cases: drive a browser or GUI with an agent; benchmark or calibrate Jev; learn how Jev works
+- rule: 152
 
 ### tontoko/jev-browser
 
@@ -1219,6 +1340,7 @@ Jev picks the operation and the DOM element; a small LLM only writes the text.
 - pushed_at: 2026-09-30
 - topics: browser-automation, cli, jev, mcp, playwright, typescript
 - use_cases: drive a browser or GUI with an agent; call Jev from the command line; judge or verify an agent's output
+- rule: 152
 
 ### imanshu03/jev-browser-use
 
@@ -1228,8 +1350,9 @@ Jev picks the operation and the DOM element; a small LLM only writes the text.
 - language: TypeScript
 - pushed_at: 2026-09-27
 - use_cases: call Jev from the command line; drive a browser or GUI with an agent; serve Jev over MCP to any agent
+- rule: 152
 
-## 📱 Mobile & Desktop Automation
+## 158 · Mobile & Desktop Automation
 
 Driving phones, IM clients and native UIs without hooking or patching.
 
@@ -1242,6 +1365,7 @@ Driving phones, IM clients and native UIs without hooking or patching.
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: control a phone or mobile app; benchmark or calibrate Jev; drive a browser or GUI with an agent
+- rule: 158
 
 ### ainame/swift-typesafe
 
@@ -1252,6 +1376,7 @@ Driving phones, IM clients and native UIs without hooking or patching.
 - license: MIT
 - pushed_at: 2026-09-23
 - use_cases: judge or verify an agent's output; extract structured fields from text; score or rank candidates in a pipeline
+- rule: 158
 
 ### friedjof/jev-mobile
 
@@ -1263,6 +1388,7 @@ Driving phones, IM clients and native UIs without hooking or patching.
 - pushed_at: 2026-09-18
 - topics: agents, android, automation, jev, mcp, mobile
 - use_cases: control a phone or mobile app; judge or verify an agent's output; drive a browser or GUI with an agent
+- rule: 158
 
 ### xinwang-nwpu/jev-mobile
 
@@ -1274,8 +1400,9 @@ Driving phones, IM clients and native UIs without hooking or patching.
 - pushed_at: 2026-09-21
 - topics: mobile-agent, jev
 - use_cases: control a phone or mobile app; compare Jev with an LLM; drive a browser or GUI with an agent
+- rule: 158
 
-## 🔎 Search, Reranking & RAG
+## 163 · Search, Reranking & RAG
 
 Query understanding, source selection, reranking and semantic SQL.
 
@@ -1288,6 +1415,7 @@ Query understanding, source selection, reranking and semantic SQL.
 - license: MIT
 - pushed_at: 2026-09-20
 - use_cases: rerank search results; learn how Jev works; compare Jev with an LLM
+- rule: 163
 
 ### jexp/neo4jev
 
@@ -1298,6 +1426,7 @@ Query understanding, source selection, reranking and semantic SQL.
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: compare Jev with an LLM; learn how Jev works; benchmark or calibrate Jev
+- rule: 163
 
 ### uehaj/jev-semgrep
 
@@ -1308,6 +1437,7 @@ Query understanding, source selection, reranking and semantic SQL.
 - license: NOASSERTION
 - pushed_at: 2026-09-30
 - use_cases: call Jev from the command line; moderate content or detect abuse; rerank search results
+- rule: 163
 
 ### ellipsis-dev/blink
 
@@ -1317,6 +1447,7 @@ Query understanding, source selection, reranking and semantic SQL.
 - language: TypeScript
 - pushed_at: 2026-09-16
 - use_cases: call Jev from the command line; score or rank candidates in a pipeline; judge or verify an agent's output
+- rule: 163
 
 ### kbhuw/jev-sift
 
@@ -1326,6 +1457,7 @@ Query understanding, source selection, reranking and semantic SQL.
 - language: JavaScript
 - pushed_at: 2026-09-18
 - use_cases: compact or prune agent context; rerank search results; score or rank candidates in a pipeline
+- rule: 163
 
 ### hev/reranker
 
@@ -1336,6 +1468,7 @@ Query understanding, source selection, reranking and semantic SQL.
 - license: Apache-2.0
 - pushed_at: 2026-09-17
 - use_cases: benchmark or calibrate Jev; score or rank candidates in a pipeline; compare Jev with an LLM
+- rule: 163
 
 ### reachjalil/jev-tree
 
@@ -1347,6 +1480,7 @@ Query understanding, source selection, reranking and semantic SQL.
 - pushed_at: 2026-09-18
 - topics: classification, jev, taxonomy, typesafe, typescript
 - use_cases: classify support tickets or messages; review code or pull requests; add Jev to a chat bot or Discord
+- rule: 163
 
 ### WiktorB2004/llama-index-jev
 
@@ -1358,6 +1492,7 @@ Query understanding, source selection, reranking and semantic SQL.
 - pushed_at: 2026-09-25
 - topics: llamaindex, rag, reranker, jev, postprocessor, python
 - use_cases: score or rank candidates in a pipeline; pick which skill or prompt to load; compare Jev with an LLM
+- rule: 163
 
 ### kylemclaren/jev-search
 
@@ -1369,6 +1504,7 @@ Query understanding, source selection, reranking and semantic SQL.
 - pushed_at: 2026-09-23
 - topics: jev, typesafe, typesafe-ai
 - use_cases: rerank search results; score or rank candidates in a pipeline; review code or pull requests
+- rule: 163
 
 ### AkashPriyadarshii/jev-scout
 
@@ -1380,6 +1516,7 @@ Query understanding, source selection, reranking and semantic SQL.
 - pushed_at: 2026-09-30
 - topics: ai-agents, claude-code, cli, code-search, coding-agents, crates-io
 - use_cases: score or rank candidates in a pipeline; rerank search results; call Jev from the command line
+- rule: 163
 
 ### kylemclaren/jevpdf
 
@@ -1391,6 +1528,7 @@ Query understanding, source selection, reranking and semantic SQL.
 - pushed_at: 2026-09-23
 - topics: jev, pdf
 - use_cases: rerank search results; compare Jev with an LLM; score or rank candidates in a pipeline
+- rule: 163
 
 ### mttrbrts/jev-folio-recursive-classifier
 
@@ -1401,6 +1539,7 @@ Query understanding, source selection, reranking and semantic SQL.
 - license: Apache-2.0
 - pushed_at: 2026-09-19
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; compare Jev with an LLM
+- rule: 163
 
 ### liou666/senseek
 
@@ -1410,8 +1549,9 @@ Query understanding, source selection, reranking and semantic SQL.
 - language: JavaScript
 - pushed_at: 2026-09-21
 - use_cases: compare Jev with an LLM; rerank search results; judge or verify an agent's output
+- rule: 163
 
-## 🛡️ Safety, Moderation & Verification
+## 179 · Safety, Moderation & Verification
 
 Guardrails, prompt-injection checks, judges that abstain.
 
@@ -1425,6 +1565,7 @@ Guardrails, prompt-injection checks, judges that abstain.
 - pushed_at: 2026-09-28
 - topics: ai-agents, claude-code, codex, cursor, gemini-cli, hooks
 - use_cases: gate or approve tool calls before they run; detect prompt injection or risky commands; judge or verify an agent's output
+- rule: 179
 
 ### brainstormity/Jev-Moderation-Bot
 
@@ -1435,6 +1576,7 @@ Guardrails, prompt-injection checks, judges that abstain.
 - license: MIT
 - pushed_at: 2026-09-22
 - use_cases: moderate content or detect abuse; add Jev to a chat bot or Discord; voice or realtime decisions
+- rule: 179
 
 ### DanRWilloughby/snifftest
 
@@ -1446,6 +1588,7 @@ Guardrails, prompt-injection checks, judges that abstain.
 - pushed_at: 2026-09-18
 - topics: ai-writing, claude-code, claude-code-plugin, claude-skills, github-action, jev
 - use_cases: judge or verify an agent's output; moderate content or detect abuse; review code or pull requests
+- rule: 179
 
 ### luantak/is-malicious
 
@@ -1457,6 +1600,7 @@ Guardrails, prompt-injection checks, judges that abstain.
 - pushed_at: 2026-09-23
 - topics: jev, security-scanner, typesafe-ai, static-analysis, static-analysis-tools, supply-chain-security
 - use_cases: call Jev from the command line; review code or pull requests; judge or verify an agent's output
+- rule: 179
 
 ### MarissaFamularo/citation-verifier
 
@@ -1468,6 +1612,7 @@ Guardrails, prompt-injection checks, judges that abstain.
 - pushed_at: 2026-09-17
 - topics: citation-verification, claude, peer-review, typesafe
 - use_cases: judge or verify an agent's output; label data or build a dataset; compare Jev with an LLM
+- rule: 179
 
 ### scale-venture-partners/riff
 
@@ -1478,6 +1623,7 @@ Guardrails, prompt-injection checks, judges that abstain.
 - license: MIT
 - pushed_at: 2026-09-29
 - use_cases: judge or verify an agent's output; compare Jev with an LLM; review code or pull requests
+- rule: 179
 
 ### caiovicentino/jev-shield
 
@@ -1489,6 +1635,7 @@ Guardrails, prompt-injection checks, judges that abstain.
 - pushed_at: 2026-09-17
 - topics: ai-safety, mcp, prompt-injection, security, vercel-ai-gateway
 - use_cases: gate or approve tool calls before they run; detect prompt injection or risky commands; route requests through a gateway or proxy
+- rule: 179
 
 ### noelzappy/tripwire
 
@@ -1500,6 +1647,7 @@ Guardrails, prompt-injection checks, judges that abstain.
 - pushed_at: 2026-09-18
 - topics: ai-sdk, guardrails, llm, pii, prompt-injection
 - use_cases: route requests through a gateway or proxy; detect prompt injection or risky commands; moderate content or detect abuse
+- rule: 179
 
 ### teyhouse/jev-secret-detection
 
@@ -1509,6 +1657,7 @@ Guardrails, prompt-injection checks, judges that abstain.
 - language: Python
 - pushed_at: 2026-09-18
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; compare Jev with an LLM
+- rule: 179
 
 ### santos-sanz/jev-audio-beeper
 
@@ -1518,6 +1667,7 @@ Guardrails, prompt-injection checks, judges that abstain.
 - language: TypeScript
 - pushed_at: 2026-09-17
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; voice or realtime decisions
+- rule: 179
 
 ### asfarsadewa/human-compiler
 
@@ -1528,6 +1678,7 @@ Guardrails, prompt-injection checks, judges that abstain.
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; moderate content or detect abuse
+- rule: 179
 
 ### DansiDanutz/fake-real-jev
 
@@ -1539,6 +1690,7 @@ Guardrails, prompt-injection checks, judges that abstain.
 - pushed_at: 2026-09-26
 - topics: evidence-verification, fact-checking, javascript, jev, typesafe
 - use_cases: judge or verify an agent's output; learn how Jev works; moderate content or detect abuse
+- rule: 179
 
 ### paulgoodchild/SkillsCheck
 
@@ -1548,6 +1700,7 @@ Guardrails, prompt-injection checks, judges that abstain.
 - language: JavaScript
 - pushed_at: 2026-09-21
 - use_cases: detect prompt injection or risky commands; moderate content or detect abuse; judge or verify an agent's output
+- rule: 179
 
 ### hteariH/stopspam-jev-bot
 
@@ -1557,8 +1710,9 @@ Guardrails, prompt-injection checks, judges that abstain.
 - language: Python
 - pushed_at: 2026-09-21
 - use_cases: moderate content or detect abuse; run Jev on open models without the vendor; benchmark or calibrate Jev
+- rule: 179
 
-## 🗄️ Data & Ops
+## 185 · Data & Ops
 
 Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 
@@ -1571,6 +1725,7 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - license: Apache-2.0
 - pushed_at: 2026-09-29
 - use_cases: compare Jev with an LLM; review code or pull requests; label data or build a dataset
+- rule: 185
 
 ### realZachi/pg-jev
 
@@ -1581,6 +1736,7 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - license: NOASSERTION
 - pushed_at: 2026-09-18
 - use_cases: run Jev inside a database or SQL; score or rank candidates in a pipeline; classify support tickets or messages
+- rule: 185
 
 ### AgriciDaniel/jev-seo
 
@@ -1591,6 +1747,7 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - license: MIT
 - pushed_at: 2026-09-22
 - use_cases: call Jev from the command line; judge or verify an agent's output; benchmark or calibrate Jev
+- rule: 185
 
 ### AkashPriyadarshii/jev-curate
 
@@ -1602,6 +1759,7 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - pushed_at: 2026-09-30
 - topics: arrow, cli, data-cleaning, data-engineering, dataset-curation, eval-harness
 - use_cases: label data or build a dataset; benchmark or calibrate Jev; score or rank candidates in a pipeline
+- rule: 185
 
 ### giuliosmall/pg_typesafe
 
@@ -1612,6 +1770,7 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - license: MIT
 - pushed_at: 2026-09-24
 - use_cases: run Jev inside a database or SQL; score or rank candidates in a pipeline; label data or build a dataset
+- rule: 185
 
 ### AboveColin/HA-Jev
 
@@ -1623,6 +1782,7 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - pushed_at: 2026-09-30
 - topics: ai, custom-components, hacs, home-assistant, home-automation, homeassistant
 - use_cases: voice or realtime decisions; monitor or observe Jev usage and cost; review code or pull requests
+- rule: 185
 
 ### choxos/jev-reviewer
 
@@ -1634,6 +1794,7 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - pushed_at: 2026-09-19
 - topics: clinical-trials, data-extraction, evidence-synthesis, jev, meta-analysis, pdf
 - use_cases: judge or verify an agent's output; extract structured fields from text; compare Jev with an LLM
+- rule: 185
 
 ### chenmingtang830/jevgraph
 
@@ -1645,6 +1806,7 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - pushed_at: 2026-09-20
 - topics: information-extraction, jev, knowledge-graph, llm, python, relation-extraction
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; compare Jev with an LLM
+- rule: 185
 
 ### colliber/duckdb-jev
 
@@ -1655,6 +1817,7 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: run Jev inside a database or SQL; extract structured fields from text; label data or build a dataset
+- rule: 185
 
 ### chopratejas/invalidate
 
@@ -1665,6 +1828,7 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - license: Apache-2.0
 - pushed_at: 2026-09-21
 - use_cases: compact or prune agent context; judge or verify an agent's output; add Jev to a chat bot or Discord
+- rule: 185
 
 ### reachjalil/jevlogs
 
@@ -1675,6 +1839,7 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - license: MIT
 - pushed_at: 2026-09-22
 - use_cases: monitor or observe Jev usage and cost; compare Jev with an LLM; benchmark or calibrate Jev
+- rule: 185
 
 ### kylemclaren/jevql
 
@@ -1686,6 +1851,7 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - pushed_at: 2026-09-19
 - topics: jev, postgres
 - use_cases: call Jev from the command line; call Jev from a language SDK; serve Jev over MCP to any agent
+- rule: 185
 
 ### collapseindex/jev-ultralightspeed
 
@@ -1697,6 +1863,7 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - pushed_at: 2026-09-22
 - topics: batching, classification, http2, jev, llm, throughput
 - use_cases: benchmark or calibrate Jev; classify support tickets or messages; label data or build a dataset
+- rule: 185
 
 ### keltokhy/jlink
 
@@ -1708,6 +1875,7 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - pushed_at: 2026-09-28
 - topics: economics, entity-resolution, fuzzy-matching, jev, record-linkage, stata
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; call Jev from the command line
+- rule: 185
 
 ### EugeneBoondock/jevsql
 
@@ -1719,6 +1887,7 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - pushed_at: 2026-09-19
 - topics: ai, jev, llm, semantic-search, sql, sqlite
 - use_cases: judge or verify an agent's output; rerank search results; score or rank candidates in a pipeline
+- rule: 185
 
 ### Foadsf/jev-for-engineers
 
@@ -1730,6 +1899,7 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - pushed_at: 2026-09-16
 - topics: cad, cae, calibrated-confidence, classification, jev, llm
 - use_cases: extract structured fields from text; benchmark or calibrate Jev; learn how Jev works
+- rule: 185
 
 ### Query-farm/vgi-typesafe
 
@@ -1741,6 +1911,7 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - pushed_at: 2026-09-19
 - topics: ai, apache-arrow, arrow, classification, data-engineering, duckdb
 - use_cases: score or rank candidates in a pipeline; classify support tickets or messages; label data or build a dataset
+- rule: 185
 
 ### mgaitan/sqlite-jev
 
@@ -1750,6 +1921,7 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - language: C
 - pushed_at: 2026-09-18
 - use_cases: run Jev inside a database or SQL; label data or build a dataset; classify support tickets or messages
+- rule: 185
 
 ### opaielsheikh/typesafe-migration-guard
 
@@ -1759,6 +1931,7 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - language: TypeScript
 - pushed_at: 2026-09-17
 - use_cases: review code or pull requests; judge or verify an agent's output; gate or approve tool calls before they run
+- rule: 185
 
 ### ddfeyes/jev-mode
 
@@ -1770,8 +1943,9 @@ Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 - pushed_at: 2026-09-18
 - topics: agents, ai, classification, cli, jev, llm
 - use_cases: compact or prune agent context; classify support tickets or messages; compare Jev with an LLM
+- rule: 185
 
-## 📦 Applications & Extensions
+## 191 · Applications & Extensions
 
 End-user tools people actually open every day.
 
@@ -1784,6 +1958,7 @@ End-user tools people actually open every day.
 - license: MIT
 - pushed_at: 2026-09-23
 - use_cases: extract structured fields from text; compare Jev with an LLM; review code or pull requests
+- rule: 191
 
 ### kitze/unclutter
 
@@ -1794,6 +1969,7 @@ End-user tools people actually open every day.
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: review code or pull requests; learn how Jev works; compare Jev with an LLM
+- rule: 191
 
 ### FerryCorleone/crush-monitor
 
@@ -1804,6 +1980,7 @@ End-user tools people actually open every day.
 - license: MIT
 - pushed_at: 2026-09-25
 - use_cases: extract structured fields from text; route requests through a gateway or proxy; label data or build a dataset
+- rule: 191
 
 ### monteduro/killmyidea
 
@@ -1813,6 +1990,7 @@ End-user tools people actually open every day.
 - language: TypeScript
 - pushed_at: 2026-09-24
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; compare Jev with an LLM
+- rule: 191
 
 ### usenotra/notra
 
@@ -1824,6 +2002,7 @@ End-user tools people actually open every day.
 - pushed_at: 2026-09-30
 - topics: aeo, engine, generative, generative-engine-optimization, geo, optimization
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; rerank search results
+- rule: 191
 
 ### wquguru/dasheng
 
@@ -1833,6 +2012,7 @@ End-user tools people actually open every day.
 - language: JavaScript
 - pushed_at: 2026-09-20
 - use_cases: voice or realtime decisions; benchmark or calibrate Jev; review code or pull requests
+- rule: 191
 
 ### trungdq88/youtube-sponsor-detection
 
@@ -1842,6 +2022,7 @@ End-user tools people actually open every day.
 - language: JavaScript
 - pushed_at: 2026-09-18
 - use_cases: voice or realtime decisions; monitor or observe Jev usage and cost; review code or pull requests
+- rule: 191
 
 ### kevinbadi/jev-voice
 
@@ -1852,6 +2033,7 @@ End-user tools people actually open every day.
 - license: MIT
 - pushed_at: 2026-09-23
 - use_cases: drive a browser or GUI with an agent; voice or realtime decisions; compare Jev with an LLM
+- rule: 191
 
 ### w3cj/jev-chat
 
@@ -1862,6 +2044,7 @@ End-user tools people actually open every day.
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: gate or approve tool calls before they run; judge or verify an agent's output; compare Jev with an LLM
+- rule: 191
 
 ### ChetasLua/jevmeter
 
@@ -1873,6 +2056,7 @@ End-user tools people actually open every day.
 - pushed_at: 2026-09-17
 - topics: debate, jev, typesafe, video-editing, whisper
 - use_cases: judge or verify an agent's output; call Jev from the command line; compare Jev with an LLM
+- rule: 191
 
 ### fazlerocks/jevmail
 
@@ -1884,6 +2068,7 @@ End-user tools people actually open every day.
 - pushed_at: 2026-09-19
 - topics: ai-email-assistant, ai-sdk, email-classification, email-sorter, email-triage, gmail
 - use_cases: classify support tickets or messages; review code or pull requests; compare Jev with an LLM
+- rule: 191
 
 ### realZachi/typesafe-adblock
 
@@ -1894,6 +2079,7 @@ End-user tools people actually open every day.
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; compare Jev with an LLM
+- rule: 191
 
 ### AkashPriyadarshii/jev-seo
 
@@ -1905,6 +2091,7 @@ End-user tools people actually open every day.
 - pushed_at: 2026-09-30
 - topics: ahrefs-alternative, claude-code, cli, generative-engine-optimization, geo, mcp
 - use_cases: call Jev from the command line; serve Jev over MCP to any agent; judge or verify an agent's output
+- rule: 191
 
 ### RafalWilinski/vibecheck
 
@@ -1914,6 +2101,7 @@ End-user tools people actually open every day.
 - language: JavaScript
 - pushed_at: 2026-09-20
 - use_cases: judge or verify an agent's output; compare Jev with an LLM; moderate content or detect abuse
+- rule: 191
 
 ### parth-kp/jev-mail-classifier
 
@@ -1924,6 +2112,7 @@ End-user tools people actually open every day.
 - license: MIT
 - pushed_at: 2026-09-20
 - use_cases: compare Jev with an LLM; classify support tickets or messages; moderate content or detect abuse
+- rule: 191
 
 ### kevthetech143/super-jev
 
@@ -1934,6 +2123,7 @@ End-user tools people actually open every day.
 - license: MIT
 - pushed_at: 2026-09-30
 - use_cases: gate or approve tool calls before they run; judge or verify an agent's output; add Jev to a chat bot or Discord
+- rule: 191
 
 ### manifoldor/xtags
 
@@ -1945,6 +2135,7 @@ End-user tools people actually open every day.
 - pushed_at: 2026-09-27
 - topics: ai, chrome-extension, jev, typesafe, userscript, x-twitter
 - use_cases: detect prompt injection or risky commands; compare Jev with an LLM; judge or verify an agent's output
+- rule: 191
 
 ### gtaras7/typesafe-jev
 
@@ -1955,6 +2146,7 @@ End-user tools people actually open every day.
 - license: MIT
 - pushed_at: 2026-09-27
 - use_cases: benchmark or calibrate Jev; score or rank candidates in a pipeline; learn how Jev works
+- rule: 191
 
 ### harshil1712/slidepilot
 
@@ -1966,6 +2158,7 @@ End-user tools people actually open every day.
 - pushed_at: 2026-09-22
 - topics: cloudflare-workers, jev, slidev, slidev-addon, typescript, voice
 - use_cases: voice or realtime decisions; review code or pull requests; compare Jev with an LLM
+- rule: 191
 
 ### valentynkit/jev.nvim
 
@@ -1976,6 +2169,7 @@ End-user tools people actually open every day.
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: rerank search results; judge or verify an agent's output; learn how Jev works
+- rule: 191
 
 ### andrelandgraf/safer-with-jev
 
@@ -1985,6 +2179,7 @@ End-user tools people actually open every day.
 - language: TypeScript
 - pushed_at: 2026-09-18
 - use_cases: detect prompt injection or risky commands; moderate content or detect abuse; judge or verify an agent's output
+- rule: 191
 
 ### valentynkit/jev-skip
 
@@ -1995,6 +2190,7 @@ End-user tools people actually open every day.
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; learn how Jev works
+- rule: 191
 
 ### chris-wozniczek/jev-voice-control
 
@@ -2006,6 +2202,7 @@ End-user tools people actually open every day.
 - pushed_at: 2026-09-21
 - topics: computer-use, cua, jev, jev-ai, jev-api, jev-model
 - use_cases: drive a browser or GUI with an agent; voice or realtime decisions; gate or approve tool calls before they run
+- rule: 191
 
 ### hellogumbo/should-ai-kill-us-all
 
@@ -2016,6 +2213,7 @@ End-user tools people actually open every day.
 - license: CC0-1.0
 - pushed_at: 2026-09-18
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; call Jev from the command line
+- rule: 191
 
 ### sriganesh/jevibe-check
 
@@ -2027,6 +2225,7 @@ End-user tools people actually open every day.
 - pushed_at: 2026-09-17
 - topics: jev, typesafe, atproto, bluesky
 - use_cases: monitor or observe Jev usage and cost; moderate content or detect abuse; benchmark or calibrate Jev
+- rule: 191
 
 ### phureewat29/jev-got
 
@@ -2036,6 +2235,7 @@ End-user tools people actually open every day.
 - language: TypeScript
 - pushed_at: 2026-09-19
 - use_cases: judge or verify an agent's output; learn how Jev works; extract structured fields from text
+- rule: 191
 
 ### hazlema/jev-riffs
 
@@ -2046,6 +2246,7 @@ End-user tools people actually open every day.
 - license: MIT
 - pushed_at: 2026-09-25
 - use_cases: score or rank candidates in a pipeline; benchmark or calibrate Jev; review code or pull requests
+- rule: 191
 
 ### thenewpotato/privacy-facts
 
@@ -2057,6 +2258,7 @@ End-user tools people actually open every day.
 - pushed_at: 2026-09-18
 - topics: ai, jev, privacy
 - use_cases: judge or verify an agent's output; compare Jev with an LLM; extract structured fields from text
+- rule: 191
 
 ### 0xShin0221/openpoke-meets-jev
 
@@ -2067,8 +2269,9 @@ End-user tools people actually open every day.
 - license: MIT
 - pushed_at: 2026-09-20
 - use_cases: gate or approve tool calls before they run; compare Jev with an LLM; detect prompt injection or risky commands
+- rule: 191
 
-## 🧩 SDKs & Community Clients
+## 205 · SDKs & Community Clients
 
 Unofficial clients for the languages without a first-party SDK.
 
@@ -2081,6 +2284,7 @@ Unofficial clients for the languages without a first-party SDK.
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: score or rank candidates in a pipeline; extract structured fields from text; call Jev from a language SDK
+- rule: 205
 
 ### milvus-io/milvus-model
 
@@ -2092,6 +2296,7 @@ Unofficial clients for the languages without a first-party SDK.
 - pushed_at: 2026-09-23
 - topics: ai, embedding, nlp, rag, reranker
 - use_cases: rerank search results; score or rank candidates in a pipeline; benchmark or calibrate Jev
+- rule: 205
 
 ### obie/ruby_decision_model
 
@@ -2102,6 +2307,7 @@ Unofficial clients for the languages without a first-party SDK.
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: call Jev from a language SDK; monitor or observe Jev usage and cost; benchmark or calibrate Jev
+- rule: 205
 
 ### dannote/jev
 
@@ -2112,6 +2318,7 @@ Unofficial clients for the languages without a first-party SDK.
 - license: MIT
 - pushed_at: 2026-09-26
 - use_cases: run Jev on open models without the vendor; learn how Jev works; extract structured fields from text
+- rule: 205
 
 ### kieranklaassen/ruby_llm-typesafe
 
@@ -2122,6 +2329,7 @@ Unofficial clients for the languages without a first-party SDK.
 - license: MIT
 - pushed_at: 2026-09-29
 - use_cases: classify support tickets or messages; call Jev from a language SDK; score or rank candidates in a pipeline
+- rule: 205
 
 ### Twister915/typesafe-ai
 
@@ -2132,6 +2340,7 @@ Unofficial clients for the languages without a first-party SDK.
 - license: Apache-2.0
 - pushed_at: 2026-09-16
 - use_cases: classify support tickets or messages; score or rank candidates in a pipeline; judge or verify an agent's output
+- rule: 205
 
 ### saibimajdi/typesafeai-dotnet-sdk
 
@@ -2143,6 +2352,7 @@ Unofficial clients for the languages without a first-party SDK.
 - pushed_at: 2026-09-29
 - topics: ai, classification, csharp, dotnet, llm, sdk
 - use_cases: extract structured fields from text; score or rank candidates in a pipeline; judge or verify an agent's output
+- rule: 205
 
 ### Premo-Cloud/typesafe-sdk-java
 
@@ -2154,6 +2364,7 @@ Unofficial clients for the languages without a first-party SDK.
 - pushed_at: 2026-09-25
 - topics: java, sdk, spring-boot, typesafe, jev, system-one
 - use_cases: call Jev from a language SDK; review code or pull requests; add Jev to a chat bot or Discord
+- rule: 205
 
 ### pambrose/jev4k
 
@@ -2165,6 +2376,7 @@ Unofficial clients for the languages without a first-party SDK.
 - pushed_at: 2026-09-28
 - topics: jev, jev-api, kotlin, java, dsl, llm
 - use_cases: call Jev from a language SDK; classify support tickets or messages; add Jev to a chat bot or Discord
+- rule: 205
 
 ### Tangerg/typesafe-sdk-go
 
@@ -2175,6 +2387,7 @@ Unofficial clients for the languages without a first-party SDK.
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: judge or verify an agent's output; review code or pull requests
+- rule: 205
 
 ### jomatsu/zod-jev
 
@@ -2185,6 +2398,7 @@ Unofficial clients for the languages without a first-party SDK.
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: moderate content or detect abuse; classify support tickets or messages; benchmark or calibrate Jev
+- rule: 205
 
 ### joshmn/typesafe-sdk
 
@@ -2195,6 +2409,7 @@ Unofficial clients for the languages without a first-party SDK.
 - license: MIT
 - pushed_at: 2026-09-26
 - use_cases: call Jev from a language SDK; score or rank candidates in a pipeline; classify support tickets or messages
+- rule: 205
 
 ### inanna-malick/jev-dsl
 
@@ -2205,6 +2420,7 @@ Unofficial clients for the languages without a first-party SDK.
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: judge or verify an agent's output; review code or pull requests; compare Jev with an LLM
+- rule: 205
 
 ### gilljon/typesafe-ai-rs
 
@@ -2216,6 +2432,7 @@ Unofficial clients for the languages without a first-party SDK.
 - pushed_at: 2026-09-17
 - topics: ai, api-client, rust, rust-sdk, typesafe
 - use_cases: score or rank candidates in a pipeline; review code or pull requests; judge or verify an agent's output
+- rule: 205
 
 ### Gaurav-Gosain/jev-go
 
@@ -2226,6 +2443,7 @@ Unofficial clients for the languages without a first-party SDK.
 - license: MIT
 - pushed_at: 2026-09-16
 - use_cases: score or rank candidates in a pipeline; call Jev from a language SDK; judge or verify an agent's output
+- rule: 205
 
 ### jamesward/zio-typesafe-ai
 
@@ -2236,6 +2454,7 @@ Unofficial clients for the languages without a first-party SDK.
 - license: Apache-2.0
 - pushed_at: 2026-09-23
 - use_cases: call Jev from a language SDK; score or rank candidates in a pipeline; judge or verify an agent's output
+- rule: 205
 
 ### Stumble/jev-go
 
@@ -2246,6 +2465,7 @@ Unofficial clients for the languages without a first-party SDK.
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: call Jev from a language SDK; call Jev from the command line; review code or pull requests
+- rule: 205
 
 ### nshkrdotcom/typesafe_sdk
 
@@ -2257,6 +2477,7 @@ Unofficial clients for the languages without a first-party SDK.
 - pushed_at: 2026-09-20
 - topics: agents, ai, ai-sdk, artificial-intelligence, elixir, function-calling
 - use_cases: extract structured fields from text; review code or pull requests; judge or verify an agent's output
+- rule: 205
 
 ### alterhq/typesafe-sdk-swift
 
@@ -2267,6 +2488,7 @@ Unofficial clients for the languages without a first-party SDK.
 - license: MIT
 - pushed_at: 2026-09-15
 - use_cases: route requests through a gateway or proxy; review code or pull requests; control a phone or mobile app
+- rule: 205
 
 ### zhirschtritt/typesafe-go
 
@@ -2278,6 +2500,7 @@ Unofficial clients for the languages without a first-party SDK.
 - pushed_at: 2026-09-29
 - topics: ai, jev, sdk, systemone, typesafe
 - use_cases: route requests through a gateway or proxy; review code or pull requests; pick which skill or prompt to load
+- rule: 205
 
 ### Butochnikov/laravel-typesafe-jev
 
@@ -2288,6 +2511,7 @@ Unofficial clients for the languages without a first-party SDK.
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: score or rank candidates in a pipeline; judge or verify an agent's output; review code or pull requests
+- rule: 205
 
 ### Hawxy/TypeSafeAI.Net
 
@@ -2299,6 +2523,7 @@ Unofficial clients for the languages without a first-party SDK.
 - pushed_at: 2026-09-19
 - topics: csharp, typesafe-ai, dotnet
 - use_cases: judge or verify an agent's output; classify support tickets or messages; score or rank candidates in a pipeline
+- rule: 205
 
 ### mateonunez/jod
 
@@ -2310,6 +2535,7 @@ Unofficial clients for the languages without a first-party SDK.
 - pushed_at: 2026-09-17
 - topics: ai, jev, typesafe, zod
 - use_cases: judge or verify an agent's output; classify support tickets or messages; extract structured fields from text
+- rule: 205
 
 ### GenieRobot/typesafe-ai-rails
 
@@ -2320,6 +2546,7 @@ Unofficial clients for the languages without a first-party SDK.
 - license: MIT
 - pushed_at: 2026-09-16
 - use_cases: monitor or observe Jev usage and cost; judge or verify an agent's output; score or rank candidates in a pipeline
+- rule: 205
 
 ### steven-shoemaker/hunch
 
@@ -2331,6 +2558,7 @@ Unofficial clients for the languages without a first-party SDK.
 - pushed_at: 2026-09-22
 - topics: classification, jev, jev-ai, llm, python
 - use_cases: score or rank candidates in a pipeline; extract structured fields from text; judge or verify an agent's output
+- rule: 205
 
 ### AboveColin/jevclient
 
@@ -2342,6 +2570,7 @@ Unofficial clients for the languages without a first-party SDK.
 - pushed_at: 2026-09-21
 - topics: async, asyncio, classification, jev, python, typesafe
 - use_cases: score or rank candidates in a pipeline; build a game or simulation on Jev; benchmark or calibrate Jev
+- rule: 205
 
 ### Butochnikov/typesafe-sdk-php
 
@@ -2352,6 +2581,7 @@ Unofficial clients for the languages without a first-party SDK.
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: classify support tickets or messages; score or rank candidates in a pipeline; label data or build a dataset
+- rule: 205
 
 ### AbdelStark/s1-rs
 
@@ -2363,6 +2593,7 @@ Unofficial clients for the languages without a first-party SDK.
 - pushed_at: 2026-09-16
 - topics: machine-learning, sdk, typesafe-ai
 - use_cases: judge or verify an agent's output; classify support tickets or messages; score or rank candidates in a pipeline
+- rule: 205
 
 ### AbdelStark/typesafe-rs
 
@@ -2374,6 +2605,7 @@ Unofficial clients for the languages without a first-party SDK.
 - pushed_at: 2026-09-16
 - topics: machine-learning, typesafe-ai
 - use_cases: score or rank candidates in a pipeline; judge or verify an agent's output; extract structured fields from text
+- rule: 205
 
 ### DomMonte/n8n-nodes-typesafe-ai
 
@@ -2384,6 +2616,7 @@ Unofficial clients for the languages without a first-party SDK.
 - license: MIT
 - pushed_at: 2026-09-21
 - use_cases: score or rank candidates in a pipeline; classify support tickets or messages; benchmark or calibrate Jev
+- rule: 205
 
 ### kunobi-ninja/kunobi-jev
 
@@ -2394,6 +2627,7 @@ Unofficial clients for the languages without a first-party SDK.
 - license: Apache-2.0
 - pushed_at: 2026-09-24
 - use_cases: score or rank candidates in a pipeline; call Jev from a language SDK; classify support tickets or messages
+- rule: 205
 
 ### bariskisir/JevSharp
 
@@ -2404,8 +2638,9 @@ Unofficial clients for the languages without a first-party SDK.
 - license: MIT
 - pushed_at: 2026-09-24
 - use_cases: route requests through a gateway or proxy; call Jev from a language SDK; run Jev on open models without the vendor
+- rule: 205
 
-## ⌨️ Command Line
+## 217 · Command Line
 
 Call Jev from a shell, no SDK required.
 
@@ -2413,12 +2648,13 @@ Call Jev from a shell, no SDK required.
 
 - url: https://github.com/dzhng/jevgrep
 - description: Finds the files, declarations, and verbatim excerpts a coding agent needs by asking Jev which declarations answer a plain-language question about the repo.
-- stars: 1,853
+- stars: 1 853
 - language: TypeScript
 - license: MIT
 - pushed_at: 2026-09-29
 - topics: ai-sdk, claude-code, cli, code-search, codex, coding-agents
 - use_cases: call Jev from the command line; route requests through a gateway or proxy; judge or verify an agent's output
+- rule: 217
 
 ### dorkitude/webctl
 
@@ -2429,6 +2665,7 @@ Call Jev from a shell, no SDK required.
 - license: MIT
 - pushed_at: 2026-09-23
 - use_cases: compact or prune agent context; rerank search results; run Jev on open models without the vendor
+- rule: 217
 
 ### keltokhy/jgrep
 
@@ -2440,6 +2677,7 @@ Call Jev from a shell, no SDK required.
 - pushed_at: 2026-09-28
 - topics: cli, grep, jev, openrouter, semantic-search, typesafe
 - use_cases: moderate content or detect abuse; classify support tickets or messages; call Jev from the command line
+- rule: 217
 
 ### mrnugget/jev-shell-history
 
@@ -2449,6 +2687,7 @@ Call Jev from a shell, no SDK required.
 - language: TypeScript
 - pushed_at: 2026-09-18
 - use_cases: compare Jev with an LLM; review code or pull requests; benchmark or calibrate Jev
+- rule: 217
 
 ### sharziki/semdecide
 
@@ -2460,6 +2699,7 @@ Call Jev from a shell, no SDK required.
 - pushed_at: 2026-09-16
 - topics: ai, ci, cli, jev, semantic, unix
 - use_cases: call Jev from the command line; score or rank candidates in a pipeline; judge or verify an agent's output
+- rule: 217
 
 ### shiftynick/jev-axi
 
@@ -2471,6 +2711,7 @@ Call Jev from a shell, no SDK required.
 - pushed_at: 2026-09-24
 - topics: ai-agents, axi, claude-code, cli, jev, typesafe
 - use_cases: gate or approve tool calls before they run; detect prompt injection or risky commands; judge or verify an agent's output
+- rule: 217
 
 ### Nasrallah-AL/jev-cli
 
@@ -2482,6 +2723,7 @@ Call Jev from a shell, no SDK required.
 - pushed_at: 2026-09-27
 - topics: ai, cli, fact-checking, guardrails, jev, llm-tools
 - use_cases: call Jev from the command line; judge or verify an agent's output; moderate content or detect abuse
+- rule: 217
 
 ### tumf/jev-cli
 
@@ -2493,6 +2735,7 @@ Call Jev from a shell, no SDK required.
 - pushed_at: 2026-09-23
 - topics: ai, cli, jev, python, typesafe
 - use_cases: call Jev from the command line; serve Jev over MCP to any agent; judge or verify an agent's output
+- rule: 217
 
 ### cristianoliveira/jeq
 
@@ -2504,6 +2747,7 @@ Call Jev from a shell, no SDK required.
 - pushed_at: 2026-09-27
 - topics: ai-tools, jev, jq, terminal, unix, ai
 - use_cases: call Jev from the command line; score or rank candidates in a pipeline; judge or verify an agent's output
+- rule: 217
 
 ### sufianetaouil/every
 
@@ -2514,6 +2758,7 @@ Call Jev from a shell, no SDK required.
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: call Jev from the command line; benchmark or calibrate Jev; judge or verify an agent's output
+- rule: 217
 
 ### y0usaf/typesafe-cli
 
@@ -2524,6 +2769,7 @@ Call Jev from a shell, no SDK required.
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: call Jev from the command line; benchmark or calibrate Jev; judge or verify an agent's output
+- rule: 217
 
 ### jtsang4/jev-cli
 
@@ -2535,6 +2781,7 @@ Call Jev from a shell, no SDK required.
 - pushed_at: 2026-09-18
 - topics: cli, jev, skills, typesafe
 - use_cases: judge or verify an agent's output; call Jev from the command line; score or rank candidates in a pipeline
+- rule: 217
 
 ### jexp/watfile
 
@@ -2545,6 +2792,7 @@ Call Jev from a shell, no SDK required.
 - pushed_at: 2026-09-21
 - topics: categorization, cli, jev, terminal, tool, laya
 - use_cases: call Jev from the command line; label data or build a dataset; compare Jev with an LLM
+- rule: 217
 
 ### allebee/jevgrep
 
@@ -2556,8 +2804,9 @@ Call Jev from a shell, no SDK required.
 - pushed_at: 2026-09-21
 - topics: cli, grep, jev, log-analysis, logs, python
 - use_cases: compare Jev with an LLM; call Jev from the command line; benchmark or calibrate Jev
+- rule: 217
 
-## 📊 Benchmarks, Evals & Calibration
+## 223 · Benchmarks, Evals & Calibration
 
 Measure it before you trust it.
 
@@ -2571,6 +2820,7 @@ Measure it before you trust it.
 - pushed_at: 2026-09-20
 - topics: active-learning, classification, cli, gepa, human-in-the-loop, jev
 - use_cases: benchmark or calibrate Jev; label data or build a dataset; classify support tickets or messages
+- rule: 223
 
 ### fstandhartinger/jevbench
 
@@ -2582,6 +2832,7 @@ Measure it before you trust it.
 - pushed_at: 2026-09-29
 - topics: jev, systemone, decisionmodels
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; score or rank candidates in a pipeline
+- rule: 223
 
 ### vinilana/jev-eval-agent
 
@@ -2591,6 +2842,7 @@ Measure it before you trust it.
 - language: HTML
 - pushed_at: 2026-09-17
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; gate or approve tool calls before they run
+- rule: 223
 
 ### openlayer-ai/jevals
 
@@ -2602,6 +2854,7 @@ Measure it before you trust it.
 - pushed_at: 2026-09-24
 - topics: agents, evals, guardrails, jev, llm, llm-evaluation
 - use_cases: judge or verify an agent's output; detect prompt injection or risky commands; benchmark or calibrate Jev
+- rule: 223
 
 ### pinecone-io/cultivar
 
@@ -2613,6 +2866,7 @@ Measure it before you trust it.
 - pushed_at: 2026-09-18
 - topics: agent, agent-skills, benchmarking, claude-code, codex, copilot
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; compare Jev with an LLM
+- rule: 223
 
 ### AbdelStark/jev-benchmarks
 
@@ -2624,6 +2878,7 @@ Measure it before you trust it.
 - pushed_at: 2026-09-17
 - topics: benchmarking, calibration, evaluation, machine-learning, reproducibility, selective-classification
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; route between models by task difficulty
+- rule: 223
 
 ### AntonioCoppe/jev-harness
 
@@ -2635,6 +2890,7 @@ Measure it before you trust it.
 - pushed_at: 2026-09-25
 - topics: agents, confidence, decision, evals, harness, jev
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; gate or approve tool calls before they run
+- rule: 223
 
 ### abhixhek/jevcal
 
@@ -2646,6 +2902,7 @@ Measure it before you trust it.
 - pushed_at: 2026-09-18
 - topics: calibration, jev, llm-evals, system-one, typesafe, confidence-thresholds
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; route between models by task difficulty
+- rule: 223
 
 ### jmanhype/jev-dspy-lab
 
@@ -2656,6 +2913,7 @@ Measure it before you trust it.
 - license: MIT
 - pushed_at: 2026-09-20
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; monitor or observe Jev usage and cost
+- rule: 223
 
 ### zhuyansen/jev-search-rerank-eval
 
@@ -2667,6 +2925,7 @@ Measure it before you trust it.
 - pushed_at: 2026-09-18
 - topics: bge-m3, evaluation, information-retrieval, ndcg, reranking, typesafe-jev
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; rerank search results
+- rule: 223
 
 ### anessbelbati/jev-rerank-bench
 
@@ -2678,6 +2937,7 @@ Measure it before you trust it.
 - pushed_at: 2026-09-25
 - topics: benchmark, cohere, information-retrieval, llm-evaluation, ndcg, rag
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; judge or verify an agent's output
+- rule: 223
 
 ### anisselbd/jev-phishing-bench
 
@@ -2687,6 +2947,7 @@ Measure it before you trust it.
 - language: Python
 - pushed_at: 2026-09-19
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; judge or verify an agent's output
+- rule: 223
 
 ### mahlernim/jev-korean-benchmark
 
@@ -2696,6 +2957,7 @@ Measure it before you trust it.
 - language: Python
 - pushed_at: 2026-09-17
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; monitor or observe Jev usage and cost
+- rule: 223
 
 ### wondertwins/jev-benchmark
 
@@ -2706,6 +2968,7 @@ Measure it before you trust it.
 - license: MIT
 - pushed_at: 2026-09-16
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; learn how Jev works
+- rule: 223
 
 ### Gaurav-Gosain/jev-sec-bench
 
@@ -2716,6 +2979,7 @@ Measure it before you trust it.
 - license: MIT
 - pushed_at: 2026-09-16
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; moderate content or detect abuse
+- rule: 223
 
 ### TokenTrim/jev-agent-failure-benchmark
 
@@ -2726,6 +2990,7 @@ Measure it before you trust it.
 - license: Apache-2.0
 - pushed_at: 2026-09-17
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; judge or verify an agent's output
+- rule: 223
 
 ### RINNECODER/jev-behavior-study
 
@@ -2736,6 +3001,7 @@ Measure it before you trust it.
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; learn how Jev works
+- rule: 223
 
 ### chenmingtang830/jevarena
 
@@ -2747,6 +3013,7 @@ Measure it before you trust it.
 - pushed_at: 2026-09-20
 - topics: byok, evaluation, jev, llm-as-a-judge, open-source
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; monitor or observe Jev usage and cost
+- rule: 223
 
 ### bitnovus/jev-spam-eval
 
@@ -2757,6 +3024,7 @@ Measure it before you trust it.
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; moderate content or detect abuse
+- rule: 223
 
 ### PistachioAIHQ/jev-synergy-screening
 
@@ -2766,6 +3034,7 @@ Measure it before you trust it.
 - language: Python
 - pushed_at: 2026-09-16
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; score or rank candidates in a pipeline
+- rule: 223
 
 ### jgridifier/jev-research-eval
 
@@ -2776,6 +3045,7 @@ Measure it before you trust it.
 - license: NOASSERTION
 - pushed_at: 2026-09-17
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; compare Jev with an LLM
+- rule: 223
 
 ### HackSing/jev-report
 
@@ -2787,6 +3057,7 @@ Measure it before you trust it.
 - pushed_at: 2026-09-17
 - topics: ai-research, chinese, jev, llm-evaluation, typesafe
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; compare Jev with an LLM
+- rule: 223
 
 ### hegargarcia/jev-playground
 
@@ -2796,6 +3067,7 @@ Measure it before you trust it.
 - language: TypeScript
 - pushed_at: 2026-09-17
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; judge or verify an agent's output
+- rule: 223
 
 ### yodablocks/jev-orderby-bench
 
@@ -2807,6 +3079,7 @@ Measure it before you trust it.
 - pushed_at: 2026-09-20
 - topics: benchmark, calibration, duckdb, information-retrieval, jev, llm-evaluation
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; score or rank candidates in a pipeline
+- rule: 223
 
 ### 4esv/jev-eval
 
@@ -2816,6 +3089,7 @@ Measure it before you trust it.
 - language: Python
 - pushed_at: 2026-09-23
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; judge or verify an agent's output
+- rule: 223
 
 ### themsquared/jev-benchmark
 
@@ -2827,6 +3101,7 @@ Measure it before you trust it.
 - pushed_at: 2026-09-24
 - topics: agentgateway, ai-agents, benchmark, calibration, llm, mcp
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; compare Jev with an LLM
+- rule: 223
 
 ### blowxian/jev-fanout-bench
 
@@ -2838,8 +3113,9 @@ Measure it before you trust it.
 - pushed_at: 2026-09-28
 - topics: benchmark, jev, llm-cost, openrouter, system-one, typesafe
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; monitor or observe Jev usage and cost
+- rule: 223
 
-## 🧠 Open Models & Replicas
+## 229 · Open Models & Replicas
 
 Run System One semantics without the vendor — on a 3090 if you like.
 
@@ -2847,53 +3123,58 @@ Run System One semantics without the vendor — on a 3090 if you like.
 
 - url: https://github.com/jaredpalmer/kev
 - description: LoRA adapter and readout head on Qwen2.5-0.5B that answers many typed questions in one prefill; trains in under two hours on a MacBook, held-out ECE 0.065, speaks the TypeSafe wire format.
-- stars: 7,998
+- stars: 7 998
 - language: Python
 - license: Apache-2.0
 - pushed_at: 2026-09-30
 - topics: decision-model, jev, qwen3
 - use_cases: run Jev on open models without the vendor; call Jev from a language SDK; benchmark or calibrate Jev
+- rule: 229
 
 ### TheoLeeCJ/SemIf
 
 - url: https://github.com/TheoLeeCJ/SemIf
 - description: Semantic ifs from open models on a single 3090; the most starred independent replica, formerly openjev.
-- stars: 4,604
+- stars: 4 604
 - language: Python
 - license: MIT
 - pushed_at: 2026-09-23
 - use_cases: run Jev on open models without the vendor; compare Jev with an LLM; gate or approve tool calls before they run
+- rule: 229
 
 ### TianyuCodings/NanoJev
 
 - url: https://github.com/TianyuCodings/NanoJev
 - description: 0.6B replica with parallel decisions, dynamic candidates, and an end-to-end training pipeline.
-- stars: 2,445
+- stars: 2 445
 - language: Python
 - license: MIT
 - pushed_at: 2026-09-21
 - use_cases: build a game or simulation on Jev; run Jev on open models without the vendor; benchmark or calibrate Jev
+- rule: 229
 
 ### vinnylarouge/jevlike
 
 - url: https://github.com/vinnylarouge/jevlike
 - description: Open option scorer that reads candidate logits instead of generating JSON.
-- stars: 1,335
+- stars: 1 335
 - language: Python
 - license: MIT
 - pushed_at: 2026-09-16
 - use_cases: score or rank candidates in a pipeline; run Jev on open models without the vendor; judge or verify an agent's output
+- rule: 229
 
 ### ollaya-dev/ollaya
 
 - url: https://github.com/ollaya-dev/ollaya
 - description: Pulls and serves open decision models such as Laya, kev, and JevK5 behind a TypeSafe-compatible local endpoint, the way Ollama serves LLMs.
-- stars: 1,011
+- stars: 1 011
 - language: Rust
 - license: Apache-2.0
 - pushed_at: 2026-09-29
 - topics: classification, decision-models, jev, laya, llm-routing, local-inference
 - use_cases: run Jev on open models without the vendor; classify support tickets or messages; benchmark or calibrate Jev
+- rule: 229
 
 ### Mapika/decider
 
@@ -2904,6 +3185,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: Apache-2.0
 - pushed_at: 2026-09-30
 - use_cases: score or rank candidates in a pipeline; classify support tickets or messages; judge or verify an agent's output
+- rule: 229
 
 ### nokia-applied-research/AnyJev
 
@@ -2915,6 +3197,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - pushed_at: 2026-09-28
 - topics: calibration, decision-model, jev, jev-model, llm, system-one
 - use_cases: run Jev on open models without the vendor; benchmark or calibrate Jev; call Jev from the command line
+- rule: 229
 
 ### wfzyx/von
 
@@ -2926,6 +3209,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - pushed_at: 2026-09-30
 - topics: decision-model, jev, machine-learning, python, rlcd, system-one
 - use_cases: run Jev on open models without the vendor; score or rank candidates in a pipeline; call Jev from a language SDK
+- rule: 229
 
 ### Rizzo-AI-Academy/rizzo-flow
 
@@ -2936,6 +3220,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: Apache-2.0
 - pushed_at: 2026-09-25
 - use_cases: run Jev on open models without the vendor; score or rank candidates in a pipeline; classify support tickets or messages
+- rule: 229
 
 ### featherless-ai/simple-jev
 
@@ -2946,6 +3231,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: Apache-2.0
 - pushed_at: 2026-09-30
 - use_cases: run Jev on open models without the vendor; judge or verify an agent's output; extract structured fields from text
+- rule: 229
 
 ### Liuziyu77/Valen
 
@@ -2956,6 +3242,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: Apache-2.0
 - pushed_at: 2026-09-30
 - use_cases: score or rank candidates in a pipeline; judge or verify an agent's output; review code or pull requests
+- rule: 229
 
 ### razorback16/openjev
 
@@ -2966,6 +3253,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: Apache-2.0
 - pushed_at: 2026-09-29
 - use_cases: run Jev on open models without the vendor; call Jev from a language SDK; compare Jev with an LLM
+- rule: 229
 
 ### Yinsongxu/LLM2Jev
 
@@ -2977,6 +3265,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - pushed_at: 2026-09-26
 - topics: jev, llm, mllm
 - use_cases: run Jev on open models without the vendor; compare Jev with an LLM; score or rank candidates in a pipeline
+- rule: 229
 
 ### ekzhang/openjev-sglang
 
@@ -2987,6 +3276,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - pushed_at: 2026-09-25
 - topics: jev, llm, structured-generation, systemone
 - use_cases: run Jev on open models without the vendor; extract structured fields from text; benchmark or calibrate Jev
+- rule: 229
 
 ### malevrigns/agent-jev
 
@@ -2997,6 +3287,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: Apache-2.0
 - pushed_at: 2026-09-23
 - use_cases: gate or approve tool calls before they run; score or rank candidates in a pipeline; benchmark or calibrate Jev
+- rule: 229
 
 ### hr98w/jev-visual
 
@@ -3007,6 +3298,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: MIT
 - pushed_at: 2026-09-21
 - use_cases: run Jev on open models without the vendor; score or rank candidates in a pipeline; judge or verify an agent's output
+- rule: 229
 
 ### Heman10x-NGU/openJev-verdict-2.0
 
@@ -3018,6 +3310,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - pushed_at: 2026-09-20
 - topics: agentic-ai, brier-score, calibration, decision-engine, deep-learning, machine-learning
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; run Jev on open models without the vendor
+- rule: 229
 
 ### logan-markewich/jeff
 
@@ -3029,6 +3322,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - pushed_at: 2026-09-20
 - topics: classification, encoder, gliner, jev, typesafe
 - use_cases: run Jev on open models without the vendor; score or rank candidates in a pipeline; compare Jev with an LLM
+- rule: 229
 
 ### togethercomputer/tev1
 
@@ -3039,6 +3333,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: MIT
 - pushed_at: 2026-09-24
 - use_cases: classify support tickets or messages; benchmark or calibrate Jev; compare Jev with an LLM
+- rule: 229
 
 ### kshetrajna12/reflex
 
@@ -3049,6 +3344,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: MIT
 - pushed_at: 2026-09-27
 - use_cases: run Jev on open models without the vendor; classify support tickets or messages; compare Jev with an LLM
+- rule: 229
 
 ### allebee/jevk5
 
@@ -3060,6 +3356,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - pushed_at: 2026-09-28
 - topics: calibration, decision-model, jev, jevbench, lora, qwen
 - use_cases: run Jev on open models without the vendor; benchmark or calibrate Jev; compare Jev with an LLM
+- rule: 229
 
 ### daseinlabs/open-jev
 
@@ -3070,6 +3367,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: MIT
 - pushed_at: 2026-09-30
 - use_cases: run Jev on open models without the vendor; score or rank candidates in a pipeline; learn how Jev works
+- rule: 229
 
 ### mmastrac/djev
 
@@ -3080,6 +3378,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: Apache-2.0
 - pushed_at: 2026-09-24
 - use_cases: benchmark or calibrate Jev; run Jev on open models without the vendor; learn how Jev works
+- rule: 229
 
 ### Heman10x-NGU/Verdict-open-jev
 
@@ -3091,6 +3390,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - pushed_at: 2026-09-28
 - topics: brier-score, calibration, decision-engine, edge-ai, gliclass, jev
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; run Jev on open models without the vendor
+- rule: 229
 
 ### zwliJay/jev-forge
 
@@ -3101,6 +3401,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: NOASSERTION
 - pushed_at: 2026-09-23
 - use_cases: benchmark or calibrate Jev; score or rank candidates in a pipeline; run Jev on open models without the vendor
+- rule: 229
 
 ### kikoncuo/jevfire
 
@@ -3112,6 +3413,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - pushed_at: 2026-09-18
 - topics: cuda, game-ai, inference, jev, llm, parallel-decoding
 - use_cases: benchmark or calibrate Jev; run Jev on open models without the vendor; build a game or simulation on Jev
+- rule: 229
 
 ### bnsd55/jevmlx
 
@@ -3123,6 +3425,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - pushed_at: 2026-09-25
 - topics: apple-silicon, jev, local-llm, local-models, mlx
 - use_cases: extract structured fields from text; run Jev on open models without the vendor; score or rank candidates in a pipeline
+- rule: 229
 
 ### r-ms/mini-jev
 
@@ -3133,6 +3436,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: compare Jev with an LLM; benchmark or calibrate Jev; judge or verify an agent's output
+- rule: 229
 
 ### ikermoel/open-alternative-jev
 
@@ -3144,6 +3448,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - pushed_at: 2026-09-25
 - topics: calibration, classification, llm, transformers, vllm, jev
 - use_cases: run Jev on open models without the vendor; compare Jev with an LLM; judge or verify an agent's output
+- rule: 229
 
 ### zhengxuyu/litjev
 
@@ -3154,6 +3459,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: Apache-2.0
 - pushed_at: 2026-09-21
 - use_cases: run Jev on open models without the vendor; score or rank candidates in a pipeline; compare Jev with an LLM
+- rule: 229
 
 ### OmniJev/PlayJev
 
@@ -3165,6 +3471,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - pushed_at: 2026-09-24
 - topics: browser-games, game-ai, game-playing-agent, html5-games, imitation-learning, jev
 - use_cases: run Jev on open models without the vendor; compare Jev with an LLM; drive a browser or GUI with an agent
+- rule: 229
 
 ### JoshuaSP/open-jev
 
@@ -3175,6 +3482,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: MIT
 - pushed_at: 2026-09-16
 - use_cases: compare Jev with an LLM; judge or verify an agent's output; extract structured fields from text
+- rule: 229
 
 ### iammrduncan/typesafe-ai-benchmark
 
@@ -3185,6 +3493,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: compare Jev with an LLM; benchmark or calibrate Jev; judge or verify an agent's output
+- rule: 229
 
 ### mithalouni/system-one-open
 
@@ -3195,6 +3504,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: NOASSERTION
 - pushed_at: 2026-09-17
 - use_cases: classify support tickets or messages; run Jev on open models without the vendor; compare Jev with an LLM
+- rule: 229
 
 ### zhihz/openjev
 
@@ -3205,6 +3515,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: NOASSERTION
 - pushed_at: 2026-09-16
 - use_cases: score or rank candidates in a pipeline; judge or verify an agent's output; run Jev on open models without the vendor
+- rule: 229
 
 ### rorshopping/jev-on-a-laptop
 
@@ -3215,6 +3526,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: NOASSERTION
 - pushed_at: 2026-09-17
 - use_cases: run Jev on open models without the vendor; compare Jev with an LLM; benchmark or calibrate Jev
+- rule: 229
 
 ### olanotolu/jevbetter
 
@@ -3225,6 +3537,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: MIT
 - pushed_at: 2026-09-16
 - use_cases: score or rank candidates in a pipeline; benchmark or calibrate Jev; pick which skill or prompt to load
+- rule: 229
 
 ### genai-craft/openvons
 
@@ -3236,6 +3549,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - pushed_at: 2026-09-21
 - topics: calibration, decision-model, japanese, speech-recognition, voice-commands, whisper
 - use_cases: gate or approve tool calls before they run; benchmark or calibrate Jev; compare Jev with an LLM
+- rule: 229
 
 ### amithgc/local-jev
 
@@ -3246,6 +3560,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - license: MIT
 - pushed_at: 2026-09-21
 - use_cases: run Jev on open models without the vendor; classify support tickets or messages; compare Jev with an LLM
+- rule: 229
 
 ### David-Lolly/Jev-Compatible
 
@@ -3255,6 +3570,7 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - language: Python
 - pushed_at: 2026-09-21
 - use_cases: score or rank candidates in a pipeline; classify support tickets or messages; run Jev on open models without the vendor
+- rule: 229
 
 ### metask-ai/metask-jev
 
@@ -3264,8 +3580,9 @@ Run System One semantics without the vendor — on a 3090 if you like.
 - language: Python
 - pushed_at: 2026-09-22
 - use_cases: benchmark or calibrate Jev; score or rank candidates in a pipeline; compare Jev with an LLM
+- rule: 229
 
-## 🎮 Games, Robotics & Simulation
+## 236 · Games, Robotics & Simulation
 
 Decisions as game mechanics.
 
@@ -3277,6 +3594,7 @@ Decisions as game mechanics.
 - language: JavaScript
 - pushed_at: 2026-09-20
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; compare Jev with an LLM
+- rule: 236
 
 ### fhshaik/typesafe-mario
 
@@ -3286,6 +3604,7 @@ Decisions as game mechanics.
 - language: Python
 - pushed_at: 2026-09-16
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; build a game or simulation on Jev
+- rule: 236
 
 ### FBddcz/embodied-jev
 
@@ -3296,6 +3615,7 @@ Decisions as game mechanics.
 - license: MIT
 - pushed_at: 2026-09-22
 - use_cases: compare Jev with an LLM; judge or verify an agent's output; run Jev on open models without the vendor
+- rule: 236
 
 ### rokbenko/quackd
 
@@ -3307,6 +3627,7 @@ Decisions as game mechanics.
 - pushed_at: 2026-09-30
 - topics: mcp, microduck, physical-ai, claude, openai, local-llm
 - use_cases: gate or approve tool calls before they run; call Jev from the command line; run Jev on open models without the vendor
+- rule: 236
 
 ### RomanSlack/jev-drone
 
@@ -3318,6 +3639,7 @@ Decisions as game mechanics.
 - pushed_at: 2026-09-24
 - topics: autonomous-agents, drone, mujoco, robotics, typesafe
 - use_cases: build a game or simulation on Jev; judge or verify an agent's output; review code or pull requests
+- rule: 236
 
 ### standardagents/jevpilot
 
@@ -3327,6 +3649,7 @@ Decisions as game mechanics.
 - language: JavaScript
 - pushed_at: 2026-09-17
 - use_cases: build a game or simulation on Jev; voice or realtime decisions; compact or prune agent context
+- rule: 236
 
 ### emrickgarrett/OneVOneJev
 
@@ -3336,6 +3659,7 @@ Decisions as game mechanics.
 - language: TypeScript
 - pushed_at: 2026-09-18
 - use_cases: review code or pull requests; build a game or simulation on Jev; benchmark or calibrate Jev
+- rule: 236
 
 ### phyous/tsai-sc
 
@@ -3346,6 +3670,7 @@ Decisions as game mechanics.
 - license: MIT
 - pushed_at: 2026-09-16
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; compare Jev with an LLM
+- rule: 236
 
 ### lukaske/jev-doom-agent
 
@@ -3355,6 +3680,7 @@ Decisions as game mechanics.
 - language: TypeScript
 - pushed_at: 2026-09-17
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; drive a browser or GUI with an agent
+- rule: 236
 
 ### sorrycc/typesafe-snake
 
@@ -3364,6 +3690,7 @@ Decisions as game mechanics.
 - language: TypeScript
 - pushed_at: 2026-09-17
 - use_cases: build a game or simulation on Jev; judge or verify an agent's output; benchmark or calibrate Jev
+- rule: 236
 
 ### vinilana/live-jev
 
@@ -3373,6 +3700,7 @@ Decisions as game mechanics.
 - language: JavaScript
 - pushed_at: 2026-09-18
 - use_cases: build a game or simulation on Jev; compare Jev with an LLM; voice or realtime decisions
+- rule: 236
 
 ### TarunTomar122/jev-askable-arm
 
@@ -3383,6 +3711,7 @@ Decisions as game mechanics.
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: compare Jev with an LLM; benchmark or calibrate Jev; learn how Jev works
+- rule: 236
 
 ### valentynkit/jev-plays-pokemon-red
 
@@ -3393,6 +3722,7 @@ Decisions as game mechanics.
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: call Jev from the command line; judge or verify an agent's output; learn how Jev works
+- rule: 236
 
 ### AbdelStark/heist-one
 
@@ -3404,6 +3734,7 @@ Decisions as game mechanics.
 - pushed_at: 2026-09-17
 - topics: ai-game, jev, phaser, probabilistic-ai, remotion, stealth-game
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; build a game or simulation on Jev
+- rule: 236
 
 ### anxkhn/JevPlaysPokemon
 
@@ -3415,6 +3746,7 @@ Decisions as game mechanics.
 - pushed_at: 2026-09-18
 - topics: firered, mgba, pokemon, showdown, typesafe
 - use_cases: benchmark or calibrate Jev; learn how Jev works; compare Jev with an LLM
+- rule: 236
 
 ### vishxrad/clashroyale-jev
 
@@ -3424,6 +3756,7 @@ Decisions as game mechanics.
 - language: Python
 - pushed_at: 2026-09-22
 - use_cases: control a phone or mobile app; benchmark or calibrate Jev; learn how Jev works
+- rule: 236
 
 ### phyous/tsai-civ2
 
@@ -3434,6 +3767,7 @@ Decisions as game mechanics.
 - license: NOASSERTION
 - pushed_at: 2026-09-18
 - use_cases: benchmark or calibrate Jev; drive a browser or GUI with an agent; compare Jev with an LLM
+- rule: 236
 
 ### siroccomask/snake-jev
 
@@ -3444,6 +3778,7 @@ Decisions as game mechanics.
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; build a game or simulation on Jev
+- rule: 236
 
 ### hazlema/jev-connect4
 
@@ -3454,8 +3789,9 @@ Decisions as game mechanics.
 - license: MIT
 - pushed_at: 2026-09-21
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; monitor or observe Jev usage and cost
+- rule: 236
 
-## 💹 Finance & Trading
+## 242 · Finance & Trading
 
 Scoring financial signals with calibrated probabilities.
 
@@ -3463,11 +3799,12 @@ Scoring financial signals with calibrated probabilities.
 
 - url: https://github.com/jarrodwatts/jev-trader
 - description: One trade decision every Monad block, on Kuru MON-USDC, about 300 ms each.
-- stars: 2,695
+- stars: 2 695
 - language: TypeScript
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: trade or score financial signals; review code or pull requests; benchmark or calibrate Jev
+- rule: 242
 
 ### imikerussell/beebots
 
@@ -3478,6 +3815,7 @@ Scoring financial signals with calibrated probabilities.
 - license: MIT
 - pushed_at: 2026-09-27
 - use_cases: benchmark or calibrate Jev; trade or score financial signals; review code or pull requests
+- rule: 242
 
 ### aowang-ai/jev-trade
 
@@ -3489,6 +3827,7 @@ Scoring financial signals with calibrated probabilities.
 - pushed_at: 2026-09-21
 - topics: hyperliquid, jev, quantitative-finance, typesafe
 - use_cases: trade or score financial signals; benchmark or calibrate Jev; review code or pull requests
+- rule: 242
 
 ### zadescoxp/Jev-Trades
 
@@ -3500,6 +3839,7 @@ Scoring financial signals with calibrated probabilities.
 - pushed_at: 2026-09-25
 - topics: automated-testing, backtesting, crypto-trading-bot-latest, trading-bot-ai-automated
 - use_cases: trade or score financial signals; benchmark or calibrate Jev; learn how Jev works
+- rule: 242
 
 ### justinhe16/trade-jev
 
@@ -3510,8 +3850,9 @@ Scoring financial signals with calibrated probabilities.
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; trade or score financial signals
+- rule: 242
 
-## 🎪 Playgrounds & Demos
+## 248 · Playgrounds & Demos
 
 Try it in thirty seconds.
 
@@ -3523,6 +3864,7 @@ Try it in thirty seconds.
 - language: TypeScript
 - pushed_at: 2026-09-21
 - use_cases: benchmark or calibrate Jev; learn how Jev works; review code or pull requests
+- rule: 248
 
 ### TypeSafeAI/typesafe-playground
 
@@ -3533,6 +3875,7 @@ Try it in thirty seconds.
 - license: MIT
 - pushed_at: 2026-09-28
 - use_cases: extract structured fields from text; pick which skill or prompt to load; build a game or simulation on Jev
+- rule: 248
 
 ### kavehmz/typesafe-playground
 
@@ -3542,6 +3885,7 @@ Try it in thirty seconds.
 - language: JavaScript
 - pushed_at: 2026-09-29
 - use_cases: learn how Jev works; judge or verify an agent's output; build a game or simulation on Jev
+- rule: 248
 
 ### GiesN/typesafe-jev-workflow
 
@@ -3551,6 +3895,7 @@ Try it in thirty seconds.
 - language: Python
 - pushed_at: 2026-09-16
 - use_cases: judge or verify an agent's output; classify support tickets or messages; learn how Jev works
+- rule: 248
 
 ### lbotinelly/jev-little-airways
 
@@ -3561,6 +3906,7 @@ Try it in thirty seconds.
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: benchmark or calibrate Jev; voice or realtime decisions; judge or verify an agent's output
+- rule: 248
 
 ### haseeb-heaven/jev-system-one
 
@@ -3571,6 +3917,7 @@ Try it in thirty seconds.
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: judge or verify an agent's output; compare Jev with an LLM; benchmark or calibrate Jev
+- rule: 248
 
 ### markjaquith/typesafe-ai-playground
 
@@ -3581,6 +3928,7 @@ Try it in thirty seconds.
 - license: MIT
 - pushed_at: 2026-09-22
 - use_cases: call Jev from the command line; classify support tickets or messages; benchmark or calibrate Jev
+- rule: 248
 
 ### replynodes/jev-web-analyzer
 
@@ -3592,6 +3940,7 @@ Try it in thirty seconds.
 - pushed_at: 2026-09-28
 - topics: ai-evaluation, jev, product-positioning, saas, typesafe-ai, vercel-ai-gateway
 - use_cases: benchmark or calibrate Jev; learn how Jev works; judge or verify an agent's output
+- rule: 248
 
 ### wustep/jev-playground
 
@@ -3601,6 +3950,7 @@ Try it in thirty seconds.
 - language: TypeScript
 - pushed_at: 2026-09-26
 - use_cases: benchmark or calibrate Jev; learn how Jev works; compare Jev with an LLM
+- rule: 248
 
 ### willprout/magic-8-ball
 
@@ -3610,6 +3960,7 @@ Try it in thirty seconds.
 - language: TypeScript
 - pushed_at: 2026-09-18
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; compare Jev with an LLM
+- rule: 248
 
 ### bud-ro/jev-demos
 
@@ -3619,6 +3970,7 @@ Try it in thirty seconds.
 - language: Dart
 - pushed_at: 2026-09-18
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; pick which skill or prompt to load
+- rule: 248
 
 ### rishi-raj-jain/hn-thread-judge
 
@@ -3629,4 +3981,4 @@ Try it in thirty seconds.
 - pushed_at: 2026-09-21
 - topics: ai, bm25, drizzle-orm, full-text-search, hacker-news, hackernews
 - use_cases: extract structured fields from text; benchmark or calibrate Jev; judge or verify an agent's output
-
+- rule: 248

@@ -1,10 +1,11 @@
-# 📦 Applications & Extensions
+# 191 · Applications & Extensions
 
 > End-user tools people actually open every day.
 
 29 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
+
 ### anishfn/shapeshift
 
 - url: https://github.com/anishfn/shapeshift
@@ -14,6 +15,7 @@
 - license: MIT
 - pushed_at: 2026-09-23
 - use_cases: extract structured fields from text; compare Jev with an LLM; review code or pull requests
+- rule: 191
 
 ### kitze/unclutter
 
@@ -24,6 +26,7 @@
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: review code or pull requests; learn how Jev works; compare Jev with an LLM
+- rule: 191
 
 ### FerryCorleone/crush-monitor
 
@@ -34,6 +37,7 @@
 - license: MIT
 - pushed_at: 2026-09-25
 - use_cases: extract structured fields from text; route requests through a gateway or proxy; label data or build a dataset
+- rule: 191
 
 ### monteduro/killmyidea
 
@@ -43,6 +47,7 @@
 - language: TypeScript
 - pushed_at: 2026-09-24
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; compare Jev with an LLM
+- rule: 191
 
 ### usenotra/notra
 
@@ -54,6 +59,7 @@
 - pushed_at: 2026-09-30
 - topics: aeo, engine, generative, generative-engine-optimization, geo, optimization
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; rerank search results
+- rule: 191
 
 ### wquguru/dasheng
 
@@ -63,6 +69,7 @@
 - language: JavaScript
 - pushed_at: 2026-09-20
 - use_cases: voice or realtime decisions; benchmark or calibrate Jev; review code or pull requests
+- rule: 191
 
 ### trungdq88/youtube-sponsor-detection
 
@@ -72,6 +79,7 @@
 - language: JavaScript
 - pushed_at: 2026-09-18
 - use_cases: voice or realtime decisions; monitor or observe Jev usage and cost; review code or pull requests
+- rule: 191
 
 ### kevinbadi/jev-voice
 
@@ -82,6 +90,7 @@
 - license: MIT
 - pushed_at: 2026-09-23
 - use_cases: drive a browser or GUI with an agent; voice or realtime decisions; compare Jev with an LLM
+- rule: 191
 
 ### w3cj/jev-chat
 
@@ -92,6 +101,7 @@
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: gate or approve tool calls before they run; judge or verify an agent's output; compare Jev with an LLM
+- rule: 191
 
 ### ChetasLua/jevmeter
 
@@ -103,6 +113,7 @@
 - pushed_at: 2026-09-17
 - topics: debate, jev, typesafe, video-editing, whisper
 - use_cases: judge or verify an agent's output; call Jev from the command line; compare Jev with an LLM
+- rule: 191
 
 ### fazlerocks/jevmail
 
@@ -114,6 +125,7 @@
 - pushed_at: 2026-09-19
 - topics: ai-email-assistant, ai-sdk, email-classification, email-sorter, email-triage, gmail
 - use_cases: classify support tickets or messages; review code or pull requests; compare Jev with an LLM
+- rule: 191
 
 ### realZachi/typesafe-adblock
 
@@ -124,6 +136,7 @@
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; compare Jev with an LLM
+- rule: 191
 
 ### AkashPriyadarshii/jev-seo
 
@@ -135,6 +148,7 @@
 - pushed_at: 2026-09-30
 - topics: ahrefs-alternative, claude-code, cli, generative-engine-optimization, geo, mcp
 - use_cases: call Jev from the command line; serve Jev over MCP to any agent; judge or verify an agent's output
+- rule: 191
 
 ### RafalWilinski/vibecheck
 
@@ -144,6 +158,7 @@
 - language: JavaScript
 - pushed_at: 2026-09-20
 - use_cases: judge or verify an agent's output; compare Jev with an LLM; moderate content or detect abuse
+- rule: 191
 
 ### parth-kp/jev-mail-classifier
 
@@ -154,6 +169,7 @@
 - license: MIT
 - pushed_at: 2026-09-20
 - use_cases: compare Jev with an LLM; classify support tickets or messages; moderate content or detect abuse
+- rule: 191
 
 ### kevthetech143/super-jev
 
@@ -164,6 +180,7 @@
 - license: MIT
 - pushed_at: 2026-09-30
 - use_cases: gate or approve tool calls before they run; judge or verify an agent's output; add Jev to a chat bot or Discord
+- rule: 191
 
 ### manifoldor/xtags
 
@@ -175,6 +192,7 @@
 - pushed_at: 2026-09-27
 - topics: ai, chrome-extension, jev, typesafe, userscript, x-twitter
 - use_cases: detect prompt injection or risky commands; compare Jev with an LLM; judge or verify an agent's output
+- rule: 191
 
 ### gtaras7/typesafe-jev
 
@@ -185,6 +203,7 @@
 - license: MIT
 - pushed_at: 2026-09-27
 - use_cases: benchmark or calibrate Jev; score or rank candidates in a pipeline; learn how Jev works
+- rule: 191
 
 ### harshil1712/slidepilot
 
@@ -196,6 +215,7 @@
 - pushed_at: 2026-09-22
 - topics: cloudflare-workers, jev, slidev, slidev-addon, typescript, voice
 - use_cases: voice or realtime decisions; review code or pull requests; compare Jev with an LLM
+- rule: 191
 
 ### valentynkit/jev.nvim
 
@@ -206,6 +226,7 @@
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: rerank search results; judge or verify an agent's output; learn how Jev works
+- rule: 191
 
 ### andrelandgraf/safer-with-jev
 
@@ -215,6 +236,7 @@
 - language: TypeScript
 - pushed_at: 2026-09-18
 - use_cases: detect prompt injection or risky commands; moderate content or detect abuse; judge or verify an agent's output
+- rule: 191
 
 ### valentynkit/jev-skip
 
@@ -225,6 +247,7 @@
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; learn how Jev works
+- rule: 191
 
 ### chris-wozniczek/jev-voice-control
 
@@ -236,6 +259,7 @@
 - pushed_at: 2026-09-21
 - topics: computer-use, cua, jev, jev-ai, jev-api, jev-model
 - use_cases: drive a browser or GUI with an agent; voice or realtime decisions; gate or approve tool calls before they run
+- rule: 191
 
 ### hellogumbo/should-ai-kill-us-all
 
@@ -246,6 +270,7 @@
 - license: CC0-1.0
 - pushed_at: 2026-09-18
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; call Jev from the command line
+- rule: 191
 
 ### sriganesh/jevibe-check
 
@@ -257,6 +282,7 @@
 - pushed_at: 2026-09-17
 - topics: jev, typesafe, atproto, bluesky
 - use_cases: monitor or observe Jev usage and cost; moderate content or detect abuse; benchmark or calibrate Jev
+- rule: 191
 
 ### phureewat29/jev-got
 
@@ -266,6 +292,7 @@
 - language: TypeScript
 - pushed_at: 2026-09-19
 - use_cases: judge or verify an agent's output; learn how Jev works; extract structured fields from text
+- rule: 191
 
 ### hazlema/jev-riffs
 
@@ -276,6 +303,7 @@
 - license: MIT
 - pushed_at: 2026-09-25
 - use_cases: score or rank candidates in a pipeline; benchmark or calibrate Jev; review code or pull requests
+- rule: 191
 
 ### thenewpotato/privacy-facts
 
@@ -287,6 +315,7 @@
 - pushed_at: 2026-09-18
 - topics: ai, jev, privacy
 - use_cases: judge or verify an agent's output; compare Jev with an LLM; extract structured fields from text
+- rule: 191
 
 ### 0xShin0221/openpoke-meets-jev
 
@@ -297,3 +326,4 @@
 - license: MIT
 - pushed_at: 2026-09-20
 - use_cases: gate or approve tool calls before they run; compare Jev with an LLM; detect prompt injection or risky commands
+- rule: 191

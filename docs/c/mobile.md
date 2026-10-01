@@ -1,10 +1,11 @@
-# 📱 Mobile & Desktop Automation
+# 158 · Mobile & Desktop Automation
 
 > Driving phones, IM clients and native UIs without hooking or patching.
 
 4 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
+
 ### droidrun/mobile-jev
 
 - url: https://github.com/droidrun/mobile-jev
@@ -14,6 +15,7 @@
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: control a phone or mobile app; benchmark or calibrate Jev; drive a browser or GUI with an agent
+- rule: 158
 
 ### ainame/swift-typesafe
 
@@ -24,6 +26,7 @@
 - license: MIT
 - pushed_at: 2026-09-23
 - use_cases: judge or verify an agent's output; extract structured fields from text; score or rank candidates in a pipeline
+- rule: 158
 
 ### friedjof/jev-mobile
 
@@ -35,6 +38,7 @@
 - pushed_at: 2026-09-18
 - topics: agents, android, automation, jev, mcp, mobile
 - use_cases: control a phone or mobile app; judge or verify an agent's output; drive a browser or GUI with an agent
+- rule: 158
 
 ### xinwang-nwpu/jev-mobile
 
@@ -46,3 +50,4 @@
 - pushed_at: 2026-09-21
 - topics: mobile-agent, jev
 - use_cases: control a phone or mobile app; compare Jev with an LLM; drive a browser or GUI with an agent
+- rule: 158

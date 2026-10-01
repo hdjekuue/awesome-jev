@@ -1,20 +1,22 @@
-# 🤖 Coding Agents
+# 104 · Coding Agents
 
 > Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 
 48 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
+
 ### nicobailon/pi-mcp-adapter
 
 - url: https://github.com/nicobailon/pi-mcp-adapter
 - description: Opt-in typed evaluation and semantic search over MCP tool results, behind a per-server data-egress allowlist.
-- stars: 1,568
+- stars: 1 568
 - language: TypeScript
 - license: MIT
 - pushed_at: 2026-09-30
 - topics: ai, claude, coding-agent, extension, llm, mcp
 - use_cases: compact or prune agent context; judge or verify an agent's output; route requests through a gateway or proxy
+- rule: 104
 
 ### kerpopule/hermes-jev-skills
 
@@ -25,6 +27,7 @@
 - license: MIT
 - pushed_at: 2026-09-29
 - use_cases: compact or prune agent context; pick which skill or prompt to load; route between models by task difficulty
+- rule: 104
 
 ### gargpratyush/jev-router
 
@@ -35,6 +38,7 @@
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: route between models by task difficulty; call Jev from the command line; learn how Jev works
+- rule: 104
 
 ### jkudish/jev-mcp
 
@@ -45,6 +49,7 @@
 - license: MIT
 - pushed_at: 2026-09-29
 - use_cases: serve Jev over MCP to any agent; score or rank candidates in a pipeline; extract structured fields from text
+- rule: 104
 
 ### notque/vexjoy-agent
 
@@ -56,6 +61,7 @@
 - pushed_at: 2026-09-30
 - topics: ai, ai-agents, ai-skills, claude, claude-code, ai-pipelines
 - use_cases: gate or approve tool calls before they run; pick which skill or prompt to load; judge or verify an agent's output
+- rule: 104
 
 ### TianyuCodings/JevHarness
 
@@ -65,6 +71,7 @@
 - language: Python
 - pushed_at: 2026-09-21
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; compare Jev with an LLM
+- rule: 104
 
 ### itsmostafa/typesafe-mcp
 
@@ -76,6 +83,7 @@
 - pushed_at: 2026-09-30
 - topics: mcp, mcp-tools
 - use_cases: classify support tickets or messages; serve Jev over MCP to any agent; add Jev to a chat bot or Discord
+- rule: 104
 
 ### miuuyy/Astra-Ares
 
@@ -86,6 +94,7 @@
 - license: MIT
 - pushed_at: 2026-09-23
 - use_cases: benchmark or calibrate Jev; review code or pull requests; learn how Jev works
+- rule: 104
 
 ### 0xNatoshi/jev-codex-router
 
@@ -98,6 +107,7 @@
 - pushed_at: 2026-09-22
 - topics: ai, codex, jev, llm, macos, routing
 - use_cases: route between models by task difficulty; benchmark or calibrate Jev; review code or pull requests
+- rule: 104
 
 ### kitze/skillbox
 
@@ -108,6 +118,7 @@
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: pick which skill or prompt to load; serve Jev over MCP to any agent; run Jev on open models without the vendor
+- rule: 104
 
 ### DevMortimer/pi-warden
 
@@ -119,6 +130,7 @@
 - pushed_at: 2026-09-29
 - topics: guardrails, pi-extension, pi-package, typesafe, agent-guardrails
 - use_cases: stop an agent from finishing early; judge or verify an agent's output; detect prompt injection or risky commands
+- rule: 104
 
 ### y0usaf/pi-jev
 
@@ -130,6 +142,7 @@
 - pushed_at: 2026-09-25
 - topics: guardrails, jev, pi-extension, pi-package, typesafe
 - use_cases: gate or approve tool calls before they run; judge or verify an agent's output; detect prompt injection or risky commands
+- rule: 104
 
 ### dbreunig/building-with-jev-skill
 
@@ -138,6 +151,7 @@
 - stars: 145
 - pushed_at: 2026-09-17
 - use_cases: score or rank candidates in a pipeline; add Jev to a chat bot or Discord; pick which skill or prompt to load
+- rule: 104
 
 ### Dicklesworthstone/skillranker
 
@@ -149,6 +163,7 @@
 - pushed_at: 2026-09-29
 - topics: agent-skills, ai-agents, asupersync, claude-code, cli, developer-tools
 - use_cases: pick which skill or prompt to load; benchmark or calibrate Jev; call Jev from the command line
+- rule: 104
 
 ### devagrawal09/jev-code
 
@@ -159,6 +174,7 @@
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: judge or verify an agent's output; review code or pull requests; call Jev from the command line
+- rule: 104
 
 ### devagrawal09/stanley-code
 
@@ -169,6 +185,7 @@
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: judge or verify an agent's output; review code or pull requests; call Jev from the command line
+- rule: 104
 
 ### fabricioctelles/skills
 
@@ -180,6 +197,7 @@
 - pushed_at: 2026-09-27
 - topics: agentic-ai, agentic-skills, skills, steering, claude-code, claude-skills
 - use_cases: judge or verify an agent's output; pick which skill or prompt to load; classify support tickets or messages
+- rule: 104
 
 ### EliaAlberti/jev-rules
 
@@ -190,6 +208,7 @@
 - license: MIT
 - pushed_at: 2026-09-27
 - use_cases: compact or prune agent context; learn how Jev works; pick which skill or prompt to load
+- rule: 104
 
 ### TheoOliveira/pi-jev
 
@@ -201,6 +220,7 @@
 - pushed_at: 2026-09-24
 - topics: jev, pi-coding-agent, pi-extension, pi-package, system-one, tool-routing
 - use_cases: pick which skill or prompt to load; compact or prune agent context; judge or verify an agent's output
+- rule: 104
 
 ### DevMortimer/pi-typesafe
 
@@ -211,6 +231,7 @@
 - license: MIT
 - pushed_at: 2026-09-30
 - use_cases: monitor or observe Jev usage and cost; call Jev from the command line; benchmark or calibrate Jev
+- rule: 104
 
 ### tacticocc/Jevbridge
 
@@ -222,6 +243,7 @@
 - pushed_at: 2026-09-21
 - topics: acp, agent, claude, computer-use, grok, jev
 - use_cases: gate or approve tool calls before they run; run Jev on open models without the vendor; serve Jev over MCP to any agent
+- rule: 104
 
 ### shantanugoel/ask-jev-skill
 
@@ -232,6 +254,7 @@
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: judge or verify an agent's output; score or rank candidates in a pipeline; compare Jev with an LLM
+- rule: 104
 
 ### shitianfang/jev-use
 
@@ -243,6 +266,7 @@
 - pushed_at: 2026-09-22
 - topics: agent, ai-agents, claude-code, claude-code-plugin, codex, jev
 - use_cases: gate or approve tool calls before they run; compact or prune agent context; drive a browser or GUI with an agent
+- rule: 104
 
 ### jomatsu/pi-jev-auto-mode
 
@@ -254,6 +278,7 @@
 - pushed_at: 2026-09-24
 - topics: auto-mode, coding-agent, guardrail, jev, permission, pi-coding-agent
 - use_cases: gate or approve tool calls before they run; detect prompt injection or risky commands; benchmark or calibrate Jev
+- rule: 104
 
 ### keeltrace/hermes-jev
 
@@ -264,6 +289,7 @@
 - license: MIT
 - pushed_at: 2026-09-28
 - use_cases: gate or approve tool calls before they run; judge or verify an agent's output; run Jev on open models without the vendor
+- rule: 104
 
 ### compozy/yoshi
 
@@ -275,6 +301,7 @@
 - pushed_at: 2026-09-18
 - topics: bun, claude-code, codex, context-window, jev, llm-proxy
 - use_cases: compact or prune agent context; route requests through a gateway or proxy; benchmark or calibrate Jev
+- rule: 104
 
 ### blakestone-x/jev-mcp
 
@@ -285,6 +312,7 @@
 - license: MIT
 - pushed_at: 2026-09-16
 - use_cases: serve Jev over MCP to any agent; judge or verify an agent's output; score or rank candidates in a pipeline
+- rule: 104
 
 ### GodsBoy/jev-agent-skill-router
 
@@ -296,6 +324,7 @@
 - pushed_at: 2026-09-16
 - topics: agentic-ai, ai-agents, hermes-agent, jev, python, skill-routing
 - use_cases: pick which skill or prompt to load; judge or verify an agent's output; benchmark or calibrate Jev
+- rule: 104
 
 ### Brainwires/jevwire
 
@@ -306,6 +335,7 @@
 - license: MIT
 - pushed_at: 2026-09-21
 - use_cases: gate or approve tool calls before they run; serve Jev over MCP to any agent; judge or verify an agent's output
+- rule: 104
 
 ### valentynkit/jev-belay
 
@@ -316,6 +346,7 @@
 - license: MIT
 - pushed_at: 2026-09-20
 - use_cases: judge or verify an agent's output; stop an agent from finishing early; benchmark or calibrate Jev
+- rule: 104
 
 ### anpicasso/hermes-jev-approvals
 
@@ -326,6 +357,7 @@
 - license: MIT
 - pushed_at: 2026-09-22
 - use_cases: gate or approve tool calls before they run; detect prompt injection or risky commands; benchmark or calibrate Jev
+- rule: 104
 
 ### mejiasd3v/pi-jev-router
 
@@ -336,6 +368,7 @@
 - license: MIT
 - pushed_at: 2026-09-22
 - use_cases: route requests through a gateway or proxy; route between models by task difficulty; call Jev from the command line
+- rule: 104
 
 ### DECRUX9812/typesafe-skill-router
 
@@ -347,6 +380,7 @@
 - pushed_at: 2026-09-21
 - topics: ai-agents, hermes-agent, hermes-plugin, llm-agents, plugin-catalog, prompt-caching
 - use_cases: pick which skill or prompt to load; compact or prune agent context; review code or pull requests
+- rule: 104
 
 ### kubet/azdaja
 
@@ -358,6 +392,7 @@
 - pushed_at: 2026-09-21
 - topics: agent-skills, jcode, recursive-language-models, rust, gemini-cli-extension, claude-code
 - use_cases: judge or verify an agent's output; compact or prune agent context; extract structured fields from text
+- rule: 104
 
 ### HyunjunJeon/pi-quiet-ask
 
@@ -368,6 +403,7 @@
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: gate or approve tool calls before they run; judge or verify an agent's output; detect prompt injection or risky commands
+- rule: 104
 
 ### harshwasan/pi-jev-sentinel
 
@@ -378,6 +414,7 @@
 - license: MIT
 - pushed_at: 2026-09-20
 - use_cases: gate or approve tool calls before they run; detect prompt injection or risky commands; judge or verify an agent's output
+- rule: 104
 
 ### 24601/Augustus
 
@@ -389,6 +426,7 @@
 - pushed_at: 2026-09-28
 - topics: agent-skills, agent-workflows, ai-agents, calibrated-confidence, claude-code, decision-systems
 - use_cases: score or rank candidates in a pipeline; benchmark or calibrate Jev; rerank search results
+- rule: 104
 
 ### adarshmishra07/jcm-router
 
@@ -399,6 +437,7 @@
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: route between models by task difficulty; route requests through a gateway or proxy; benchmark or calibrate Jev
+- rule: 104
 
 ### AbdelStark/bicameral
 
@@ -410,6 +449,7 @@
 - pushed_at: 2026-09-16
 - topics: harness-engineering, hybrid-machine-learning, machine-learning
 - use_cases: gate or approve tool calls before they run; judge or verify an agent's output; detect prompt injection or risky commands
+- rule: 104
 
 ### ajensenwaud/hermes-jev-plugin
 
@@ -421,6 +461,7 @@
 - pushed_at: 2026-09-19
 - topics: ai-agents, decision-making, hermes, hermes-agent, jev, typesafe
 - use_cases: judge or verify an agent's output; classify support tickets or messages; score or rank candidates in a pipeline
+- rule: 104
 
 ### HyunjunJeon/jev-judgment
 
@@ -431,6 +472,7 @@
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: gate or approve tool calls before they run; judge or verify an agent's output; voice or realtime decisions
+- rule: 104
 
 ### 3clyp50/a0-typesafe-ai
 
@@ -441,6 +483,7 @@
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: judge or verify an agent's output; score or rank candidates in a pipeline; add Jev to a chat bot or Discord
+- rule: 104
 
 ### bestagentkits/jev-skillful
 
@@ -452,6 +495,7 @@
 - pushed_at: 2026-09-17
 - topics: agent-tooling, ai-agents, claude-code, codex, coding-agents, developer-tools
 - use_cases: compact or prune agent context; pick which skill or prompt to load; benchmark or calibrate Jev
+- rule: 104
 
 ### noplan-inc/limpet
 
@@ -463,6 +507,7 @@
 - pushed_at: 2026-09-17
 - topics: ai-agents, claude-code, codex, hooks, jev
 - use_cases: stop an agent from finishing early; judge or verify an agent's output; benchmark or calibrate Jev
+- rule: 104
 
 ### suenot/codex-jev-router
 
@@ -473,6 +518,7 @@
 - license: MIT
 - pushed_at: 2026-09-27
 - use_cases: judge or verify an agent's output; compact or prune agent context; compare Jev with an LLM
+- rule: 104
 
 ### legacybridge-tech/pi-typesafe-jev
 
@@ -483,6 +529,7 @@
 - license: NOASSERTION
 - pushed_at: 2026-09-17
 - use_cases: judge or verify an agent's output; score or rank candidates in a pipeline; classify support tickets or messages
+- rule: 104
 
 ### BYK/jev-mcp
 
@@ -493,6 +540,7 @@
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; classify support tickets or messages
+- rule: 104
 
 ### samtay32/jev-system-architect
 
@@ -502,3 +550,4 @@
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: classify support tickets or messages; extract structured fields from text; score or rank candidates in a pipeline
+- rule: 104

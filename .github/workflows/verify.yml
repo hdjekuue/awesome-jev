@@ -24,9 +24,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+- uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
 
       - name: Schema, duplicates, categories, description hygiene
         run: node scripts/verify.mjs
@@ -38,11 +39,12 @@ jobs:
       - name: Generated files are up to date
         run: |
           set -e
+          npm ci
           node scripts/build-readme.mjs --check
-          node site/build.mjs >/dev/null
+          npm run build
           if ! git diff --quiet -- README.md README.zh.md README.fr.md docs/ llms.txt llms-full.txt skill.md projects.json; then
-            echo "::error::Generated files are stale. Run: node scripts/build-readme.mjs && node site/build.mjs"
-            git diff --stat -- README.md README.zh.md README.fr.md docs/ llms.txt llms-full.txt skill.md projects.json
+            echo "::error::Generated files are stale. Run: node scripts/build-readme.mjs && npm run build"
+            git diff --stat -- README.md README.zh.md README.fr.md docs/ llms.txt llms-full.txt skill.md projects.json | tail -n 20
             exit 1
           fi
           echo "generated files match data/entries.json"

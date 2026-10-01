@@ -9,7 +9,7 @@
 1. Fork 并新建分支：`git checkout -b add-your-repo`
 2. 在 `data/entries.json` 里加一个对象（见下方结构），三种语言都写
 3. `node scripts/verify.mjs` —— 必须 0 error
-4. `node scripts/build-readme.mjs && node site/build.mjs` —— 重新生成
+4. `npm run build` —— 重新生成
 5. 用模板开 PR，标题写 `Add owner/repo to Category`
 
 就这些。README 表格、三种语言、网站与机器可读导出 CI 也会重新生成；第 4 步忘了也没关系，机器人会补。

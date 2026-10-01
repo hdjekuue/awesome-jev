@@ -1,10 +1,11 @@
-# 🔎 Search, Reranking & RAG
+# 163 · Search, Reranking & RAG
 
 > Query understanding, source selection, reranking and semantic SQL.
 
 13 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
+
 ### superagents-lab/jev-search
 
 - url: https://github.com/superagents-lab/jev-search
@@ -14,6 +15,7 @@
 - license: MIT
 - pushed_at: 2026-09-20
 - use_cases: rerank search results; learn how Jev works; compare Jev with an LLM
+- rule: 163
 
 ### jexp/neo4jev
 
@@ -24,6 +26,7 @@
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: compare Jev with an LLM; learn how Jev works; benchmark or calibrate Jev
+- rule: 163
 
 ### uehaj/jev-semgrep
 
@@ -34,6 +37,7 @@
 - license: NOASSERTION
 - pushed_at: 2026-09-30
 - use_cases: call Jev from the command line; moderate content or detect abuse; rerank search results
+- rule: 163
 
 ### ellipsis-dev/blink
 
@@ -43,6 +47,7 @@
 - language: TypeScript
 - pushed_at: 2026-09-16
 - use_cases: call Jev from the command line; score or rank candidates in a pipeline; judge or verify an agent's output
+- rule: 163
 
 ### kbhuw/jev-sift
 
@@ -52,6 +57,7 @@
 - language: JavaScript
 - pushed_at: 2026-09-18
 - use_cases: compact or prune agent context; rerank search results; score or rank candidates in a pipeline
+- rule: 163
 
 ### hev/reranker
 
@@ -62,6 +68,7 @@
 - license: Apache-2.0
 - pushed_at: 2026-09-17
 - use_cases: benchmark or calibrate Jev; score or rank candidates in a pipeline; compare Jev with an LLM
+- rule: 163
 
 ### reachjalil/jev-tree
 
@@ -73,6 +80,7 @@
 - pushed_at: 2026-09-18
 - topics: classification, jev, taxonomy, typesafe, typescript
 - use_cases: classify support tickets or messages; review code or pull requests; add Jev to a chat bot or Discord
+- rule: 163
 
 ### WiktorB2004/llama-index-jev
 
@@ -84,6 +92,7 @@
 - pushed_at: 2026-09-25
 - topics: llamaindex, rag, reranker, jev, postprocessor, python
 - use_cases: score or rank candidates in a pipeline; pick which skill or prompt to load; compare Jev with an LLM
+- rule: 163
 
 ### kylemclaren/jev-search
 
@@ -95,6 +104,7 @@
 - pushed_at: 2026-09-23
 - topics: jev, typesafe, typesafe-ai
 - use_cases: rerank search results; score or rank candidates in a pipeline; review code or pull requests
+- rule: 163
 
 ### AkashPriyadarshii/jev-scout
 
@@ -106,6 +116,7 @@
 - pushed_at: 2026-09-30
 - topics: ai-agents, claude-code, cli, code-search, coding-agents, crates-io
 - use_cases: score or rank candidates in a pipeline; rerank search results; call Jev from the command line
+- rule: 163
 
 ### kylemclaren/jevpdf
 
@@ -117,6 +128,7 @@
 - pushed_at: 2026-09-23
 - topics: jev, pdf
 - use_cases: rerank search results; compare Jev with an LLM; score or rank candidates in a pipeline
+- rule: 163
 
 ### mttrbrts/jev-folio-recursive-classifier
 
@@ -127,6 +139,7 @@
 - license: Apache-2.0
 - pushed_at: 2026-09-19
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; compare Jev with an LLM
+- rule: 163
 
 ### liou666/senseek
 
@@ -136,3 +149,4 @@
 - language: JavaScript
 - pushed_at: 2026-09-21
 - use_cases: compare Jev with an LLM; rerank search results; judge or verify an agent's output
+- rule: 163

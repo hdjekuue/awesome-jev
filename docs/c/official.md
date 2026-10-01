@@ -1,30 +1,33 @@
-# 🏛️ Official SDKs & Framework Support
+# 011 · Official SDKs & Framework Support
 
 > Maintained by TypeSafe AI, plus the frameworks that ship Jev natively.
 
 7 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
+
 ### vercel/eve
 
 - url: https://github.com/vercel/eve
 - description: Vercel's agent framework; Jev is the typed judge in its evaluate step.
-- stars: 5,418
+- stars: 5 418
 - language: TypeScript
 - license: Apache-2.0
 - pushed_at: 2026-09-30
 - topics: agent, framework, harness, javascript, markdown, typescript
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; review code or pull requests
+- rule: 011
 
 ### typesafe-ai/skills
 
 - url: https://github.com/typesafe-ai/skills
 - description: Agent skills for designing questions, building workflows, and evaluating them.
-- stars: 2,469
+- stars: 2 469
 - license: MIT
 - official: true
 - pushed_at: 2026-09-12
 - use_cases: classify support tickets or messages; judge or verify an agent's output; pick which skill or prompt to load
+- rule: 011
 
 ### vercel-labs/ai-cli
 
@@ -34,6 +37,7 @@
 - language: TypeScript
 - pushed_at: 2026-09-30
 - use_cases: judge or verify an agent's output; review code or pull requests; call Jev from the command line
+- rule: 011
 
 ### typesafe-ai/system-one-adapter-python
 
@@ -45,6 +49,7 @@
 - official: true
 - pushed_at: 2026-09-22
 - use_cases: compare Jev with an LLM; benchmark or calibrate Jev; judge or verify an agent's output
+- rule: 011
 
 ### typesafe-ai/typesafe-sdk-js
 
@@ -56,6 +61,7 @@
 - official: true
 - pushed_at: 2026-09-15
 - use_cases: review code or pull requests; judge or verify an agent's output; extract structured fields from text
+- rule: 011
 
 ### typesafe-ai/typesafe-sdk-python
 
@@ -67,6 +73,7 @@
 - official: true
 - pushed_at: 2026-09-26
 - use_cases: review code or pull requests; judge or verify an agent's output; moderate content or detect abuse
+- rule: 011
 
 ### Agent skill
 
@@ -74,3 +81,4 @@
 - description: How to install the official skill in Claude Code, Cursor, and friends.
 - official: true
 - use_cases: drive a browser or GUI with an agent; call Jev from a language SDK; pick which skill or prompt to load
+- rule: 011

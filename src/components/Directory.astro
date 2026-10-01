@@ -1,0 +1,256 @@
+---
+import { CATEGORIES, catLabel, catBlurb, desc, fmtStars, weightClass } from '../lib/catalog.mjs';
+
+/**
+ * The directory. 352 rows sitting bare on the grid — no cards, no enclosures,
+ * baselines running the full measure. Star magnitude lands on type weight, never
+ * on hue, and official entries are marked with a rule rather than a colour.
+ */
+const { lang, byCat } = Astro.props;
+
+const cellMeta = (e) => {
+  const bits = [];
+  if (e.language) bits.push(e.language);
+  if (e.license) bits.push(e.license);
+  return bits.length ? bits.join(' · ') : '—';
+};
+---
+
+<section class="dir-head" id="directory">
+  <h2>{Astro.props.dirTitle}</h2>
+  <p>{Astro.props.dirLede}</p>
+</section>
+
+<nav class="rules" aria-label={lang === 'zh' ? '规则索引' : lang === 'fr' ? 'Index des règles' : 'Rule index'}>
+  <ol>
+    {CATEGORIES.map((cat) => (
+      <li><a href={`#${cat.id}`}>{cat.stamp}<span>{catLabel(cat, lang)}</span></a></li>
+    ))}
+  </ol>
+</nav>
+
+<div class="search" role="search">
+  <label for="q">{Astro.props.searchLabel}</label>
+  <input
+    id="q"
+    type="search"
+    name="q"
+    autocomplete="off"
+    spellcheck="false"
+    placeholder={Astro.props.searchPlaceholder}
+    aria-describedby="q-count"
+  />
+  <span class="search-count" id="q-count" data-count>{Astro.props.searchAll}</span>
+</div>
+
+<noscript>
+  <p class="no-hits">{Astro.props.searchHint}</p>
+</noscript>
+
+<div class="no-hits" data-empty hidden>
+  <strong>{Astro.props.searchNone}</strong>
+  <br />
+  {Astro.props.searchNoneHint}
+</div>
+
+{CATEGORIES.map((cat) => {
+  const items = byCat.get(cat.id) || [];
+  if (!items.length) return null;
+  return (
+    <section class="cat" id={cat.id} data-category={cat.id}>
+      <div class="cat-head">
+        <span class="cat-stamp">{cat.stamp}</span>
+        <h3>{catLabel(cat, lang)}</h3>
+        <span class="cat-n">{items.length}</span>
+        <p class="cat-blurb">{catBlurb(cat, lang)}</p>
+      </div>
+
+      <div class="entries">
+        {items.map((e) => (
+          <a
+            class:list={['entry', { 'is-archived': e.archived }]}
+            href={e.url}
+            rel="noopener"
+            data-search={[
+              e.name,
+              e.description,
+              e.descriptionZh,
+              e.descriptionFr,
+              e.language,
+              e.license,
+              catLabel(cat, 'en'),
+              catLabel(cat, 'zh'),
+              catLabel(cat, 'fr'),
+              cat.stamp,
+              ...(e.topics || []),
+              ...(e.intents || []),
+            ]
+              .filter(Boolean)
+              .join(' ')
+              .toLowerCase()}
+          >
+            <div class="entry-name">
+              {e.name}
+              {e.official && <span class="off">{lang === 'zh' ? '官方' : lang === 'fr' ? 'officiel' : 'official'}</span>}
+            </div>
+            <div class="entry-desc">{desc(e, lang)}</div>
+            <div class="entry-meta">{cellMeta(e)}</div>
+            <div class={`entry-stars ${weightClass(e.stars)}`}>
+              {e.stars === null ? <span>{Astro.props.noStars}</span> : <><span class="star">★</span> {fmtStars(e.stars)}</>}
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  );
+})}
+
+<script>
+  /**
+   * One control propagates. Activating the search re-rulings the whole table:
+   * every matching rule keeps its heading and its rows, and everything that does
+   * not match leaves the grid entirely. There is no "filtered fragment" state.
+   */
+  const input = document.getElementById('q');
+  const count = document.querySelector('[data-count]');
+  const empty = document.querySelector('[data-empty]');
+  const cats = Array.from(document.querySelectorAll('[data-category]'));
+  const labels = {
+    en: { showing: 'showing', of: 'of', none: 'No entry matches' },
+    zh: { showing: '显示', of: '/', none: '没有匹配的条目' },
+    fr: { showing: 'affichage de', of: 'sur', none: 'Aucune entrée ne correspond' },
+  };
+
+  const lang = document.documentElement.lang.startsWith('zh') ? 'zh' : document.documentElement.lang.startsWith('fr') ? 'fr' : 'en';
+  const t = labels[lang];
+  const all = count?.dataset.all || String(cats.reduce((a, c) => a + c.querySelectorAll('.entry').length, 0));
+
+  // Fold diacritics so "reseau" finds "réseau" and "guardrail" finds both.
+  const norm = (s) =>
+    s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+
+  let hits = [];
+  let active = -1;
+
+  function run() {
+    const q = norm(input.value.trim());
+    hits = [];
+
+    for (const cat of cats) {
+      let visible = 0;
+      for (const row of cat.querySelectorAll('.entry')) {
+        const match = !q || row.dataset.search.includes(q);
+        row.toggleAttribute('data-search-hidden', !match);
+        if (match) visible += 1;
+      }
+      cat.toggleAttribute('data-search-hidden', visible === 0);
+      cat.dataset.visible = String(visible);
+      hits.push(cat);
+    }
+
+    const total = cats.reduce((a, c) => a + Number(c.dataset.visible || 0), 0);
+
+    if (count) {
+      count.textContent = q
+        ? `${t.showing} ${total} ${t.of} ${all}`
+        : `${all}`;
+    }
+    if (empty) empty.toggleAttribute('hidden', total !== 0);
+  }
+
+  function move(step) {
+    const visible = cats.filter((c) => !c.hasAttribute('data-search-hidden'));
+    if (!visible.length) return;
+    active = Math.max(0, Math.min(visible.length - 1, active + step));
+    visible[active].scrollIntoView({ block: 'start', behavior: 'smooth' });
+  }
+
+  input?.addEventListener('input', () => {
+    active = -1;
+    run();
+  });
+
+  input?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === 'ArrowDown') {
+      e.preventDefault();
+      move(1);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      move(-1);
+    } else if (e.key === 'Escape') {
+      input.value = '';
+      active = -1;
+      run();
+    }
+  });
+
+  // A ?q= in the URL runs the same filter, so the JSON-LD SearchAction target and
+  // a shared link both resolve to the same view.
+  const initial = new URLSearchParams(location.search).get('q');
+  if (initial) {
+    input.value = initial;
+    run();
+  } else {
+    run();
+  }
+</script>
+
+<style>
+  /* The rule index: the whole directory addressed the way a decision table is
+     cited, by number. Replaces the incumbent's pill row of category chips. */
+  .rules {
+    padding: 1.4rem 0 0;
+  }
+
+  .rules ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    border-top: var(--rule) solid var(--ink);
+    border-bottom: var(--rule) solid var(--ink);
+  }
+
+  .rules li {
+    border-left: var(--rule-hair) solid var(--ink-45);
+  }
+
+  .rules li:first-child {
+    border-left: 0;
+  }
+
+  .rules a {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.82rem;
+    text-decoration: none;
+    color: var(--ink-70);
+  }
+
+  .rules a:hover {
+    color: var(--ink);
+    background: var(--paper-deep);
+  }
+
+  .rules a > :first-child {
+    font-family: var(--f-mono), var(--f-cjk);
+    font-size: var(--t-min);
+    letter-spacing: 0.045em;
+    color: var(--ink-45);
+  }
+
+  @media (max-width: 52rem) {
+    .rules ol {
+      border-bottom: 0;
+    }
+
+    .rules li {
+      flex: 1 1 auto;
+      border-bottom: var(--rule-hair) solid var(--ink-45);
+    }
+  }
+</style>

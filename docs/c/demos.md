@@ -1,10 +1,11 @@
-# 🎪 Playgrounds & Demos
+# 248 · Playgrounds & Demos
 
 > Try it in thirty seconds.
 
 12 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
+
 ### dabit3/jev-experiments
 
 - url: https://github.com/dabit3/jev-experiments
@@ -13,6 +14,7 @@
 - language: TypeScript
 - pushed_at: 2026-09-21
 - use_cases: benchmark or calibrate Jev; learn how Jev works; review code or pull requests
+- rule: 248
 
 ### TypeSafeAI/typesafe-playground
 
@@ -23,6 +25,7 @@
 - license: MIT
 - pushed_at: 2026-09-28
 - use_cases: extract structured fields from text; pick which skill or prompt to load; build a game or simulation on Jev
+- rule: 248
 
 ### kavehmz/typesafe-playground
 
@@ -32,6 +35,7 @@
 - language: JavaScript
 - pushed_at: 2026-09-29
 - use_cases: learn how Jev works; judge or verify an agent's output; build a game or simulation on Jev
+- rule: 248
 
 ### GiesN/typesafe-jev-workflow
 
@@ -41,6 +45,7 @@
 - language: Python
 - pushed_at: 2026-09-16
 - use_cases: judge or verify an agent's output; classify support tickets or messages; learn how Jev works
+- rule: 248
 
 ### lbotinelly/jev-little-airways
 
@@ -51,6 +56,7 @@
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: benchmark or calibrate Jev; voice or realtime decisions; judge or verify an agent's output
+- rule: 248
 
 ### haseeb-heaven/jev-system-one
 
@@ -61,6 +67,7 @@
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: judge or verify an agent's output; compare Jev with an LLM; benchmark or calibrate Jev
+- rule: 248
 
 ### markjaquith/typesafe-ai-playground
 
@@ -71,6 +78,7 @@
 - license: MIT
 - pushed_at: 2026-09-22
 - use_cases: call Jev from the command line; classify support tickets or messages; benchmark or calibrate Jev
+- rule: 248
 
 ### replynodes/jev-web-analyzer
 
@@ -82,6 +90,7 @@
 - pushed_at: 2026-09-28
 - topics: ai-evaluation, jev, product-positioning, saas, typesafe-ai, vercel-ai-gateway
 - use_cases: benchmark or calibrate Jev; learn how Jev works; judge or verify an agent's output
+- rule: 248
 
 ### wustep/jev-playground
 
@@ -91,6 +100,7 @@
 - language: TypeScript
 - pushed_at: 2026-09-26
 - use_cases: benchmark or calibrate Jev; learn how Jev works; compare Jev with an LLM
+- rule: 248
 
 ### willprout/magic-8-ball
 
@@ -100,6 +110,7 @@
 - language: TypeScript
 - pushed_at: 2026-09-18
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; compare Jev with an LLM
+- rule: 248
 
 ### bud-ro/jev-demos
 
@@ -109,6 +120,7 @@
 - language: Dart
 - pushed_at: 2026-09-18
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; pick which skill or prompt to load
+- rule: 248
 
 ### rishi-raj-jain/hn-thread-judge
 
@@ -119,3 +131,4 @@
 - pushed_at: 2026-09-21
 - topics: ai, bm25, drizzle-orm, full-text-search, hacker-news, hackernews
 - use_cases: extract structured fields from text; benchmark or calibrate Jev; judge or verify an agent's output
+- rule: 248

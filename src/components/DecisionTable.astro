@@ -1,0 +1,196 @@
+---
+import { DEMO_RULES, DEMO_ANSWER, DEMO_CALL } from '../lib/copy.mjs';
+import { fmtStars, REPO } from '../lib/catalog.mjs';
+
+/**
+ * The first viewport is a decision table, not a description of one.
+ *
+ * A real ticket enters as state, three conditions resolve against it, and the
+ * three typed answers arrive carrying their actual probabilities. The
+ * probability fixture is the documented `choice` call's real return value, and
+ * the confidence gauge reads the answer's own `confidence` field against the
+ * threshold a caller would actually set.
+ */
+const { lang, c, stats } = Astro.props;
+const rules = DEMO_RULES[lang];
+const answer = DEMO_ANSWER[lang];
+const threshold = 0.8;
+const MARK_LABEL = {
+  yes: lang === 'zh' ? '是' : lang === 'fr' ? 'oui' : 'true',
+  no: lang === 'zh' ? '否' : lang === 'fr' ? 'non' : 'false',
+  any: lang === 'zh' ? '任意' : lang === 'fr' ? 'indifférent' : "don't care",
+};
+---
+
+<section class="hero" id="decision">
+  <div class="hero-head">
+    <h1 set:html={c.hero.h1} />
+    <div class="hero-side">
+      <p class="hero-lede" set:html={c.hero.lede} />
+      <div class="cta-row">
+        <a class="btn btn-primary" href={REPO} rel="noopener">
+          {c.cta.star}
+          <span class="hint">{c.cta.starHint}</span>
+        </a>
+        <a class="btn" href={`${REPO}/blob/main/CONTRIBUTING.md`} rel="noopener">
+          {c.cta.submit}
+          <span class="hint">{c.cta.submitHint}</span>
+        </a>
+        <a class="btn" href="https://skills.sh/hdjekuue/awesome-jev" rel="noopener">
+          {c.cta.skill}
+          <span class="hint">{c.cta.skillHint}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="dt">
+    <div class="dt-state">
+      <span class="lbl">{c.table.state}</span>
+      <span class="val">{c.table.stateValue}</span>
+    </div>
+
+    <div class="dt-grid">
+      <div class="dt-head dt-cond-head">{c.table.rule}</div>
+      {c.table.conditions.map((label) => (
+        <div class="dt-head">{label}</div>
+      ))}
+      <div class="dt-head">{c.table.prob}</div>
+      <div class="dt-head">{c.table.action}</div>
+
+      {rules.map((r) => (
+        <Fragment>
+          <div class={`dt-cond dt-row${r.resolved ? '-resolved' : ''}`}>
+            <span class="rule-no">{r.no}</span>
+          </div>
+          {r.marks.map((m) => (
+            <div class="dt-cond">
+              <span
+                class={`mark mark-${m === 'yes' ? 'yes' : m === 'no' ? 'no' : 'any'}`}
+                role="img"
+                aria-label={MARK_LABEL[m]}
+              ></span>
+            </div>
+          ))}
+          <div class="dt-prob">{r.prob}</div>
+          <div class="dt-action">
+            {r.resolved && <span class="dt-flag">{c.table.resolved}</span>}
+            <span>{r.action}</span>
+          </div>
+        </Fragment>
+      ))}
+    </div>
+
+    <div class="dt-foot">
+      <span><span class="k">{c.table.confidence}</span> {answer.confidence.toFixed(2)}</span>
+      <span>
+        <span class="k">choice</span>
+        <code>{answer.choice}</code>
+      </span>
+      <span>
+        <span class="k">probabilities</span>
+        <code>{JSON.stringify(answer.probabilities)}</code>
+      </span>
+      <span class="dt-caption">{c.table.caption}</span>
+    </div>
+
+    <div class="gauge">
+      <div class="gauge-row">
+        <span class="gauge-cap">{c.table.threshold} {threshold.toFixed(1)}</span>
+        <div class="gauge-track">
+          <div class="gauge-ticks" aria-hidden="true"></div>
+          <div class="gauge-threshold" style={`left:${threshold * 100}%`}></div>
+          <div class="gauge-needle" style={`left:${answer.confidence * 100}%`}></div>
+        </div>
+      </div>
+      <div class="gauge-scale">
+        <span>0.0</span>
+        <span class="gauge-mid">{c.table.confidence} {answer.confidence.toFixed(2)}</span>
+        <span>1.0</span>
+      </div>
+    </div>
+  </div>
+
+  <details class="call">
+    <summary>
+      <span class="call-no">POST</span>
+      {lang === 'zh' ? '看这一次调用' : lang === 'fr' ? 'Voir l’appel' : 'See the call'}
+    </summary>
+    <pre><code>{DEMO_CALL}</code></pre>
+  </details>
+</section>
+
+<style>
+  .dt-caption {
+    flex-basis: 100%;
+    color: var(--ink-45);
+  }
+
+  .dt-row-resolved {
+    background: var(--signal-wash);
+  }
+
+  .call {
+    margin-top: 1.1rem;
+    border-bottom: var(--rule) solid var(--ink);
+  }
+
+  .call summary {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    cursor: pointer;
+    padding: 0.7rem 0;
+    font-size: 0.86rem;
+    font-weight: 500;
+    list-style: none;
+  }
+
+  .call summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .call-no {
+    font-family: var(--f-mono), var(--f-cjk);
+    font-size: var(--t-min);
+    letter-spacing: 0.08em;
+    color: var(--paper);
+    background: var(--ink);
+    padding: 0.12rem 0.4rem;
+  }
+
+  .call pre {
+    margin: 0;
+    padding: 0 0 1rem;
+    overflow-x: auto;
+    font-family: var(--f-mono);
+    font-size: 0.78rem;
+    line-height: 1.6;
+    color: var(--ink-70);
+  }
+
+  .call code {
+    font-family: inherit;
+  }
+
+  dt-foot .dt-caption {
+    flex-basis: 100%;
+  }
+
+  .gauge-threshold-label {
+    color: var(--ink-45);
+  }
+
+  @media (min-width: 52.1rem) {
+    .gauge-scale {
+      position: relative;
+    }
+
+    .gauge-threshold-label {
+      position: absolute;
+      left: 80%;
+      translate: -50% 0;
+      white-space: nowrap;
+    }
+  }
+</style>

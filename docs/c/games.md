@@ -1,10 +1,11 @@
-# 🎮 Games, Robotics & Simulation
+# 236 · Games, Robotics & Simulation
 
 > Decisions as game mechanics.
 
 19 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
+
 ### rmalde/minecraft-agent
 
 - url: https://github.com/rmalde/minecraft-agent
@@ -13,6 +14,7 @@
 - language: JavaScript
 - pushed_at: 2026-09-20
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; compare Jev with an LLM
+- rule: 236
 
 ### fhshaik/typesafe-mario
 
@@ -22,6 +24,7 @@
 - language: Python
 - pushed_at: 2026-09-16
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; build a game or simulation on Jev
+- rule: 236
 
 ### FBddcz/embodied-jev
 
@@ -32,6 +35,7 @@
 - license: MIT
 - pushed_at: 2026-09-22
 - use_cases: compare Jev with an LLM; judge or verify an agent's output; run Jev on open models without the vendor
+- rule: 236
 
 ### rokbenko/quackd
 
@@ -43,6 +47,7 @@
 - pushed_at: 2026-09-30
 - topics: mcp, microduck, physical-ai, claude, openai, local-llm
 - use_cases: gate or approve tool calls before they run; call Jev from the command line; run Jev on open models without the vendor
+- rule: 236
 
 ### RomanSlack/jev-drone
 
@@ -54,6 +59,7 @@
 - pushed_at: 2026-09-24
 - topics: autonomous-agents, drone, mujoco, robotics, typesafe
 - use_cases: build a game or simulation on Jev; judge or verify an agent's output; review code or pull requests
+- rule: 236
 
 ### standardagents/jevpilot
 
@@ -63,6 +69,7 @@
 - language: JavaScript
 - pushed_at: 2026-09-17
 - use_cases: build a game or simulation on Jev; voice or realtime decisions; compact or prune agent context
+- rule: 236
 
 ### emrickgarrett/OneVOneJev
 
@@ -72,6 +79,7 @@
 - language: TypeScript
 - pushed_at: 2026-09-18
 - use_cases: review code or pull requests; build a game or simulation on Jev; benchmark or calibrate Jev
+- rule: 236
 
 ### phyous/tsai-sc
 
@@ -82,6 +90,7 @@
 - license: MIT
 - pushed_at: 2026-09-16
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; compare Jev with an LLM
+- rule: 236
 
 ### lukaske/jev-doom-agent
 
@@ -91,6 +100,7 @@
 - language: TypeScript
 - pushed_at: 2026-09-17
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; drive a browser or GUI with an agent
+- rule: 236
 
 ### sorrycc/typesafe-snake
 
@@ -100,6 +110,7 @@
 - language: TypeScript
 - pushed_at: 2026-09-17
 - use_cases: build a game or simulation on Jev; judge or verify an agent's output; benchmark or calibrate Jev
+- rule: 236
 
 ### vinilana/live-jev
 
@@ -109,6 +120,7 @@
 - language: JavaScript
 - pushed_at: 2026-09-18
 - use_cases: build a game or simulation on Jev; compare Jev with an LLM; voice or realtime decisions
+- rule: 236
 
 ### TarunTomar122/jev-askable-arm
 
@@ -119,6 +131,7 @@
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: compare Jev with an LLM; benchmark or calibrate Jev; learn how Jev works
+- rule: 236
 
 ### valentynkit/jev-plays-pokemon-red
 
@@ -129,6 +142,7 @@
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: call Jev from the command line; judge or verify an agent's output; learn how Jev works
+- rule: 236
 
 ### AbdelStark/heist-one
 
@@ -140,6 +154,7 @@
 - pushed_at: 2026-09-17
 - topics: ai-game, jev, phaser, probabilistic-ai, remotion, stealth-game
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; build a game or simulation on Jev
+- rule: 236
 
 ### anxkhn/JevPlaysPokemon
 
@@ -151,6 +166,7 @@
 - pushed_at: 2026-09-18
 - topics: firered, mgba, pokemon, showdown, typesafe
 - use_cases: benchmark or calibrate Jev; learn how Jev works; compare Jev with an LLM
+- rule: 236
 
 ### vishxrad/clashroyale-jev
 
@@ -160,6 +176,7 @@
 - language: Python
 - pushed_at: 2026-09-22
 - use_cases: control a phone or mobile app; benchmark or calibrate Jev; learn how Jev works
+- rule: 236
 
 ### phyous/tsai-civ2
 
@@ -170,6 +187,7 @@
 - license: NOASSERTION
 - pushed_at: 2026-09-18
 - use_cases: benchmark or calibrate Jev; drive a browser or GUI with an agent; compare Jev with an LLM
+- rule: 236
 
 ### siroccomask/snake-jev
 
@@ -180,6 +198,7 @@
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; build a game or simulation on Jev
+- rule: 236
 
 ### hazlema/jev-connect4
 
@@ -190,3 +209,4 @@
 - license: MIT
 - pushed_at: 2026-09-21
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; monitor or observe Jev usage and cost
+- rule: 236

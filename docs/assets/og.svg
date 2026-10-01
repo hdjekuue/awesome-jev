@@ -1,20 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0a0e14"/>
-      <stop offset="100%" stop-color="#141b26"/>
-    </linearGradient>
-    <linearGradient id="ac" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#4d9fff"/>
-      <stop offset="100%" stop-color="#7c5cff"/>
-    </linearGradient>
-  </defs>
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="600" cy="120" r="340" fill="rgba(124,92,255,.18)"/>
-  <circle cx="600" cy="60" r="240" fill="rgba(77,159,255,.14)"/>
-  <text x="600" y="286" text-anchor="middle" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="82" font-weight="800" fill="#e6edf3">Awesome <tspan fill="#ff7a45">Jev</tspan></text>
-  <text x="600" y="352" text-anchor="middle" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="34" font-weight="600" fill="#ff7a45">Everything is a Decision.</text>
-  <text x="600" y="404" text-anchor="middle" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="22" fill="#8b949e">Everything built on Jev — TypeSafe AI&#39;s System One model</text>
-  <rect x="330" y="440" width="540" height="60" rx="30" fill="url(#ac)"/>
-  <text x="600" y="478" text-anchor="middle" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="24" font-weight="700" fill="#ffffff">ENTRIES · STARS · 3 LANGUAGES · SELF-UPDATING</text>
+  <rect width="1200" height="630" fill="#fbfaf6"/>
+  <rect x="0" y="0" width="1200" height="8" fill="#14130f"/>
+  <rect x="0" y="286" width="1200" height="2" fill="#14130f"/>
+  <rect x="0" y="286" width="1200" height="112" fill="none"/>
+  <text x="70" y="196" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="86" font-weight="700" fill="#14130f" letter-spacing="-3">Awesome Jev</text>
+  <text x="70" y="252" font-family="DM Mono, monospace" font-size="24" fill="#7d7a70" letter-spacing="2">EVERYTHING IS A DECISION.</text>
+  <g stroke="#7d7a70" stroke-width="1">
+    <line x1="70" y1="316" x2="1130" y2="316"/>
+    <line x1="70" y1="348" x2="1130" y2="348"/>
+    <line x1="70" y1="380" x2="1130" y2="380"/>
+  </g>
+  <g stroke="#14130f" stroke-width="1">
+    <line x1="70" y1="316" x2="70" y2="380"/>
+    <line x1="880" y1="316" x2="880" y2="380"/>
+    <line x1="990" y1="316" x2="990" y2="380"/>
+    <line x1="1130" y1="316" x2="1130" y2="380"/>
+  </g>
+  <text x="70" y="339" font-family="DM Mono, monospace" font-size="15" fill="#7d7a70">RULE</text>
+  <text x="380" y="339" font-family="DM Mono, monospace" font-size="15" fill="#7d7a70">PROJECT</text>
+  <text x="1000" y="339" font-family="DM Mono, monospace" font-size="15" fill="#7d7a70">★</text>
+  <text x="70" y="404" font-family="DM Mono, monospace" font-size="21" fill="#4a4841">browser-use/jev-ultrafast · ★21 495</text>
+<text x="70" y="438" font-family="DM Mono, monospace" font-size="21" fill="#4a4841">jaredpalmer/kev · ★7 998</text>
+<text x="70" y="472" font-family="DM Mono, monospace" font-size="21" fill="#4a4841">tamaratran/fast-jev-compaction · ★7 225</text>
+  <rect x="880" y="316" width="110" height="64" fill="#b3261e"/>
+  <text x="935" y="356" text-anchor="middle" font-family="DM Mono, monospace" font-size="20" fill="#fbfaf6" font-weight="500">0.94</text>
+  <text x="70" y="470" font-family="Archivo, Helvetica, Arial, sans-serif" font-size="27" font-weight="600" fill="#14130f">352 projects · 93 460 stars · 19 rules</text>
+  <text x="70" y="512" font-family="DM Mono, monospace" font-size="21" fill="#4a4841">Typed judgments. Calibrated probabilities. No prose to parse.</text>
+  <rect x="70" y="546" width="1200" y="0" fill="none"/>
+  <line x1="70" y1="546" x2="1130" y2="546" stroke="#14130f" stroke-width="3"/>
+  <text x="70" y="586" font-family="DM Mono, monospace" font-size="19" fill="#7d7a70">EN · 中文 · FRANÇAIS — generated from one data file</text>
 </svg>

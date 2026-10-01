@@ -1,0 +1,15 @@
+---
+import Base from '../../layouts/Base.astro';
+import DecisionTable from '../../components/DecisionTable.astro';
+import PageBody from '../../components/PageBody.astro';
+import { CATEGORIES, load } from '../../lib/catalog.mjs';
+import { COPY } from '../../lib/copy.mjs';
+
+const { byCat, updated, entries } = load();
+const cats = CATEGORIES.filter((cat) => (byCat.get(cat.id) || []).length);
+---
+
+<Base lang="fr" entries={entries} cats={cats} updated={updated}>
+  <DecisionTable lang="fr" c={COPY.fr} stats={entries.length} />
+  <PageBody lang="fr" byCat={byCat} updated={updated} entries={entries} />
+</Base>

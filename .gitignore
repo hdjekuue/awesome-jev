@@ -21,6 +21,22 @@ curator-report.md
 review-comment.md
 .curate-prompt.md
 
+# Astro build cache and generated types — never committed
+.astro/
+
+# Third-party skill installs. `npx skills add <repo>` drops copies into these
+# per-harness directories; they are tooling, not part of this product, and
+# committing a third-party skill's binary and 2 MB catalog into an awesome list
+# would be both a licence problem and noise for every visitor.
+.agents/
+.claude/
+agent/
+data/skills/
+skills-lock.json
+
+# Design review captures — regenerate with `node scripts/shoot.mjs`
+.impeccable/review/
+
 # NOTE: docs/, llms.txt, llms-full.txt, skill.md and projects.json are generated
 # but ARE committed on purpose:
 #   - docs/ is the GitHub Pages source for the website,

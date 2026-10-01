@@ -1,0 +1,3 @@
+# Review captures are regenerable with `node scripts/shoot.mjs`. Only the surface
+# brief and the design record are tracked; the PNGs are not.
+review/

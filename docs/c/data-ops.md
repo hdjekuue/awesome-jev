@@ -1,10 +1,11 @@
-# 🗄️ Data & Ops
+# 185 · Data & Ops
 
 > Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 
 20 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
+
 ### kyotofin/tax-doc-classifier
 
 - url: https://github.com/kyotofin/tax-doc-classifier
@@ -14,6 +15,7 @@
 - license: Apache-2.0
 - pushed_at: 2026-09-29
 - use_cases: compare Jev with an LLM; review code or pull requests; label data or build a dataset
+- rule: 185
 
 ### realZachi/pg-jev
 
@@ -24,6 +26,7 @@
 - license: NOASSERTION
 - pushed_at: 2026-09-18
 - use_cases: run Jev inside a database or SQL; score or rank candidates in a pipeline; classify support tickets or messages
+- rule: 185
 
 ### AgriciDaniel/jev-seo
 
@@ -34,6 +37,7 @@
 - license: MIT
 - pushed_at: 2026-09-22
 - use_cases: call Jev from the command line; judge or verify an agent's output; benchmark or calibrate Jev
+- rule: 185
 
 ### AkashPriyadarshii/jev-curate
 
@@ -45,6 +49,7 @@
 - pushed_at: 2026-09-30
 - topics: arrow, cli, data-cleaning, data-engineering, dataset-curation, eval-harness
 - use_cases: label data or build a dataset; benchmark or calibrate Jev; score or rank candidates in a pipeline
+- rule: 185
 
 ### giuliosmall/pg_typesafe
 
@@ -55,6 +60,7 @@
 - license: MIT
 - pushed_at: 2026-09-24
 - use_cases: run Jev inside a database or SQL; score or rank candidates in a pipeline; label data or build a dataset
+- rule: 185
 
 ### AboveColin/HA-Jev
 
@@ -66,6 +72,7 @@
 - pushed_at: 2026-09-30
 - topics: ai, custom-components, hacs, home-assistant, home-automation, homeassistant
 - use_cases: voice or realtime decisions; monitor or observe Jev usage and cost; review code or pull requests
+- rule: 185
 
 ### choxos/jev-reviewer
 
@@ -77,6 +84,7 @@
 - pushed_at: 2026-09-19
 - topics: clinical-trials, data-extraction, evidence-synthesis, jev, meta-analysis, pdf
 - use_cases: judge or verify an agent's output; extract structured fields from text; compare Jev with an LLM
+- rule: 185
 
 ### chenmingtang830/jevgraph
 
@@ -88,6 +96,7 @@
 - pushed_at: 2026-09-20
 - topics: information-extraction, jev, knowledge-graph, llm, python, relation-extraction
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; compare Jev with an LLM
+- rule: 185
 
 ### colliber/duckdb-jev
 
@@ -98,6 +107,7 @@
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: run Jev inside a database or SQL; extract structured fields from text; label data or build a dataset
+- rule: 185
 
 ### chopratejas/invalidate
 
@@ -108,6 +118,7 @@
 - license: Apache-2.0
 - pushed_at: 2026-09-21
 - use_cases: compact or prune agent context; judge or verify an agent's output; add Jev to a chat bot or Discord
+- rule: 185
 
 ### reachjalil/jevlogs
 
@@ -118,6 +129,7 @@
 - license: MIT
 - pushed_at: 2026-09-22
 - use_cases: monitor or observe Jev usage and cost; compare Jev with an LLM; benchmark or calibrate Jev
+- rule: 185
 
 ### kylemclaren/jevql
 
@@ -129,6 +141,7 @@
 - pushed_at: 2026-09-19
 - topics: jev, postgres
 - use_cases: call Jev from the command line; call Jev from a language SDK; serve Jev over MCP to any agent
+- rule: 185
 
 ### collapseindex/jev-ultralightspeed
 
@@ -140,6 +153,7 @@
 - pushed_at: 2026-09-22
 - topics: batching, classification, http2, jev, llm, throughput
 - use_cases: benchmark or calibrate Jev; classify support tickets or messages; label data or build a dataset
+- rule: 185
 
 ### keltokhy/jlink
 
@@ -151,6 +165,7 @@
 - pushed_at: 2026-09-28
 - topics: economics, entity-resolution, fuzzy-matching, jev, record-linkage, stata
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; call Jev from the command line
+- rule: 185
 
 ### EugeneBoondock/jevsql
 
@@ -162,6 +177,7 @@
 - pushed_at: 2026-09-19
 - topics: ai, jev, llm, semantic-search, sql, sqlite
 - use_cases: judge or verify an agent's output; rerank search results; score or rank candidates in a pipeline
+- rule: 185
 
 ### Foadsf/jev-for-engineers
 
@@ -173,6 +189,7 @@
 - pushed_at: 2026-09-16
 - topics: cad, cae, calibrated-confidence, classification, jev, llm
 - use_cases: extract structured fields from text; benchmark or calibrate Jev; learn how Jev works
+- rule: 185
 
 ### Query-farm/vgi-typesafe
 
@@ -184,6 +201,7 @@
 - pushed_at: 2026-09-19
 - topics: ai, apache-arrow, arrow, classification, data-engineering, duckdb
 - use_cases: score or rank candidates in a pipeline; classify support tickets or messages; label data or build a dataset
+- rule: 185
 
 ### mgaitan/sqlite-jev
 
@@ -193,6 +211,7 @@
 - language: C
 - pushed_at: 2026-09-18
 - use_cases: run Jev inside a database or SQL; label data or build a dataset; classify support tickets or messages
+- rule: 185
 
 ### opaielsheikh/typesafe-migration-guard
 
@@ -202,6 +221,7 @@
 - language: TypeScript
 - pushed_at: 2026-09-17
 - use_cases: review code or pull requests; judge or verify an agent's output; gate or approve tool calls before they run
+- rule: 185
 
 ### ddfeyes/jev-mode
 
@@ -213,3 +233,4 @@
 - pushed_at: 2026-09-18
 - topics: agents, ai, classification, cli, jev, llm
 - use_cases: compact or prune agent context; classify support tickets or messages; compare Jev with an LLM
+- rule: 185

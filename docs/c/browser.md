@@ -1,30 +1,33 @@
-# 🌐 Browser & Computer Use
+# 152 · Browser & Computer Use
 
 > Jev picks the operation and the DOM element; a small LLM only writes the text.
 
 14 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
+
 ### browser-use/jev-ultrafast
 
 - url: https://github.com/browser-use/jev-ultrafast
 - description: One request picks both the operation and the target element from an indexed DOM table; a small LLM only writes typed text. Zürich to London booked in 7.1 seconds.
-- stars: 21,495
+- stars: 21 495
 - language: Python
 - license: MIT
 - pushed_at: 2026-09-30
 - use_cases: drive a browser or GUI with an agent; benchmark or calibrate Jev; learn how Jev works
+- rule: 152
 
 ### awlevin/typesafe-computer-use
 
 - url: https://github.com/awlevin/typesafe-computer-use
 - description: OCR the screen, classify the next action, click; about $0.0002 a step on macOS.
-- stars: 1,097
+- stars: 1 097
 - language: Python
 - license: MIT
 - pushed_at: 2026-09-29
 - topics: ai-agents, automation, computer-use, macos, ocr, typesafe
 - use_cases: drive a browser or GUI with an agent; learn how Jev works; benchmark or calibrate Jev
+- rule: 152
 
 ### wy-coliney/jev-browser-use
 
@@ -35,6 +38,7 @@
 - license: MIT
 - pushed_at: 2026-09-23
 - use_cases: drive a browser or GUI with an agent; judge or verify an agent's output; learn how Jev works
+- rule: 152
 
 ### Sac-Y/Jev-cu
 
@@ -45,6 +49,7 @@
 - license: MIT
 - pushed_at: 2026-09-22
 - use_cases: gate or approve tool calls before they run; drive a browser or GUI with an agent; learn how Jev works
+- rule: 152
 
 ### moritzkremb/jev-voice-browser
 
@@ -55,6 +60,7 @@
 - license: MIT
 - pushed_at: 2026-09-21
 - use_cases: drive a browser or GUI with an agent; voice or realtime decisions; compare Jev with an LLM
+- rule: 152
 
 ### jkudish/jev-browser
 
@@ -65,6 +71,7 @@
 - license: MIT
 - pushed_at: 2026-09-29
 - use_cases: call Jev from the command line; drive a browser or GUI with an agent; benchmark or calibrate Jev
+- rule: 152
 
 ### YUTA-fywoo/jev-gui-delegate
 
@@ -74,6 +81,7 @@
 - language: Python
 - pushed_at: 2026-09-27
 - use_cases: drive a browser or GUI with an agent; judge or verify an agent's output; monitor or observe Jev usage and cost
+- rule: 152
 
 ### socai-io/jev-social
 
@@ -85,6 +93,7 @@
 - pushed_at: 2026-09-30
 - topics: jev, social-media, ai-agents, browser-automation, instagram, research-agent
 - use_cases: judge or verify an agent's output; drive a browser or GUI with an agent; gate or approve tool calls before they run
+- rule: 152
 
 ### savka777/jev-use
 
@@ -96,6 +105,7 @@
 - pushed_at: 2026-09-21
 - topics: ai, browser-use, computer-use, harness, jev, typesafe-ai
 - use_cases: drive a browser or GUI with an agent; call Jev from the command line; voice or realtime decisions
+- rule: 152
 
 ### Ying-Kai-Liao/jev-browser
 
@@ -107,6 +117,7 @@
 - pushed_at: 2026-09-29
 - topics: browser-automation, llm-agents, mcp, mcp-server, playwright
 - use_cases: drive a browser or GUI with an agent; call Jev from the command line; gate or approve tool calls before they run
+- rule: 152
 
 ### hqman/JevScout
 
@@ -116,6 +127,7 @@
 - language: Python
 - pushed_at: 2026-09-18
 - use_cases: drive a browser or GUI with an agent; call Jev from the command line; compare Jev with an LLM
+- rule: 152
 
 ### romaluev/jev-ego
 
@@ -127,6 +139,7 @@
 - pushed_at: 2026-09-17
 - topics: ai-agent, browser-agent, cdp, cli, ego-browser, ego-lite
 - use_cases: drive a browser or GUI with an agent; benchmark or calibrate Jev; learn how Jev works
+- rule: 152
 
 ### tontoko/jev-browser
 
@@ -138,6 +151,7 @@
 - pushed_at: 2026-09-30
 - topics: browser-automation, cli, jev, mcp, playwright, typescript
 - use_cases: drive a browser or GUI with an agent; call Jev from the command line; judge or verify an agent's output
+- rule: 152
 
 ### imanshu03/jev-browser-use
 
@@ -147,3 +161,4 @@
 - language: TypeScript
 - pushed_at: 2026-09-27
 - use_cases: call Jev from the command line; drive a browser or GUI with an agent; serve Jev over MCP to any agent
+- rule: 152

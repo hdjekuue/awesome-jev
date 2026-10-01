@@ -1,10 +1,11 @@
-# 📊 Benchmarks, Evals & Calibration
+# 223 · Benchmarks, Evals & Calibration
 
 > Measure it before you trust it.
 
 27 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
+
 ### sutro-sh/jev-align
 
 - url: https://github.com/sutro-sh/jev-align
@@ -15,6 +16,7 @@
 - pushed_at: 2026-09-20
 - topics: active-learning, classification, cli, gepa, human-in-the-loop, jev
 - use_cases: benchmark or calibrate Jev; label data or build a dataset; classify support tickets or messages
+- rule: 223
 
 ### fstandhartinger/jevbench
 
@@ -26,6 +28,7 @@
 - pushed_at: 2026-09-29
 - topics: jev, systemone, decisionmodels
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; score or rank candidates in a pipeline
+- rule: 223
 
 ### vinilana/jev-eval-agent
 
@@ -35,6 +38,7 @@
 - language: HTML
 - pushed_at: 2026-09-17
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; gate or approve tool calls before they run
+- rule: 223
 
 ### openlayer-ai/jevals
 
@@ -46,6 +50,7 @@
 - pushed_at: 2026-09-24
 - topics: agents, evals, guardrails, jev, llm, llm-evaluation
 - use_cases: judge or verify an agent's output; detect prompt injection or risky commands; benchmark or calibrate Jev
+- rule: 223
 
 ### pinecone-io/cultivar
 
@@ -57,6 +62,7 @@
 - pushed_at: 2026-09-18
 - topics: agent, agent-skills, benchmarking, claude-code, codex, copilot
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; compare Jev with an LLM
+- rule: 223
 
 ### AbdelStark/jev-benchmarks
 
@@ -68,6 +74,7 @@
 - pushed_at: 2026-09-17
 - topics: benchmarking, calibration, evaluation, machine-learning, reproducibility, selective-classification
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; route between models by task difficulty
+- rule: 223
 
 ### AntonioCoppe/jev-harness
 
@@ -79,6 +86,7 @@
 - pushed_at: 2026-09-25
 - topics: agents, confidence, decision, evals, harness, jev
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; gate or approve tool calls before they run
+- rule: 223
 
 ### abhixhek/jevcal
 
@@ -90,6 +98,7 @@
 - pushed_at: 2026-09-18
 - topics: calibration, jev, llm-evals, system-one, typesafe, confidence-thresholds
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; route between models by task difficulty
+- rule: 223
 
 ### jmanhype/jev-dspy-lab
 
@@ -100,6 +109,7 @@
 - license: MIT
 - pushed_at: 2026-09-20
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; monitor or observe Jev usage and cost
+- rule: 223
 
 ### zhuyansen/jev-search-rerank-eval
 
@@ -111,6 +121,7 @@
 - pushed_at: 2026-09-18
 - topics: bge-m3, evaluation, information-retrieval, ndcg, reranking, typesafe-jev
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; rerank search results
+- rule: 223
 
 ### anessbelbati/jev-rerank-bench
 
@@ -122,6 +133,7 @@
 - pushed_at: 2026-09-25
 - topics: benchmark, cohere, information-retrieval, llm-evaluation, ndcg, rag
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; judge or verify an agent's output
+- rule: 223
 
 ### anisselbd/jev-phishing-bench
 
@@ -131,6 +143,7 @@
 - language: Python
 - pushed_at: 2026-09-19
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; judge or verify an agent's output
+- rule: 223
 
 ### mahlernim/jev-korean-benchmark
 
@@ -140,6 +153,7 @@
 - language: Python
 - pushed_at: 2026-09-17
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; monitor or observe Jev usage and cost
+- rule: 223
 
 ### wondertwins/jev-benchmark
 
@@ -150,6 +164,7 @@
 - license: MIT
 - pushed_at: 2026-09-16
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; learn how Jev works
+- rule: 223
 
 ### Gaurav-Gosain/jev-sec-bench
 
@@ -160,6 +175,7 @@
 - license: MIT
 - pushed_at: 2026-09-16
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; moderate content or detect abuse
+- rule: 223
 
 ### TokenTrim/jev-agent-failure-benchmark
 
@@ -170,6 +186,7 @@
 - license: Apache-2.0
 - pushed_at: 2026-09-17
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; judge or verify an agent's output
+- rule: 223
 
 ### RINNECODER/jev-behavior-study
 
@@ -180,6 +197,7 @@
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; learn how Jev works
+- rule: 223
 
 ### chenmingtang830/jevarena
 
@@ -191,6 +209,7 @@
 - pushed_at: 2026-09-20
 - topics: byok, evaluation, jev, llm-as-a-judge, open-source
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; monitor or observe Jev usage and cost
+- rule: 223
 
 ### bitnovus/jev-spam-eval
 
@@ -201,6 +220,7 @@
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; moderate content or detect abuse
+- rule: 223
 
 ### PistachioAIHQ/jev-synergy-screening
 
@@ -210,6 +230,7 @@
 - language: Python
 - pushed_at: 2026-09-16
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; score or rank candidates in a pipeline
+- rule: 223
 
 ### jgridifier/jev-research-eval
 
@@ -220,6 +241,7 @@
 - license: NOASSERTION
 - pushed_at: 2026-09-17
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; compare Jev with an LLM
+- rule: 223
 
 ### HackSing/jev-report
 
@@ -231,6 +253,7 @@
 - pushed_at: 2026-09-17
 - topics: ai-research, chinese, jev, llm-evaluation, typesafe
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; compare Jev with an LLM
+- rule: 223
 
 ### hegargarcia/jev-playground
 
@@ -240,6 +263,7 @@
 - language: TypeScript
 - pushed_at: 2026-09-17
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; judge or verify an agent's output
+- rule: 223
 
 ### yodablocks/jev-orderby-bench
 
@@ -251,6 +275,7 @@
 - pushed_at: 2026-09-20
 - topics: benchmark, calibration, duckdb, information-retrieval, jev, llm-evaluation
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; score or rank candidates in a pipeline
+- rule: 223
 
 ### 4esv/jev-eval
 
@@ -260,6 +285,7 @@
 - language: Python
 - pushed_at: 2026-09-23
 - use_cases: benchmark or calibrate Jev; compare Jev with an LLM; judge or verify an agent's output
+- rule: 223
 
 ### themsquared/jev-benchmark
 
@@ -271,6 +297,7 @@
 - pushed_at: 2026-09-24
 - topics: agentgateway, ai-agents, benchmark, calibration, llm, mcp
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; compare Jev with an LLM
+- rule: 223
 
 ### blowxian/jev-fanout-bench
 
@@ -282,3 +309,4 @@
 - pushed_at: 2026-09-28
 - topics: benchmark, jev, llm-cost, openrouter, system-one, typesafe
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; monitor or observe Jev usage and cost
+- rule: 223

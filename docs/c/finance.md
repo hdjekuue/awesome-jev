@@ -1,19 +1,21 @@
-# 💹 Finance & Trading
+# 242 · Finance & Trading
 
 > Scoring financial signals with calibrated probabilities.
 
 5 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
+
 ### jarrodwatts/jev-trader
 
 - url: https://github.com/jarrodwatts/jev-trader
 - description: One trade decision every Monad block, on Kuru MON-USDC, about 300 ms each.
-- stars: 2,695
+- stars: 2 695
 - language: TypeScript
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: trade or score financial signals; review code or pull requests; benchmark or calibrate Jev
+- rule: 242
 
 ### imikerussell/beebots
 
@@ -24,6 +26,7 @@
 - license: MIT
 - pushed_at: 2026-09-27
 - use_cases: benchmark or calibrate Jev; trade or score financial signals; review code or pull requests
+- rule: 242
 
 ### aowang-ai/jev-trade
 
@@ -35,6 +38,7 @@
 - pushed_at: 2026-09-21
 - topics: hyperliquid, jev, quantitative-finance, typesafe
 - use_cases: trade or score financial signals; benchmark or calibrate Jev; review code or pull requests
+- rule: 242
 
 ### zadescoxp/Jev-Trades
 
@@ -46,6 +50,7 @@
 - pushed_at: 2026-09-25
 - topics: automated-testing, backtesting, crypto-trading-bot-latest, trading-bot-ai-automated
 - use_cases: trade or score financial signals; benchmark or calibrate Jev; learn how Jev works
+- rule: 242
 
 ### justinhe16/trade-jev
 
@@ -56,3 +61,4 @@
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; trade or score financial signals
+- rule: 242

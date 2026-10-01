@@ -1,10 +1,11 @@
-# 🧩 SDKs & Community Clients
+# 205 · SDKs & Community Clients
 
 > Unofficial clients for the languages without a first-party SDK.
 
 32 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
+
 ### pithings/advocaat
 
 - url: https://github.com/pithings/advocaat
@@ -14,6 +15,7 @@
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: score or rank candidates in a pipeline; extract structured fields from text; call Jev from a language SDK
+- rule: 205
 
 ### milvus-io/milvus-model
 
@@ -25,6 +27,7 @@
 - pushed_at: 2026-09-23
 - topics: ai, embedding, nlp, rag, reranker
 - use_cases: rerank search results; score or rank candidates in a pipeline; benchmark or calibrate Jev
+- rule: 205
 
 ### obie/ruby_decision_model
 
@@ -35,6 +38,7 @@
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: call Jev from a language SDK; monitor or observe Jev usage and cost; benchmark or calibrate Jev
+- rule: 205
 
 ### dannote/jev
 
@@ -45,6 +49,7 @@
 - license: MIT
 - pushed_at: 2026-09-26
 - use_cases: run Jev on open models without the vendor; learn how Jev works; extract structured fields from text
+- rule: 205
 
 ### kieranklaassen/ruby_llm-typesafe
 
@@ -55,6 +60,7 @@
 - license: MIT
 - pushed_at: 2026-09-29
 - use_cases: classify support tickets or messages; call Jev from a language SDK; score or rank candidates in a pipeline
+- rule: 205
 
 ### Twister915/typesafe-ai
 
@@ -65,6 +71,7 @@
 - license: Apache-2.0
 - pushed_at: 2026-09-16
 - use_cases: classify support tickets or messages; score or rank candidates in a pipeline; judge or verify an agent's output
+- rule: 205
 
 ### saibimajdi/typesafeai-dotnet-sdk
 
@@ -76,6 +83,7 @@
 - pushed_at: 2026-09-29
 - topics: ai, classification, csharp, dotnet, llm, sdk
 - use_cases: extract structured fields from text; score or rank candidates in a pipeline; judge or verify an agent's output
+- rule: 205
 
 ### Premo-Cloud/typesafe-sdk-java
 
@@ -87,6 +95,7 @@
 - pushed_at: 2026-09-25
 - topics: java, sdk, spring-boot, typesafe, jev, system-one
 - use_cases: call Jev from a language SDK; review code or pull requests; add Jev to a chat bot or Discord
+- rule: 205
 
 ### pambrose/jev4k
 
@@ -98,6 +107,7 @@
 - pushed_at: 2026-09-28
 - topics: jev, jev-api, kotlin, java, dsl, llm
 - use_cases: call Jev from a language SDK; classify support tickets or messages; add Jev to a chat bot or Discord
+- rule: 205
 
 ### Tangerg/typesafe-sdk-go
 
@@ -108,6 +118,7 @@
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: judge or verify an agent's output; review code or pull requests
+- rule: 205
 
 ### jomatsu/zod-jev
 
@@ -118,6 +129,7 @@
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: moderate content or detect abuse; classify support tickets or messages; benchmark or calibrate Jev
+- rule: 205
 
 ### joshmn/typesafe-sdk
 
@@ -128,6 +140,7 @@
 - license: MIT
 - pushed_at: 2026-09-26
 - use_cases: call Jev from a language SDK; score or rank candidates in a pipeline; classify support tickets or messages
+- rule: 205
 
 ### inanna-malick/jev-dsl
 
@@ -138,6 +151,7 @@
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: judge or verify an agent's output; review code or pull requests; compare Jev with an LLM
+- rule: 205
 
 ### gilljon/typesafe-ai-rs
 
@@ -149,6 +163,7 @@
 - pushed_at: 2026-09-17
 - topics: ai, api-client, rust, rust-sdk, typesafe
 - use_cases: score or rank candidates in a pipeline; review code or pull requests; judge or verify an agent's output
+- rule: 205
 
 ### Gaurav-Gosain/jev-go
 
@@ -159,6 +174,7 @@
 - license: MIT
 - pushed_at: 2026-09-16
 - use_cases: score or rank candidates in a pipeline; call Jev from a language SDK; judge or verify an agent's output
+- rule: 205
 
 ### jamesward/zio-typesafe-ai
 
@@ -169,6 +185,7 @@
 - license: Apache-2.0
 - pushed_at: 2026-09-23
 - use_cases: call Jev from a language SDK; score or rank candidates in a pipeline; judge or verify an agent's output
+- rule: 205
 
 ### Stumble/jev-go
 
@@ -179,6 +196,7 @@
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: call Jev from a language SDK; call Jev from the command line; review code or pull requests
+- rule: 205
 
 ### nshkrdotcom/typesafe_sdk
 
@@ -190,6 +208,7 @@
 - pushed_at: 2026-09-20
 - topics: agents, ai, ai-sdk, artificial-intelligence, elixir, function-calling
 - use_cases: extract structured fields from text; review code or pull requests; judge or verify an agent's output
+- rule: 205
 
 ### alterhq/typesafe-sdk-swift
 
@@ -200,6 +219,7 @@
 - license: MIT
 - pushed_at: 2026-09-15
 - use_cases: route requests through a gateway or proxy; review code or pull requests; control a phone or mobile app
+- rule: 205
 
 ### zhirschtritt/typesafe-go
 
@@ -211,6 +231,7 @@
 - pushed_at: 2026-09-29
 - topics: ai, jev, sdk, systemone, typesafe
 - use_cases: route requests through a gateway or proxy; review code or pull requests; pick which skill or prompt to load
+- rule: 205
 
 ### Butochnikov/laravel-typesafe-jev
 
@@ -221,6 +242,7 @@
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: score or rank candidates in a pipeline; judge or verify an agent's output; review code or pull requests
+- rule: 205
 
 ### Hawxy/TypeSafeAI.Net
 
@@ -232,6 +254,7 @@
 - pushed_at: 2026-09-19
 - topics: csharp, typesafe-ai, dotnet
 - use_cases: judge or verify an agent's output; classify support tickets or messages; score or rank candidates in a pipeline
+- rule: 205
 
 ### mateonunez/jod
 
@@ -243,6 +266,7 @@
 - pushed_at: 2026-09-17
 - topics: ai, jev, typesafe, zod
 - use_cases: judge or verify an agent's output; classify support tickets or messages; extract structured fields from text
+- rule: 205
 
 ### GenieRobot/typesafe-ai-rails
 
@@ -253,6 +277,7 @@
 - license: MIT
 - pushed_at: 2026-09-16
 - use_cases: monitor or observe Jev usage and cost; judge or verify an agent's output; score or rank candidates in a pipeline
+- rule: 205
 
 ### steven-shoemaker/hunch
 
@@ -264,6 +289,7 @@
 - pushed_at: 2026-09-22
 - topics: classification, jev, jev-ai, llm, python
 - use_cases: score or rank candidates in a pipeline; extract structured fields from text; judge or verify an agent's output
+- rule: 205
 
 ### AboveColin/jevclient
 
@@ -275,6 +301,7 @@
 - pushed_at: 2026-09-21
 - topics: async, asyncio, classification, jev, python, typesafe
 - use_cases: score or rank candidates in a pipeline; build a game or simulation on Jev; benchmark or calibrate Jev
+- rule: 205
 
 ### Butochnikov/typesafe-sdk-php
 
@@ -285,6 +312,7 @@
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: classify support tickets or messages; score or rank candidates in a pipeline; label data or build a dataset
+- rule: 205
 
 ### AbdelStark/s1-rs
 
@@ -296,6 +324,7 @@
 - pushed_at: 2026-09-16
 - topics: machine-learning, sdk, typesafe-ai
 - use_cases: judge or verify an agent's output; classify support tickets or messages; score or rank candidates in a pipeline
+- rule: 205
 
 ### AbdelStark/typesafe-rs
 
@@ -307,6 +336,7 @@
 - pushed_at: 2026-09-16
 - topics: machine-learning, typesafe-ai
 - use_cases: score or rank candidates in a pipeline; judge or verify an agent's output; extract structured fields from text
+- rule: 205
 
 ### DomMonte/n8n-nodes-typesafe-ai
 
@@ -317,6 +347,7 @@
 - license: MIT
 - pushed_at: 2026-09-21
 - use_cases: score or rank candidates in a pipeline; classify support tickets or messages; benchmark or calibrate Jev
+- rule: 205
 
 ### kunobi-ninja/kunobi-jev
 
@@ -327,6 +358,7 @@
 - license: Apache-2.0
 - pushed_at: 2026-09-24
 - use_cases: score or rank candidates in a pipeline; call Jev from a language SDK; classify support tickets or messages
+- rule: 205
 
 ### bariskisir/JevSharp
 
@@ -337,3 +369,4 @@
 - license: MIT
 - pushed_at: 2026-09-24
 - use_cases: route requests through a gateway or proxy; call Jev from a language SDK; run Jev on open models without the vendor
+- rule: 205

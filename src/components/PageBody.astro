@@ -1,0 +1,173 @@
+---
+import Directory from '../components/Directory.astro';
+import { REPO, SITE, DISCORD, DOCS, load, stats, fmtStars, CATEGORIES, LANGS } from '../lib/catalog.mjs';
+import { COPY, CURATION_STAGES } from '../lib/copy.mjs';
+
+/**
+ * The page body, shared by the root (English) route and the [lang] routes.
+ * Extracted so all three languages render from one template — the same reason
+ * the READMEs are generated: three copies of this markup would drift.
+ */
+const { lang, byCat, updated, entries } = Astro.props;
+const c = COPY[lang];
+const s = stats(entries, updated);
+const cats = CATEGORIES.filter((cat) => (byCat.get(cat.id) || []).length);
+
+const intentRows = c.intents.map((i) => {
+  const cat = CATEGORIES.find((x) => x.id === i.to);
+  return { ...i, stamp: cat?.stamp || '—', n: (byCat.get(i.to) || []).length };
+});
+
+const stages = CURATION_STAGES[lang];
+
+const machine = [
+  ['llms.txt', lang === 'zh' ? '模型索引' : lang === 'fr' ? 'Index pour modèles' : 'Index for models'],
+  ['llms-full.txt', lang === 'zh' ? '全部条目（markdown）' : lang === 'fr' ? 'Toutes les entrées (markdown)' : 'Every entry (markdown)'],
+  ['skill.md', lang === 'zh' ? '可安装技能' : lang === 'fr' ? 'Skill installable' : 'Installable skill'],
+  ['projects.json', lang === 'zh' ? '结构化数据' : lang === 'fr' ? 'Données structurées' : 'Structured data'],
+  ['c/context.md', lang === 'zh' ? '单个分类' : lang === 'fr' ? 'Une catégorie' : 'One category'],
+];
+
+const readmes = LANGS.map((l) => ({
+  l,
+  href: `${REPO}/blob/main/${l === 'en' ? 'README' : `README.${l}`}.md`,
+}));
+---
+
+<Fragment>
+  <section class="counts" aria-label={c.countsTitle}>
+    <div class="count">
+      <div class="n">{fmtStars(s.entries)}</div>
+      <div class="l">{c.counts.entries}</div>
+    </div>
+    <div class="count">
+      <div class="n">{fmtStars(s.stars)}</div>
+      <div class="l">{c.counts.stars}</div>
+    </div>
+    <div class="count">
+      <div class="n">{s.categories}</div>
+      <div class="l">{c.counts.categories}</div>
+    </div>
+    <div class="count">
+      <div class="n">{s.languages}</div>
+      <div class="l">{c.counts.languages}</div>
+    </div>
+    <div class="count">
+      <div class="n">0</div>
+      <div class="l">{c.counts.keys}</div>
+    </div>
+  </section>
+
+  <section class="intents" id="intents">
+    <h2>{c.intentsTitle}</h2>
+    <p class="lede">{c.intentsLede}</p>
+    <div class="intent-list">
+      {intentRows.map((r) => (
+        <a class="intent-row" href={`#${r.id}`}>
+          <span class="intent-no">{r.stamp}</span>
+          <span class="intent-what">{r.what}</span>
+          <span class="intent-where">{r.why}</span>
+          <span class="intent-n">{r.n}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <Directory
+    lang={lang}
+    byCat={byCat}
+    dirTitle={c.dirTitle}
+    dirLede={c.dirLede}
+    searchLabel={c.search.label}
+    searchPlaceholder={c.search.placeholder}
+    searchAll={c.search.all}
+    searchNone={c.search.none}
+    searchNoneHint={c.search.noneHint}
+    noStars={lang === 'zh' ? '文档' : 'doc'}
+  />
+
+  <section class="section" id="curation">
+    <h2 class="section-head">{c.curatedTitle}</h2>
+    <p class="lede">{c.curatedLede}</p>
+    <div class="stages">
+      {stages.map((stage) => (
+        <div class="stage">
+          <span class="cmd">{stage.cmd}</span>
+          <span class="name">{stage.name}</span>
+          <span class="what">{stage.what}</span>
+        </div>
+      ))}
+    </div>
+    <p class="note">{c.curatedNote}</p>
+    <p class="note"><a href={`${REPO}/blob/main/AGENTS.md`} rel="noopener">{c.curatedMore}</a></p>
+  </section>
+
+  <section class="section" id="faq">
+    <h2 class="section-head">{c.faqTitle}</h2>
+    <div class="faq">
+      {c.faq.map((f, i) => (
+        <details>
+          <summary>
+            <span>{f.q}</span>
+            <span class="q-no">Q{i + 1}</span>
+          </summary>
+          <p class="a">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot-grid">
+      <div class="foot-col">
+        <h3>{c.footer.about}</h3>
+        <ul>
+          {cats.slice(0, 7).map((cat) => (
+            <li><a href={`#${cat.id}`}>{cat.stamp} · {cat[lang] || cat.en}</a></li>
+          ))}
+          <li><a href="#intents">{c.intentsTitle}</a></li>
+          <li><a href="#faq">{c.faqTitle}</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>{c.footer.machine}</h3>
+        <ul>
+          {machine.map(([href, label]) => (
+            <li><a href={`${SITE}/${href}`} rel="noopener">{label}</a></li>
+          ))}
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h3>{c.footer.project}</h3>
+        <ul>
+          <li><a href={REPO} rel="noopener">GitHub</a></li>
+          {readmes.map((r) => (
+            <li><a href={r.href} rel="noopener">README · {COPY[r.l].langName(r.l)}</a></li>
+          ))}
+          <li><a href={DISCORD} rel="noopener">Discord</a></li>
+          <li><a href={DOCS} rel="noopener">{lang === 'zh' ? '官方文档' : lang === 'fr' ? 'Documentation' : 'Docs'}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="colophon">
+      <span>{c.footer.notAffiliated}</span>
+      <span>{c.footer.snapshot} {updated}</span>
+      <span>{c.footer.license} CC0-1.0</span>
+    </div>
+  </footer>
+</Fragment>
+
+<style>
+  .lede {
+    margin: 0.75rem 0 0;
+    color: var(--ink-70);
+    max-width: 68ch;
+  }
+
+  .note {
+    margin: 1.1rem 0 0;
+    color: var(--ink-70);
+    font-size: 0.88rem;
+    max-width: 72ch;
+  }
+</style>

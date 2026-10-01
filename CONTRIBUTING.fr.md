@@ -11,7 +11,7 @@ dans les trois langues à la fois.
 1. Fork et branche : `git checkout -b add-your-repo`
 2. Ajoutez un objet à `data/entries.json` (schéma ci-dessous), dans les trois langues
 3. `node scripts/verify.mjs` — doit passer avec 0 erreur
-4. `node scripts/build-readme.mjs && node site/build.mjs` — regénérer
+4. `npm run build` — regénérer
 5. Ouvrez la PR avec le modèle, titre `Add owner/repo to Category`
 
 C'est tout. Les tableaux des trois README, le site et les exports lisibles par machine sont

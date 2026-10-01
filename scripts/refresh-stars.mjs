@@ -134,10 +134,12 @@ async function main() {
   }
 
   if (RENDER) {
+    // `npm run build` rather than the raw scripts: the site is an Astro build now,
+    // and calling astro directly here would skip the AI artifacts that step 2 writes.
     for (const [cmd, args2] of [
       ['node', ['scripts/verify.mjs']],
       ['node', ['scripts/build-readme.mjs']],
-      ['node', ['site/build.mjs']],
+      ['npm', ['run', 'build']],
     ]) {
       const r = spawnSync(cmd, args2, { stdio: 'inherit', shell: process.platform === 'win32' });
       if (r.status !== 0) {

@@ -1,61 +1,67 @@
-# 🧠 Open Models & Replicas
+# 229 · Open Models & Replicas
 
 > Run System One semantics without the vendor — on a 3090 if you like.
 
 41 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
+
 ### jaredpalmer/kev
 
 - url: https://github.com/jaredpalmer/kev
 - description: LoRA adapter and readout head on Qwen2.5-0.5B that answers many typed questions in one prefill; trains in under two hours on a MacBook, held-out ECE 0.065, speaks the TypeSafe wire format.
-- stars: 7,998
+- stars: 7 998
 - language: Python
 - license: Apache-2.0
 - pushed_at: 2026-09-30
 - topics: decision-model, jev, qwen3
 - use_cases: run Jev on open models without the vendor; call Jev from a language SDK; benchmark or calibrate Jev
+- rule: 229
 
 ### TheoLeeCJ/SemIf
 
 - url: https://github.com/TheoLeeCJ/SemIf
 - description: Semantic ifs from open models on a single 3090; the most starred independent replica, formerly openjev.
-- stars: 4,604
+- stars: 4 604
 - language: Python
 - license: MIT
 - pushed_at: 2026-09-23
 - use_cases: run Jev on open models without the vendor; compare Jev with an LLM; gate or approve tool calls before they run
+- rule: 229
 
 ### TianyuCodings/NanoJev
 
 - url: https://github.com/TianyuCodings/NanoJev
 - description: 0.6B replica with parallel decisions, dynamic candidates, and an end-to-end training pipeline.
-- stars: 2,445
+- stars: 2 445
 - language: Python
 - license: MIT
 - pushed_at: 2026-09-21
 - use_cases: build a game or simulation on Jev; run Jev on open models without the vendor; benchmark or calibrate Jev
+- rule: 229
 
 ### vinnylarouge/jevlike
 
 - url: https://github.com/vinnylarouge/jevlike
 - description: Open option scorer that reads candidate logits instead of generating JSON.
-- stars: 1,335
+- stars: 1 335
 - language: Python
 - license: MIT
 - pushed_at: 2026-09-16
 - use_cases: score or rank candidates in a pipeline; run Jev on open models without the vendor; judge or verify an agent's output
+- rule: 229
 
 ### ollaya-dev/ollaya
 
 - url: https://github.com/ollaya-dev/ollaya
 - description: Pulls and serves open decision models such as Laya, kev, and JevK5 behind a TypeSafe-compatible local endpoint, the way Ollama serves LLMs.
-- stars: 1,011
+- stars: 1 011
 - language: Rust
 - license: Apache-2.0
 - pushed_at: 2026-09-29
 - topics: classification, decision-models, jev, laya, llm-routing, local-inference
 - use_cases: run Jev on open models without the vendor; classify support tickets or messages; benchmark or calibrate Jev
+- rule: 229
 
 ### Mapika/decider
 
@@ -66,6 +72,7 @@
 - license: Apache-2.0
 - pushed_at: 2026-09-30
 - use_cases: score or rank candidates in a pipeline; classify support tickets or messages; judge or verify an agent's output
+- rule: 229
 
 ### nokia-applied-research/AnyJev
 
@@ -77,6 +84,7 @@
 - pushed_at: 2026-09-28
 - topics: calibration, decision-model, jev, jev-model, llm, system-one
 - use_cases: run Jev on open models without the vendor; benchmark or calibrate Jev; call Jev from the command line
+- rule: 229
 
 ### wfzyx/von
 
@@ -88,6 +96,7 @@
 - pushed_at: 2026-09-30
 - topics: decision-model, jev, machine-learning, python, rlcd, system-one
 - use_cases: run Jev on open models without the vendor; score or rank candidates in a pipeline; call Jev from a language SDK
+- rule: 229
 
 ### Rizzo-AI-Academy/rizzo-flow
 
@@ -98,6 +107,7 @@
 - license: Apache-2.0
 - pushed_at: 2026-09-25
 - use_cases: run Jev on open models without the vendor; score or rank candidates in a pipeline; classify support tickets or messages
+- rule: 229
 
 ### featherless-ai/simple-jev
 
@@ -108,6 +118,7 @@
 - license: Apache-2.0
 - pushed_at: 2026-09-30
 - use_cases: run Jev on open models without the vendor; judge or verify an agent's output; extract structured fields from text
+- rule: 229
 
 ### Liuziyu77/Valen
 
@@ -118,6 +129,7 @@
 - license: Apache-2.0
 - pushed_at: 2026-09-30
 - use_cases: score or rank candidates in a pipeline; judge or verify an agent's output; review code or pull requests
+- rule: 229
 
 ### razorback16/openjev
 
@@ -128,6 +140,7 @@
 - license: Apache-2.0
 - pushed_at: 2026-09-29
 - use_cases: run Jev on open models without the vendor; call Jev from a language SDK; compare Jev with an LLM
+- rule: 229
 
 ### Yinsongxu/LLM2Jev
 
@@ -139,6 +152,7 @@
 - pushed_at: 2026-09-26
 - topics: jev, llm, mllm
 - use_cases: run Jev on open models without the vendor; compare Jev with an LLM; score or rank candidates in a pipeline
+- rule: 229
 
 ### ekzhang/openjev-sglang
 
@@ -149,6 +163,7 @@
 - pushed_at: 2026-09-25
 - topics: jev, llm, structured-generation, systemone
 - use_cases: run Jev on open models without the vendor; extract structured fields from text; benchmark or calibrate Jev
+- rule: 229
 
 ### malevrigns/agent-jev
 
@@ -159,6 +174,7 @@
 - license: Apache-2.0
 - pushed_at: 2026-09-23
 - use_cases: gate or approve tool calls before they run; score or rank candidates in a pipeline; benchmark or calibrate Jev
+- rule: 229
 
 ### hr98w/jev-visual
 
@@ -169,6 +185,7 @@
 - license: MIT
 - pushed_at: 2026-09-21
 - use_cases: run Jev on open models without the vendor; score or rank candidates in a pipeline; judge or verify an agent's output
+- rule: 229
 
 ### Heman10x-NGU/openJev-verdict-2.0
 
@@ -180,6 +197,7 @@
 - pushed_at: 2026-09-20
 - topics: agentic-ai, brier-score, calibration, decision-engine, deep-learning, machine-learning
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; run Jev on open models without the vendor
+- rule: 229
 
 ### logan-markewich/jeff
 
@@ -191,6 +209,7 @@
 - pushed_at: 2026-09-20
 - topics: classification, encoder, gliner, jev, typesafe
 - use_cases: run Jev on open models without the vendor; score or rank candidates in a pipeline; compare Jev with an LLM
+- rule: 229
 
 ### togethercomputer/tev1
 
@@ -201,6 +220,7 @@
 - license: MIT
 - pushed_at: 2026-09-24
 - use_cases: classify support tickets or messages; benchmark or calibrate Jev; compare Jev with an LLM
+- rule: 229
 
 ### kshetrajna12/reflex
 
@@ -211,6 +231,7 @@
 - license: MIT
 - pushed_at: 2026-09-27
 - use_cases: run Jev on open models without the vendor; classify support tickets or messages; compare Jev with an LLM
+- rule: 229
 
 ### allebee/jevk5
 
@@ -222,6 +243,7 @@
 - pushed_at: 2026-09-28
 - topics: calibration, decision-model, jev, jevbench, lora, qwen
 - use_cases: run Jev on open models without the vendor; benchmark or calibrate Jev; compare Jev with an LLM
+- rule: 229
 
 ### daseinlabs/open-jev
 
@@ -232,6 +254,7 @@
 - license: MIT
 - pushed_at: 2026-09-30
 - use_cases: run Jev on open models without the vendor; score or rank candidates in a pipeline; learn how Jev works
+- rule: 229
 
 ### mmastrac/djev
 
@@ -242,6 +265,7 @@
 - license: Apache-2.0
 - pushed_at: 2026-09-24
 - use_cases: benchmark or calibrate Jev; run Jev on open models without the vendor; learn how Jev works
+- rule: 229
 
 ### Heman10x-NGU/Verdict-open-jev
 
@@ -253,6 +277,7 @@
 - pushed_at: 2026-09-28
 - topics: brier-score, calibration, decision-engine, edge-ai, gliclass, jev
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; run Jev on open models without the vendor
+- rule: 229
 
 ### zwliJay/jev-forge
 
@@ -263,6 +288,7 @@
 - license: NOASSERTION
 - pushed_at: 2026-09-23
 - use_cases: benchmark or calibrate Jev; score or rank candidates in a pipeline; run Jev on open models without the vendor
+- rule: 229
 
 ### kikoncuo/jevfire
 
@@ -274,6 +300,7 @@
 - pushed_at: 2026-09-18
 - topics: cuda, game-ai, inference, jev, llm, parallel-decoding
 - use_cases: benchmark or calibrate Jev; run Jev on open models without the vendor; build a game or simulation on Jev
+- rule: 229
 
 ### bnsd55/jevmlx
 
@@ -285,6 +312,7 @@
 - pushed_at: 2026-09-25
 - topics: apple-silicon, jev, local-llm, local-models, mlx
 - use_cases: extract structured fields from text; run Jev on open models without the vendor; score or rank candidates in a pipeline
+- rule: 229
 
 ### r-ms/mini-jev
 
@@ -295,6 +323,7 @@
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: compare Jev with an LLM; benchmark or calibrate Jev; judge or verify an agent's output
+- rule: 229
 
 ### ikermoel/open-alternative-jev
 
@@ -306,6 +335,7 @@
 - pushed_at: 2026-09-25
 - topics: calibration, classification, llm, transformers, vllm, jev
 - use_cases: run Jev on open models without the vendor; compare Jev with an LLM; judge or verify an agent's output
+- rule: 229
 
 ### zhengxuyu/litjev
 
@@ -316,6 +346,7 @@
 - license: Apache-2.0
 - pushed_at: 2026-09-21
 - use_cases: run Jev on open models without the vendor; score or rank candidates in a pipeline; compare Jev with an LLM
+- rule: 229
 
 ### OmniJev/PlayJev
 
@@ -327,6 +358,7 @@
 - pushed_at: 2026-09-24
 - topics: browser-games, game-ai, game-playing-agent, html5-games, imitation-learning, jev
 - use_cases: run Jev on open models without the vendor; compare Jev with an LLM; drive a browser or GUI with an agent
+- rule: 229
 
 ### JoshuaSP/open-jev
 
@@ -337,6 +369,7 @@
 - license: MIT
 - pushed_at: 2026-09-16
 - use_cases: compare Jev with an LLM; judge or verify an agent's output; extract structured fields from text
+- rule: 229
 
 ### iammrduncan/typesafe-ai-benchmark
 
@@ -347,6 +380,7 @@
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: compare Jev with an LLM; benchmark or calibrate Jev; judge or verify an agent's output
+- rule: 229
 
 ### mithalouni/system-one-open
 
@@ -357,6 +391,7 @@
 - license: NOASSERTION
 - pushed_at: 2026-09-17
 - use_cases: classify support tickets or messages; run Jev on open models without the vendor; compare Jev with an LLM
+- rule: 229
 
 ### zhihz/openjev
 
@@ -367,6 +402,7 @@
 - license: NOASSERTION
 - pushed_at: 2026-09-16
 - use_cases: score or rank candidates in a pipeline; judge or verify an agent's output; run Jev on open models without the vendor
+- rule: 229
 
 ### rorshopping/jev-on-a-laptop
 
@@ -377,6 +413,7 @@
 - license: NOASSERTION
 - pushed_at: 2026-09-17
 - use_cases: run Jev on open models without the vendor; compare Jev with an LLM; benchmark or calibrate Jev
+- rule: 229
 
 ### olanotolu/jevbetter
 
@@ -387,6 +424,7 @@
 - license: MIT
 - pushed_at: 2026-09-16
 - use_cases: score or rank candidates in a pipeline; benchmark or calibrate Jev; pick which skill or prompt to load
+- rule: 229
 
 ### genai-craft/openvons
 
@@ -398,6 +436,7 @@
 - pushed_at: 2026-09-21
 - topics: calibration, decision-model, japanese, speech-recognition, voice-commands, whisper
 - use_cases: gate or approve tool calls before they run; benchmark or calibrate Jev; compare Jev with an LLM
+- rule: 229
 
 ### amithgc/local-jev
 
@@ -408,6 +447,7 @@
 - license: MIT
 - pushed_at: 2026-09-21
 - use_cases: run Jev on open models without the vendor; classify support tickets or messages; compare Jev with an LLM
+- rule: 229
 
 ### David-Lolly/Jev-Compatible
 
@@ -417,6 +457,7 @@
 - language: Python
 - pushed_at: 2026-09-21
 - use_cases: score or rank candidates in a pipeline; classify support tickets or messages; run Jev on open models without the vendor
+- rule: 229
 
 ### metask-ai/metask-jev
 
@@ -426,3 +467,4 @@
 - language: Python
 - pushed_at: 2026-09-22
 - use_cases: benchmark or calibrate Jev; score or rank candidates in a pipeline; compare Jev with an LLM
+- rule: 229

@@ -17,7 +17,7 @@ confidence out).
 | --- | --- |
 | `data/entries.json` | humans and the curator — **hand-edited** |
 | `README.md`, `README.zh.md`, `README.fr.md` | `scripts/build-readme.mjs` — **generated** between `<!-- entries:start -->` and `<!-- entries:end -->` |
-| `docs/**`, `llms.txt`, `llms-full.txt`, `skill.md`, `projects.json` | `site/build.mjs` — **generated** |
+| `docs/**`, `llms.txt`, `llms-full.txt`, `skill.md`, `projects.json` | `npm run build` — Astro then `scripts/build-ai-artifacts.mjs` — **generated** |
 
 Never hand-edit a generated file. If a README row is wrong, fix the data and re-render.
 This is what keeps English, 中文 and Français from drifting apart.
@@ -30,7 +30,7 @@ node scripts/refresh-stars.mjs     # GitHub API refresh → re-renders README + 
 node scripts/translate.mjs --lang zh,fr   # fill missing translations on free models
 node scripts/curate.mjs            # free-AI health audit or PR triage → curator-report.md
 node scripts/build-readme.mjs      # render the three READMEs (--check in CI)
-node site/build.mjs                # render docs/ + machine-readable exports
+npm run build                      # Astro → docs/ + machine-readable exports
 node scripts/import-seed.mjs <projects.json>   # re-seed from a community CC0 dump
 node scripts/check-workflows.mjs   # parse every workflow, flag block-scalar breakage
 node scripts/check-translations.mjs # exercise the per-entry translation gate

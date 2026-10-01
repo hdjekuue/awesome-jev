@@ -1,19 +1,21 @@
-# 🗜️ Context & Compaction
+# 131 · Context & Compaction
 
 > Decide what stays in the window before the model ever reads it.
 
 6 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
+
 ### tamaratran/fast-jev-compaction
 
 - url: https://github.com/tamaratran/fast-jev-compaction
 - description: Replaces the compaction summary with Jev decisions: every tool call and result scored in one request, stale ones dropped, everything kept stays verbatim.
-- stars: 7,225
+- stars: 7 225
 - language: TypeScript
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: compact or prune agent context; judge or verify an agent's output; benchmark or calibrate Jev
+- rule: 131
 
 ### tamaratran/jev-pruner
 
@@ -24,6 +26,7 @@
 - license: MIT
 - pushed_at: 2026-09-30
 - use_cases: compact or prune agent context; judge or verify an agent's output; review code or pull requests
+- rule: 131
 
 ### GhalebDweikat/winnow
 
@@ -35,6 +38,7 @@
 - pushed_at: 2026-09-30
 - topics: claude-code, claude-code-plugin, context-management, jev, llm-agents, typesafe
 - use_cases: compact or prune agent context; judge or verify an agent's output; compare Jev with an LLM
+- rule: 131
 
 ### IAmUnbounded/save-token-jev-clean
 
@@ -45,6 +49,7 @@
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: compact or prune agent context; judge or verify an agent's output; run Jev on open models without the vendor
+- rule: 131
 
 ### joelhooks/pi-fast-jev-compaction
 
@@ -55,6 +60,7 @@
 - license: MIT
 - pushed_at: 2026-09-18
 - use_cases: compact or prune agent context; benchmark or calibrate Jev; compare Jev with an LLM
+- rule: 131
 
 ### Nyarlathoteppppp/pi-heed
 
@@ -66,3 +72,4 @@
 - pushed_at: 2026-09-19
 - topics: ai-agents, coding-agent, guardrails, jev, pi-coding-agent, pi-package
 - use_cases: gate or approve tool calls before they run; compact or prune agent context; judge or verify an agent's output
+- rule: 131

@@ -65,7 +65,7 @@ jobs:
           set -e
           node scripts/verify.mjs
           node scripts/build-readme.mjs
-          node site/build.mjs >/dev/null
+          npm run build
 
       - name: Open a PR with the new translations
         id: cpr

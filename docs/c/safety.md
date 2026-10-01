@@ -1,10 +1,11 @@
-# 🛡️ Safety, Moderation & Verification
+# 179 · Safety, Moderation & Verification
 
 > Guardrails, prompt-injection checks, judges that abstain.
 
 14 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
+
 ### leepokai/jev-guard
 
 - url: https://github.com/leepokai/jev-guard
@@ -15,6 +16,7 @@
 - pushed_at: 2026-09-28
 - topics: ai-agents, claude-code, codex, cursor, gemini-cli, hooks
 - use_cases: gate or approve tool calls before they run; detect prompt injection or risky commands; judge or verify an agent's output
+- rule: 179
 
 ### brainstormity/Jev-Moderation-Bot
 
@@ -25,6 +27,7 @@
 - license: MIT
 - pushed_at: 2026-09-22
 - use_cases: moderate content or detect abuse; add Jev to a chat bot or Discord; voice or realtime decisions
+- rule: 179
 
 ### DanRWilloughby/snifftest
 
@@ -36,6 +39,7 @@
 - pushed_at: 2026-09-18
 - topics: ai-writing, claude-code, claude-code-plugin, claude-skills, github-action, jev
 - use_cases: judge or verify an agent's output; moderate content or detect abuse; review code or pull requests
+- rule: 179
 
 ### luantak/is-malicious
 
@@ -47,6 +51,7 @@
 - pushed_at: 2026-09-23
 - topics: jev, security-scanner, typesafe-ai, static-analysis, static-analysis-tools, supply-chain-security
 - use_cases: call Jev from the command line; review code or pull requests; judge or verify an agent's output
+- rule: 179
 
 ### MarissaFamularo/citation-verifier
 
@@ -58,6 +63,7 @@
 - pushed_at: 2026-09-17
 - topics: citation-verification, claude, peer-review, typesafe
 - use_cases: judge or verify an agent's output; label data or build a dataset; compare Jev with an LLM
+- rule: 179
 
 ### scale-venture-partners/riff
 
@@ -68,6 +74,7 @@
 - license: MIT
 - pushed_at: 2026-09-29
 - use_cases: judge or verify an agent's output; compare Jev with an LLM; review code or pull requests
+- rule: 179
 
 ### caiovicentino/jev-shield
 
@@ -79,6 +86,7 @@
 - pushed_at: 2026-09-17
 - topics: ai-safety, mcp, prompt-injection, security, vercel-ai-gateway
 - use_cases: gate or approve tool calls before they run; detect prompt injection or risky commands; route requests through a gateway or proxy
+- rule: 179
 
 ### noelzappy/tripwire
 
@@ -90,6 +98,7 @@
 - pushed_at: 2026-09-18
 - topics: ai-sdk, guardrails, llm, pii, prompt-injection
 - use_cases: route requests through a gateway or proxy; detect prompt injection or risky commands; moderate content or detect abuse
+- rule: 179
 
 ### teyhouse/jev-secret-detection
 
@@ -99,6 +108,7 @@
 - language: Python
 - pushed_at: 2026-09-18
 - use_cases: benchmark or calibrate Jev; judge or verify an agent's output; compare Jev with an LLM
+- rule: 179
 
 ### santos-sanz/jev-audio-beeper
 
@@ -108,6 +118,7 @@
 - language: TypeScript
 - pushed_at: 2026-09-17
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; voice or realtime decisions
+- rule: 179
 
 ### asfarsadewa/human-compiler
 
@@ -118,6 +129,7 @@
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: judge or verify an agent's output; benchmark or calibrate Jev; moderate content or detect abuse
+- rule: 179
 
 ### DansiDanutz/fake-real-jev
 
@@ -129,6 +141,7 @@
 - pushed_at: 2026-09-26
 - topics: evidence-verification, fact-checking, javascript, jev, typesafe
 - use_cases: judge or verify an agent's output; learn how Jev works; moderate content or detect abuse
+- rule: 179
 
 ### paulgoodchild/SkillsCheck
 
@@ -138,6 +151,7 @@
 - language: JavaScript
 - pushed_at: 2026-09-21
 - use_cases: detect prompt injection or risky commands; moderate content or detect abuse; judge or verify an agent's output
+- rule: 179
 
 ### hteariH/stopspam-jev-bot
 
@@ -147,3 +161,4 @@
 - language: Python
 - pushed_at: 2026-09-21
 - use_cases: moderate content or detect abuse; run Jev on open models without the vendor; benchmark or calibrate Jev
+- rule: 179

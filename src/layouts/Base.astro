@@ -1,0 +1,228 @@
+---
+import '../styles/decision-table.css';
+import {
+  LANGS, LANG_META, PATH_FOR, REPO, SITE, BASE, DISCORD, DOCS, API,
+} from '../lib/catalog.mjs';
+import { COPY } from '../lib/copy.mjs';
+
+/**
+ * JSON-LD graph. Same six node types the previous build shipped, so no ranking
+ * signal is lost in the redesign: WebSite, CollectionPage, ItemList with one
+ * position per repository, FAQPage, DefinedTermSet for the three primitives, and
+ * a BreadcrumbList whose items are the rule numbers.
+ */
+function jsonLd(lang, { entries, cats, updated }) {
+  const c = COPY[lang];
+  const url = `${SITE}${PATH_FOR[lang]}`;
+  const meta = LANG_META[lang];
+  const repos = entries.filter((e) => e.kind === 'repo');
+  const pos = new Map(repos.map((e, i) => [e.url, i + 1]));
+
+  return JSON.stringify({
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        '@id': `${url}#website`,
+        url,
+        name: 'Awesome Jev',
+        inLanguage: meta.ogLocale,
+        description: c.hero.lede.replace(/<[^>]+>/g, ''),
+        publisher: { '@type': 'Organization', name: 'awesome-jev', url: `https://github.com/${url.split('/')[2]}` },
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: { '@type': 'EntryPoint', urlTemplate: `${url}?q={search_term_string}` },
+          'query-input': 'required name=search_term_string',
+        },
+      },
+      {
+        '@type': 'CollectionPage',
+        '@id': `${url}#collection`,
+        url,
+        name: `Awesome Jev — ${c.dirTitle}`,
+        description: c.dirLede,
+        inLanguage: meta.ogLocale,
+        isPartOf: { '@id': `${url}#website` },
+        dateModified: updated,
+        about: {
+          '@type': 'SoftwareApplication',
+          name: 'Jev',
+          applicationCategory: 'DeveloperApplication',
+          operatingSystem: 'Any',
+          url: 'https://typesafe.ai',
+          description: 'TypeSafe AI System One decision model returning typed answers with calibrated probabilities.',
+        },
+      },
+      {
+        '@type': 'ItemList',
+        '@id': `${url}#list`,
+        name: c.dirTitle,
+        description: c.dirLede,
+        numberOfItems: repos.length,
+        itemListOrder: 'https://schema.org/ItemListOrderDescending',
+        itemListElement: repos.map((e) => ({
+          '@type': 'ListItem',
+          position: pos.get(e.url),
+          url: e.url,
+          name: e.name,
+          description: lang === 'zh' ? (e.descriptionZh || e.description) : lang === 'fr' ? (e.descriptionFr || e.description) : e.description,
+        })),
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': `${url}#faq`,
+        mainEntity: c.faq.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      },
+      {
+        '@type': 'DefinedTermSet',
+        '@id': `${url}#primitives`,
+        name: 'Jev question primitives',
+        hasDefinedTerm: [
+          { '@type': 'DefinedTerm', name: 'choice', description: 'Pick one option from a list → choice, probabilities, confidence' },
+          { '@type': 'DefinedTerm', name: 'score', description: 'Rate the state against a rubric → score, probabilities, confidence' },
+          { '@type': 'DefinedTerm', name: 'noul', description: 'Is this statement true? → noul (0–1)' },
+        ],
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': `${url}#breadcrumb`,
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Awesome Jev', item: url },
+          ...cats.map((cat, i) => ({
+            '@type': 'ListItem',
+            position: i + 2,
+            name: cat[lang] || cat.en,
+            item: `${url}#${cat.id}`,
+          })),
+        ],
+      },
+    ],
+  });
+}
+
+const title = (lang) =>
+  lang === 'zh'
+    ? 'Awesome Jev — 万物皆决策 | Jev 生态项目精选目录'
+    : lang === 'fr'
+      ? 'Awesome Jev — Tout est décision | Annuaire des projets Jev'
+      : 'Awesome Jev — Everything is a Decision | The directory of projects built on Jev';
+
+const keywords = (lang) => {
+  const base = [
+    'awesome list', 'Jev', 'jev', 'TypeSafe AI', 'System One', 'typesafe-ai',
+    'AI decision model', 'calibrated probabilities', 'structured output', 'LLM evaluation',
+    'agent harness', 'model router', 'tool gating', 'context compaction', 'LLM guardrails',
+    'reranker', 'MCP server', 'open models', 'AI agents',
+  ];
+  const zh = ['精选列表', 'Jev 教程', '大模型', '智能体', '模型路由', '上下文压缩', '安全护栏', '开源模型', '决策模型'];
+  const fr = ['liste awesome', 'Jev tutoriel', 'IA', 'agents', 'routage de modèles', 'compaction de contexte', 'garde-fous IA', 'modèles ouverts'];
+  if (lang === 'zh') return [...zh, ...base];
+  if (lang === 'fr') return [...fr, ...base];
+  return base;
+};
+
+const props = Astro.props;
+const { lang, entries, cats, updated } = props;
+const c = COPY[lang];
+const meta = LANG_META[lang];
+const pageUrl = `${SITE}${PATH_FOR[lang]}`;
+const titleText = title(lang);
+const description = c.dirLede;
+
+const alternates = LANGS.map(
+  (l) => `<link rel="alternate" hreflang="${LANG_META[l].hreflang}" href="${SITE}${PATH_FOR[l]}" />`,
+);
+
+const machineLinks = [
+  ['llms.txt', 'text/plain', 'Awesome Jev for language models'],
+  ['llms-full.txt', 'text/plain', 'Every entry as markdown'],
+  ['skill.md', 'text/markdown', 'Installable agent skill'],
+  ['projects.json', 'application/json', 'Structured records'],
+];
+---
+
+<!doctype html>
+<html lang={meta.ogLocale} dir={meta.dir}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{titleText}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords(lang).join(', ')} />
+    <meta name="author" content="awesome-jev" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta name="theme-color" content="#fbfaf6" />
+    <link rel="canonical" href={pageUrl} />
+    {alternates.map((h) => <Fragment set:html={h} />)}
+    <link rel="alternate" hreflang="x-default" href={`${SITE}/`} />
+    <link
+      rel="icon"
+      href={`data:image/svg+xml,${encodeURIComponent(
+        `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="#fbfaf6"/><path d="M3 6h26M3 15h26M3 24h26" stroke="#14130f" stroke-width="2"/><path d="M9 3v26M21 3v26" stroke="#b3261e" stroke-width="1"/></svg>`,
+      )}`}
+    />
+    <link rel="preload" href={`${BASE}/fonts/archivo-latin.woff2`} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={`${BASE}/fonts/dmmono-latin.woff2`} as="font" type="font/woff2" crossorigin />
+    {machineLinks.map(([href, type, title]) => (
+      <link rel="alternate" type={type} href={`${SITE}/${href}`} title={title} />
+    ))}
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Awesome Jev" />
+    <meta property="og:title" content={titleText} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:locale" content={meta.ogLocale} />
+    {LANGS.filter((l) => l !== lang).map((l) => (
+      <meta property="og:locale:alternate" content={LANG_META[l].ogLocale} />
+    ))}
+    <meta property="og:image" content={`${SITE}/assets/og.svg`} />
+    <meta property="og:image:alt" content={`Awesome Jev — ${entries.length} projects built on Jev`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={titleText} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${SITE}/assets/og.svg`} />
+    <script type="application/ld+json" set:html={jsonLd(lang, { entries, cats, updated })} is:inline />
+  </head>
+
+  <body>
+    <a class="skip" href="#directory">{c.dirLabel}</a>
+
+    <div class="page">
+      <header class="masthead">
+        <a class="wordmark" href={`${BASE}/`}>
+          Awesome&nbsp;Jev
+          <span class="mark">{c.langName(lang)}</span>
+        </a>
+        <nav class="langs" aria-label={lang === 'zh' ? '语言' : lang === 'fr' ? 'Langue' : 'Language'}>
+          {LANGS.map((l) => (
+            <a href={`${BASE}${l === 'en' ? '/' : `${l}/`}`} hreflang={LANG_META[l].hreflang} lang={LANG_META[l].hreflang} aria-current={l === lang ? 'page' : undefined}>
+              {c.langName(l)}
+            </a>
+          ))}
+        </nav>
+      </header>
+
+      <slot />
+    </div>
+  </body>
+</html>
+
+<style>
+  .skip {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    padding: 0.6rem 1rem;
+    background: var(--ink);
+    color: var(--paper);
+    z-index: 100;
+  }
+
+  .skip:focus {
+    left: 0;
+  }
+</style>

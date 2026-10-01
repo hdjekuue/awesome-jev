@@ -10,7 +10,7 @@ contribution is smaller than it looks — and it lands in all three languages at
 1. Fork and create a branch: `git checkout -b add-your-repo`
 2. Add one object to `data/entries.json` (schema below), in all three languages
 3. `node scripts/verify.mjs` — must pass with 0 errors
-4. `node scripts/build-readme.mjs && node site/build.mjs` — regenerate
+4. `npm run build` — regenerate
 5. Open the PR using the template, title `Add owner/repo to Category`
 
 That's it. The README tables, all three languages, the website and the machine-readable

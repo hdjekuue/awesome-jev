@@ -1,0 +1,15 @@
+{
+  "direction": "decision-table",
+  "surface": "directory-site",
+  "status": "built",
+  "updatedAt": "2026-10-01",
+  "notes": [
+    "ISO/IEC 61471 condition grid over action grid; Jev's noul primitive and the table's don't-care mark are deliberately the same glyph.",
+    "The first viewport is a live decision table carrying the documented choice call's real probabilities, not a description of one.",
+    "Six raises carried in from the challenger weighing: hierarchy in rules not fills; no enclosures; one control propagates; weight carries magnitude; thresholds as don't-care marks; language as a column not a dropdown.",
+    "The incumbent card grid was removed entirely. 352 entries now sit bare on the grid.",
+    "The ink ramp is measured by scripts/check-contrast.mjs. The original --ink-45 measured 4.1:1 and failed AA across 1086 strings; it is now #6f6c63 at 5.03:1.",
+    "Functional text has a 0.75rem floor; the detector's undersized-ui-text and tiny-text findings are resolved.",
+    "Detector after the pass: 3 warnings, 0 errors. All three are the gauge's tick comb, which the craft floor permits as the graduations of a measuring instrument."
+  ]
+}

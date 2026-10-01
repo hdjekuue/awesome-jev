@@ -1,20 +1,22 @@
-# ⌨️ Command Line
+# 217 · Command Line
 
 > Call Jev from a shell, no SDK required.
 
 14 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
+
 ### dzhng/jevgrep
 
 - url: https://github.com/dzhng/jevgrep
 - description: Finds the files, declarations, and verbatim excerpts a coding agent needs by asking Jev which declarations answer a plain-language question about the repo.
-- stars: 1,853
+- stars: 1 853
 - language: TypeScript
 - license: MIT
 - pushed_at: 2026-09-29
 - topics: ai-sdk, claude-code, cli, code-search, codex, coding-agents
 - use_cases: call Jev from the command line; route requests through a gateway or proxy; judge or verify an agent's output
+- rule: 217
 
 ### dorkitude/webctl
 
@@ -25,6 +27,7 @@
 - license: MIT
 - pushed_at: 2026-09-23
 - use_cases: compact or prune agent context; rerank search results; run Jev on open models without the vendor
+- rule: 217
 
 ### keltokhy/jgrep
 
@@ -36,6 +39,7 @@
 - pushed_at: 2026-09-28
 - topics: cli, grep, jev, openrouter, semantic-search, typesafe
 - use_cases: moderate content or detect abuse; classify support tickets or messages; call Jev from the command line
+- rule: 217
 
 ### mrnugget/jev-shell-history
 
@@ -45,6 +49,7 @@
 - language: TypeScript
 - pushed_at: 2026-09-18
 - use_cases: compare Jev with an LLM; review code or pull requests; benchmark or calibrate Jev
+- rule: 217
 
 ### sharziki/semdecide
 
@@ -56,6 +61,7 @@
 - pushed_at: 2026-09-16
 - topics: ai, ci, cli, jev, semantic, unix
 - use_cases: call Jev from the command line; score or rank candidates in a pipeline; judge or verify an agent's output
+- rule: 217
 
 ### shiftynick/jev-axi
 
@@ -67,6 +73,7 @@
 - pushed_at: 2026-09-24
 - topics: ai-agents, axi, claude-code, cli, jev, typesafe
 - use_cases: gate or approve tool calls before they run; detect prompt injection or risky commands; judge or verify an agent's output
+- rule: 217
 
 ### Nasrallah-AL/jev-cli
 
@@ -78,6 +85,7 @@
 - pushed_at: 2026-09-27
 - topics: ai, cli, fact-checking, guardrails, jev, llm-tools
 - use_cases: call Jev from the command line; judge or verify an agent's output; moderate content or detect abuse
+- rule: 217
 
 ### tumf/jev-cli
 
@@ -89,6 +97,7 @@
 - pushed_at: 2026-09-23
 - topics: ai, cli, jev, python, typesafe
 - use_cases: call Jev from the command line; serve Jev over MCP to any agent; judge or verify an agent's output
+- rule: 217
 
 ### cristianoliveira/jeq
 
@@ -100,6 +109,7 @@
 - pushed_at: 2026-09-27
 - topics: ai-tools, jev, jq, terminal, unix, ai
 - use_cases: call Jev from the command line; score or rank candidates in a pipeline; judge or verify an agent's output
+- rule: 217
 
 ### sufianetaouil/every
 
@@ -110,6 +120,7 @@
 - license: MIT
 - pushed_at: 2026-09-17
 - use_cases: call Jev from the command line; benchmark or calibrate Jev; judge or verify an agent's output
+- rule: 217
 
 ### y0usaf/typesafe-cli
 
@@ -120,6 +131,7 @@
 - license: MIT
 - pushed_at: 2026-09-19
 - use_cases: call Jev from the command line; benchmark or calibrate Jev; judge or verify an agent's output
+- rule: 217
 
 ### jtsang4/jev-cli
 
@@ -131,6 +143,7 @@
 - pushed_at: 2026-09-18
 - topics: cli, jev, skills, typesafe
 - use_cases: judge or verify an agent's output; call Jev from the command line; score or rank candidates in a pipeline
+- rule: 217
 
 ### jexp/watfile
 
@@ -141,6 +154,7 @@
 - pushed_at: 2026-09-21
 - topics: categorization, cli, jev, terminal, tool, laya
 - use_cases: call Jev from the command line; label data or build a dataset; compare Jev with an LLM
+- rule: 217
 
 ### allebee/jevgrep
 
@@ -152,3 +166,4 @@
 - pushed_at: 2026-09-21
 - topics: cli, grep, jev, log-analysis, logs, python
 - use_cases: compare Jev with an LLM; call Jev from the command line; benchmark or calibrate Jev
+- rule: 217

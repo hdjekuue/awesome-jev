@@ -1,23 +1,24 @@
 name: Site
 
-# Rebuild docs/ (the GitHub Pages source) whenever the data or the READMEs change.
-# docs/, llms.txt, llms-full.txt, skill.md and projects.json are generated but
-# committed on purpose — the site serves them and agents fetch them by raw URL.
+# Builds the trilingual site (Astro → docs/) plus every machine-readable export,
+# then commits the result. docs/ is the GitHub Pages source, so it has to be
+# committed for the site and for the AIEO endpoints to exist at all.
 
 on:
   push:
     branches: [main]
     paths:
       - 'data/entries.json'
-      - 'scripts/lib/catalog.mjs'
-      - 'scripts/build-readme.mjs'
-      - 'site/build.mjs'
+      - 'src/**'
+      - 'astro.config.mjs'
+      - 'package.json'
+      - 'scripts/build-ai-artifacts.mjs'
       - '.github/workflows/site.yml'
   workflow_run:
     workflows: ['Refresh', 'Translate']
     types: [completed]
   schedule:
-    - cron: '11 6 * * *'      # daily fallback
+    - cron: '11 6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -31,7 +32,7 @@ jobs:
   build:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
@@ -40,33 +41,61 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
 
-      - name: Rebuild READMEs and site
+      - name: Install
+        run: npm ci
+
+      - name: Build site and AI artifacts
+        run: npm run build
+
+      - name: The three languages rendered the same number of rows
         run: |
           set -e
-          node scripts/build-readme.mjs
-          node site/build.mjs
+          EN=$(grep -c 'class="entry' docs/index.html || true)
+          ZH=$(grep -c 'class="entry' docs/zh/index.html || true)
+          FR=$(grep -c 'class="entry' docs/fr/index.html || true)
+          echo "entry rows: en=$EN zh=$ZH fr=$FR"
+          if [ "$EN" != "$ZH" ] || [ "$EN" != "$FR" ]; then
+            echo "::error::Row counts differ across languages"
+            exit 1
+          fi
+          test "$EN" -gt 300 || { echo "::error::Only $EN rows rendered — the data file did not load"; exit 1; }
 
-      - name: Sanity-check the AIEO artifacts
+      - name: The AIEO endpoints exist
         run: |
           set -e
-          test -f docs/llms.txt
-          test -f docs/llms-full.txt
-          test -f docs/skill.md
-          test -f docs/projects.json
-          test -f docs/index.html
-          test -f docs/zh/index.html
-          test -f docs/fr/index.html
-          node -e "const j=require('./docs/projects.json'); if(!j.entries.length) throw new Error('empty'); console.log('projects.json OK, '+j.entries.length+' entries, updated '+j.meta.updatedAt)"
-          node -e "const s=require('fs').readFileSync('docs/sitemap.xml','utf8'); if((s.match(/<url>/g)||[]).length < 3) throw new Error('sitemap too small'); console.log('sitemap OK')"
-          echo "llms.txt: $(wc -c < docs/llms.txt) bytes · llms-full.txt: $(wc -c < docs/llms-full.txt) bytes · skill.md: $(wc -c < docs/skill.md) bytes"
+          for f in llms.txt llms-full.txt skill.md projects.json sitemap.xml robots.txt assets/og.svg c/context.md; do
+            test -s "docs/$f" || { echo "::error::missing docs/$f"; exit 1; }
+          done
+          echo "llms.txt $(wc -c < docs/llms.txt)B · llms-full.txt $(wc -c < docs/llms-full.txt)B · skill.md $(wc -c < docs/skill.md)B · projects.json $(wc -c < docs/projects.json)B"
+
+      - name: The JSON-LD graph parses and still carries the six node types
+        run: |
+          node -e "
+          const fs = require('fs');
+          for (const f of ['docs/index.html','docs/zh/index.html','docs/fr/index.html']) {
+            const h = fs.readFileSync(f, 'utf8');
+            const m = h.match(/<script type=\"application\/ld\\+json\">([\s\S]*?)<\/script>/);
+            if (!m) throw new Error(f + ': no JSON-LD');
+            const j = JSON.parse(m[1]);
+            const types = j['@graph'].map(n => n['@type']);
+            for (const want of ['WebSite','CollectionPage','ItemList','FAQPage','DefinedTermSet','BreadcrumbList']) {
+              if (!types.includes(want)) throw new Error(f + ': JSON-LD lost ' + want);
+            }
+            if (!h.includes('hreflang=\"zh_CN\"')) throw new Error(f + ': zh hreflang missing');
+            if (!h.includes('hreflang=\"fr_FR\"')) throw new Error(f + ': fr hreflang missing');
+            if (!h.includes('hreflang=\"x-default\"')) throw new Error(f + ': x-default hreflang missing');
+            console.log(f + ': ' + types.join(', '));
+          }
+          "
 
       - name: Commit and push if changed
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/ llms.txt llms-full.txt skill.md projects.json README.md README.zh.md README.fr.md
+          git add docs/ llms.txt llms-full.txt skill.md projects.json
           if git diff --cached --quiet; then
             echo "Site unchanged — nothing to do."
             exit 0

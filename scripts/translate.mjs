@@ -155,11 +155,15 @@ function runModel(model, prompt, timeoutMs) {
     child.stdout.on('data', (d) => { out += d.toString(); });
     child.stderr.on('data', (d) => { err += d.toString(); });
     child.on('error', (e) => { clearTimeout(timer); resolve({ out: '', err: e.message }); });
-    child.on('close', () => { clearTimeout(timer); resolve({ out, err }); });
+    child.on('close', (code) => { clearTimeout(timer); resolve({ out, err: code === 0 ? '' : err }); });
     child.stdin.on('error', () => { /* the model may close stdin early; output is what matters */ });
     child.stdin.end(prompt, 'utf8');
   });
 }
+
+/** Free models get withdrawn or rate-limited; recognise that so we stop early. */
+const isUnavailable = (err) =>
+  /model unavailable|rate.?limit|429|invalid url|not found|unauthorized|401|503|overloaded/i.test(err || '');
 
 /**
  * Prompt shape: strict JSON only, one object per input id. JSON out (not
@@ -276,24 +280,36 @@ async function main() {
       byLang.get(t.spec.label).push(t);
     }
 
-    for (const [label, group] of byLang) {
+for (const [label, group] of byLang) {
       const spec = group[0].spec;
       const payload = group.map((t) => ({ id: t.entry.id, desc: t.entry.description }));
       let parsed = null;
+      let unavailable = 0;
 
       for (let attempt = 0; attempt < Math.min(3, models.length) && !parsed; attempt++) {
         const model = models[(currentModel + attempt) % models.length];
-        const { out } = await runModel(model, buildPrompt(payload, spec), 180000);
+        const { out, err } = await runModel(model, buildPrompt(payload, spec), 180000);
         const arr = parseJsonArray(out);
         if (arr && arr.length === payload.length) {
           parsed = arr;
           currentModel = (currentModel + attempt) % models.length;
+        } else if (isUnavailable(err)) {
+          unavailable++;
+          console.warn(`[translate] ${model} unavailable: ${(err || '').trim().split('\n').pop()}`);
         } else if (arr) {
           console.warn(`[translate] ${model} returned ${arr.length}/${payload.length} items, retrying`);
         } else {
           console.warn(`[translate] ${model} produced no parsable JSON, retrying`);
         }
-        if (!parsed) await sleep(1200);
+        if (!parsed) await sleep(attempt === 0 ? 2500 : 8000);
+      }
+
+      // Every free model is withdrawn or throttled. Stop now rather than burning
+      // hundreds of doomed calls — the next run resumes exactly where this left off.
+      if (unavailable >= Math.min(3, models.length)) {
+        console.warn('\n[translate] every free model is unavailable or rate-limited right now.');
+        console.warn('[translate] stopping. Nothing is lost — re-run later, or wait for the weekly Translate workflow.');
+        break;
       }
 
       if (!parsed) {

@@ -32,8 +32,11 @@ node scripts/curate.mjs            # free-AI health audit or PR triage → curat
 node scripts/build-readme.mjs      # render the three READMEs (--check in CI)
 npm run build                      # Astro → docs/ + machine-readable exports
 node scripts/import-seed.mjs <projects.json>   # re-seed from a community CC0 dump
+node scripts/run-checks.mjs --browser   # every check, static + browser
 node scripts/check-workflows.mjs   # parse every workflow, flag block-scalar breakage
+node scripts/check-links.mjs       # every link, anchor and asset resolves
 node scripts/check-translations.mjs # exercise the per-entry translation gate
+node scripts/check-contrast.mjs    # print the measured contrast of every ink
 ```
 
 ## Running the free-model tooling locally
@@ -55,6 +58,49 @@ opencode run --model opencode/<id> --agent curator < prompt.txt
 The free endpoints are withdrawn and rate-limited without warning. `translate.mjs`
 detects `Model unavailable` / 429 and stops the run rather than retrying hundreds of
 times; re-run it and it resumes exactly where it stopped.
+
+## The browser: Kitesurf
+
+The curator needs a real browser, because verifying that a submitted project calls
+the Jev / System One API often means reading a rendered page rather than a README. It
+gets one over a URL:
+
+```bash
+node probe-kitesurf.mjs                       # does this endpoint answer real CDP?
+node kitesurf-render.mjs <url>                # does it render, or paint blank?
+node scripts/check-page.mjs <url>             # page behaviour, a11y, responsive
+node scripts/shoot.mjs <url> <outDir>         # screenshots at 2 viewports × 3 languages
+```
+
+**Kitesurf** is Cloudflare's stateless browser engine running on Workers. It speaks
+the Chrome DevTools Protocol from `wss://kitesurf.dev/devtools/browser` — no account,
+no token, no local Chrome, no container, no Chromium process, and no state between
+connections. `scripts/lib/cdp.mjs` is a ~200-line CDP client over Node's built-in
+`WebSocket`, so the repo has **no browser npm dependency at all**; `npm audit` stays
+clean and CI needs no browser install step.
+
+`opencode.json` also registers Kitesurf as an MCP server (`chrome-devtools-mcp` over the
+same endpoint), enabled by default, so a curator run can drive pages interactively.
+
+Set `KITESURF_WS` to use Browser Run instead — same engine, account attached, your own
+rate limits and a private session:
+
+```
+wss://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/browser-run/devtools/browser?browser=kitesurfwss://kitesurf.dev/devtools/browser
+```
+
+The engine is remote, so it cannot reach `localhost`. Point the page checks at the
+deployed site, or at a tunnel.
+
+## Checks
+
+```bash
+node scripts/run-checks.mjs            # static only, no network
+node scripts/run-checks.mjs --browser  # + the browser half (network, no local browser)
+```
+
+Four dead-link bugs shipped before `check-links.mjs` and `check-page.mjs` existed. Run
+the browser half before pushing anything that touches markup.
 
 ## Entry schema
 

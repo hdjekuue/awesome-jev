@@ -1,0 +1,89 @@
+name: Page
+
+# The browser half of the checks: real page behaviour, accessibility basics, and
+# horizontal overflow at seven widths, in all three languages.
+#
+# It runs against Kitesurf — Cloudflare's stateless browser engine on Workers,
+# over the Chrome DevTools Protocol at an endpoint that needs no account. That is
+# the whole reason this workflow is viable: the previous setup needed Chrome
+# installed at a known path, so these checks could only ever run on the maintainer's
+# machine, which is the same reason four dead-link bugs shipped.
+#
+# The checks run against the deployed site, not docs/, because the engine is
+# remote and cannot reach localhost.
+
+on:
+  schedule:
+    - cron: '37 7 * * *'      # daily, after the refresh and translate windows
+  workflow_dispatch:
+  workflow_run:
+    workflows: ['Site']
+    types: [completed]
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: page
+  cancel-in-progress: true
+
+jobs:
+  page:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: No browser to install, and that is the point
+        run: |
+          echo "node: $(node --version)"
+          echo "npm dependencies: $(node -e "console.log(Object.keys(require('./package.json').dependencies||{}).length + Object.keys(require('./package.json').devDependencies).length)")"
+          if node -e "process.exit(require('fs').existsSync('node_modules/puppeteer-core') ? 0 : 1)"; then
+            echo "::error::puppeteer-core is installed — the checks should run over the zero-dependency CDP client"
+            exit 1
+          fi
+          echo "no local browser and no browser library: scripts/lib/cdp.mjs speaks CDP over a plain WebSocket"
+
+      - name: The Kitesurf endpoint answers real CDP
+        run: node probe-kitesurf.mjs
+
+      - name: Rendered content, not a blank paint
+        run: node kitesurf-render.mjs https://hdjekuue.github.io/awesome-jev/
+
+      - name: Page behaviour, accessibility and responsive
+        run: node scripts/check-page.mjs https://hdjekuue.github.io/awesome-jev/
+
+      - name: Screenshots, for a human to look at
+        if: always()
+        run: node scripts/shoot.mjs https://hdjekuue.github.io/awesome-jev/ .impeccable/review || true
+
+      - name: Open an issue when the live site regresses
+        if: failure()
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: 'Page checks failed on the deployed site'
+          labels: |
+            bug
+            needs-review
+          body-filepath: .impeccable/review/REPORT.md
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "# Page checks — $(date -u +'%Y-%m-%d %H:%M UTC')"
+            echo
+            echo "Commit: ${{ github.sha }}"
+            echo "Target: https://hdjekuue.github.io/awesome-jev/"
+            echo
+            echo "Browser: Kitesurf (Cloudflare Workers), no local Chrome, no npm browser library."
+            echo "Screenshots are attached as artifacts."
+          } > .impeccable/review/REPORT.md
+          ls -1 .impeccable/review/ | head -n 20

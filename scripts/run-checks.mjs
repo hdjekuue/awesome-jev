@@ -6,8 +6,11 @@
  * anything a person clicks.
  *
  *   node scripts/run-checks.mjs            # static only, no browser needed
- *   node scripts/run-checks.mjs --browser  # + the puppeteer checks
+ *   node scripts/run-checks.mjs --browser  # + the browser checks (needs network)
  *   node scripts/run-checks.mjs --serve    # + starts astro dev first
+ *
+ * The browser half runs against Kitesurf, so it needs network but no local
+ * browser and no npm dependency beyond Astro.
  */
 
 import fs from 'node:fs';
@@ -35,7 +38,9 @@ const STATIC = [
 ];
 
 const BROWSER = [
+  // Remote, no local Chrome, no npm dependency — so this runs in CI unchanged.
   { name: 'page behaviour + a11y + responsive', cmd: 'node', args: ['scripts/check-page.mjs'] },
+  { name: 'kitesurf endpoint', cmd: 'node', args: ['probe-kitesurf.mjs'] },
 ];
 
 const run = (step) => {

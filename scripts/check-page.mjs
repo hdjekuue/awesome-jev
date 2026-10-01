@@ -1,51 +1,27 @@
 #!/usr/bin/env node
 /**
  * check-page.mjs — what a person actually does on the page, checked in a real
- * browser. The static checks cannot see any of this.
+ * browser engine. The static checks cannot see any of this.
  *
- * Covers: the search island (typing, filtering, the empty state, ?q= deep links,
- * Escape, keyboard stepping), accessibility basics that the detector does not
- * cover (heading order, skip link target, focus order, tap target size, text
- * that overflows its box), and horizontal overflow at seven widths.
+ * Covers: the search island (typing, filtering, the empty state, Escape, ?q= deep
+ * links, diacritic folding), accessibility basics the detector does not cover
+ * (heading order, skip link target, duplicate ids, unlabelled inputs, tap target
+ * size, clipped text), console errors, and horizontal overflow at seven widths.
  *
  *   node scripts/check-page.mjs [baseUrl]
  *
- * baseUrl defaults to http://localhost:4321/awesome-jev/ — run `npm run dev`.
+ * The browser is Kitesurf — Cloudflare's stateless engine on Workers, over the
+ * Chrome DevTools Protocol at a no-sign-in playground endpoint. It is remote, so
+ * it cannot reach localhost: the default base URL is the deployed site, and a
+ * local run passes its own URL.
+ *
+ * Zero npm dependencies: scripts/lib/cdp.mjs is a plain WebSocket CDP client.
  */
 
-import fs from 'node:fs';
-import path from 'node:path';
-import { createRequire } from 'node:module';
+import { launchCDP, KITESURF_WS } from './lib/cdp.mjs';
 
-const require = createRequire(import.meta.url);
+const BASE = process.argv[2] || 'https://hdjekuue.github.io/awesome-jev/';
 
-// puppeteer-core lives outside this repo; resolve it from PUPPETEER_PATH or a few
-// known places. When it is missing, say so and exit 0 — a browser check that
-// cannot run must not look like a passing check, and must not look like a failure
-// of the site either.
-function loadPuppeteer() {
-  const candidates = [
-    process.env.PUPPETEER_PATH,
-    path.join(process.cwd(), 'node_modules', 'puppeteer-core'),
-    'puppeteer-core',
-  ].filter(Boolean);
-  for (const c of candidates) {
-    try {
-      const m = require(c);
-      if (typeof m.launch === 'function') return m;
-    } catch { /* try the next */ }
-  }
-  return null;
-}
-
-const puppeteer = loadPuppeteer();
-
-const CHROME = [
-  'C:/Program Files/Google/Chrome/Application/chrome.exe',
-  'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
-].find((p) => fs.existsSync(p));
-
-const BASE = process.argv[2] || 'http://localhost:4321/awesome-jev/';
 const PAGES = [
   { name: 'en', path: '/' },
   { name: 'zh', path: '/zh/' },
@@ -56,138 +32,136 @@ const WIDTHS = [360, 414, 600, 832, 1024, 1280, 1600];
 
 const problems = [];
 const fail = (page, kind, detail) => problems.push(`${page}: ${kind} — ${detail}`);
+const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const url = (p) => (BASE.endsWith('/') ? BASE + p.replace(/^\//, '') : `${BASE}/${p.replace(/^\//, '')}`);
 
 async function main() {
-  if (!puppeteer) {
-    console.log('SKIPPED — puppeteer-core is not resolvable.');
-    console.log('  npm i -D puppeteer-core, then: set PUPPETEER_PATH=<path to>/puppeteer-core');
-    process.exit(0);
-  }
-  if (!CHROME) {
-    console.log('SKIPPED — no Chrome or Edge binary found on this machine.');
-    process.exit(0);
-  }
-
-  const browser = await puppeteer.launch({
-    executablePath: CHROME,
-    headless: 'new',
-    args: ['--no-sandbox', '--disable-dev-shm-usage', '--font-render-hinting=none', '--force-color-profile=srgb'],
-  });
+  const session = await launchCDP();
+  console.log(`browser: ${session.version} via ${KITESURF_WS}`);
+  console.log(`base:    ${BASE}\n`);
 
   for (const target of PAGES) {
-    const page = await browser.newPage();
-    await page.setViewport({ width: 1440, height: 900 });
-    await page.goto(url(target.path), { waitUntil: 'networkidle0', timeout: 60000 });
-    await page.evaluate(() => document.fonts.ready);
+    const page = await session.newPage({ width: 1440, height: 900 });
     const p = target.name;
 
-    // --- console errors -------------------------------------------------
-    const consoleErrors = [];
-    page.on('pageerror', (e) => consoleErrors.push(String(e.message).slice(0, 160)));
-    page.on('console', (m) => {
-      if (m.type() === 'error') consoleErrors.push(m.text().slice(0, 160));
-    });
+    await page.goto(url(target.path), { wait: true, timeout: 45000 });
+    await wait(400);
 
     // --- accessibility basics -------------------------------------------
-    const a11y = await page.evaluate(() => {
-      const out = {};
+    const a = await page.evaluate(() => {
       const hs = Array.from(document.querySelectorAll('h1,h2,h3,h4,h5,h6')).map((h) => Number(h.tagName[1]));
-      out.headings = hs;
-      out.h1Count = document.querySelectorAll('h1').length;
-      out.docLang = document.documentElement.lang || '';
-      out.duplicateIds = (() => {
-        const seen = new Map();
-        for (const el of document.querySelectorAll('[id]')) seen.set(el.id, (seen.get(el.id) || 0) + 1);
-        return [...seen.entries()].filter(([, n]) => n > 1).map(([id, n]) => `${id}×${n}`);
-      })();
+      const seen = new Map();
+      for (const el of document.querySelectorAll('[id]')) seen.set(el.id, (seen.get(el.id) || 0) + 1);
       const skip = document.querySelector('a.skip');
-      out.skipTarget = skip ? skip.getAttribute('href') : null;
-      out.skipWorks = skip ? !!document.querySelector(skip.getAttribute('href')) : false;
-      out.inputsWithoutLabel = Array.from(document.querySelectorAll('input'))
-        .filter((i) => !i.labels?.length && !i.getAttribute('aria-label') && !i.getAttribute('aria-labelledby'))
-        .map((i) => i.id || i.type);
-      // Interactive elements smaller than 24x24 CSS px, ignoring inline links in prose.
-      out.smallTargets = Array.from(document.querySelectorAll('a,button,input,summary'))
-        .filter((el) => {
-          const r = el.getBoundingClientRect();
-          if (r.width === 0 || r.height === 0) return false;
-          const inProse = el.closest('.entry-desc, .faq .a, .cat-blurb, .note, .lede');
-          if (inProse && el.tagName === 'A') return false;
-          return r.width < 24 || r.height < 24;
-        })
-        .slice(0, 6)
-        .map((el) => `${el.tagName.toLowerCase()}.${(el.className || '').toString().split(' ')[0]} ${Math.round(el.getBoundingClientRect().width)}×${Math.round(el.getBoundingClientRect().height)}`);
-      // Text visibly clipped by its own box.
-      out.clipped = Array.from(document.querySelectorAll('h1,h2,h3,.entry-name,.count .n,.intent-what'))
-        .filter((el) => el.scrollWidth > el.clientWidth + 2 && getComputedStyle(el).overflow !== 'visible')
-        .slice(0, 6)
-        .map((el) => `${el.tagName.toLowerCase()}.${(el.className || '').toString().split(' ')[0]}`);
-      out.title = document.title;
-      out.metaDesc = document.querySelector('meta[name=description]')?.content?.length || 0;
-      out.canonical = document.querySelector('link[rel=canonical]')?.href || null;
-      return out;
+      return {
+        headings: hs,
+        h1Count: document.querySelectorAll('h1').length,
+        docLang: document.documentElement.lang || '',
+        duplicateIds: [...seen.entries()].filter(([, n]) => n > 1).map(([id, n]) => `${id}×${n}`),
+        skipHref: skip ? skip.getAttribute('href') : null,
+        skipWorks: skip ? !!document.querySelector(skip.getAttribute('href')) : false,
+        inputsWithoutLabel: Array.from(document.querySelectorAll('input'))
+          .filter((i) => !i.labels?.length && !i.getAttribute('aria-label') && !i.getAttribute('aria-labelledby'))
+          .map((i) => i.id || i.type),
+        smallTargets: Array.from(document.querySelectorAll('a,button,input,summary'))
+          .filter((el) => {
+            const r = el.getBoundingClientRect();
+            if (r.width === 0 || r.height === 0) return false;
+            const inProse = el.closest('.entry-desc, .faq .a, .cat-blurb, .note, .lede');
+            if (inProse && el.tagName === 'A') return false;
+            return r.width < 24 || r.height < 24;
+          })
+          .slice(0, 6)
+          .map((el) => {
+            const r = el.getBoundingClientRect();
+            return `${el.tagName.toLowerCase()}.${(el.className || '').toString().split(' ')[0]} ${Math.round(r.width)}×${Math.round(r.height)}`;
+          }),
+        clipped: Array.from(document.querySelectorAll('h1,h2,h3,.entry-name,.count .n,.intent-what'))
+          .filter((el) => el.scrollWidth > el.clientWidth + 2 && getComputedStyle(el).overflow !== 'visible')
+          .slice(0, 6)
+          .map((el) => `${el.tagName.toLowerCase()}.${(el.className || '').toString().split(' ')[0]}`),
+        title: document.title,
+        metaDesc: (document.querySelector('meta[name=description]')?.content || '').length,
+        canonical: document.querySelector('link[rel=canonical]')?.href || null,
+        font: getComputedStyle(document.body).fontFamily.split(',')[0].replace(/"/g, '').trim(),
+        totalRows: document.querySelectorAll('.entry').length,
+        hasSearch: !!document.getElementById('q'),
+      };
     });
 
-    if (a11y.h1Count !== 1) fail(p, 'a11y', `${a11y.h1Count} <h1> elements, expected exactly 1`);
-    if (!a11y.docLang) fail(p, 'a11y', '<html> has no lang attribute');
-    for (let i = 1; i < a11y.headings.length; i++) {
-      if (a11y.headings[i] - a11y.headings[i - 1] > 1) {
-        fail(p, 'a11y', `heading level skipped: h${a11y.headings[i - 1]} → h${a11y.headings[i]}`);
+    if (a.h1Count !== 1) fail(p, 'a11y', `${a.h1Count} <h1> elements, expected exactly 1`);
+    if (!a.docLang) fail(p, 'a11y', '<html> has no lang attribute');
+    for (let i = 1; i < a.headings.length; i++) {
+      if (a.headings[i] - a.headings[i - 1] > 1) {
+        fail(p, 'a11y', `heading level skipped: h${a.headings[i - 1]} → h${a.headings[i]}`);
         break;
       }
     }
-    if (a11y.duplicateIds.length) fail(p, 'a11y', `duplicate ids: ${a11y.duplicateIds.join(', ')}`);
-    if (!a11y.skipWorks) fail(p, 'a11y', `skip link points at "${a11y.skipTarget}" which does not exist`);
-    if (a11y.inputsWithoutLabel.length) fail(p, 'a11y', `inputs without a label: ${a11y.inputsWithoutLabel.join(', ')}`);
-    if (a11y.smallTargets.length) fail(p, 'a11y', `tap targets under 24px: ${a11y.smallTargets.join(' | ')}`);
-    if (a11y.clipped.length) fail(p, 'a11y', `clipped text: ${a11y.clipped.join(', ')}`);
-    if (!a11y.title) fail(p, 'seo', 'no <title>');
-    if (a11y.metaDesc < 50) fail(p, 'seo', `meta description is ${a11y.metaDesc} chars`);
-    if (!a11y.canonical) fail(p, 'seo', 'no canonical link');
+    if (a.duplicateIds.length) fail(p, 'a11y', `duplicate ids: ${a.duplicateIds.join(', ')}`);
+    if (!a.skipWorks) fail(p, 'a11y', `skip link points at "${a.skipHref}" which does not exist`);
+    if (a.inputsWithoutLabel.length) fail(p, 'a11y', `inputs without a label: ${a.inputsWithoutLabel.join(', ')}`);
+    if (a.smallTargets.length) fail(p, 'a11y', `tap targets under 24px: ${a.smallTargets.join(' | ')}`);
+    if (a.clipped.length) fail(p, 'a11y', `clipped text: ${a.clipped.join(', ')}`);
+    if (!a.title) fail(p, 'seo', 'no <title>');
+    if (a.metaDesc < 50) fail(p, 'seo', `meta description is ${a.metaDesc} chars`);
+    if (!a.canonical) fail(p, 'seo', 'no canonical link');
+    if (a.font !== 'Archivo') fail(p, 'fonts', `body is in "${a.font}", expected Archivo — the self-hosted face did not load`);
 
     // --- search island ---------------------------------------------------
-    const total = await page.$$eval('.entry', (n) => n.length);
+    if (!a.hasSearch) {
+      fail(p, 'search', 'the search input did not render');
+      await page.close();
+      continue;
+    }
 
-    await page.type('#q', 'compaction');
-    await new Promise((r) => setTimeout(r, 250));
-    let s = await page.evaluate(() => ({
-      visible: Array.from(document.querySelectorAll('.entry')).filter((e) => !e.hasAttribute('data-search-hidden')).length,
-      catsVisible: Array.from(document.querySelectorAll('[data-category]')).filter((e) => !e.hasAttribute('data-search-hidden')).length,
-      count: document.querySelector('[data-count]')?.textContent?.trim(),
-      emptyHidden: document.querySelector('[data-empty]')?.hasAttribute('hidden'),
-    }));
-    if (s.visible === 0) fail(p, 'search', '"compaction" matched nothing');
-    if (s.visible >= total) fail(p, 'search', `"compaction" did not filter (${s.visible}/${total})`);
-    if (!s.emptyHidden) fail(p, 'search', 'the empty state is showing while there are matches');
+    const total = a.totalRows;
+    const visibleRows = () => page.evaluate(() => Array.from(document.querySelectorAll('.entry')).filter((e) => !e.hasAttribute('data-search-hidden')).length);
+    const visibleCats = () => page.evaluate(() => Array.from(document.querySelectorAll('[data-category]')).filter((e) => !e.hasAttribute('data-search-hidden')).length);
 
-    // A search that matches nothing must say so.
-    await page.evaluate(() => { const q = document.getElementById('q'); q.value = 'zzzzzznotathing'; q.dispatchEvent(new Event('input')); });
-    await new Promise((r) => setTimeout(r, 250));
-    s = await page.evaluate(() => ({
-      visible: Array.from(document.querySelectorAll('.entry')).filter((e) => !e.hasAttribute('data-search-hidden')).length,
-      emptyShown: !document.querySelector('[data-empty]')?.hasAttribute('hidden'),
-      catsVisible: Array.from(document.querySelectorAll('[data-category]')).filter((e) => !e.hasAttribute('data-search-hidden')).length,
-    }));
-    if (s.visible !== 0) fail(p, 'search', `a no-match search still shows ${s.visible} rows`);
-    if (!s.emptyShown) fail(p, 'search', 'no-match search does not show the empty state');
-    if (s.catsVisible !== 0) fail(p, 'search', `${s.catsVisible} rule headings survived a no-match search`);
+    await page.setValue('#q', 'compaction');
+    await wait(350);
+    let n = await visibleRows();
+    let cats = await visibleCats();
+    if (n === 0) fail(p, 'search', '"compaction" matched nothing');
+    if (n >= total) fail(p, 'search', `"compaction" did not filter (${n}/${total})`);
+    if (cats === 0) fail(p, 'search', 'a matching search removed every rule heading');
+    const emptyEarly = await page.evaluate(() => !document.querySelector('[data-empty]')?.hasAttribute('hidden'));
+    if (emptyEarly) fail(p, 'search', 'the empty state shows while there are matches');
 
-    // Escape must clear and restore.
-    await page.focus('#q');
-    await page.keyboard.press('Escape');
-    await new Promise((r) => setTimeout(r, 200));
-    const afterEsc = await page.evaluate(() => ({
+    await page.setValue('#q', 'zzzzzznotathing');
+    await wait(350);
+    n = await visibleRows();
+    cats = await visibleCats();
+    const emptyShown = await page.evaluate(() => !document.querySelector('[data-empty]')?.hasAttribute('hidden'));
+    if (n !== 0) fail(p, 'search', `a no-match search still shows ${n} rows`);
+    if (!emptyShown) fail(p, 'search', 'no-match search does not show the empty state');
+    if (cats !== 0) fail(p, 'search', `${cats} rule headings survived a no-match search`);
+
+    await page.press('Escape');
+    await wait(350);
+    const esc = await page.evaluate(() => ({
       value: document.getElementById('q').value,
       visible: Array.from(document.querySelectorAll('.entry')).filter((e) => !e.hasAttribute('data-search-hidden')).length,
     }));
-    if (afterEsc.value !== '') fail(p, 'search', 'Escape did not clear the field');
-    if (afterEsc.visible !== total) fail(p, 'search', `Escape restored ${afterEsc.visible}/${total} rows`);
+    if (esc.value !== '') fail(p, 'search', 'Escape did not clear the field');
+    if (esc.visible !== total) fail(p, 'search', `Escape restored ${esc.visible}/${total} rows`);
 
-    // ?q= must reproduce the same filter, since JSON-LD advertises it.
-    await page.goto(`${url(target.path)}?q=compaction`, { waitUntil: 'networkidle0' });
-    await new Promise((r) => setTimeout(r, 250));
+    // Diacritics must fold so "reseau" finds "réseau". The expectation is computed
+    // independently here; reusing the page's own helper would agree with the bug.
+    await page.setValue('#q', 'reseau');
+    await wait(350);
+    const folded = await visibleRows();
+    const expectedFolded = await page.evaluate(() => {
+      const f = (s) => s.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
+      return Array.from(document.querySelectorAll('.entry')).filter((e) => f(e.dataset.search || '').includes('reseau')).length;
+    });
+    if (folded !== expectedFolded) {
+      fail(p, 'search', `diacritic folding is wrong: "reseau" showed ${folded} rows, expected ${expectedFolded}`);
+    }
+
+    await page.goto(`${url(target.path)}?q=compaction`, { wait: true, timeout: 45000 });
+    await wait(500);
     const deep = await page.evaluate(() => ({
       value: document.getElementById('q')?.value,
       visible: Array.from(document.querySelectorAll('.entry')).filter((e) => !e.hasAttribute('data-search-hidden')).length,
@@ -197,9 +171,9 @@ async function main() {
 
     // --- responsive overflow --------------------------------------------
     for (const width of WIDTHS) {
-      await page.setViewport({ width, height: 900, deviceScaleFactor: 1 });
-      await page.goto(url(target.path), { waitUntil: 'networkidle0' });
-      await page.evaluate(() => document.fonts.ready);
+      await page.setViewport({ width, height: 900 });
+      await page.goto(url(target.path), { wait: true, timeout: 45000 });
+      await wait(250);
       const o = await page.evaluate(() => {
         const de = document.documentElement;
         const wide = [];
@@ -216,12 +190,13 @@ async function main() {
       }
     }
 
-    for (const e of consoleErrors) fail(p, 'console', e);
+    for (const e of page.errors) fail(p, 'console', e);
+
     await page.close();
-    console.log(`${p}: checked`);
+    console.log(`  ${p}: checked (${total} rows, ${a.font})`);
   }
 
-  await browser.close();
+  session.close();
 
   console.log(`\nwidths tested: ${WIDTHS.join(', ')}`);
   if (problems.length) {
@@ -233,6 +208,6 @@ async function main() {
 }
 
 main().catch((e) => {
-  console.error(e);
+  console.error(`check-page: ${e.message || e}`);
   process.exit(1);
 });

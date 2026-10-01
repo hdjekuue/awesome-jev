@@ -15,6 +15,36 @@
     "  node scripts/translate.mjs --models"
   ],
 
+  "mcp": {
+    "//kitesurf": [
+      "Kitesurf is Cloudflare's stateless browser engine, running on Workers.",
+      "It speaks the Chrome DevTools Protocol from a URL, so the curator can drive a",
+      "real page — DOM, console, network, screenshots — with no local Chrome, no",
+      "container and no Chromium process. That matters here because verifying that a",
+      "submitted project really calls the Jev / System One API often means reading a",
+      "rendered page rather than a README, and a local-browser setup is why that check",
+      "so rarely runs.",
+      "",
+      "The playground endpoint needs no account and no token, which is what makes it",
+      "usable from an unattended free-model run. Each connection is a fresh browser,",
+      "which is the right default for auditing someone else's page.",
+      "",
+      "Override with KITESURF_WS to use Browser Run instead (an account, your own rate",
+      "limits, a private session):",
+      "  wss://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/browser-run/devtools/browser?browser=kitesurfwss://kitesurf.dev/devtools/browser"
+    ],
+    "kitesurf": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "chrome-devtools-mcp@latest",
+        "--wsEndpoint=wss://kitesurf.dev/devtools/browser"
+      ],
+      "enabled": true
+    }
+  },
+
   "model": "opencode/muse-spark-1.3-contributor-free",
   "small_model": "opencode/muse-spark-1.3-contributor-free",
   "snapshot": false

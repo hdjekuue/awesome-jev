@@ -1,32 +1,25 @@
+#!/usr/bin/env node
+/**
+ * shoot.mjs — captures the site at two viewports across all three languages.
+ *
+ * The browser is Kitesurf (Cloudflare's stateless engine on Workers) over a plain
+ * WebSocket CDP client, so this runs anywhere with no Chrome installed — in CI,
+ * in a container, on a machine that has never seen a browser. Zero npm
+ * dependencies.
+ *
+ *   node scripts/shoot.mjs [baseUrl] [outDir]
+ */
+
 import fs from 'node:fs';
 import path from 'node:path';
-import { createRequire } from 'node:module';
+import { launchCDP, KITESURF_WS } from './lib/cdp.mjs';
 
-// Captures the two viewports the craft floor requires, from a running dev or
-// preview server, in one batched round. Desktop 1440 and mobile 390, full page.
-//
-//   node scripts/shoot.mjs <baseUrl> [outDir]
-
-const require = createRequire(import.meta.url);
-const puppeteer = require(process.env.PUPPETEER_PATH || 'puppeteer-core');
-
-const BASE = process.argv[2] || 'http://localhost:4321/awesome-jev/';
+const BASE = process.argv[2] || 'https://hdjekuue.github.io/awesome-jev/';
 const OUT = process.argv[3] || '.impeccable/review';
 
-const CHROME = [
-  'C:/Program Files/Google/Chrome/Application/chrome.exe',
-  'C:/Program Files (x86)/Microsoft/Chrome/Application/chrome.exe',
-  'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
-].find((p) => fs.existsSync(p));
-
-if (!CHROME) {
-  console.error('no Chrome or Edge binary found');
-  process.exit(1);
-}
-
 const SHOTS = [
-  { name: 'desktop', width: 1440, height: 900, dsf: 1 },
-  { name: 'mobile', width: 390, height: 844, dsf: 2 },
+  { name: 'desktop', width: 1440, height: 900, deviceScaleFactor: 1 },
+  { name: 'mobile', width: 390, height: 844, deviceScaleFactor: 2 },
 ];
 
 const PAGES = [
@@ -35,81 +28,78 @@ const PAGES = [
   { name: 'fr', path: '/fr/' },
 ];
 
-// BASE is the site root including the Astro base path, so a target path is
-// appended to it. Using `new URL('/', BASE)` would silently drop /awesome-jev
-// and capture the 404 page — which renders, reports no rows, and looks "fine".
 const url = (p) => (BASE.endsWith('/') ? BASE + p.replace(/^\//, '') : `${BASE}/${p.replace(/^\//, '')}`);
+const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function main() {
   fs.mkdirSync(OUT, { recursive: true });
-
-  const browser = await puppeteer.launch({
-    executablePath: CHROME,
-    headless: 'new',
-    args: ['--no-sandbox', '--disable-dev-shm-usage', '--font-render-hinting=none', '--force-color-profile=srgb'],
-  });
+  const session = await launchCDP();
+  console.log(`browser: ${session.version} via ${KITESURF_WS}`);
+  console.log(`base:    ${BASE}\n`);
 
   const report = [];
 
   for (const shot of SHOTS) {
-    const page = await browser.newPage();
-    await page.setViewport({ width: shot.width, height: shot.height, deviceScaleFactor: shot.dsf });
+    const page = await session.newPage(shot);
 
     for (const target of PAGES) {
-      await page.goto(url(target.path), { waitUntil: 'networkidle0', timeout: 60000 });
-      // Fonts must be settled before capture or the first paint is measured in the
-      // fallback face, which is the failure mode a screenshot hides.
-      await page.evaluate(() => document.fonts.ready);
-      await new Promise((r) => setTimeout(r, 350));
+      await page.setViewport(shot);
+      await page.goto(url(target.path), { wait: true, timeout: 45000 });
+      // Fonts must settle before capture, or the first paint is measured in the
+      // fallback face — the failure mode a screenshot hides.
+      await page.evaluate(() => document.fonts?.ready).catch(() => {});
+      await wait(400);
 
       const file = path.join(OUT, `${target.name}-${shot.name}.png`);
       await page.screenshot({ path: file, fullPage: true });
 
-      // A full-page shot of a 352-row directory is unreadable when scaled down,
-      // so the first viewport is captured separately. That is the frame the
-      // direction contract actually describes, and the only one where a
-      // hierarchy mistake is visible.
+      // The first viewport separately: a full-page shot of 352 rows is unreadable
+      // once scaled down, and it is the only frame where a hierarchy mistake shows.
       const foldFile = path.join(OUT, `${target.name}-${shot.name}-fold.png`);
-      await page.screenshot({ path: foldFile, fullPage: false });
+      await page.screenshot({ path: foldFile });
 
       const metrics = await page.evaluate(() => {
         const de = document.documentElement;
-        const rows = Array.from(document.querySelectorAll('.entry'));
-        const overflow = de.scrollWidth > de.clientWidth + 1;
+        const rows = document.querySelectorAll('.entry');
         return {
           lang: de.lang,
-          title: document.title.slice(0, 70),
+          title: document.title,
           docWidth: de.scrollWidth,
           clientWidth: de.clientWidth,
-          horizontalOverflow: overflow,
+          horizontalOverflow: de.scrollWidth > de.clientWidth + 1,
           docHeight: de.scrollHeight,
           entryRows: rows.length,
           rules: document.querySelectorAll('[data-category]').length,
-          fontFamilyUsed: getComputedStyle(document.body).fontFamily.split(',')[0],
+          fontFamilyUsed: getComputedStyle(document.body).fontFamily.split(',')[0].replace(/"/g, '').trim(),
           heroH1: document.querySelector('.hero h1')?.textContent?.trim().slice(0, 40) || null,
-          firstEntry: rows[0]?.textContent?.replace(/\s+/g, ' ').trim().slice(0, 60) || null,
+          consoleErrors: null,
         };
       });
 
-      report.push({ ...target, ...shot, file, metrics });
+      report.push({ ...target, ...shot, file, foldFile, metrics });
       console.log(
         `${target.name}/${shot.name}: ${(fs.statSync(file).size / 1024).toFixed(0)} KB · ` +
-          `rows=${metrics.entryRows} · overflow=${metrics.horizontalOverflow ? 'YES ' + metrics.docWidth + '>' + metrics.clientWidth : 'no'} · ` +
-          `font=${metrics.fontFamilyUsed} · h1="${metrics.heroH1}"`,
+          `rows=${metrics.entryRows} · overflow=${metrics.horizontalOverflow ? `YES ${metrics.docWidth}>${metrics.clientWidth}` : 'no'} · ` +
+          `font=${metrics.fontFamilyUsed} · h1="${metrics.heroH1}"` + (page.errors.length ? ` · ${page.errors.length} console error(s)` : ''),
       );
     }
     await page.close();
   }
 
-  await browser.close();
+  session.close();
   fs.writeFileSync(path.join(OUT, 'metrics.json'), JSON.stringify(report, null, 2));
-  console.log(`\n${report.length} captures → ${OUT}`);
+  console.log(`\n${report.length * 2} captures → ${OUT}`);
 
   const anyOverflow = report.some((r) => r.metrics.horizontalOverflow);
-  console.log(anyOverflow ? 'WARNING: horizontal overflow on at least one viewport' : 'no horizontal overflow at any viewport');
+  const anyErrors = report.some((r) => r.metrics.consoleErrors || false);
+  if (anyOverflow) console.log('WARNING: horizontal overflow on at least one viewport');
+  else console.log('no horizontal overflow at any viewport');
+  if (anyErrors) console.log('WARNING: console errors were recorded — see metrics.json');
+
+  process.exit(anyOverflow ? 1 : 0);
 }
 
 main().catch((e) => {
-  console.error(e);
+  console.error(`shoot: ${e.message || e}`);
   process.exit(1);
 });

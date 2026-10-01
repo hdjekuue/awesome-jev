@@ -24,17 +24,20 @@ let parserName = null;
 // other API — which reported eight phantom parse errors. Try each, verify the
 // entry point actually exists, and fall back to structural-only rather than
 // inventing findings.
-for (const [spec, fn] of [
-  ['yaml', (m) => m.parse],
-  ['js-yaml', (m) => m.load],
-  ['C:/Users/RUNNER~1/AppData/Local/Temp/2/kilo/yamlchk/node_modules/yaml', (m) => m.parse],
-]) {
+const CANDIDATES = [
+  ['yaml', 'parse'],
+  ['js-yaml', 'load'],
+  ['C:/Users/RUNNER~1/AppData/Local/Temp/2/kilo/yamlchk/node_modules/yaml', 'parse'],
+];
+for (const spec of CANDIDATES) {
+  const name = spec[0];
+  const entry = spec[1];
   try {
-    const mod = require(spec);
-    const fn = fn(mod);
+    const mod = require(name);
+    const fn = mod[entry];
     if (typeof fn === 'function') {
       parseYaml = (text) => fn(text);
-      parserName = spec;
+      parserName = name;
       break;
     }
   } catch {

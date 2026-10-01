@@ -1,53 +1,62 @@
-import fs from 'node:fs';
-import { createRequire } from 'node:module';
+#!/usr/bin/env node
+/**
+ * shoot-region.mjs — capture one element or scroll offset at readable scale.
+ *
+ * A full-page shot of a 352-row directory proves nothing about how a single row
+ * is set. This frames one region so spacing, rule weight and type can actually be
+ * judged.
+ *
+ *   node scripts/shoot-region.mjs <url> <selector|scrollY> <outFile> [width] [height]
+ */
 
-// Captures a specific element or scroll offset, for inspecting one region of the
-// page at readable scale. A full-page shot of 352 rows proves nothing about how
-// a single row is set.
-//
-//   node scripts/shoot-region.mjs <url> <selector|offsetY> <outFile> [width] [height]
-
-const require = createRequire(import.meta.url);
-const puppeteer = require(process.env.PUPPETEER_PATH || 'puppeteer-core');
-
-const CHROME = [
-  'C:/Program Files/Google/Chrome/Application/chrome.exe',
-  'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',
-].find((p) => fs.existsSync(p));
+import path from 'node:path';
+import { launchCDP } from './lib/cdp.mjs';
 
 const [, , target, sel, out, w = '1440', h = '900'] = process.argv;
 
-async function main() {
-  const browser = await puppeteer.launch({
-    executablePath: CHROME,
-    headless: 'new',
-    args: ['--no-sandbox', '--font-render-hinting=none', '--force-color-profile=srgb'],
-  });
-  const page = await browser.newPage();
-  await page.setViewport({ width: Number(w), height: Number(h), deviceScaleFactor: 1 });
-  await page.goto(target, { waitUntil: 'networkidle0', timeout: 60000 });
-  await page.evaluate(() => document.fonts.ready);
+if (!target || !sel || !out) {
+  console.error('usage: node scripts/shoot-region.mjs <url> <selector|scrollY> <outFile> [width] [height]');
+  process.exit(1);
+}
+
+const session = await launchCDP();
+const page = await session.newPage({ width: Number(w), height: Number(h) });
+
+try {
+  await page.goto(target, { wait: true, timeout: 45000 });
+  await page.evaluate(() => document.fonts?.ready).catch(() => {});
+  await new Promise((r) => setTimeout(r, 350));
 
   if (/^\d+$/.test(sel)) {
     await page.evaluate((y) => window.scrollTo(0, y), Number(sel));
+    await new Promise((r) => setTimeout(r, 350));
+    await page.screenshot({ path: out });
+    console.log(`captured scrollY=${sel} → ${path.basename(out)}`);
   } else {
-    const el = await page.$(sel);
-    if (!el) {
-      console.error(`selector not found: ${sel}`);
-      process.exit(1);
-    }
-    await el.screenshot({ path: out });
-    console.log(`captured ${sel} → ${out}`);
-    await browser.close();
-    return;
-  }
-  await new Promise((r) => setTimeout(r, 300));
-  await page.screenshot({ path: out, fullPage: false });
-  console.log(`captured scrollY=${sel} → ${out}`);
-  await browser.close();
-}
+    // Clip to the element's box rather than screenshotting the whole document,
+    // so the region is at natural scale instead of being scaled down to fit.
+    const box = await page.evaluate((selector) => {
+      const el = document.querySelector(selector);
+      if (!el) return null;
+      const r = el.getBoundingClientRect();
+      return { x: r.left + window.scrollX, y: r.top + window.scrollY, width: r.width, height: r.height };
+    }, sel);
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+    if (!box) {
+      console.error(`selector not found: ${sel}`);
+      process.exitCode = 1;
+    } else {
+      const buf = await page.screenshot({
+        fullPage: true,
+        clip: { x: box.x, y: box.y, width: box.width, height: Math.min(box.height, 4000), scale: 1 },
+      });
+      const fs = await import('node:fs');
+      fs.mkdirSync(path.dirname(out) || '.', { recursive: true });
+      fs.writeFileSync(out, buf);
+      console.log(`captured ${sel} (${Math.round(box.width)}×${Math.round(box.height)}) → ${path.basename(out)} · ${Math.round(buf.length / 1024)}KB`);
+    }
+  }
+} finally {
+  await page.close().catch(() => {});
+  session.close();
+}

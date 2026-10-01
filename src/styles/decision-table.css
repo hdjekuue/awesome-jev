@@ -147,11 +147,13 @@ h3 {
 .langs {
   display: flex;
   align-items: stretch;
+  flex-wrap: wrap;
   gap: 0;
   font-family: var(--f-mono), var(--f-cjk);
   font-size: var(--t-min);
   letter-spacing: 0.045em;
   text-transform: uppercase;
+  min-width: 0;
 }
 
 .langs a {
@@ -1214,8 +1216,18 @@ footer {
     gap: 0.7rem;
   }
 
+  /* Three ruled language cells do not fit on a 360px phone at the desktop
+     padding, and the row pushed the document 55px wider than the viewport.
+     They shrink instead of overflowing. */
   .langs {
     justify-content: flex-start;
+  }
+
+  .langs a {
+    padding: 0.4rem 0.6rem;
+    flex: 1 1 auto;
+    justify-content: center;
+    min-width: 0;
   }
 
   .langs a:first-child {

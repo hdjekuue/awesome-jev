@@ -26,12 +26,12 @@
       "so rarely runs.",
       "",
       "The playground endpoint needs no account and no token, which is what makes it",
-      "usable from an unattended free-model run. Each connection is a fresh browser,",
-      "which is the right default for auditing someone else's page.",
+      "usable from an unattended free-model run — and is the only endpoint this repo",
+      "configures. Each connection is a fresh browser, which is the right default for",
+      "auditing someone else's page.",
       "",
-      "Override with KITESURF_WS to use Browser Run instead (an account, your own rate",
-      "limits, a private session):",
-      "  wss://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/browser-run/devtools/browser?browser=kitesurfwss://kitesurf.dev/devtools/browser"
+      "To point it somewhere else without editing this file, set KITESURF_WS in the",
+      "environment. Leave it unset."
     ],
     "kitesurf": {
       "type": "local",

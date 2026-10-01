@@ -82,12 +82,9 @@ clean and CI needs no browser install step.
 `opencode.json` also registers Kitesurf as an MCP server (`chrome-devtools-mcp` over the
 same endpoint), enabled by default, so a curator run can drive pages interactively.
 
-Set `KITESURF_WS` to use Browser Run instead — same engine, account attached, your own
-rate limits and a private session:
-
-```
-wss://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/browser-run/devtools/browser?browser=kitesurfwss://kitesurf.dev/devtools/browser
-```
+That playground endpoint is the only one configured here, on purpose: it needs no
+credentials, which is what lets an unattended free-model run use it. `KITESURF_WS`
+overrides the address in the environment; leave it unset.
 
 The engine is remote, so it cannot reach `localhost`. Point the page checks at the
 deployed site, or at a tunnel.

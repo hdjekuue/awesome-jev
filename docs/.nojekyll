@@ -1,0 +1,5 @@
+# Astro caches nothing that Pages needs, but Jekyll does: without this file the
+# Pages legacy build runs the output through Jekyll, which silently drops every
+# directory beginning with an underscore — that is `docs/_astro/`, where the
+# stylesheet and the font preload live. The site rendered unstyled and the fonts
+# 404'd with no error anywhere. Kept in public/ so every build ships it.

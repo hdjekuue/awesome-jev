@@ -1,48 +1,57 @@
 import fs from 'node:fs';
-import { execFileSync } from 'node:child_process';
 
-// Mirrors the "Entries added in this PR must ship all three languages" step of
-// verify.yml so it can be exercised locally without opening a PR.
-// 用一个真实的 diff 片段驱动同一段校验逻辑，避免只能在 PR 里才发现问题。
+// Exercises the per-entry translation gate that verify.yml runs on a pull
+// request, without needing a real PR. Pass a diff file to test a specific diff;
+// with no argument it verifies the shipped data instead.
+//
+//   node scripts/check-translations.mjs [diff-file]
+//
+// The default used to be a synthetic diff, which then failed by design once the
+// gate learned to reject names the data file cannot resolve — so the "check"
+// reported four errors that had nothing to do with the repo.
 
-const diff = process.argv[2] ? fs.readFileSync(process.argv[2], 'utf8') : `
-diff --git a/data/entries.json b/data/entries.json
-@@
-+    "name": "owner--repo",
-+    "name": "second--repo",
-+    "name": "third--repo",
-+    "name": "fourth--repo",
-`;
-
-const added = [...diff.matchAll(/^\+\s*"name":\s*"([^"]+)"/gm)].map((m) => m[1]);
-console.log('added entries detected:', added.length ? added.join(', ') : '(none)');
+const diffArg = process.argv[2];
+const diff = diffArg ? fs.readFileSync(diffArg, 'utf8') : '';
 
 const d = JSON.parse(fs.readFileSync('data/entries.json', 'utf8'));
-const known = new Set(d.entries.map((e) => e.name));
 
-// A name in the diff that is not in the data file means the contributor added a row
-// under a different key than the one `name:` claims, or the row is malformed. Passing
-// silently here would let a half-written entry through.
-const unknown = added.filter((n) => !known.has(n));
-if (unknown.length) {
-  for (const n of unknown) console.error(`::error file=data/entries.json::${n} appears in the diff but not in the parsed data — check the id/name pair`);
-  process.exit(1);
-}
-
-const bad = d.entries.filter((e) => added.includes(e.name) && (!e.description || !e.descriptionZh || !e.descriptionFr));
-
-if (bad.length) {
-  for (const b of bad) {
-    const missing = [!b.description && 'description', !b.descriptionZh && 'descriptionZh', !b.descriptionFr && 'descriptionFr']
-      .filter(Boolean);
-    console.error(`${b.name} is missing: ${missing.join(', ')}`);
-  }
-  console.error(`\n${bad.length} of ${added.length} new entries would be rejected.`);
-  process.exit(1);
-}
-console.log(`all ${added.length} new entr(y/ies) have all three descriptions`);
-
-// Also report how many of the *existing* entries the check would wave through,
-// which is the honest measure of whether the backlog is draining.
 const incomplete = d.entries.filter((e) => !e.description || !e.descriptionZh || !e.descriptionFr);
-console.log(`\nrepo-wide: ${d.entries.length - incomplete.length}/${d.entries.length} fully translated`);
+const missingZh = d.entries.filter((e) => !e.descriptionZh);
+const missingFr = d.entries.filter((e) => !e.descriptionFr);
+
+console.log(`repo-wide: ${d.entries.length - incomplete.length}/${d.entries.length} fully translated`);
+console.log(`  zh missing ${missingZh.length} · fr missing ${missingFr.length}`);
+
+if (!diffArg) {
+  if (incomplete.length) {
+    console.error(`\n${incomplete.length} entr(y/ies) lack at least one translation:`);
+    for (const e of incomplete.slice(0, 10)) {
+      const missing = [!e.description && 'description', !e.descriptionZh && 'descriptionZh', !e.descriptionFr && 'descriptionFr'].filter(Boolean);
+      console.error(`  ${e.name}: missing ${missing.join(', ')}`);
+    }
+    process.exit(1);
+  }
+  console.log('PASS — every entry ships all three descriptions');
+  process.exit(0);
+}
+
+const added = [...diff.matchAll(/^\+\s*"name":\s*"([^"]+)"/gm)].map((m) => m[1]);
+console.log(`\nadded entries detected: ${added.length ? added.join(', ') : '(none)'}`);
+
+if (!added.length) {
+  console.log('PASS — no entries added, nothing to gate');
+  process.exit(0);
+}
+
+const known = new Set(d.entries.map((e) => e.name));
+const unknown = added.filter((n) => !known.has(n));
+for (const n of unknown) {
+  console.error(`::error file=data/entries.json::${n} appears in the diff but not in the parsed data — check the id/name pair`);
+}
+const bad = d.entries.filter((e) => added.includes(e.name) && (!e.description || !e.descriptionZh || !e.descriptionFr));
+for (const b of bad) {
+  const missing = [!b.description && 'description', !b.descriptionZh && 'descriptionZh', !b.descriptionFr && 'descriptionFr'].filter(Boolean);
+  console.error(`::error file=data/entries.json::${b.name} is missing ${missing.join(', ')}`);
+}
+if (unknown.length || bad.length) process.exit(1);
+console.log(`PASS — all ${added.length} new entr(y/ies) have all three descriptions`);

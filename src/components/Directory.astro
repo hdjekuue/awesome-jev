@@ -8,6 +8,13 @@ import { CATEGORIES, catLabel, catBlurb, desc, fmtStars, weightClass } from '../
  */
 const { lang, byCat } = Astro.props;
 
+/**
+ * Only rules that actually have entries are rendered, and only those appear in
+ * the index and the intent rail. `articles` currently holds none, and linking to
+ * it produced a `#articles` anchor with no target on any page.
+ */
+const populated = CATEGORIES.filter((cat) => (byCat.get(cat.id) || []).length);
+
 const cellMeta = (e) => {
   const bits = [];
   if (e.language) bits.push(e.language);
@@ -23,7 +30,7 @@ const cellMeta = (e) => {
 
 <nav class="rules" aria-label={lang === 'zh' ? '规则索引' : lang === 'fr' ? 'Index des règles' : 'Rule index'}>
   <ol>
-    {CATEGORIES.map((cat) => (
+    {populated.map((cat) => (
       <li><a href={`#${cat.id}`}>{cat.stamp}<span>{catLabel(cat, lang)}</span></a></li>
     ))}
   </ol>
@@ -53,9 +60,8 @@ const cellMeta = (e) => {
   {Astro.props.searchNoneHint}
 </div>
 
-{CATEGORIES.map((cat) => {
+{populated.map((cat) => {
   const items = byCat.get(cat.id) || [];
-  if (!items.length) return null;
   return (
     <section class="cat" id={cat.id} data-category={cat.id}>
       <div class="cat-head">

@@ -50,7 +50,17 @@ jobs:
         run: npm run build
 
       - name: Generated output is correct
-        run: bash scripts/check-parity.sh
+        # Row parity, JSON-LD node types, hreflang set, and every internal link,
+        # anchor and asset resolving to a file that exists.
+        #   node scripts/check-links.mjs
+        #     caught the language switcher pointing at /awesome-jevzh/ and eight
+        #     intent rows linking to #undefined. Both had shipped.
+        #   node scripts/check-parity.sh
+        #     is the same check CI previously ran inline; it lives in a script so
+        #     it can be run locally before a push.
+        run: |
+          bash scripts/check-parity.sh
+          node scripts/check-links.mjs
 
       - name: The AIEO endpoints exist
         run: |

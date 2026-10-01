@@ -16,9 +16,30 @@ const dir = path.join(process.cwd(), '.github', 'workflows');
 const files = fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => f.endsWith('.yml')).sort() : [];
 
 const require = createRequire(import.meta.url);
-let YAML = null;
-for (const spec of ['yaml', 'js-yaml', 'C:/Users/RUNNER~1/AppData/Local/Temp/2/kilo/yamlchk/node_modules/yaml']) {
-  try { YAML = require(spec); break; } catch { /* try the next one */ }
+let parseYaml = null;
+let parserName = null;
+
+// `yaml` and `js-yaml` both appear in transitive trees with different shapes
+// (`parse` vs `load`), and resolving either by name can pick up a module with the
+// other API — which reported eight phantom parse errors. Try each, verify the
+// entry point actually exists, and fall back to structural-only rather than
+// inventing findings.
+for (const [spec, fn] of [
+  ['yaml', (m) => m.parse],
+  ['js-yaml', (m) => m.load],
+  ['C:/Users/RUNNER~1/AppData/Local/Temp/2/kilo/yamlchk/node_modules/yaml', (m) => m.parse],
+]) {
+  try {
+    const mod = require(spec);
+    const fn = fn(mod);
+    if (typeof fn === 'function') {
+      parseYaml = (text) => fn(text);
+      parserName = spec;
+      break;
+    }
+  } catch {
+    /* try the next one */
+  }
 }
 
 let bad = 0;
@@ -33,9 +54,9 @@ for (const f of files) {
   if (!/^permissions:/m.test(text)) issues.push('no permissions: block');
   if (!/^jobs:/m.test(text)) issues.push('no jobs: block');
 
-  if (YAML) {
+  if (parseYaml) {
     try {
-      const doc = YAML.parse(text);
+      const doc = parseYaml(text);
       const jobs = Object.keys(doc.jobs || {});
       if (!jobs.length) issues.push('no job ids');
       for (const [id, job] of Object.entries(doc.jobs || {})) {
@@ -67,7 +88,7 @@ for (const f of files) {
   if (issues.length) { bad++; problems.push(`${f}:\n  - ${issues.join('\n  - ')}`); }
 }
 
-console.log(`checked ${files.length} workflow file(s) · parser: ${YAML ? 'full YAML' : 'structural only (install `yaml` for the deep check)'}`);
+console.log(`checked ${files.length} workflow file(s) · parser: ${parserName || 'structural only (install `yaml` for the deep check)'}`);
 if (bad) {
   console.error(`\n${bad} workflow(s) with problems:\n${problems.join('\n')}`);
   process.exit(1);

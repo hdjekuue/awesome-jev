@@ -199,7 +199,15 @@ const machineLinks = [
         </a>
         <nav class="langs" aria-label={lang === 'zh' ? '语言' : lang === 'fr' ? 'Langue' : 'Language'}>
           {LANGS.map((l) => (
-            <a href={`${BASE}${l === 'en' ? '/' : `${l}/`}`} hreflang={LANG_META[l].hreflang} lang={LANG_META[l].hreflang} aria-current={l === lang ? 'page' : undefined}>
+            /* PATH_FOR already carries the leading slash. Concatenating BASE
+               directly — `${BASE}${l}/` — produced /awesome-jevzh/, which 404'd,
+               because BASE is `/awesome-jev` with no trailing slash. */
+            <a
+              href={`${BASE}${PATH_FOR[l]}`}
+              hreflang={LANG_META[l].hreflang}
+              lang={LANG_META[l].hreflang}
+              aria-current={l === lang ? 'page' : undefined}
+            >
               {c.langName(l)}
             </a>
           ))}

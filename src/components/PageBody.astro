@@ -11,12 +11,21 @@ import { COPY, CURATION_STAGES } from '../lib/copy.mjs';
 const { lang, byCat, updated, entries } = Astro.props;
 const c = COPY[lang];
 const s = stats(entries, updated);
+// Only rules that render. `stats()` counts the whole CATEGORIES table, which
+// includes one rule with no entries, so the page would claim 20 rules and ship 19.
 const cats = CATEGORIES.filter((cat) => (byCat.get(cat.id) || []).length);
+s.categories = cats.length;
 
-const intentRows = c.intents.map((i) => {
-  const cat = CATEGORIES.find((x) => x.id === i.to);
-  return { ...i, stamp: cat?.stamp || '—', n: (byCat.get(i.to) || []).length };
-});
+const intentRows = c.intents
+  .map((i) => {
+    const cat = cats.find((x) => x.id === i.to);
+    if (!cat) return null;
+    // `to` is the category id and `id` is what the anchor needs. Naming the local
+    // `id` is deliberate: `href={\`#${r.id}\`}` reading `r.to` looks equivalent and
+    // shipped eight dead anchors as `#undefined`.
+    return { ...i, id: i.to, stamp: cat.stamp, n: (byCat.get(i.to) || []).length };
+  })
+  .filter(Boolean);
 
 const stages = CURATION_STAGES[lang];
 

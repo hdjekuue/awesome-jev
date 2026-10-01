@@ -1,0 +1,199 @@
+name: Triage
+
+# PR and issue triage: policy enforcement plus a free-AI review comment.
+# Runs on pull_request_target, which has repo secrets — so it never checks out
+# fork code, only the base branch.
+
+on:
+  issues:
+    types: [opened, reopened]
+  pull_request_target:
+    types: [opened, reopened]
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+  id-token: write
+
+concurrency:
+  group: triage-${{ github.event_name }}-${{ github.event.number || github.event.issue.number || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  guard:
+    name: Submission policy
+    if: >
+      github.event_name == 'pull_request_target' &&
+      (github.event.action == 'opened' || github.event.action == 'reopened') &&
+      github.event.sender.login == github.event.pull_request.user.login &&
+      !startsWith(github.head_ref, 'curator/') &&
+      !startsWith(github.head_ref, 'bot/') &&
+      !endsWith(github.actor, '[bot]') &&
+      github.event.pull_request.author_association != 'OWNER' &&
+      github.event.pull_request.author_association != 'MEMBER' &&
+      github.event.pull_request.author_association != 'COLLABORATOR'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Enforce submission policy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          REPO="${{ github.repository }}"
+          BASE="${{ github.base_ref }}"; [ -z "$BASE" ] && BASE="main"
+          AUTHOR="${{ github.event.pull_request.user.login }}"
+          PR="${{ github.event.number }}"
+          ALOW=$(echo "$AUTHOR" | tr '[:upper:]' '[:lower:]')
+
+          have_marker() {
+            gh pr view "$PR" --json comments --jq "[.comments[] | select(.author.login == \"github-actions[bot]\") and (.body | contains(\"submission-guard:$1\"))] | length" 2>/dev/null || echo 0
+          }
+
+          # Policy is read from the BASE branch so a fork cannot edit its own rules.
+          POLICY=$(gh api -H "Accept: application/vnd.github.raw" "repos/$REPO/contents/.github/curator-policy.yml?ref=$BASE" 2>/dev/null || true)
+          WATCHED=$(echo "$POLICY" | awk '/^watchlist:/{f=1;next} /^[^[:space:]#]/{f=0} f' | grep -ciE "^[[:space:]]*-[[:space:]]*${ALOW}[[:space:]]*$" || true)
+          WINDOW=$(echo "$POLICY" | grep -E '^[[:space:]]*window_days:' | grep -oE '[0-9]+' | head -n1 || true); [ -z "$WINDOW" ] && WINDOW=14
+          WARN_UNTIL=$(echo "$POLICY" | grep -E '^[[:space:]]*warn_until:' | grep -oE '[0-9]+' | head -n1 || true); [ -z "$WARN_UNTIL" ] && WARN_UNTIL=3
+          CLOSE_FROM=$(echo "$POLICY" | grep -E '^[[:space:]]*close_from:' | grep -oE '[0-9]+' | head -n1 || true); [ -z "$CLOSE_FROM" ] && CLOSE_FROM=4
+          echo "policy: watched=$WATCHED window=${WINDOW}d warn_until=$WARN_UNTIL close_from=$CLOSE_FROM"
+
+          OPEN_JSON=$(gh pr list --state open --author "$AUTHOR" --json number,createdAt)
+          OPEN_COUNT=$(echo "$OPEN_JSON" | jq 'length')
+
+          if [ "$WATCHED" -ge 1 ]; then
+            if [ "$OPEN_COUNT" -le 1 ]; then echo "Watchlisted, first/only PR — normal flow."; exit 0; fi
+            KEEP=$(echo "$OPEN_JSON" | jq -r 'sort_by(.createdAt) | .[0].number')
+            if [ "$KEEP" = "$PR" ]; then echo "This is the oldest open PR — keep it."; exit 0; fi
+            if [ "$(have_marker strict)" -ge 1 ]; then gh pr close "$PR" || true; exit 0; fi
+            gh label create batch-submission --color "E99695" --description "Closed by the one-open-PR policy" 2>/dev/null || true
+            gh pr edit "$PR" --add-label "batch-submission" || true
+            gh pr close "$PR" --comment "<!-- submission-guard:strict -->Hi @$AUTHOR — you are on the submission watchlist, so one PR is reviewed at a time. #$KEEP is still open, so this one was auto-closed; nothing is lost, the diff stays in history. Welcome back once #$KEEP has a verdict.
+
+你好，你在投稿观察名单中，一次只评审一个 PR；#$KEEP 还没处理完，本条自动关闭（改动都在历史里）。等它有结论后欢迎重提。" || true
+            exit 0
+          fi
+
+          # Is this PR adding the author's own repository? Recommending others is exempt.
+          OWNERS=$(gh pr diff "$PR" 2>/dev/null | grep -oE '\+.*github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+' | grep -oE 'github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+' | cut -d/ -f2 | tr '[:upper:]' '[:lower:]' | sort -u || true)
+          SELF=false; for o in $OWNERS; do [ "$o" = "$ALOW" ] && SELF=true; done
+          echo "added_owners: $OWNERS self_promo=$SELF"
+          if [ "$SELF" != "true" ]; then echo "Not self-promo — normal flow."; exit 0; fi
+
+          SINCE=$(date -u -d "$WINDOW days ago" +%Y-%m-%dT%H:%M:%SZ)
+          HIST=$(gh pr list --state all --author "$AUTHOR" --limit 100 --json number,title,createdAt)
+          N=$(echo "$HIST" | jq --arg a "$ALOW" --arg s "$SINCE" '[.[] | select(.createdAt >= $s and ((.title // "") | ascii_downcase | test("^(add|docs:\\s*add)\\s+" + $a + "/")))] | length')
+          echo "self_promo_in_window(incl current)=$N"
+
+          if [ "$N" -ge "$CLOSE_FROM" ]; then
+            if [ "$(have_marker velocity-close)" -ge 1 ]; then gh pr close "$PR" || true; exit 0; fi
+            gh label create batch-submission --color "E99695" --description "Closed by the self-promo velocity policy" 2>/dev/null || true
+            gh pr edit "$PR" --add-label "batch-submission" || true
+            gh pr close "$PR" --comment "<!-- submission-guard:velocity-close -->Hi @$AUTHOR — thanks for contributing to Awesome Jev, but this is your ${N}th self-submission in $WINDOW days, so it was auto-closed to keep review capacity for everyone. Nothing is lost: the diff stays in history. Recommending someone else's excellent project is always welcome and unaffected.
+
+你好，感谢投稿，但这是你 $WINDOW 天内第 ${N} 个自荐，按策略自动关闭（改动都在历史里）。举荐别人的优秀项目不受影响，正常评审。" || true
+          elif [ "$N" -gt 1 ]; then
+            if [ "$(have_marker velocity-warn)" -ge 1 ]; then exit 0; fi
+            gh pr comment "$PR" --body "<!-- submission-guard:velocity-warn -->Hi @$AUTHOR — this is your ${N}th self-submission in $WINDOW days. Please let the earlier ones conclude first; from the ${CLOSE_FROM}th on, new self-submissions are auto-closed. One quality PR at a time gets reviewed fastest.
+
+你好，这是你 $WINDOW 天内第 ${N} 个自荐，请先等前面的有结论；第 ${CLOSE_FROM} 个起会自动关闭。" || true
+          else
+            if [ "$(have_marker velocity-tip)" -ge 1 ]; then exit 0; fi
+            gh pr comment "$PR" --body "<!-- submission-guard:velocity-tip -->Hi @$AUTHOR — thanks for submitting your project to Awesome Jev! One friendly heads-up: several self-submissions from the same account in a short window get extra scrutiny. From the ${CLOSE_FROM}th self-submission within $WINDOW days, new ones are auto-closed until earlier ones are handled. Recommending someone else's project is always welcome and unaffected.
+
+你好 @$AUTHOR，感谢投稿！小提示：同账号短时间内多次自荐会被额外关注；$WINDOW 天内第 ${CLOSE_FROM} 个起会自动关闭。举荐别人的项目不受影响。" || true
+          fi
+
+  review:
+    name: Free-AI triage
+    if: >
+      github.event_name == 'issues' ||
+      (
+        github.event_name == 'pull_request_target' &&
+        !startsWith(github.head_ref, 'curator/') &&
+        !startsWith(github.head_ref, 'bot/') &&
+        !endsWith(github.actor, '[bot]')
+      ) ||
+      (
+        github.event_name == 'issue_comment' &&
+        contains(github.event.comment.body, '/curator') &&
+        (github.event.comment.author_association == 'OWNER' ||
+         github.event.comment.author_association == 'MEMBER' ||
+         github.event.comment.author_association == 'COLLABORATOR')
+      )
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      # Base branch only — pull_request_target carries secrets, so fork code must
+      # never be checked out here (pwn-request).
+      - uses: actions/checkout@v4
+        if: github.event_name != 'issue_comment'
+        with:
+          ref: ${{ github.base_ref || 'main' }}
+
+      - uses: actions/checkout@v4
+        if: github.event_name == 'issue_comment'
+        with:
+          ref: ${{ github.event.issue.pull_request && github.base_ref || 'main' }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install opencode
+        run: |
+          set -e
+          npm install -g @opencode/cli
+          opencode --version
+
+      - name: Label + review (free model)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PR: ${{ github.event_name == 'pull_request_target' && github.event.number || (github.event_name == 'issue_comment' && github.event.issue.pull_request && github.event.issue.number) || '' }}
+          GH_ISSUE: ${{ github.event_name == 'issues' && github.event.issue.number || (github.event_name == 'issue_comment' && !github.event.issue.pull_request && github.event.issue.number) || '' }}
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY || 'public' }}
+        run: |
+          set -e
+          node scripts/curate.mjs
+          head -n 120 curator-report.md || true
+
+          N="${{ github.event.number || github.event.issue.number }}"
+          IS_PR="${{ github.event_name == 'pull_request_target' || github.event.issue.pull_request }}"
+          [ -z "$N" ] && exit 0
+          for L in ai-draft needs-review curator auto-labeled; do
+            gh label create "$L" --color "c5def5" --description "Applied by the curator" 2>/dev/null || true
+          done
+          if [ "$IS_PR" = "true" ]; then gh pr edit "$N" --add-label "needs-review,curator,auto-labeled" || true
+          else gh issue edit "$N" --add-label "needs-review,curator,auto-labeled" || true; fi
+
+          MARK="<!-- curator:triage -->"
+          { echo "$MARK"; echo; head -c 8000 curator-report.md; } > /tmp/triage.md
+          ID=$(gh api "repos/${{ github.repository }}/issues/$N/comments" --paginate \
+                --jq '[.[] | select(.body | contains("<!-- curator:triage -->")) | .id] | first // empty')
+          if [ -n "$ID" ]; then gh api -X PATCH "repos/${{ github.repository }}/issues/comments/$ID" -F body=@/tmp/triage.md --jq .id
+          elif [ "$IS_PR" = "true" ]; then gh pr comment "$N" --body-file /tmp/triage.md
+          else gh issue comment "$N" --body-file /tmp/triage.md; fi
+
+          # The short, postable comment is posted separately so the technical report
+          # and the human-facing note never get mixed.
+          if [ -s review-comment.md ]; then
+            { echo "$MARK:comment"; echo; head -c 5000 review-comment.md; } > /tmp/rc.md
+            ID2=$(gh api "repos/${{ github.repository }}/issues/$N/comments" --paginate \
+                  --jq '[.[] | select(.body | contains("<!-- curator:triage:comment -->")) | .id] | first // empty')
+            if [ -n "$ID2" ]; then gh api -X PATCH "repos/${{ github.repository }}/issues/comments/$ID2" -F body=@/tmp/rc.md --jq .id
+            elif [ "$IS_PR" = "true" ]; then gh pr comment "$N" --body-file /tmp/rc.md
+            else gh issue comment "$N" --body-file /tmp/rc.md; fi
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "Triage complete."
+          ls -lh curator-report.md review-comment.md 2>&1 || true

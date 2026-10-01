@@ -1,0 +1,18 @@
+# Awesome Jev 投稿策略 / Submission policy
+#
+# Read from the BASE branch by curator-triage.yml, so a fork editing this file
+# cannot change how its own PR is handled.
+#
+# watchlist: strict list — one running PR at a time. Older unhandled PRs are
+#   auto-closed with a friendly note. Maintainer reopens are exempt.
+# self_promo: general rule — repeated self-submissions (your own repos, several in
+#   a short window) get a friendly tip, then reminders, then auto-close from the
+#   Nth. Recommending someone else's project is always exempt and reviewed normally.
+
+watchlist:
+  # - some-login
+
+self_promo:
+  window_days: 14   # lookback window (days)
+  warn_until: 3     # 1st is a tip, 2nd..warn_until are firmer reminders
+  close_from: 4     # from the Nth self-promo PR in the window, auto-close

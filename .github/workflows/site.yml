@@ -1,0 +1,76 @@
+name: Site
+
+# Rebuild docs/ (the GitHub Pages source) whenever the data or the READMEs change.
+# docs/, llms.txt, llms-full.txt, skill.md and projects.json are generated but
+# committed on purpose — the site serves them and agents fetch them by raw URL.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/entries.json'
+      - 'scripts/lib/catalog.mjs'
+      - 'scripts/build-readme.mjs'
+      - 'site/build.mjs'
+      - '.github/workflows/site.yml'
+  workflow_run:
+    workflows: ['Refresh', 'Translate']
+    types: [completed]
+  schedule:
+    - cron: '11 6 * * *'      # daily fallback
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: site
+  cancel-in-progress: true
+
+jobs:
+  build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Rebuild READMEs and site
+        run: |
+          set -e
+          node scripts/build-readme.mjs
+          node site/build.mjs
+
+      - name: Sanity-check the AIEO artifacts
+        run: |
+          set -e
+          test -f docs/llms.txt
+          test -f docs/llms-full.txt
+          test -f docs/skill.md
+          test -f docs/projects.json
+          test -f docs/index.html
+          test -f docs/zh/index.html
+          test -f docs/fr/index.html
+          node -e "const j=require('./docs/projects.json'); if(!j.entries.length) throw new Error('empty'); console.log('projects.json OK, '+j.entries.length+' entries, updated '+j.meta.updatedAt)"
+          node -e "const s=require('fs').readFileSync('docs/sitemap.xml','utf8'); if((s.match(/<url>/g)||[]).length < 3) throw new Error('sitemap too small'); console.log('sitemap OK')"
+          echo "llms.txt: $(wc -c < docs/llms.txt) bytes · llms-full.txt: $(wc -c < docs/llms-full.txt) bytes · skill.md: $(wc -c < docs/skill.md) bytes"
+
+      - name: Commit and push if changed
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/ llms.txt llms-full.txt skill.md projects.json README.md README.zh.md README.fr.md
+          if git diff --cached --quiet; then
+            echo "Site unchanged — nothing to do."
+            exit 0
+          fi
+          git commit -m "chore(site): rebuild site and AIEO exports [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main

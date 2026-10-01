@@ -1,0 +1,131 @@
+name: Curator
+
+# Free-AI health audit on a schedule. Drafts a PR when it finds something real;
+# does nothing when the repo is healthy.
+
+on:
+  schedule:
+    - cron: '23 3 * * *'      # daily 03:23 UTC
+  workflow_dispatch:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  id-token: write
+
+concurrency:
+  group: curator-${{ github.event.number || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  curate:
+    # /curator in a comment re-runs the review; anything else only runs on schedule.
+    if: >
+      github.event_name != 'issue_comment' ||
+      (
+        contains(github.event.comment.body, '/curator') &&
+        github.event.comment.author_association == 'MEMBER'
+      )
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      # SECURITY: issue_comment runs with repo secrets. Never check out fork code.
+      - uses: actions/checkout@v4
+        if: github.event_name != 'issue_comment'
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        if: github.event_name != 'issue_comment'
+        with:
+          node-version: 22
+
+      - name: Install opencode
+        if: github.event_name != 'issue_comment'
+        run: |
+          set -e
+          npm install -g @opencode/cli
+          opencode --version
+
+      - name: Free models in play
+        if: github.event_name != 'issue_comment'
+        run: node scripts/curate.mjs --models
+
+      - name: Run curator (free-model traversal, deterministic fallback)
+        id: run
+        if: github.event_name != 'issue_comment'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PR: ${{ github.event.issue.pull_request && github.event.issue.number || '' }}
+          GH_ISSUE: ${{ !github.event.issue.pull_request && github.event.issue.number || '' }}
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY || 'public' }}
+        run: |
+          set -e
+          node scripts/curate.mjs
+          head -n 120 curator-report.md || true
+
+      - name: Post the report as a single upserted comment
+        if: github.event_name == 'issue_comment'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          npm install -g @opencode/cli
+          node scripts/curate.mjs
+          N="${{ github.event.issue.number }}"
+          MARK="<!-- curator:ai-review -->"
+          BODY=/tmp/body.md
+          { echo "$MARK"; echo; head -c 8000 curator-report.md; } > $BODY
+          ID=$(gh api "repos/${{ github.repository }}/issues/$N/comments" --paginate \
+                --jq '[.[] | select(.body | contains("<!-- curator:ai-review -->")) | .id] | first // empty')
+          if [ -n "$ID" ]; then
+            gh api -X PATCH "repos/${{ github.repository }}/issues/comments/$ID" -F body=@$BODY --jq .id
+          else
+            gh issue comment "$N" --body-file $BODY
+          fi
+
+      - name: Skip the PR when there is nothing to fix
+        if: steps.run.outcome == 'success'
+        run: |
+          set -e
+          IDLE=$(grep -ciE "nothing to fix|no actionable findings|nothing is broken" curator-report.md || true)
+          DIFF=$(grep -c '^```diff' curator-report.md || true)
+          echo "idle_markers=$IDLE diff_blocks=$DIFF"
+          if [ "$DIFF" -eq 0 ] && [ "$IDLE" -ge 1 ]; then
+            echo "Nothing actionable — dropping the report so no PR is opened"
+            rm -f curator-report.md
+          else
+            echo "Actionable content — the gate will review the PR"
+          fi
+
+      - name: Open a PR if the audit produced a report
+        id: cpr
+        if: steps.run.outcome == 'success'
+        continue-on-error: true
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: curator/report-${{ github.run_id }}
+          delete-branch: true
+          commit-message: 'chore(curator): free-AI health audit [skip ci]'
+          title: 'chore(curator): free-AI health audit — run ${{ github.run_number }}'
+          labels: |
+            ai-draft
+            needs-review
+            curator
+            bot
+          body: |
+            Health audit from a **free** opencode model, gated by a second free model.
+
+            - Report: `curator-report.md`
+            - Nothing here merges on its own: the gate workflow re-reviews and only merges
+              changes that actually touch `data/entries.json`.
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "Curator run complete."
+          ls -lh curator-report.md 2>&1 || echo "no report produced (repo looked healthy)"

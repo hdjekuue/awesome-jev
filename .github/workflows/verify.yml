@@ -1,0 +1,79 @@
+name: Verify
+
+# Deterministic, model-free gate. This is the check that must be green to merge.
+# 确定性校验（不调用任何模型），是合并的硬性条件。
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Schema, duplicates, categories, description hygiene
+        run: node scripts/verify.mjs
+
+      - name: JSON parses
+        run: |
+          node -e "JSON.parse(require('fs').readFileSync('data/entries.json','utf8')); console.log('data/entries.json OK')"
+
+      - name: Generated files are up to date
+        run: |
+          set -e
+          node scripts/build-readme.mjs --check
+          node site/build.mjs >/dev/null
+          if ! git diff --quiet -- README.md README.zh.md README.fr.md docs/ llms.txt llms-full.txt skill.md projects.json; then
+            echo "::error::Generated files are stale. Run: node scripts/build-readme.mjs && node site/build.mjs"
+            git diff --stat -- README.md README.zh.md README.fr.md docs/ llms.txt llms-full.txt skill.md projects.json
+            exit 1
+          fi
+          echo "generated files match data/entries.json"
+
+      - name: Trilingual row parity
+        run: |
+          set -e
+          for f in README.md README.zh.md README.fr.md; do
+            printf '%s: %s rows\n' "$f" "$(grep -c '^| \[' "$f" || true)"
+          done
+          EN=$(grep -c '^| \[' README.md || true)
+          ZH=$(grep -c '^| \[' README.zh.md || true)
+          FR=$(grep -c '^| \[' README.fr.md || true)
+          if [ "$EN" != "$ZH" ] || [ "$EN" != "$FR" ]; then
+            echo "::error::Row counts differ across languages: en=$EN zh=$ZH fr=$FR"
+            exit 1
+          fi
+          echo "row parity OK ($EN)"
+
+      - name: Trilingual entry coverage
+        run: |
+          set -e
+          node -e "
+          const d = JSON.parse(require('fs').readFileSync('data/entries.json','utf8'));
+          const missZh = d.entries.filter(e => !e.descriptionZh);
+          const missFr = d.entries.filter(e => !e.descriptionFr);
+          const pct = (n) => Math.round((1 - n / d.entries.length) * 100);
+          console.log('zh coverage: ' + pct(missZh.length) + '% (' + missZh.length + ' missing)');
+          console.log('fr coverage: ' + pct(missFr.length) + '% (' + missFr.length + ' missing)');
+          if (missZh.length > d.entries.length * 0.15 || missFr.length > d.entries.length * 0.15) {
+            console.error('::error::translation coverage below 85% — run node scripts/translate.mjs');
+            process.exit(1);
+          }
+          "

@@ -1,0 +1,110 @@
+name: Translate
+
+# Fills in missing 中文 and Français descriptions using ONLY free opencode Zen
+# models. No API key, no billing. Scheduled so the list keeps filling in after
+# every new batch of entries.
+
+on:
+  schedule:
+    - cron: '43 5 * * 1'      # Mondays 05:43 UTC
+  workflow_dispatch:
+    inputs:
+      langs:
+        description: 'Languages to fill (comma separated: zh,fr)'
+        required: false
+        default: 'zh,fr'
+      limit:
+        description: 'Max entries per language (0 = all)'
+        required: false
+        default: '0'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: translate
+  cancel-in-progress: false
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install opencode
+        run: |
+          set -e
+          npm install -g @opencode/cli
+          opencode --version
+
+      - name: Show the free models in play
+        run: node scripts/translate.mjs --models
+
+      - name: Translate missing descriptions
+        env:
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY || 'public' }}
+        run: |
+          set -e
+          LIMIT="${{ inputs.limit }}"
+          if [ -z "$LIMIT" ] || [ "$LIMIT" = "0" ]; then
+            node scripts/translate.mjs --lang "${{ inputs.langs }}" --batch 12
+          else
+            node scripts/translate.mjs --lang "${{ inputs.langs }}" --batch 12 --limit "$LIMIT"
+          fi
+
+      - name: Re-render and verify
+        run: |
+          set -e
+          node scripts/verify.mjs
+          node scripts/build-readme.mjs
+          node site/build.mjs >/dev/null
+
+      - name: Open a PR with the new translations
+        id: cpr
+        continue-on-error: true
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: bot/translations
+          delete-branch: true
+          commit-message: 'chore(i18n): fill missing zh/fr descriptions [skip ci]'
+          title: 'chore(i18n): fill missing 中文 / Français descriptions'
+          labels: |
+            bot
+            documentation
+          body: |
+            Translated with free opencode Zen models, then re-rendered.
+
+            The READMEs, the website and the machine-readable exports are all generated from
+            `data/entries.json`, so this PR is the translations plus their rendered output.
+
+            Human spot-check welcome: if a description reads wrong, fix the `descriptionZh` /
+            `descriptionFr` field in `data/entries.json` and re-render.
+          add-paths: |
+            data/entries.json
+            README.zh.md
+            README.fr.md
+            docs/
+            llms-full.txt
+            skill.md
+            projects.json
+
+      - name: Summary
+        if: always()
+        run: |
+          node -e "
+          const d = JSON.parse(require('fs').readFileSync('data/entries.json','utf8'));
+          const miss = (f) => d.entries.filter(e => !e[f]).length;
+          const t = d.entries.length;
+          console.log('zh missing: ' + miss('descriptionZh') + '/' + t);
+          console.log('fr missing: ' + miss('descriptionFr') + '/' + t);
+          "
+          echo "PR step outcome: ${{ steps.cpr.outcome }}"

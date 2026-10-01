@@ -1,0 +1,76 @@
+name: Star History
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'      # every 6h, also picks up unstars
+  watch:
+    types: [started]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: star-history
+  cancel-in-progress: true
+
+jobs:
+  star-history:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Render without committing so we can mirror the block into both other READMEs.
+      - id: render
+        uses: narayann7/star-history-action@v1
+        with:
+          repos: ${{ github.repository }}
+          commit: false
+
+      - name: Mirror the embed into README.zh.md and README.fr.md
+        if: steps.render.outputs.changed == 'true'
+        run: |
+          set -e
+          python3 - <<'PY'
+          import re
+          def extract(p):
+              t = open(p, encoding='utf-8').read()
+              m = re.search(r'<!-- star-history:start -->.*?<!-- star-history:end -->', t, re.S)
+              return m.group(0) if m else None
+          block = extract('README.md')
+          if not block:
+              print('no block in README.md, skipping mirror')
+              raise SystemExit(0)
+          for path in ('README.zh.md', 'README.fr.md'):
+              t = open(path, encoding='utf-8').read()
+              if '<!-- star-history:start -->' in t and '<!-- star-history:end -->' in t:
+                  new = re.sub(r'<!-- star-history:start -->.*?<!-- star-history:end -->',
+                               lambda _: block, t, count=1, flags=re.S)
+                  open(path, 'w', encoding='utf-8').write(new)
+                  print('mirrored into', path)
+              else:
+                  print('markers not found in', path)
+          PY
+
+      - name: Commit and push
+        if: steps.render.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/star-history README.md README.zh.md README.fr.md
+          if git diff --cached --quiet; then
+            echo "Nothing staged."
+            exit 0
+          fi
+          git commit -m "chore: update star history [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - name: No change
+        if: steps.render.outputs.changed != 'true'
+        run: echo "Star chart unchanged — no push needed."

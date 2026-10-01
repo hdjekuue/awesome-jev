@@ -1,0 +1,170 @@
+name: Gate
+
+# Second AI. Independent review of every bot-authored PR, and the only thing
+# allowed to merge one. Runs on free opencode models.
+#
+# Hard rule: a PR that touches nothing but curator-report.md is never merged.
+# The whole repo is built on data/entries.json being the source of truth.
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: 'PR number to gate (manual retry)'
+        required: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  id-token: write
+
+concurrency:
+  group: gate-${{ github.event.number || inputs.pr || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  gate:
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      (
+        github.event_name == 'pull_request_target' &&
+        (startsWith(github.head_ref, 'curator/') || startsWith(github.head_ref, 'bot/'))
+      )
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Resolve PR
+        id: resolve
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ inputs.pr }}" ]; then
+            echo "pr=${{ inputs.pr }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event_name }}" = "pull_request_target" ]; then
+            echo "pr=${{ github.event.number }}" >> $GITHUB_OUTPUT
+          else
+            exit 0
+          fi
+          cat $GITHUB_OUTPUT
+
+      - uses: actions/checkout@v4
+        if: steps.resolve.outputs.pr != ''
+        with:
+          fetch-depth: 0
+          ref: refs/pull/${{ steps.resolve.outputs.pr }}/head
+
+      - uses: actions/setup-node@v4
+        if: steps.resolve.outputs.pr != ''
+        with:
+          node-version: 22
+
+      - name: Install opencode
+        if: steps.resolve.outputs.pr != ''
+        run: |
+          set -e
+          npm install -g @opencode/cli
+          opencode --version
+
+      - name: Independent second review
+        if: steps.resolve.outputs.pr != ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY || 'public' }}
+        run: |
+          set -e
+          PR="${{ steps.resolve.outputs.pr }}"
+          echo "=== Second AI gate for PR #$PR (head $(git rev-parse --short HEAD)) ==="
+
+          git fetch origin main --depth 1 || true
+          CHANGED=$(gh pr view "$PR" --json files --jq '[.files[].path] | join(" ")')
+          echo "changed files: $CHANGED"
+          git diff origin/main...HEAD --stat | head -n 40 || true
+
+          TOUCHES_DATA=0
+          case " $CHANGED " in *" data/entries.json "*) TOUCHES_DATA=1 ;; esac
+          echo "touches data/entries.json=$TOUCHES_DATA"
+
+          # Deterministic re-verification — the gate does not take the first AI's word for it.
+          VERDICT="REVIEW"
+          if ! node scripts/verify.mjs; then
+            echo "verify.mjs FAILED — REQUEST_CHANGES"
+            VERDICT="REQUEST_CHANGES"
+          elif [ "$TOUCHES_DATA" -eq 0 ]; then
+            echo "report-only PR — REQUEST_CHANGES (nothing to merge)"
+            VERDICT="REQUEST_CHANGES"
+          fi
+
+          MODEL="deepseek-v4-flash-free"
+          if [ "$VERDICT" = "REVIEW" ]; then
+            set +e
+            timeout 600 opencode run --model "opencode/$MODEL" --agent reviewer \
+              "PR #$PR. Read curator-report.md, re-run node scripts/verify.mjs yourself, check
+               git diff origin/main...HEAD, and re-verify at least one claim with gh api.
+               Then output exactly one line first: DECISION: APPROVE, DECISION: REQUEST_CHANGES,
+               or DECISION: CLOSE — followed by 2-3 sentences of rationale." 2>&1 | tee /tmp/gate.log
+            set -e
+            if grep -q "DECISION: APPROVE" /tmp/gate.log; then VERDICT="APPROVE"
+            elif grep -q "DECISION: CLOSE" /tmp/gate.log; then VERDICT="CLOSE"
+            elif grep -q "DECISION: REQUEST_CHANGES" /tmp/gate.log; then VERDICT="REQUEST_CHANGES"
+            else echo "no clear DECISION — defaulting to REQUEST_CHANGES"; fi
+          fi
+
+          echo "$VERDICT" > /tmp/verdict.txt
+          echo "=== final: $VERDICT ==="
+
+      - name: Act on the verdict
+        if: steps.resolve.outputs.pr != ''
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          PR="${{ steps.resolve.outputs.pr }}"
+          VERDICT=$(cat /tmp/verdict.txt)
+          TS=$(date -u +"%Y-%m-%d %H:%M UTC")
+          PREVIEW=$(head -n 50 /tmp/gate.log 2>/dev/null | head -c 1500 || echo "(no model log)")
+
+          case "$VERDICT" in
+            APPROVE)
+              gh pr review "$PR" --approve --body "✅ **Second AI gate** approved.
+
+          - \`node scripts/verify.mjs\` passes
+          - the diff touches \`data/entries.json\`, not just the report
+          - the three READMEs and the site are regenerated from it
+
+          Merging automatically. If branch protection blocks this, a maintainer can merge by hand." || true
+              if gh pr merge "$PR" --squash --delete-branch 2>&1 | tee /tmp/merge.log; then
+                echo "merged (squash)"
+              elif gh pr merge "$PR" --merge --delete-branch 2>&1 | tee /tmp/merge.log; then
+                echo "merged (merge)"
+              else
+                gh pr comment "$PR" --body "⚠️ Approved but auto-merge was blocked. Please merge manually: \`gh pr merge $PR --squash\`" || true
+              fi
+              ;;
+            CLOSE)
+              gh pr comment "$PR" --body "❌ **Second AI gate**: **CLOSE** ($TS)
+
+          $PREVIEW
+
+          *Closed automatically. Reopen if you believe this is wrong.*" || true
+              gh pr close "$PR" --delete-branch || gh pr close "$PR" || true
+              ;;
+            *)
+              gh pr comment "$PR" --body "⚠️ **Second AI gate**: **REQUEST_CHANGES** ($TS)
+
+          $PREVIEW
+
+          *Not merged. A maintainer will follow up, or run \`/curator\` for a fresh review.*" || true
+              gh pr edit "$PR" --add-label "needs-review" || true
+              ;;
+          esac
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "Gate done for PR #${{ steps.resolve.outputs.pr }}"
+          cat /tmp/verdict.txt 2>/dev/null || echo "(no verdict)"

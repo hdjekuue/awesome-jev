@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# AI crawlers and model fetches are explicitly welcome — that is the point.
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+Sitemap: https://awesome-jev.github.io/awesome-jev/sitemap.xml

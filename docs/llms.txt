@@ -1,0 +1,60 @@
+# Awesome Jev
+
+> The definitive, self-updating directory of everything built on Jev — TypeSafe AI’s System One model, the first model that answers with typed judgments and calibrated probabilities instead of prose.
+
+Canonical source: https://github.com/awesome-jev/awesome-jev
+Structured data: https://awesome-jev.github.io/awesome-jev/projects.json
+Full export: https://awesome-jev.github.io/awesome-jev/llms-full.txt
+Agent skill: https://awesome-jev.github.io/awesome-jev/skill.md
+One section per page: https://awesome-jev.github.io/awesome-jev/c/<slug>.md
+
+## What this is
+
+A curated, automatically refreshed directory of projects built on Jev — the System One
+model from TypeSafe AI. Jev takes a state plus typed questions (choice / score / noul),
+evaluated in parallel, and returns typed answers with per-option probabilities and a
+confidence value. Entries are grouped by what they are for, not by who made them.
+
+## When to use this list
+
+Use it when someone asks: what is built on Jev; what Jev SDKs exist for language X; how
+people route between models with Jev; how Jev is used for context compaction, tool gating,
+code review, browser automation, moderation, reranking or evals; whether there is an
+open-weight alternative to the Jev API.
+
+## Stats
+
+- entries: 352 (335 repositories, 17 resources)
+- stars tracked: 93,460
+- categories: 19
+- languages covered: 21
+- last refresh: 2026-10-01
+
+## Sections
+
+- [🧭 Start Here](https://awesome-jev.github.io/awesome-jev/c/start-here.md) — 16 entries · The spec sheet, the three primitives and the docs — read these before building.
+- [🏛️ Official SDKs & Framework Support](https://awesome-jev.github.io/awesome-jev/c/official.md) — 7 entries · Maintained by TypeSafe AI, plus the frameworks that ship Jev natively.
+- [🤖 Coding Agents](https://awesome-jev.github.io/awesome-jev/c/coding-agents.md) — 48 entries · Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
+- [🚦 Routing & Gateways](https://awesome-jev.github.io/awesome-jev/c/routing.md) — 10 entries · Per-turn model and tool selection, behind a hard deadline.
+- [🗜️ Context & Compaction](https://awesome-jev.github.io/awesome-jev/c/context.md) — 6 entries · Decide what stays in the window before the model ever reads it.
+- [🔍 Code Review & Quality](https://awesome-jev.github.io/awesome-jev/c/code-review.md) — 21 entries · Judges, linters, coverage gates and review dashboards.
+- [🌐 Browser & Computer Use](https://awesome-jev.github.io/awesome-jev/c/browser.md) — 14 entries · Jev picks the operation and the DOM element; a small LLM only writes the text.
+- [📱 Mobile & Desktop Automation](https://awesome-jev.github.io/awesome-jev/c/mobile.md) — 4 entries · Driving phones, IM clients and native UIs without hooking or patching.
+- [🔎 Search, Reranking & RAG](https://awesome-jev.github.io/awesome-jev/c/search-rag.md) — 13 entries · Query understanding, source selection, reranking and semantic SQL.
+- [🛡️ Safety, Moderation & Verification](https://awesome-jev.github.io/awesome-jev/c/safety.md) — 14 entries · Guardrails, prompt-injection checks, judges that abstain.
+- [🗄️ Data & Ops](https://awesome-jev.github.io/awesome-jev/c/data-ops.md) — 20 entries · Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
+- [📦 Applications & Extensions](https://awesome-jev.github.io/awesome-jev/c/apps.md) — 29 entries · End-user tools people actually open every day.
+- [🧩 SDKs & Community Clients](https://awesome-jev.github.io/awesome-jev/c/clients.md) — 32 entries · Unofficial clients for the languages without a first-party SDK.
+- [⌨️ Command Line](https://awesome-jev.github.io/awesome-jev/c/cli.md) — 14 entries · Call Jev from a shell, no SDK required.
+- [📊 Benchmarks, Evals & Calibration](https://awesome-jev.github.io/awesome-jev/c/benchmarks.md) — 27 entries · Measure it before you trust it.
+- [🧠 Open Models & Replicas](https://awesome-jev.github.io/awesome-jev/c/open-models.md) — 41 entries · Run System One semantics without the vendor — on a 3090 if you like.
+- [🎮 Games, Robotics & Simulation](https://awesome-jev.github.io/awesome-jev/c/games.md) — 19 entries · Decisions as game mechanics.
+- [💹 Finance & Trading](https://awesome-jev.github.io/awesome-jev/c/finance.md) — 5 entries · Scoring financial signals with calibrated probabilities.
+- [🎪 Playgrounds & Demos](https://awesome-jev.github.io/awesome-jev/c/demos.md) — 12 entries · Try it in thirty seconds.
+
+## Conventions for entries
+
+- Each entry is one public repository or one official page that calls the Jev / System One API.
+- Repo entries: name as `owner/repo`, stars and pushedAt refreshed from the GitHub API.
+- Star counts are a snapshot, not a ranking claim. Snapshot date: 2026-10-01.
+- Archived repositories are marked and kept for reference.

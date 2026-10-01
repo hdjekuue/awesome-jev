@@ -1,0 +1,85 @@
+name: Refresh
+
+# Bulk star / license / archive refresh from the GitHub API, then regenerate.
+# Star counts are the one thing humans never keep up to date, so this is the
+# workflow that keeps the list honest.
+
+on:
+  schedule:
+    - cron: '17 4 * * *'      # daily 04:17 UTC
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Only check the first N repos (smoke test)'
+        required: false
+        default: '0'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Refresh stars, licenses, archive state
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          if [ -n "${{ inputs.limit }}" ] && [ "${{ inputs.limit }}" != "0" ]; then
+            node scripts/refresh-stars.mjs --limit "${{ inputs.limit }}"
+          else
+            node scripts/refresh-stars.mjs
+          fi
+
+      - name: Open a PR when the data moved
+        id: cpr
+        continue-on-error: true
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: bot/star-refresh
+          delete-branch: true
+          commit-message: 'chore(data): refresh stars, licenses and archive state [skip ci]'
+          title: 'chore(data): refresh stars, licenses and archive state'
+          labels: |
+            bot
+            documentation
+          body: |
+            Automated refresh from the GitHub API. No model was involved.
+
+            - Star counts, forks, licenses, archive flags and push dates re-read from the API
+            - READMEs (en/zh/fr), the website and the machine-readable exports regenerated
+
+            If a repo 404'd, it is flagged with `stale: true` rather than removed — the curator
+            decides whether to drop the row or fix the URL.
+          add-paths: |
+            data/entries.json
+            README.md
+            README.zh.md
+            README.fr.md
+            docs/
+            llms.txt
+            llms-full.txt
+            skill.md
+            projects.json
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "Refresh complete. PR step outcome: ${{ steps.cpr.outcome }}"
+          git diff --stat | head -n 30 || true

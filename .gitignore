@@ -1,0 +1,28 @@
+# Editors
+.vscode/
+.idea/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env — never commit tokens
+.env
+.env.*
+!.env.example
+
+# Curator scratch output (regenerated every run)
+curator-report.md
+review-comment.md
+.curate-prompt.md
+
+# NOTE: docs/, llms.txt, llms-full.txt, skill.md and projects.json are generated
+# but ARE committed on purpose:
+#   - docs/ is the GitHub Pages source for the website,
+#   - skill.md / llms*.txt are what `npx skills add` and model fetches read.
+# The workflows rebuild and commit them, and CI fails if they drift from the data file.

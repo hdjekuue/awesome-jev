@@ -180,13 +180,22 @@ async function main() {
         for (const el of document.querySelectorAll('body *')) {
           const r = el.getBoundingClientRect();
           if (r.width > 0 && r.right > de.clientWidth + 2) {
-            wide.push(`${el.tagName.toLowerCase()}.${(el.className || '').toString().split(' ')[0]}`);
+            // Report by how far each element overflows, so the report names the
+            // culprit instead of the nearest ancestor. A nav that merely contains
+            // a too-wide code token is not the thing to fix.
+            wide.push({
+              sel: `${el.tagName.toLowerCase()}.${(el.className || '').toString().split(' ')[0]}`,
+              over: Math.round(r.right - de.clientWidth),
+              text: (el.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 28),
+            });
           }
         }
-        return { scrollW: de.scrollWidth, clientW: de.clientWidth, wide: [...new Set(wide)].slice(0, 5) };
+        wide.sort((a, b) => b.over - a.over);
+        return { scrollW: de.scrollWidth, clientW: de.clientWidth, wide: wide.slice(0, 4) };
       });
       if (o.scrollW > o.clientW + 2) {
-        fail(p, 'responsive', `${width}px: scrollWidth ${o.scrollW} > ${o.clientW}${o.wide.length ? ` — ${o.wide.join(', ')}` : ''}`);
+        const detail = o.wide.map((x) => `${x.sel} +${x.over}px "${x.text}"`).join(' | ');
+        fail(p, 'responsive', `${width}px: scrollWidth ${o.scrollW} > ${o.clientW}${detail ? ` — ${detail}` : ''}`);
       }
     }
 

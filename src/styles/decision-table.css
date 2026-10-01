@@ -412,6 +412,14 @@ h3 {
   color: var(--ink-70);
 }
 
+/* The probability object is one 45-character token of monospace — at 12px that is
+   ~350px of unbreakable width, which is wider than a 360px phone's content box.
+   The token has to be allowed to break, or it pushes the document sideways. */
+.dt-foot code {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 .dt-foot .k {
   color: var(--ink-45);
   text-transform: uppercase;

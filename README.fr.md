@@ -189,8 +189,8 @@ Maintenus par TypeSafe AI, plus les frameworks qui intègrent Jev nativement. _(
 | --- | --- | --- | --- | --- |
 | [vercel/eve](https://github.com/vercel/eve) | Framework d'agents de Vercel ; Jev est le juge typé dans son étape evaluate. | typescript · apache-2.0 | 5,418 | 2026-09-30 |
 | [typesafe-ai/skills](https://github.com/typesafe-ai/skills) | Skills d’agent pour concevoir des questions, construire des workflows et les évaluer. | official · mit | 2,469 | 2026-09-12 |
-| [vercel-labs/ai-cli](https://github.com/vercel-labs/ai-cli) | The Vercel AI SDK in your terminal, with an evaluate path that runs on Jev. | typescript | 817 | 2026-09-30 |
-| [typesafe-ai/system-one-adapter-python](https://github.com/typesafe-ai/system-one-adapter-python) | Same `TypeSafeClient` interface backed by an LLM API, so you can compare Jev against a chat model on identical questions. | official · python · mit | 363 | 2026-09-22 |
+| [vercel-labs/ai-cli](https://github.com/vercel-labs/ai-cli) | Le Vercel AI SDK dans votre terminal, avec un chemin evaluate qui s'exécute sur Jev. | typescript | 817 | 2026-09-30 |
+| [typesafe-ai/system-one-adapter-python](https://github.com/typesafe-ai/system-one-adapter-python) | Même interface `TypeSafeClient` adossée à une API LLM, pour comparer Jev à un modèle de chat sur des questions identiques. | official · python · mit | 363 | 2026-09-22 |
 | [typesafe-ai/typesafe-sdk-js](https://github.com/typesafe-ai/typesafe-sdk-js) | TypeScript and JavaScript client with answer types inferred from your questions. | official · typescript · mit | 259 | 2026-09-15 |
 | [typesafe-ai/typesafe-sdk-python](https://github.com/typesafe-ai/typesafe-sdk-python) | Python client, sync and async. | official · python · mit | 256 | 2026-09-26 |
 | [Agent skill](https://docs.typesafe.ai/agent-skill) | How to install the official skill in Claude Code, Cursor, and friends. | official | — | — |
@@ -202,12 +202,12 @@ Routage, garde-fous d'outils, relecteurs, skills et serveurs MCP pour les harnai
 | Projet | Description | Lang / Licence | ⭐ | Maj |
 | --- | --- | --- | --- | --- |
 | [nicobailon/pi-mcp-adapter](https://github.com/nicobailon/pi-mcp-adapter) | Évaluation typée et recherche sémantique opt-in sur les résultats d’outils MCP, derrière une liste d’autorisation de sortie de données par serveur. | typescript · mit | 1,568 | 2026-09-30 |
-| [kerpopule/hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills) | Hands an agent's small decisions to Jev: which model answers the turn, which skills to load, which passages matter, which turns survive compaction. | python · mit | 918 | 2026-09-29 |
-| [gargpratyush/jev-router](https://github.com/gargpratyush/jev-router) | Routes each task to the cheapest Claude model that can handle it. | javascript · mit | 499 | 2026-09-19 |
-| [jkudish/jev-mcp](https://github.com/jkudish/jev-mcp) | The first MCP server for Jev, and still the most linked. | javascript · mit | 464 | 2026-09-29 |
-| [notque/vexjoy-agent](https://github.com/notque/vexjoy-agent) | Agent toolkit whose `/d` command picks the specialist agent, skill, and pipeline with one Jev call, plus an optional Jev auto-compact plugin. | python · mit | 426 | 2026-09-30 |
-| [TianyuCodings/JevHarness](https://github.com/TianyuCodings/JevHarness) | Has an LLM write a task-specific harness that turns observations into Jev questions, then freezes it and improves it from rewards and full execution traces. | python | 400 | 2026-09-21 |
-| [itsmostafa/typesafe-mcp](https://github.com/itsmostafa/typesafe-mcp) | Go MCP connector. | go · mit | 337 | 2026-09-30 |
+| [kerpopule/hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills) | Confie les petites décisions d'un agent à Jev : quel modèle répond au tour, quelles skills charger, quels passages comptent, quels tours survivent à la compaction. | python · mit | 918 | 2026-09-29 |
+| [gargpratyush/jev-router](https://github.com/gargpratyush/jev-router) | Achemine chaque tâche vers le modèle Claude le moins cher capable de la traiter. | javascript · mit | 499 | 2026-09-19 |
+| [jkudish/jev-mcp](https://github.com/jkudish/jev-mcp) | Premier serveur MCP pour Jev, et toujours le plus lié. | javascript · mit | 464 | 2026-09-29 |
+| [notque/vexjoy-agent](https://github.com/notque/vexjoy-agent) | Boîte à outils d'agents dont la commande `/d` choisit l'agent spécialiste, la skill et le pipeline en un seul appel Jev, plus un plugin optionnel Jev auto-compact. | python · mit | 426 | 2026-09-30 |
+| [TianyuCodings/JevHarness](https://github.com/TianyuCodings/JevHarness) | Fait écrire par un LLM un harness spécifique à la tâche qui transforme les observations en questions Jev, puis le fige et l'améliore à partir des récompenses et des traces d'exécution complètes. | python | 400 | 2026-09-21 |
+| [itsmostafa/typesafe-mcp](https://github.com/itsmostafa/typesafe-mcp) | Connecteur MCP en Go. | go · mit | 337 | 2026-09-30 |
 | [miuuyy/Astra-Ares](https://github.com/miuuyy/Astra-Ares) | Has Jev pick the reasoning effort and how long to hold it for a running Codex task, on a patched Codex CLI built from upstream source. | javascript · mit | 293 | 2026-09-23 |
 | [0xNatoshi/jev-codex-router](https://github.com/0xNatoshi/jev-codex-router) | Picks model, thinking depth, and speed mode for every Codex turn. | javascript · mit · archived | 278 | 2026-09-22 |
 | [kitze/skillbox](https://github.com/kitze/skillbox) | Self-hosted, versioned skills library served over MCP, with Jev recommending which skill to load. | typescript · mit | 255 | 2026-09-19 |
@@ -256,7 +256,7 @@ Choix du modèle et des outils à chaque tour, sous une échéance stricte. _(10
 
 | Projet | Description | Lang / Licence | ⭐ | Maj |
 | --- | --- | --- | --- | --- |
-| [BillionsBobby/JevRouter](https://github.com/BillionsBobby/JevRouter) | Models, subagents, skills, MCP tools, and CLIs as one candidate set; Jev picks, the router enforces permissions and risk; reports 44 percent first-five tool-call hits against 24 for DeepSeek on Toolathlon. | typescript · mit | 303 | 2026-09-26 |
+| [BillionsBobby/JevRouter](https://github.com/BillionsBobby/JevRouter) | Modèles, subagents, skills, outils MCP et CLI réunis en un seul ensemble de candidats ; Jev choisit, le routeur applique les permissions et le risque ; 44 % de bons appels d'outils dans les cinq premiers contre 24 pour DeepSeek sur Toolathlon. | typescript · mit | 303 | 2026-09-26 |
 | [vinilana/jev-gateway](https://github.com/vinilana/jev-gateway) | Local gateway for Codex and Claude Code that sends the "which tool next" decision to Jev and everything else to your usual model. | typescript · mit | 267 | 2026-09-25 |
 | [juspay/neurolink](https://github.com/juspay/neurolink) | TypeScript AI SDK where decide, via Jev, is a peer of generate and stream: one typed-judgment call routes model choice, prunes context, and picks MCP tools. | typescript · mit | 144 | 2026-09-30 |
 | [nidhi-singh02/agent-router](https://github.com/nidhi-singh02/agent-router) | Picks Cursor, Claude Code, Codex, or OpenCode plus model and effort for a task, then launches it. | typescript · mit | 99 | 2026-09-27 |
@@ -286,9 +286,9 @@ Juges, linters, seuils de couverture et tableaux de bord de relecture. _(21 entr
 
 | Projet | Description | Lang / Licence | ⭐ | Maj |
 | --- | --- | --- | --- | --- |
-| [devagrawal09/jev-review](https://github.com/devagrawal09/jev-review) | Staged code-review workflow with a local dashboard. | typescript · mit | 643 | 2026-09-17 |
-| [thruwire/foreman](https://github.com/thruwire/foreman) | Supervises a software factory of agents, with Jev making the go and no-go calls. | python · mit | 619 | 2026-09-28 |
-| [lakeday-org/perch](https://github.com/lakeday-org/perch) | Semantic linting: rules in plain language, each file judged by Jev, run locally or in CI. | javascript · mit | 316 | 2026-09-30 |
+| [devagrawal09/jev-review](https://github.com/devagrawal09/jev-review) | Workflow de revue de code par étapes avec un tableau de bord local. | typescript · mit | 643 | 2026-09-17 |
+| [thruwire/foreman](https://github.com/thruwire/foreman) | Supervise une usine logicielle d'agents, Jev prenant les décisions de validation et de rejet. | python · mit | 619 | 2026-09-28 |
+| [lakeday-org/perch](https://github.com/lakeday-org/perch) | Linting sémantique : règles en langage courant, chaque fichier évalué par Jev, exécution en local ou en CI. | javascript · mit | 316 | 2026-09-30 |
 | [NiazMorshed2007/jev-review](https://github.com/NiazMorshed2007/jev-review) | Local-first MCP plugin for continuous quality review by coding agents. | typescript · mit | 231 | 2026-09-17 |
 | [supercorp-ai/supercov](https://github.com/supercorp-ai/supercov) | Code quality and coverage signals for coding agents. | rust · mit | 141 | 2026-09-27 |
 | [kyu1204/jgrep](https://github.com/kyu1204/jgrep) | `--diff` gates a PR in CI on a rule written in English, `--tests` lists the test files a diff can affect, and plain `jgrep` greps code by what it does; one Noul per chunk, 16 chunks per request. | typescript · mit | 58 | 2026-09-30 |
@@ -315,11 +315,11 @@ Jev choisit l'opération et l'élément DOM ; un petit LLM n'écrit que le texte
 | Projet | Description | Lang / Licence | ⭐ | Maj |
 | --- | --- | --- | --- | --- |
 | [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast) | Une seule requête sélectionne à la fois l'opération et l'élément cible depuis une table DOM indexée ; un petit LLM écrit uniquement du texte typé. Trajet de Zürich à Londres réservé en 7,1 secondes. | python · mit | 21,495 | 2026-09-30 |
-| [awlevin/typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) | OCR the screen, classify the next action, click; about $0.0002 a step on macOS. | python · mit | 1,097 | 2026-09-29 |
-| [wy-coliney/jev-browser-use](https://github.com/wy-coliney/jev-browser-use) | Codex skill and plugin where Jev handles navigation, clicks, and scrolling and Codex keeps typing and verification; reports browser steps 5 to 10 times faster. | javascript · mit | 707 | 2026-09-23 |
-| [Sac-Y/Jev-cu](https://github.com/Sac-Y/Jev-cu) | Codex computer use where Jev picks the element, action, completion, and risk from on-screen text, no screenshots sent; Chinese readme. | javascript · mit | 613 | 2026-09-22 |
-| [moritzkremb/jev-voice-browser](https://github.com/moritzkremb/jev-voice-browser) | Intent and target decided per spoken word in about 300 ms, often before the sentence ends. | javascript · mit | 371 | 2026-09-21 |
-| [jkudish/jev-browser](https://github.com/jkudish/jev-browser) | The first community browser agent on Jev, with a demo GIF. | javascript · mit | 297 | 2026-09-29 |
+| [awlevin/typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) | Fait de l'OCR sur l'écran, classifie l'action suivante, clique ; environ $0.0002 par étape sur macOS. | python · mit | 1,097 | 2026-09-29 |
+| [wy-coliney/jev-browser-use](https://github.com/wy-coliney/jev-browser-use) | Skill et plugin Codex où Jev gère la navigation, les clics et le défilement tandis que Codex conserve la saisie et la vérification ; annonce des étapes de navigateur 5 à 10 fois plus rapides. | javascript · mit | 707 | 2026-09-23 |
+| [Sac-Y/Jev-cu](https://github.com/Sac-Y/Jev-cu) | Utilisation d'ordinateur Codex où Jev choisit l'élément, l'action, l'achèvement et le risque à partir du texte à l'écran, sans envoi de captures d'écran ; readme en chinois. | javascript · mit | 613 | 2026-09-22 |
+| [moritzkremb/jev-voice-browser](https://github.com/moritzkremb/jev-voice-browser) | Intention et cible décidées à chaque mot prononcé en environ 300 ms, souvent avant la fin de la phrase. | javascript · mit | 371 | 2026-09-21 |
+| [jkudish/jev-browser](https://github.com/jkudish/jev-browser) | Le premier agent navigateur communautaire basé sur Jev, avec un GIF de démonstration. | javascript · mit | 297 | 2026-09-29 |
 | [YUTA-fywoo/jev-gui-delegate](https://github.com/YUTA-fywoo/jev-gui-delegate) | Runs a delegated GUI task for Codex through the real Chrome session or Windows UI Automation, with Jev picking the control at each step. | python | 131 | 2026-09-27 |
 | [socai-io/jev-social](https://github.com/socai-io/jev-social) | Lets Jev choose each read-only social research step while socai runs it in a real Chrome session and streams inspectable Instagram, TikTok, or LinkedIn evidence into a report. | javascript · mit | 128 | 2026-09-30 |
 | [savka777/jev-use](https://github.com/savka777/jev-use) | Voice and typed computer use for macOS: Jev picks the next on-screen action from the Accessibility tree, with no screenshots. | swift · mit | 112 | 2026-09-21 |
@@ -335,7 +335,7 @@ Piloter téléphones, clients de messagerie et interfaces natives sans patch ni 
 
 | Projet | Description | Lang / Licence | ⭐ | Maj |
 | --- | --- | --- | --- | --- |
-| [droidrun/mobile-jev](https://github.com/droidrun/mobile-jev) | The same loop on a real Android phone; nine Uber actions in 21 seconds in the demo. | javascript · mit | 426 | 2026-09-17 |
+| [droidrun/mobile-jev](https://github.com/droidrun/mobile-jev) | La même boucle sur un vrai téléphone Android ; neuf actions Uber en 21 secondes dans la démo. | javascript · mit | 426 | 2026-09-17 |
 | [ainame/swift-typesafe](https://github.com/ainame/swift-typesafe) | Swift 6.4 SDK following the Python SDK's API, on Apple platforms and Linux. | swift · mit | 16 | 2026-09-23 |
 | [friedjof/jev-mobile](https://github.com/friedjof/jev-mobile) | Android sub-agent over USB running observe, normalize, decide, mutate, verify, with Jev deciding. | python · mit | 8 | 2026-09-18 |
 | [xinwang-nwpu/jev-mobile](https://github.com/xinwang-nwpu/jev-mobile) | Android automation where one Jev request picks both the action and the target element from the accessibility tree, executed over ADB. | python · mit | 3 | 2026-09-21 |
@@ -346,7 +346,7 @@ Compréhension de requête, sélection de sources, reranking et SQL sémantique.
 
 | Projet | Description | Lang / Licence | ⭐ | Maj |
 | --- | --- | --- | --- | --- |
-| [superagents-lab/jev-search](https://github.com/superagents-lab/jev-search) | Source selection, query understanding, and relevance ranking for web search. | typescript · mit | 493 | 2026-09-20 |
+| [superagents-lab/jev-search](https://github.com/superagents-lab/jev-search) | Sélection des sources, compréhension des requêtes et classement de pertinence pour la recherche web. | typescript · mit | 493 | 2026-09-20 |
 | [jexp/neo4jev](https://github.com/jexp/neo4jev) | Walks a Neo4j graph by classifying neighbouring relationships. | jupyter notebook · mit | 154 | 2026-09-18 |
 | [uehaj/jev-semgrep](https://github.com/uehaj/jev-semgrep) | Greps by meaning instead of by regex: every line gets a probability from Jev, and meanings combine with AND, OR, and NOT. | javascript · noassertion | 145 | 2026-09-30 |
 | [ellipsis-dev/blink](https://github.com/ellipsis-dev/blink) | Codebase search where Jev scores the candidates. | typescript | 93 | 2026-09-16 |
@@ -387,8 +387,8 @@ Extensions Postgres, SQL sémantique et pipelines de télémétrie qui appellent
 
 | Projet | Description | Lang / Licence | ⭐ | Maj |
 | --- | --- | --- | --- | --- |
-| [kyotofin/tax-doc-classifier](https://github.com/kyotofin/tax-doc-classifier) | One request per page picks among 261 IRS forms and seven page kinds; reports 100 percent on its corpus at $0.001 a page, 34 times cheaper than the LLM pipeline it replaced. | typescript · apache-2.0 | 484 | 2026-09-29 |
-| [realZachi/pg-jev](https://github.com/realZachi/pg-jev) | PostgreSQL extension that answers plain-language questions about your tables. | shell · noassertion | 381 | 2026-09-18 |
+| [kyotofin/tax-doc-classifier](https://github.com/kyotofin/tax-doc-classifier) | Une requête par page choisit parmi 261 formulaires IRS et sept types de page ; rapporte 100 pour cent sur son corpus à $0.001 par page, 34 fois moins cher que le pipeline LLM remplacé. | typescript · apache-2.0 | 484 | 2026-09-29 |
+| [realZachi/pg-jev](https://github.com/realZachi/pg-jev) | Extension PostgreSQL qui répond aux questions en langage courant sur vos tables. | shell · noassertion | 381 | 2026-09-18 |
 | [AgriciDaniel/jev-seo](https://github.com/AgriciDaniel/jev-seo) | Crawls a site, checks it against 52 SEO rules, has Jev judge every page, and writes PDF, spreadsheet, and Markdown reports. | python · mit | 266 | 2026-09-22 |
 | [AkashPriyadarshii/jev-curate](https://github.com/AkashPriyadarshii/jev-curate) | Sifts Parquet and JSONL training data at more than 1,500 rows a second. | rust · mit | 92 | 2026-09-30 |
 | [giuliosmall/pg_typesafe](https://github.com/giuliosmall/pg_typesafe) | Pre-alpha PostgreSQL extension for categorical classification with Jev. | c · mit | 88 | 2026-09-24 |
@@ -414,8 +414,8 @@ Des outils de bout en bout que les gens ouvrent vraiment chaque jour. _(29 entr�
 
 | Projet | Description | Lang / Licence | ⭐ | Maj |
 | --- | --- | --- | --- | --- |
-| [anishfn/shapeshift](https://github.com/anishfn/shapeshift) | Turns one text box into the matching card as you type, judged by a single parallel Jev call, with a keyword fallback when no key is set. | typescript · mit | 752 | 2026-09-23 |
-| [kitze/unclutter](https://github.com/kitze/unclutter) | Browser extension that removes page clutter with reusable template rules. | typescript · mit | 341 | 2026-09-18 |
+| [anishfn/shapeshift](https://github.com/anishfn/shapeshift) | Transforme une zone de texte en carte correspondante pendant la frappe, jugée par un seul appel Jev parallèle, avec un repli par mot-clé quand aucune clé n'est définie. | typescript · mit | 752 | 2026-09-23 |
+| [kitze/unclutter](https://github.com/kitze/unclutter) | Extension de navigateur qui supprime l'encombrement des pages grâce à des règles de modèles réutilisables. | typescript · mit | 341 | 2026-09-18 |
 | [FerryCorleone/crush-monitor](https://github.com/FerryCorleone/crush-monitor) | Reads a chat log locally and labels every message with the three likeliest of twelve emotions and thirty-five intents. | typescript · mit | 262 | 2026-09-25 |
 | [monteduro/killmyidea](https://github.com/monteduro/killmyidea) | Describe your startup idea; Jev says kill it, fix it, or ship it. | typescript | 244 | 2026-09-24 |
 | [usenotra/notra](https://github.com/usenotra/notra) | Turns work into content, with Jev deciding what is worth posting. | typescript · agpl-3.0 | 226 | 2026-09-30 |
@@ -510,7 +510,7 @@ Mesurez avant de faire confiance. _(27 entrées)_
 
 | Projet | Description | Lang / Licence | ⭐ | Maj |
 | --- | --- | --- | --- | --- |
-| [sutro-sh/jev-align](https://github.com/sutro-sh/jev-align) | Finds the examples a Jev function is least sure about, asks you to label them, and improves the function with GEPA. | python · apache-2.0 | 301 | 2026-09-20 |
+| [sutro-sh/jev-align](https://github.com/sutro-sh/jev-align) | Trouve les exemples dont une fonction Jev est la moins sûre, vous demande de les annoter et améliore la fonction avec GEPA. | python · apache-2.0 | 301 | 2026-09-20 |
 | [fstandhartinger/jevbench](https://github.com/fstandhartinger/jevbench) | Benchmark for Jev-class decision models: bounded rubric in, typed answer with a probability per option out, with cascade and committee experiments reported separately. | python · mit | 186 | 2026-09-29 |
 | [vinilana/jev-eval-agent](https://github.com/vinilana/jev-eval-agent) | Personal-assistant agent with 100 mocked tools, measuring how many steps a Jev-gated agent needs. | html | 107 | 2026-09-17 |
 | [openlayer-ai/jevals](https://github.com/openlayer-ai/jevals) | Runs a trace's agent, quality, and security evals as one batch of typed Jev questions instead of separate LLM-judge calls. | python · mit | 97 | 2026-09-24 |
@@ -547,19 +547,19 @@ Exécuter la sémantique System One sans le fournisseur — sur une 3090 si vous
 | [jaredpalmer/kev](https://github.com/jaredpalmer/kev) | Adaptateur LoRA et tête de lecture sur Qwen2.5-0.5B qui répond à de nombreuses questions typées en un seul prefill ; entraînement en moins de deux heures sur un MacBook, ECE hors échantillon de 0,065, utilise le format wire TypeSafe. | python · apache-2.0 | 7,998 | 2026-09-30 |
 | [TheoLeeCJ/SemIf](https://github.com/TheoLeeCJ/SemIf) | Ifs sémantiques issus de modèles ouverts sur une seule 3090 ; la réplique indépendante la plus étoilée, anciennement openjev. | python · mit | 4,604 | 2026-09-23 |
 | [TianyuCodings/NanoJev](https://github.com/TianyuCodings/NanoJev) | Réplique 0.6B avec décisions parallèles, candidats dynamiques et pipeline d’entraînement de bout en bout. | python · mit | 2,445 | 2026-09-21 |
-| [vinnylarouge/jevlike](https://github.com/vinnylarouge/jevlike) | Open option scorer that reads candidate logits instead of generating JSON. | python · mit | 1,335 | 2026-09-16 |
-| [ollaya-dev/ollaya](https://github.com/ollaya-dev/ollaya) | Pulls and serves open decision models such as Laya, kev, and JevK5 behind a TypeSafe-compatible local endpoint, the way Ollama serves LLMs. | rust · apache-2.0 | 1,011 | 2026-09-29 |
-| [Mapika/decider](https://github.com/Mapika/decider) | One-pass typed decisions fine-tuned from Qwen3.5-2B. | python · apache-2.0 | 988 | 2026-09-30 |
-| [nokia-applied-research/AnyJev](https://github.com/nokia-applied-research/AnyJev) | Turns an open Hugging Face model into a calibrated decision endpoint served through vLLM, with no fine-tuning at the first two levels. | python · apache-2.0 | 981 | 2026-09-28 |
-| [wfzyx/von](https://github.com/wfzyx/von) | Non-autoregressive open decision model reporting under 15 ms locally, as a drop-in alternative to Jev. | python · apache-2.0 | 781 | 2026-09-30 |
-| [Rizzo-AI-Academy/rizzo-flow](https://github.com/Rizzo-AI-Academy/rizzo-flow) | Local-first take on the System One idea: unstructured state in, typed probabilistic decisions out, without generating a token. | python · apache-2.0 | 763 | 2026-09-25 |
-| [featherless-ai/simple-jev](https://github.com/featherless-ai/simple-jev) | Reads next-token logits from any Hugging Face model for choice, rubric, and support questions; public demo API with no key. | python · apache-2.0 | 575 | 2026-09-30 |
-| [Liuziyu77/Valen](https://github.com/Liuziyu77/Valen) | Multimodal decision model on Qwen3.5 that scores candidates against images and video as well as text, with training code and open weights. | python · apache-2.0 | 551 | 2026-09-30 |
-| [razorback16/openjev](https://github.com/razorback16/openjev) | Jev-compatible decision server on DiffusionGemma 26B through vLLM, images included, hosted free on [Codiv](https://codiv.ai). | python · apache-2.0 | 541 | 2026-09-29 |
-| [Yinsongxu/LLM2Jev](https://github.com/Yinsongxu/LLM2Jev) | Adapts local language models to runtime-defined Choice, Score, and Noul questions and returns typed answers with probabilities. | python · apache-2.0 | 377 | 2026-09-26 |
-| [ekzhang/openjev-sglang](https://github.com/ekzhang/openjev-sglang) | Jev-compatible API endpoint on SGLang, prefill only. | python | 336 | 2026-09-25 |
-| [malevrigns/agent-jev](https://github.com/malevrigns/agent-jev) | Decision model on Qwen3-0.6B that answers without decoding tokens, reports 79.25 percent top-1 on the public Typed Decisions benchmark. | python · apache-2.0 | 328 | 2026-09-23 |
-| [hr98w/jev-visual](https://github.com/hr98w/jev-visual) | Educational visual-inference variant on Apple Silicon: shared context, direct candidate scoring. | python · mit | 303 | 2026-09-21 |
+| [vinnylarouge/jevlike](https://github.com/vinnylarouge/jevlike) | Scorer d'options ouvert qui lit les logits des candidats au lieu de générer du JSON. | python · mit | 1,335 | 2026-09-16 |
+| [ollaya-dev/ollaya](https://github.com/ollaya-dev/ollaya) | Télécharge et sert des modèles de décision ouverts tels que Laya, kev et JevK5 derrière un endpoint local compatible TypeSafe, comme Ollama sert les LLM. | rust · apache-2.0 | 1,011 | 2026-09-29 |
+| [Mapika/decider](https://github.com/Mapika/decider) | Décisions typées en une passe, affinées à partir de Qwen3.5-2B. | python · apache-2.0 | 988 | 2026-09-30 |
+| [nokia-applied-research/AnyJev](https://github.com/nokia-applied-research/AnyJev) | Transforme un modèle ouvert Hugging Face en endpoint de décision calibré servi via vLLM, sans fine-tuning aux deux premiers niveaux. | python · apache-2.0 | 981 | 2026-09-28 |
+| [wfzyx/von](https://github.com/wfzyx/von) | Modèle de décision ouvert non autorégressif annoncé à moins de 15 ms en local, comme alternative directe à Jev. | python · apache-2.0 | 781 | 2026-09-30 |
+| [Rizzo-AI-Academy/rizzo-flow](https://github.com/Rizzo-AI-Academy/rizzo-flow) | Interprétation local-first de l'idée System One : état non structuré en entrée, décisions probabilistes typées en sortie, sans générer de token. | python · apache-2.0 | 763 | 2026-09-25 |
+| [featherless-ai/simple-jev](https://github.com/featherless-ai/simple-jev) | Lit les logits du token suivant depuis n'importe quel modèle Hugging Face pour les questions de choix, d'évaluation et de support ; API de démonstration publique sans clé. | python · apache-2.0 | 575 | 2026-09-30 |
+| [Liuziyu77/Valen](https://github.com/Liuziyu77/Valen) | Modèle de décision multimodal basé sur Qwen3.5 qui évalue les candidats face aux images et à la vidéo ainsi qu'au texte, avec code d'entraînement et poids ouverts. | python · apache-2.0 | 551 | 2026-09-30 |
+| [razorback16/openjev](https://github.com/razorback16/openjev) | Serveur de décision compatible Jev basé sur DiffusionGemma 26B via vLLM, images incluses, hébergé gratuitement sur [Codiv](https://codiv.ai). | python · apache-2.0 | 541 | 2026-09-29 |
+| [Yinsongxu/LLM2Jev](https://github.com/Yinsongxu/LLM2Jev) | Adapte les modèles de langage locaux aux questions Choice, Score et Noul définies à l'exécution et renvoie des réponses typées avec probabilités. | python · apache-2.0 | 377 | 2026-09-26 |
+| [ekzhang/openjev-sglang](https://github.com/ekzhang/openjev-sglang) | Point de terminaison d'API compatible Jev sur SGLang, prefill uniquement. | python | 336 | 2026-09-25 |
+| [malevrigns/agent-jev](https://github.com/malevrigns/agent-jev) | Modèle de décision basé sur Qwen3-0.6B qui répond sans décoder de tokens, avec 79,25 % de top-1 sur le benchmark public Typed Decisions. | python · apache-2.0 | 328 | 2026-09-23 |
+| [hr98w/jev-visual](https://github.com/hr98w/jev-visual) | Variante éducative d'inférence visuelle sur Apple Silicon : contexte partagé, notation directe des candidats. | python · mit | 303 | 2026-09-21 |
 | [Heman10x-NGU/openJev-verdict-2.0](https://github.com/Heman10x-NGU/openJev-verdict-2.0) | Non-autoregressive 151M decision engine with a WebGPU browser runtime, reporting 77.1 percent top-1 and 1.44 percent calibration error on its own benchmark. | python · noassertion | 293 | 2026-09-20 |
 | [logan-markewich/jeff](https://github.com/logan-markewich/jeff) | Self-hosted System One API on the 400M GLiFormer, with benchmarks that say where it trails Jev. | python · mit | 273 | 2026-09-20 |
 | [togethercomputer/tev1](https://github.com/togethercomputer/tev1) | Data recipe and training code that fine-tune Qwen3.5-4B into an open-weight decision model on Together AI. | python · mit | 177 | 2026-09-24 |
@@ -592,8 +592,8 @@ Les décisions comme mécanique de jeu. _(19 entrées)_
 
 | Projet | Description | Lang / Licence | ⭐ | Maj |
 | --- | --- | --- | --- | --- |
-| [rmalde/minecraft-agent](https://github.com/rmalde/minecraft-agent) | Kills the dragon on a vanilla server with a frontier model planning and Jev selecting every player action; the logged run took 131 Jev decisions and 35 planner calls. | javascript | 569 | 2026-09-20 |
-| [fhshaik/typesafe-mario](https://github.com/fhshaik/typesafe-mario) | Plays Super Mario Bros. from structured emulator state; Jev picks the NES controller input directly. | python | 422 | 2026-09-16 |
+| [rmalde/minecraft-agent](https://github.com/rmalde/minecraft-agent) | Tue le dragon sur un serveur vanilla avec un modèle de pointe pour la planification et Jev sélectionnant chaque action du joueur ; la partie enregistrée a nécessité 131 décisions Jev et 35 appels au planificateur. | javascript | 569 | 2026-09-20 |
+| [fhshaik/typesafe-mario](https://github.com/fhshaik/typesafe-mario) | Joue à Super Mario Bros. à partir de l'état structuré de l'émulateur ; Jev choisit directement l'entrée de la manette NES. | python | 422 | 2026-09-16 |
 | [FBddcz/embodied-jev](https://github.com/FBddcz/embodied-jev) | Browser workbench for embodied experiments in MuJoCo where every robot step is a visible Jev decision, backed by a local model or a cloud API. | python · mit | 250 | 2026-09-22 |
 | [rokbenko/quackd](https://github.com/rokbenko/quackd) | Command line for LLM-piloted robots across seven bodies, with an optional Jev stepper that picks among calls without ever writing a joint angle. | python · apache-2.0 | 245 | 2026-09-30 |
 | [RomanSlack/jev-drone](https://github.com/RomanSlack/jev-drone) | Camera-only drone in MuJoCo with Jev in the loop at 2.5 Hz. | python · mit | 229 | 2026-09-24 |
@@ -630,7 +630,7 @@ Essayez en trente secondes. _(12 entrées)_
 
 | Projet | Description | Lang / Licence | ⭐ | Maj |
 | --- | --- | --- | --- | --- |
-| [dabit3/jev-experiments](https://github.com/dabit3/jev-experiments) | Nader Dabit's grab bag of small Jev experiments. | typescript | 397 | 2026-09-21 |
+| [dabit3/jev-experiments](https://github.com/dabit3/jev-experiments) | Assortiment de petites expériences Jev de Nader Dabit. | typescript | 397 | 2026-09-21 |
 | [TypeSafeAI/typesafe-playground](https://github.com/TypeSafeAI/typesafe-playground) | 110 use cases, games, and model challenges with editable prompts and A/B comparisons; a community org, not the vendor, formerly under BunsDev. | typescript · mit | 22 | 2026-09-28 |
 | [kavehmz/typesafe-playground](https://github.com/kavehmz/typesafe-playground) | From support routing to a 3D driving simulation with visible sensor inputs. | javascript | 14 | 2026-09-29 |
 | [GiesN/typesafe-jev-workflow](https://github.com/GiesN/typesafe-jev-workflow) | LangGraph demo that sends a mocked email to Jev and routes on the typed Choice it returns. | python | 12 | 2026-09-16 |

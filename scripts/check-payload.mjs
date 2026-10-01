@@ -18,8 +18,8 @@ for (const file of files) {
   const preloads = [...html.matchAll(/<link[^>]+rel="preload"[^>]*as="font"[^>]*>/g)];
   const jsonLd = [...html.matchAll(/application\/ld\+json/g)].length;
 
-  const entries = (html.match(/class="entry[ "]/g) || []).length;
-  const rules = (html.match(/class="cat-stamp"/g) || []).length;
+  const entries = (html.match(/class="?entry[ "]/g) || []).length;
+  const rules = (html.match(/class="?cat-stamp"?/g) || []).length;
 
   console.log(`\n${file}  (${(html.length / 1024).toFixed(0)} KB)`);
   console.log(`  scripts: ${external.length} external, ${inline.length} inline`);

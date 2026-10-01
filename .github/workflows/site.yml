@@ -49,18 +49,8 @@ jobs:
       - name: Build site and AI artifacts
         run: npm run build
 
-      - name: The three languages rendered the same number of rows
-        run: |
-          set -e
-          EN=$(grep -c 'class="entry' docs/index.html || true)
-          ZH=$(grep -c 'class="entry' docs/zh/index.html || true)
-          FR=$(grep -c 'class="entry' docs/fr/index.html || true)
-          echo "entry rows: en=$EN zh=$ZH fr=$FR"
-          if [ "$EN" != "$ZH" ] || [ "$EN" != "$FR" ]; then
-            echo "::error::Row counts differ across languages"
-            exit 1
-          fi
-          test "$EN" -gt 300 || { echo "::error::Only $EN rows rendered — the data file did not load"; exit 1; }
+      - name: Generated output is correct
+        run: bash scripts/check-parity.sh
 
       - name: The AIEO endpoints exist
         run: |
@@ -69,26 +59,6 @@ jobs:
             test -s "docs/$f" || { echo "::error::missing docs/$f"; exit 1; }
           done
           echo "llms.txt $(wc -c < docs/llms.txt)B · llms-full.txt $(wc -c < docs/llms-full.txt)B · skill.md $(wc -c < docs/skill.md)B · projects.json $(wc -c < docs/projects.json)B"
-
-      - name: The JSON-LD graph parses and still carries the six node types
-        run: |
-          node -e "
-          const fs = require('fs');
-          for (const f of ['docs/index.html','docs/zh/index.html','docs/fr/index.html']) {
-            const h = fs.readFileSync(f, 'utf8');
-            const m = h.match(/<script type=\"application\/ld\\+json\">([\s\S]*?)<\/script>/);
-            if (!m) throw new Error(f + ': no JSON-LD');
-            const j = JSON.parse(m[1]);
-            const types = j['@graph'].map(n => n['@type']);
-            for (const want of ['WebSite','CollectionPage','ItemList','FAQPage','DefinedTermSet','BreadcrumbList']) {
-              if (!types.includes(want)) throw new Error(f + ': JSON-LD lost ' + want);
-            }
-            if (!h.includes('hreflang=\"zh_CN\"')) throw new Error(f + ': zh hreflang missing');
-            if (!h.includes('hreflang=\"fr_FR\"')) throw new Error(f + ': fr hreflang missing');
-            if (!h.includes('hreflang=\"x-default\"')) throw new Error(f + ': x-default hreflang missing');
-            console.log(f + ': ' + types.join(', '));
-          }
-          "
 
       - name: Commit and push if changed
         run: |

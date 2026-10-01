@@ -68,6 +68,14 @@ jobs:
           OPEN_JSON=$(gh pr list --state open --author "$AUTHOR" --json number,createdAt)
           OPEN_COUNT=$(echo "$OPEN_JSON" | jq 'length')
 
+          # Bilingual notices are assembled from parts and joined with a newline, so
+          # no shell string ever spans a line break. A literal continuation line
+          # inside a YAML block scalar loses its indentation and silently breaks the
+          # whole workflow file.
+          say() {
+            printf '%s\n\n%s' "$1" "$2" > /tmp/say.md
+          }
+
           if [ "$WATCHED" -ge 1 ]; then
             if [ "$OPEN_COUNT" -le 1 ]; then echo "Watchlisted, first/only PR — normal flow."; exit 0; fi
             KEEP=$(echo "$OPEN_JSON" | jq -r 'sort_by(.createdAt) | .[0].number')
@@ -75,9 +83,11 @@ jobs:
             if [ "$(have_marker strict)" -ge 1 ]; then gh pr close "$PR" || true; exit 0; fi
             gh label create batch-submission --color "E99695" --description "Closed by the one-open-PR policy" 2>/dev/null || true
             gh pr edit "$PR" --add-label "batch-submission" || true
-            gh pr close "$PR" --comment "<!-- submission-guard:strict -->Hi @$AUTHOR — you are on the submission watchlist, so one PR is reviewed at a time. #$KEEP is still open, so this one was auto-closed; nothing is lost, the diff stays in history. Welcome back once #$KEEP has a verdict.
-
-你好，你在投稿观察名单中，一次只评审一个 PR；#$KEEP 还没处理完，本条自动关闭（改动都在历史里）。等它有结论后欢迎重提。" || true
+            EN="Hi @$AUTHOR — you are on the submission watchlist, so one PR is reviewed at a time. #$KEEP is still open, so this one was auto-closed; nothing is lost, the diff stays in history. Welcome back once #$KEEP has a verdict."
+            ZH="你好 @$AUTHOR，你在投稿观察名单中，一次只评审一个 PR；#$KEEP 还没处理完，本条自动关闭（改动都在历史里）。等它有结论后欢迎重提。"
+            say "$EN" "$ZH"
+            { echo '<!-- submission-guard:strict -->'; cat /tmp/say.md; } > /tmp/msg.md
+            gh pr close "$PR" --comment "$(cat /tmp/msg.md)" || true
             exit 0
           fi
 
@@ -96,19 +106,25 @@ jobs:
             if [ "$(have_marker velocity-close)" -ge 1 ]; then gh pr close "$PR" || true; exit 0; fi
             gh label create batch-submission --color "E99695" --description "Closed by the self-promo velocity policy" 2>/dev/null || true
             gh pr edit "$PR" --add-label "batch-submission" || true
-            gh pr close "$PR" --comment "<!-- submission-guard:velocity-close -->Hi @$AUTHOR — thanks for contributing to Awesome Jev, but this is your ${N}th self-submission in $WINDOW days, so it was auto-closed to keep review capacity for everyone. Nothing is lost: the diff stays in history. Recommending someone else's excellent project is always welcome and unaffected.
-
-你好，感谢投稿，但这是你 $WINDOW 天内第 ${N} 个自荐，按策略自动关闭（改动都在历史里）。举荐别人的优秀项目不受影响，正常评审。" || true
+            EN="Hi @$AUTHOR — thanks for contributing to Awesome Jev, but this is your ${N}th self-submission in $WINDOW days, so it was auto-closed to keep review capacity for everyone. Nothing is lost: the diff stays in history. Recommending someone else's excellent project is always welcome and unaffected."
+            ZH="你好 @$AUTHOR，感谢投稿，但这是你 $WINDOW 天内第 ${N} 个自荐，按策略自动关闭（改动都在历史里）。举荐别人的优秀项目不受影响，正常评审。"
+            say "$EN" "$ZH"
+            { echo '<!-- submission-guard:velocity-close -->'; cat /tmp/say.md; } > /tmp/msg.md
+            gh pr close "$PR" --comment "$(cat /tmp/msg.md)" || true
           elif [ "$N" -gt 1 ]; then
             if [ "$(have_marker velocity-warn)" -ge 1 ]; then exit 0; fi
-            gh pr comment "$PR" --body "<!-- submission-guard:velocity-warn -->Hi @$AUTHOR — this is your ${N}th self-submission in $WINDOW days. Please let the earlier ones conclude first; from the ${CLOSE_FROM}th on, new self-submissions are auto-closed. One quality PR at a time gets reviewed fastest.
-
-你好，这是你 $WINDOW 天内第 ${N} 个自荐，请先等前面的有结论；第 ${CLOSE_FROM} 个起会自动关闭。" || true
+            EN="Hi @$AUTHOR — this is your ${N}th self-submission in $WINDOW days. Please let the earlier ones conclude first; from the ${CLOSE_FROM}th on, new self-submissions are auto-closed. One quality PR at a time gets reviewed fastest."
+            ZH="你好 @$AUTHOR，这是你 $WINDOW 天内第 ${N} 个自荐，请先等前面的有结论；第 ${CLOSE_FROM} 个起会自动关闭。一次投一个高质量 PR，通过最快。"
+            say "$EN" "$ZH"
+            { echo '<!-- submission-guard:velocity-warn -->'; cat /tmp/say.md; } > /tmp/msg.md
+            gh pr comment "$PR" --body "$(cat /tmp/msg.md)" || true
           else
             if [ "$(have_marker velocity-tip)" -ge 1 ]; then exit 0; fi
-            gh pr comment "$PR" --body "<!-- submission-guard:velocity-tip -->Hi @$AUTHOR — thanks for submitting your project to Awesome Jev! One friendly heads-up: several self-submissions from the same account in a short window get extra scrutiny. From the ${CLOSE_FROM}th self-submission within $WINDOW days, new ones are auto-closed until earlier ones are handled. Recommending someone else's project is always welcome and unaffected.
-
-你好 @$AUTHOR，感谢投稿！小提示：同账号短时间内多次自荐会被额外关注；$WINDOW 天内第 ${CLOSE_FROM} 个起会自动关闭。举荐别人的项目不受影响。" || true
+            EN="Hi @$AUTHOR — thanks for submitting your project to Awesome Jev! One friendly heads-up: several self-submissions from the same account in a short window get extra scrutiny. From the ${CLOSE_FROM}th self-submission within $WINDOW days, new ones are auto-closed until earlier ones are handled. Recommending someone else's project is always welcome and unaffected."
+            ZH="你好 @$AUTHOR，感谢投稿！小提示：同账号短时间内多次自荐会被额外关注；$WINDOW 天内第 ${CLOSE_FROM} 个起会自动关闭。举荐别人的项目不受影响，正常评审。"
+            say "$EN" "$ZH"
+            { echo '<!-- submission-guard:velocity-tip -->'; cat /tmp/say.md; } > /tmp/msg.md
+            gh pr comment "$PR" --body "$(cat /tmp/msg.md)" || true
           fi
 
   review:

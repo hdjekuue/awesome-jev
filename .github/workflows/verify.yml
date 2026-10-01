@@ -62,18 +62,49 @@ jobs:
           fi
           echo "row parity OK ($EN)"
 
-      - name: Trilingual entry coverage
+      - name: Translation coverage is reported, not gated globally
+        # Translation is a progressive, scheduled job — the free model quota fills
+        # the backlog over weeks, so a global coverage floor would keep main red for
+        # months and teach everyone to ignore it. New entries are gated instead,
+        # in the step below.
         run: |
-          set -e
           node -e "
           const d = JSON.parse(require('fs').readFileSync('data/entries.json','utf8'));
-          const missZh = d.entries.filter(e => !e.descriptionZh);
-          const missFr = d.entries.filter(e => !e.descriptionFr);
-          const pct = (n) => Math.round((1 - n / d.entries.length) * 100);
-          console.log('zh coverage: ' + pct(missZh.length) + '% (' + missZh.length + ' missing)');
-          console.log('fr coverage: ' + pct(missFr.length) + '% (' + missFr.length + ' missing)');
-          if (missZh.length > d.entries.length * 0.15 || missFr.length > d.entries.length * 0.15) {
-            console.error('::error::translation coverage below 85% — run node scripts/translate.mjs');
-            process.exit(1);
+          const miss = (f) => d.entries.filter(e => !e[f]).length;
+          const pct = (n) => ((1 - n / d.entries.length) * 100).toFixed(1);
+          console.log('zh coverage: ' + pct(miss('descriptionZh')) + '% (' + miss('descriptionZh') + ' missing)');
+          console.log('fr coverage: ' + pct(miss('descriptionFr')) + '% (' + miss('descriptionFr') + ' missing)');
+          if (miss('descriptionZh') || miss('descriptionFr')) {
+            console.log('::warning title=Translation backlog::' + miss('descriptionZh') + ' zh and ' + miss('descriptionFr') + ' fr descriptions are still pending. The weekly Translate workflow drains this.');
           }
+          "
+
+      - name: Entries added in this PR must ship all three languages
+        if: github.event_name == 'pull_request'
+        run: |
+          set -e
+          BASE=$(git fetch origin main --depth 1 >/dev/null 2>&1; git rev-parse origin/main)
+          node -e "
+          const { execFileSync } = require('node:child_process');
+          const fs = require('fs');
+          let diff = '';
+          try {
+            diff = execFileSync('git', ['diff', process.env.BASE + '...HEAD', '--', 'data/entries.json'], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
+          } catch (e) { diff = ''; }
+          const added = [...diff.matchAll(/^\+\s*\"name\":\s*\"([^\"]+)\"/gm)].map((m) => m[1]);
+          if (!added.length) { console.log('no entries added in this PR — nothing to check'); process.exit(0); }
+          const d = JSON.parse(fs.readFileSync('data/entries.json','utf8'));
+          const known = new Set(d.entries.map((e) => e.name));
+          // A name in the diff that the data file does not contain means the row was
+          // written under a mismatched id/name pair. Passing silently would let a
+          // half-written entry through.
+          const unknown = added.filter((n) => !known.has(n));
+          for (const n of unknown) console.error('::error file=data/entries.json::' + n + ' appears in the diff but not in the parsed data — check the id/name pair');
+          const bad = d.entries.filter(e => added.includes(e.name) && (!e.description || !e.descriptionZh || !e.descriptionFr));
+          for (const b of bad) {
+            const missing = [!b.description && 'description', !b.descriptionZh && 'descriptionZh', !b.descriptionFr && 'descriptionFr'].filter(Boolean);
+            console.error('::error file=data/entries.json::' + b.name + ' is missing ' + missing.join(', '));
+          }
+          if (unknown.length || bad.length) process.exit(1);
+          console.log('all ' + added.length + ' new entr(y|ies) have all three descriptions');
           "

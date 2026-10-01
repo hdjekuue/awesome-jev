@@ -2,7 +2,7 @@
 
 > Run System One semantics without the vendor — on a 3090 if you like.
 
-41 entries. Part of [Awesome Jev](https://github.com/awesome-jev/awesome-jev) — refreshed 2026-10-01.
+41 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
 ### jaredpalmer/kev

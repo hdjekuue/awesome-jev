@@ -11,9 +11,9 @@
 </div>
 
 <p align="center">
-  <a href="https://github.com/awesome-jev/awesome-jev"><img src="https://img.shields.io/github/stars/awesome-jev/awesome-jev?style=social" alt="GitHub stars"></a>
-  <a href="https://github.com/awesome-jev/awesome-jev/fork"><img src="https://img.shields.io/github/forks/awesome-jev/awesome-jev?style=social" alt="GitHub forks"></a>
-  <img src="https://img.shields.io/github/last-commit/awesome-jev/awesome-jev" alt="last commit">
+  <a href="https://github.com/hdjekuue/awesome-jev"><img src="https://img.shields.io/github/stars/hdjekuue/awesome-jev?style=social" alt="GitHub stars"></a>
+  <a href="https://github.com/hdjekuue/awesome-jev/fork"><img src="https://img.shields.io/github/forks/hdjekuue/awesome-jev?style=social" alt="GitHub forks"></a>
+  <img src="https://img.shields.io/github/last-commit/hdjekuue/awesome-jev" alt="last commit">
   <a href="CONTRIBUTING.zh.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome"></a>
   <a href="https://github.com/topics/jev"><img src="https://img.shields.io/badge/topic-jev-ff7a45" alt="jev topic"></a>
   <img src="https://img.shields.io/badge/CC0-lightgrey.svg" alt="CC0">
@@ -25,7 +25,7 @@
   <a href="https://vercel.com/ai-gateway/models/jev"><b>AI Gateway</b></a> ·
   <a href="https://discord.gg/typesafe"><b>Discord</b></a> ·
   <a href="https://github.com/topics/jev"><b><code>jev</code> 话题</b></a> ·
-  <a href="https://awesome-jev.github.io/awesome-jev/zh/"><b>网站</b></a>
+  <a href="https://hdjekuue.github.io/awesome-jev/zh/"><b>网站</b></a>
 </p>
 
 ---
@@ -34,11 +34,11 @@
 >
 > 下面每一个条目，都是某位希望自己项目被看见的贡献者加进来的。GitHub 会优先推荐有 Star 的清单，而**一个 Star 是你能为这些项目做的、杠杆率最高的动作。**
 >
-> <a href="https://github.com/awesome-jev/awesome-jev"><img src="https://img.shields.io/github/stars/awesome-jev/awesome-jev?style=for-the-badge&label=%E2%AD%90%20Star%20%E2%AD%90" alt="Star on GitHub"></a>
+> <a href="https://github.com/hdjekuue/awesome-jev"><img src="https://img.shields.io/github/stars/hdjekuue/awesome-jev?style=for-the-badge&label=%E2%AD%90%20Star%20%E2%AD%90" alt="Star on GitHub"></a>
 >
 > **里程碑：0 → 100 stars。** 接近时，被关注的条目会在 README 与站点首页置顶展示。不收费、不设配额——只是社区对「什么真的值得用」的信号。
 >
-> **你做了基于 Jev 的东西？** [提个 PR](CONTRIBUTING.zh.md)（每个 PR 一条，三分钟）。也可以给仓库打上 [`jev` 话题](https://github.com/topics/jev) 再[开个 issue](https://github.com/awesome-jev/awesome-jev/issues/new/choose)，AI 策展机器人会自动接手。
+> **你做了基于 Jev 的东西？** [提个 PR](CONTRIBUTING.zh.md)（每个 PR 一条，三分钟）。也可以给仓库打上 [`jev` 话题](https://github.com/topics/jev) 再[开个 issue](https://github.com/hdjekuue/awesome-jev/issues/new/choose)，AI 策展机器人会自动接手。
 
 ---
 
@@ -126,7 +126,7 @@ if (res.answers.risk.choice === "block" && res.answers.risk.confidence > 0.8) {
 - **我想知道它到底好不好用** → [📊 基准、评测与校准](#-基准评测与校准)
 - **我刚起步** → [🧭 入门与心智模型](#-入门与心智模型)
 
-> 🤖 **正在用 AI agent？** 这份清单以机器可读数据发布，不只是散文。取 [`llms.txt`](https://awesome-jev.github.io/awesome-jev/llms.txt) 看索引、[`llms-full.txt`](https://awesome-jev.github.io/awesome-jev/llms-full.txt) 拿全部条目的 markdown、[`projects.json`](https://awesome-jev.github.io/awesome-jev/projects.json) 取结构化记录，或用 [`npx skills add awesome-jev/awesome-jev`](https://skills.sh/awesome-jev/awesome-jev) 把它加成技能。详见 [AGENTS.md](AGENTS.md)。
+> 🤖 **正在用 AI agent？** 这份清单以机器可读数据发布，不只是散文。取 [`llms.txt`](https://hdjekuue.github.io/awesome-jev/llms.txt) 看索引、[`llms-full.txt`](https://hdjekuue.github.io/awesome-jev/llms-full.txt) 拿全部条目的 markdown、[`projects.json`](https://hdjekuue.github.io/awesome-jev/projects.json) 取结构化记录，或用 [`npx skills add hdjekuue/awesome-jev`](https://skills.sh/hdjekuue/awesome-jev) 把它加成技能。详见 [AGENTS.md](AGENTS.md)。
 
 ---
 
@@ -680,7 +680,7 @@ Jev 选操作与 DOM 元素，小模型只负责写字。 _(14 项)_
 
 **星标数有多新？** 由 GitHub Actions 定时刷新，页脚有确切日期。
 
-**我能在自己的工具里用这些数据吗？** 可以——CC0-1.0，公共领域。取 [`projects.json`](https://awesome-jev.github.io/awesome-jev/projects.json) 或 `llms-full.txt` 直接用。
+**我能在自己的工具里用这些数据吗？** 可以——CC0-1.0，公共领域。取 [`projects.json`](https://hdjekuue.github.io/awesome-jev/projects.json) 或 `llms-full.txt` 直接用。
 
 ---
 
@@ -688,9 +688,9 @@ Jev 选操作与 DOM 元素，小模型只负责写字。 _(14 项)_
 
 一次分享，对下面这些构建者来说抵十个 Star。
 
-[![Share on X](https://img.shields.io/badge/%E5%88%86%E4%BA%AB%20-%20X-000000?style=for-the-badge&logo=x)](https://twitter.com/intent/tweet?text=Awesome%20Jev%20%E2%80%94%20%E5%85%B3%E4%BA%8E%20Jev%20%E6%9E%84%E5%BB%BA%E7%9A%84%E4%B8%80%E5%88%87%E3%80%82%E7%B1%BB%E5%9E%8B%E5%8C%96%E5%86%B3%E7%AD%96%EF%BC%8C%E6%A0%A1%E5%87%86%E6%A6%82%E7%8E%87%EF%BC%8C350%2B%20%E4%B8%AA%E9%A1%B9%E7%9B%AE%EF%BC%8C%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E3%80%82&url=https://github.com/awesome-jev/awesome-jev&hashtags=jev,typesafe,aiagents,awesome)
-[![Share on Reddit](https://img.shields.io/badge/%E5%88%86%E4%BA%AB%20-%20Reddit-ff4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/submit?url=https://github.com/awesome-jev/awesome-jev&title=Awesome%20Jev%20%E2%80%94%20everything%20built%20on%20Jev)
-[![Share on LinkedIn](https://img.shields.io/badge/%E5%88%86%E4%BA%AB%20-%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/sharing/share-offsite/?url=https://github.com/awesome-jev/awesome-jev)
+[![Share on X](https://img.shields.io/badge/%E5%88%86%E4%BA%AB%20-%20X-000000?style=for-the-badge&logo=x)](https://twitter.com/intent/tweet?text=Awesome%20Jev%20%E2%80%94%20%E5%85%B3%E4%BA%8E%20Jev%20%E6%9E%84%E5%BB%BA%E7%9A%84%E4%B8%80%E5%88%87%E3%80%82%E7%B1%BB%E5%9E%8B%E5%8C%96%E5%86%B3%E7%AD%96%EF%BC%8C%E6%A0%A1%E5%87%86%E6%A6%82%E7%8E%87%EF%BC%8C350%2B%20%E4%B8%AA%E9%A1%B9%E7%9B%AE%EF%BC%8C%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E3%80%82&url=https://github.com/hdjekuue/awesome-jev&hashtags=jev,typesafe,aiagents,awesome)
+[![Share on Reddit](https://img.shields.io/badge/%E5%88%86%E4%BA%AB%20-%20Reddit-ff4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/submit?url=https://github.com/hdjekuue/awesome-jev&title=Awesome%20Jev%20%E2%80%94%20everything%20built%20on%20Jev)
+[![Share on LinkedIn](https://img.shields.io/badge/%E5%88%86%E4%BA%AB%20-%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/sharing/share-offsite/?url=https://github.com/hdjekuue/awesome-jev)
 
 ## 📮 参与贡献
 

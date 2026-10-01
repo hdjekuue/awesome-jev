@@ -13,4 +13,4 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
-Sitemap: https://awesome-jev.github.io/awesome-jev/sitemap.xml
+Sitemap: https://hdjekuue.github.io/awesome-jev/sitemap.xml

@@ -2,7 +2,7 @@
 
 > Maintained by TypeSafe AI, plus the frameworks that ship Jev natively.
 
-7 entries. Part of [Awesome Jev](https://github.com/awesome-jev/awesome-jev) — refreshed 2026-10-01.
+7 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
 ### vercel/eve

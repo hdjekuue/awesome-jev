@@ -13,7 +13,7 @@ The definitive, self-updating directory of everything built on Jev — TypeSafe 
 
 ## How to use this skill
 
-1. Fetch `https://awesome-jev.github.io/awesome-jev/projects.json` once per session. It is well under 1 MB and holds every
+1. Fetch `https://hdjekuue.github.io/awesome-jev/projects.json` once per session. It is well under 1 MB and holds every
    entry with its fields.
 2. Filter locally. Useful fields: `category`, `kind` (repo | resource), `stars`,
    `language`, `license`, `official`, `archived`, `pushedAt`, `intents`, and the
@@ -22,10 +22,10 @@ The definitive, self-updating directory of everything built on Jev — TypeSafe 
    alone — stars are a snapshot from 2026-10-01, not a quality claim.
 
 Smaller views, if you only need part of it:
-- `https://awesome-jev.github.io/awesome-jev/llms.txt` — index plus section links
-- `https://awesome-jev.github.io/awesome-jev/llms-full.txt` — every entry as markdown
-- `https://awesome-jev.github.io/awesome-jev/c/<slug>.md` — one section only
-- https://github.com/awesome-jev/awesome-jev/data/entries.json — the source file
+- `https://hdjekuue.github.io/awesome-jev/llms.txt` — index plus section links
+- `https://hdjekuue.github.io/awesome-jev/llms-full.txt` — every entry as markdown
+- `https://hdjekuue.github.io/awesome-jev/c/<slug>.md` — one section only
+- https://github.com/hdjekuue/awesome-jev/data/entries.json — the source file
 
 ## Sections
 

@@ -2,7 +2,7 @@
 
 > Query understanding, source selection, reranking and semantic SQL.
 
-13 entries. Part of [Awesome Jev](https://github.com/awesome-jev/awesome-jev) — refreshed 2026-10-01.
+13 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
 ### superagents-lab/jev-search

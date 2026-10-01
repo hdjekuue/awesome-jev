@@ -11,9 +11,9 @@
 </div>
 
 <p align="center">
-  <a href="https://github.com/awesome-jev/awesome-jev"><img src="https://img.shields.io/github/stars/awesome-jev/awesome-jev?style=social" alt="GitHub stars"></a>
-  <a href="https://github.com/awesome-jev/awesome-jev/fork"><img src="https://img.shields.io/github/forks/awesome-jev/awesome-jev?style=social" alt="GitHub forks"></a>
-  <img src="https://img.shields.io/github/last-commit/awesome-jev/awesome-jev" alt="last commit">
+  <a href="https://github.com/hdjekuue/awesome-jev"><img src="https://img.shields.io/github/stars/hdjekuue/awesome-jev?style=social" alt="GitHub stars"></a>
+  <a href="https://github.com/hdjekuue/awesome-jev/fork"><img src="https://img.shields.io/github/forks/hdjekuue/awesome-jev?style=social" alt="GitHub forks"></a>
+  <img src="https://img.shields.io/github/last-commit/hdjekuue/awesome-jev" alt="last commit">
   <a href="CONTRIBUTING.fr.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome"></a>
   <a href="https://github.com/topics/jev"><img src="https://img.shields.io/badge/topic-jev-ff7a45" alt="jev topic"></a>
   <img src="https://img.shields.io/badge/CC0-lightgrey.svg" alt="CC0">
@@ -25,7 +25,7 @@
   <a href="https://vercel.com/ai-gateway/models/jev"><b>AI Gateway</b></a> ·
   <a href="https://discord.gg/typesafe"><b>Discord</b></a> ·
   <a href="https://github.com/topics/jev"><b>Sujet <code>jev</code></b></a> ·
-  <a href="https://awesome-jev.github.io/awesome-jev/fr/"><b>Site web</b></a>
+  <a href="https://hdjekuue.github.io/awesome-jev/fr/"><b>Site web</b></a>
 </p>
 
 ---
@@ -34,11 +34,11 @@
 >
 > Chaque entrée ci-dessous a été ajoutée par un contributeur qui voulait que son projet soit trouvé. GitHub classe les listes étoilées plus haut, et **une étoile est le geste le plus rentable que vous puissiez faire pour les projets listés ici.**
 >
-> <a href="https://github.com/awesome-jev/awesome-jev"><img src="https://img.shields.io/github/stars/awesome-jev/awesome-jev?style=for-the-badge&label=%E2%AD%90%20Star%20%E2%AD%90" alt="Star on GitHub"></a>
+> <a href="https://github.com/hdjekuue/awesome-jev"><img src="https://img.shields.io/github/stars/hdjekuue/awesome-jev?style=for-the-badge&label=%E2%AD%90%20Star%20%E2%AD%90" alt="Star on GitHub"></a>
 >
 > **Objectif : 0 → 100 étoiles.** À l'approche, les entrées notables seront épinglées en haut du README et du site. Aucun placement payant, aucun quota — juste le signal de la communauté sur ce qui vaut vraiment le coup.
 >
-> **Vous avez construit quelque chose sur Jev ?** [Ouvrez une PR](CONTRIBUTING.fr.md) (une entrée par PR, trois minutes). Ajoutez le sujet [`jev`](https://github.com/topics/jev) à votre dépôt et [ouvrez une issue](https://github.com/awesome-jev/awesome-jev/issues/new/choose) si vous préférez — le curateur IA s'en chargera.
+> **Vous avez construit quelque chose sur Jev ?** [Ouvrez une PR](CONTRIBUTING.fr.md) (une entrée par PR, trois minutes). Ajoutez le sujet [`jev`](https://github.com/topics/jev) à votre dépôt et [ouvrez une issue](https://github.com/hdjekuue/awesome-jev/issues/new/choose) si vous préférez — le curateur IA s'en chargera.
 
 ---
 
@@ -126,7 +126,7 @@ C'est pourquoi l'écosystème ci-dessus n'est pas une liste de jouets : ce sont 
 - **Je veux savoir si ça marche vraiment** → [📊 Benchmarks, évaluations et calibration](#-benchmarks-%C3%A9valuations-et-calibration)
 - **Je démarre** → [🧭 Pour commencer](#%EF%B8%8F-pour-commencer)
 
-> 🤖 **Vous travaillez avec un agent IA ?** Cette liste est publiée sous forme de données lisibles par machine, pas seulement de prose. Récupérez [`llms.txt`](https://awesome-jev.github.io/awesome-jev/llms.txt) pour l'index, [`llms-full.txt`](https://awesome-jev.github.io/awesome-jev/llms-full.txt) pour toutes les entrées en markdown, [`projects.json`](https://awesome-jev.github.io/awesome-jev/projects.json) pour les données structurées, ou ajoutez-la comme skill avec [`npx skills add awesome-jev/awesome-jev`](https://skills.sh/awesome-jev/awesome-jev). Voir [AGENTS.md](AGENTS.md).
+> 🤖 **Vous travaillez avec un agent IA ?** Cette liste est publiée sous forme de données lisibles par machine, pas seulement de prose. Récupérez [`llms.txt`](https://hdjekuue.github.io/awesome-jev/llms.txt) pour l'index, [`llms-full.txt`](https://hdjekuue.github.io/awesome-jev/llms-full.txt) pour toutes les entrées en markdown, [`projects.json`](https://hdjekuue.github.io/awesome-jev/projects.json) pour les données structurées, ou ajoutez-la comme skill avec [`npx skills add hdjekuue/awesome-jev`](https://skills.sh/hdjekuue/awesome-jev). Voir [AGENTS.md](AGENTS.md).
 
 ---
 
@@ -688,9 +688,9 @@ Ce n'est pas une liste saisie à la main qui moisit en six mois. C'est **un fich
 
 Un partage vaut dix étoiles pour les bâtisseurs listés ci-dessous.
 
-[![Partager sur X](https://img.shields.io/badge/Partager%20-%20X-000000?style=for-the-badge&logo=x)](https://twitter.com/intent/tweet?text=Awesome%20Jev%20%E2%80%94%20tout%20ce%20qui%20est%20construit%20sur%20Jev%2C%20le%20mod%C3%A8le%20System%20One%20de%20TypeSafe%20AI.&url=https://github.com/awesome-jev/awesome-jev&hashtags=jev,typesafe,aiagents,awesome)
-[![Partager sur Reddit](https://img.shields.io/badge/Partager%20-%20Reddit-ff4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/submit?url=https://github.com/awesome-jev/awesome-jev&title=Awesome%20Jev)
-[![Partager sur LinkedIn](https://img.shields.io/badge/Partager%20-%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/sharing/share-offsite/?url=https://github.com/awesome-jev/awesome-jev)
+[![Partager sur X](https://img.shields.io/badge/Partager%20-%20X-000000?style=for-the-badge&logo=x)](https://twitter.com/intent/tweet?text=Awesome%20Jev%20%E2%80%94%20tout%20ce%20qui%20est%20construit%20sur%20Jev%2C%20le%20mod%C3%A8le%20System%20One%20de%20TypeSafe%20AI.&url=https://github.com/hdjekuue/awesome-jev&hashtags=jev,typesafe,aiagents,awesome)
+[![Partager sur Reddit](https://img.shields.io/badge/Partager%20-%20Reddit-ff4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/submit?url=https://github.com/hdjekuue/awesome-jev&title=Awesome%20Jev)
+[![Partager sur LinkedIn](https://img.shields.io/badge/Partager%20-%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/sharing/share-offsite/?url=https://github.com/hdjekuue/awesome-jev)
 
 ## 📮 Contribuer
 

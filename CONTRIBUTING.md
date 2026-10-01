@@ -114,12 +114,12 @@ A maintainer (or the gate) merges. If nothing happens in 48 hours, leave a frien
 
 ## Star, don't just submit
 
-A star on [this list](https://github.com/awesome-jev/awesome-jev) is the highest-leverage
+A star on [this list](https://github.com/hdjekuue/awesome-jev) is the highest-leverage
 thing anyone can do here — it raises every project in it. If your entry was useful, star the
 list and share it:
 
-[![X](https://img.shields.io/badge/Share%20-%20X-000000?style=flat-square&logo=x)](https://twitter.com/intent/tweet?text=Awesome%20Jev&url=https://github.com/awesome-jev/awesome-jev&hashtags=jev,typesafe,awesome)
-[![Reddit](https://img.shields.io/badge/Share%20-%20Reddit-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/submit?url=https://github.com/awesome-jev/awesome-jev)
+[![X](https://img.shields.io/badge/Share%20-%20X-000000?style=flat-square&logo=x)](https://twitter.com/intent/tweet?text=Awesome%20Jev&url=https://github.com/hdjekuue/awesome-jev&hashtags=jev,typesafe,awesome)
+[![Reddit](https://img.shields.io/badge/Share%20-%20Reddit-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/submit?url=https://github.com/hdjekuue/awesome-jev)
 
 ## License
 

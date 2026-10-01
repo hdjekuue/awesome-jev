@@ -105,10 +105,10 @@
 
 ## 顺手点个 Star
 
-给[这份清单](https://github.com/awesome-jev/awesome-jev)点 Star，是对这里所有项目最高杠杆的支持——它会提升清单里每一个项目的曝光。如果你的条目有用，请 Star 并分享：
+给[这份清单](https://github.com/hdjekuue/awesome-jev)点 Star，是对这里所有项目最高杠杆的支持——它会提升清单里每一个项目的曝光。如果你的条目有用，请 Star 并分享：
 
-[![X](https://img.shields.io/badge/分享%20-%20X-000000?style=flat-square&logo=x)](https://twitter.com/intent/tweet?text=Awesome%20Jev&url=https://github.com/awesome-jev/awesome-jev&hashtags=jev,typesafe,awesome)
-[![Reddit](https://img.shields.io/badge/分享%20-%20Reddit-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/submit?url=https://github.com/awesome-jev/awesome-jev)
+[![X](https://img.shields.io/badge/分享%20-%20X-000000?style=flat-square&logo=x)](https://twitter.com/intent/tweet?text=Awesome%20Jev&url=https://github.com/hdjekuue/awesome-jev&hashtags=jev,typesafe,awesome)
+[![Reddit](https://img.shields.io/badge/分享%20-%20Reddit-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/submit?url=https://github.com/hdjekuue/awesome-jev)
 
 ## 许可
 

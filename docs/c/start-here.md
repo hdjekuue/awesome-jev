@@ -2,7 +2,7 @@
 
 > The spec sheet, the three primitives and the docs — read these before building.
 
-16 entries. Part of [Awesome Jev](https://github.com/awesome-jev/awesome-jev) — refreshed 2026-10-01.
+16 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
 ### Introduction

@@ -2,7 +2,7 @@
 
 > Decisions as game mechanics.
 
-19 entries. Part of [Awesome Jev](https://github.com/awesome-jev/awesome-jev) — refreshed 2026-10-01.
+19 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
 ### rmalde/minecraft-agent

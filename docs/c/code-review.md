@@ -2,7 +2,7 @@
 
 > Judges, linters, coverage gates and review dashboards.
 
-21 entries. Part of [Awesome Jev](https://github.com/awesome-jev/awesome-jev) — refreshed 2026-10-01.
+21 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
 ### devagrawal09/jev-review

@@ -117,12 +117,12 @@ un rappel amical.
 
 ## Une étoile plutôt qu'une simple soumission
 
-Une étoile sur [cette liste](https://github.com/awesome-jev/awesome-jev) est le geste le plus
+Une étoile sur [cette liste](https://github.com/hdjekuue/awesome-jev) est le geste le plus
 rentable possible ici : elle augmente la visibilité de chaque projet qu'elle contient. Si votre
 entrée vous a été utile, mettez une étoile et partagez :
 
-[![X](https://img.shields.io/badge/Partager%20-%20X-000000?style=flat-square&logo=x)](https://twitter.com/intent/tweet?text=Awesome%20Jev&url=https://github.com/awesome-jev/awesome-jev&hashtags=jev,typesafe,awesome)
-[![Reddit](https://img.shields.io/badge/Partager%20-%20Reddit-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/submit?url=https://github.com/awesome-jev/awesome-jev)
+[![X](https://img.shields.io/badge/Partager%20-%20X-000000?style=flat-square&logo=x)](https://twitter.com/intent/tweet?text=Awesome%20Jev&url=https://github.com/hdjekuue/awesome-jev&hashtags=jev,typesafe,awesome)
+[![Reddit](https://img.shields.io/badge/Partager%20-%20Reddit-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/submit?url=https://github.com/hdjekuue/awesome-jev)
 
 ## Licence
 

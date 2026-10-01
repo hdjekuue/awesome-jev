@@ -2,7 +2,7 @@
 
 > Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 
-48 entries. Part of [Awesome Jev](https://github.com/awesome-jev/awesome-jev) — refreshed 2026-10-01.
+48 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
 ### nicobailon/pi-mcp-adapter

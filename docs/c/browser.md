@@ -2,7 +2,7 @@
 
 > Jev picks the operation and the DOM element; a small LLM only writes the text.
 
-14 entries. Part of [Awesome Jev](https://github.com/awesome-jev/awesome-jev) — refreshed 2026-10-01.
+14 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
 ### browser-use/jev-ultrafast

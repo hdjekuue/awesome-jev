@@ -57,9 +57,9 @@ Answer all three with evidence from the repo, not adjectives:
 - [ ] `node scripts/verify.mjs` exits 0
 - [ ] `node scripts/build-readme.mjs && node site/build.mjs` run (CI also does this)
 - [ ] Added the [`jev`](https://github.com/topics/jev) topic to your repo
-- [ ] Starred [this list](https://github.com/awesome-jev/awesome-jev) ⭐ and shared it
-      ([X](https://twitter.com/intent/tweet?text=Awesome%20Jev&url=https://github.com/awesome-jev/awesome-jev&hashtags=jev,typesafe,awesome) ·
-      [Reddit](https://www.reddit.com/submit?url=https://github.com/awesome-jev/awesome-jev))
+- [ ] Starred [this list](https://github.com/hdjekuue/awesome-jev) ⭐ and shared it
+      ([X](https://twitter.com/intent/tweet?text=Awesome%20Jev&url=https://github.com/hdjekuue/awesome-jev&hashtags=jev,typesafe,awesome) ·
+      [Reddit](https://www.reddit.com/submit?url=https://github.com/hdjekuue/awesome-jev))
 
 ## Screenshot or demo / 截图或演示 / Capture ou démo
 
@@ -71,5 +71,5 @@ Answer all three with evidence from the repo, not adjectives:
 
 ---
 
-> 💡 A line like *"Listed in [Awesome Jev](https://github.com/awesome-jev/awesome-jev) — star if useful"* at the
+> 💡 A line like *"Listed in [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — star if useful"* at the
 > bottom of your README helps both sides. If nobody reviews within 48h, feel free to leave a friendly ping.

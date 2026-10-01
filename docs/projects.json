@@ -2,8 +2,8 @@
   "meta": {
     "name": "Awesome Jev",
     "description": "The definitive, self-updating directory of everything built on Jev — TypeSafe AI’s System One model, the first model that answers with typed judgments and calibrated probabilities instead of prose.",
-    "canonical": "https://github.com/awesome-jev/awesome-jev",
-    "site": "https://awesome-jev.github.io/awesome-jev/",
+    "canonical": "https://github.com/hdjekuue/awesome-jev",
+    "site": "https://hdjekuue.github.io/awesome-jev/",
     "license": "CC0-1.0",
     "languages": [
       "en",
@@ -136,11 +136,11 @@
       }
     },
     "endpoints": {
-      "source": "https://github.com/awesome-jev/awesome-jev/blob/main/data/entries.json",
-      "llms": "https://awesome-jev.github.io/awesome-jev/llms.txt",
-      "llmsFull": "https://awesome-jev.github.io/awesome-jev/llms-full.txt",
-      "skill": "https://awesome-jev.github.io/awesome-jev/skill.md",
-      "section": "https://awesome-jev.github.io/awesome-jev/c/<slug>.md",
+      "source": "https://github.com/hdjekuue/awesome-jev/blob/main/data/entries.json",
+      "llms": "https://hdjekuue.github.io/awesome-jev/llms.txt",
+      "llmsFull": "https://hdjekuue.github.io/awesome-jev/llms-full.txt",
+      "skill": "https://hdjekuue.github.io/awesome-jev/skill.md",
+      "section": "https://hdjekuue.github.io/awesome-jev/c/<slug>.md",
       "api": "POST https://api.typesafe.ai/v1/systemone"
     },
     "primitives": [

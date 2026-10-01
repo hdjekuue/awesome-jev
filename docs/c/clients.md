@@ -2,7 +2,7 @@
 
 > Unofficial clients for the languages without a first-party SDK.
 
-32 entries. Part of [Awesome Jev](https://github.com/awesome-jev/awesome-jev) — refreshed 2026-10-01.
+32 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
 ### pithings/advocaat

@@ -82,7 +82,7 @@ Published under `docs/` (GitHub Pages) and mirrored at the repository root:
 | `llms-full.txt` | every entry as markdown with field bullets |
 | `c/<slug>.md` | one category only, for a narrow question |
 | `projects.json` | structured records, filter locally |
-| `skill.md` | installable agent skill (`npx skills add awesome-jev/awesome-jev`) |
+| `skill.md` | installable agent skill (`npx skills add hdjekuue/awesome-jev`) |
 
 Staleness contract for consumers: star counts are a snapshot dated in
 `meta.updatedAt`, never a quality claim.

@@ -2,7 +2,7 @@
 
 > Try it in thirty seconds.
 
-12 entries. Part of [Awesome Jev](https://github.com/awesome-jev/awesome-jev) — refreshed 2026-10-01.
+12 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
 ### dabit3/jev-experiments

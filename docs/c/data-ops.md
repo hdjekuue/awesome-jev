@@ -2,7 +2,7 @@
 
 > Postgres extensions, semantic SQL and telemetry pipelines that call Jev.
 
-20 entries. Part of [Awesome Jev](https://github.com/awesome-jev/awesome-jev) — refreshed 2026-10-01.
+20 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
 ### kyotofin/tax-doc-classifier

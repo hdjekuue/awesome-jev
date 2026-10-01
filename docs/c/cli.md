@@ -2,7 +2,7 @@
 
 > Call Jev from a shell, no SDK required.
 
-14 entries. Part of [Awesome Jev](https://github.com/awesome-jev/awesome-jev) — refreshed 2026-10-01.
+14 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
 ### dzhng/jevgrep

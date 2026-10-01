@@ -3,7 +3,7 @@
 > The definitive, self-updating directory of everything built on Jev — TypeSafe AI’s System One model, the first model that answers with typed judgments and calibrated probabilities instead of prose.
 
 352 entries, 93,460 stars, 19 categories, refreshed 2026-10-01.
-Source: https://github.com/awesome-jev/awesome-jev
+Source: https://github.com/hdjekuue/awesome-jev
 
 Format: one H3 per entry, followed by a YAML-ish bullet list of fields.
 

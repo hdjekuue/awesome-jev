@@ -2,7 +2,7 @@
 
 > Driving phones, IM clients and native UIs without hooking or patching.
 
-4 entries. Part of [Awesome Jev](https://github.com/awesome-jev/awesome-jev) — refreshed 2026-10-01.
+4 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
 ### droidrun/mobile-jev

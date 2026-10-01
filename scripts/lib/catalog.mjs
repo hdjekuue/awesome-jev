@@ -5,10 +5,16 @@ import { fileURLToPath } from 'node:url';
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 export const DATA_FILE = path.join(ROOT, 'data', 'entries.json');
 
-export const REPO = 'https://github.com/awesome-jev/awesome-jev';
-export const OWNER = 'awesome-jev';
-export const SITE = 'https://awesome-jev.github.io/awesome-jev';
-export const SITE_BASE = '/awesome-jev';
+/**
+ * Where this repo lives, and where it is published. Override with env vars when
+ * forking or mirroring — canonical URLs, JSON-LD and the sitemap are all derived
+ * from these, and a mismatch with reality is the fastest way to lose SEO.
+ */
+export const OWNER = process.env.AWEJEV_OWNER || 'hdjekuue';
+export const REPO_NAME = process.env.AWEJEV_REPO || 'awesome-jev';
+export const REPO = `https://github.com/${OWNER}/${REPO_NAME}`;
+export const SITE = `https://${OWNER}.github.io/${REPO_NAME}`;
+export const SITE_BASE = `/${REPO_NAME}`;
 export const DISCORD = 'https://discord.gg/typesafe';
 export const DOCS = 'https://docs.typesafe.ai';
 

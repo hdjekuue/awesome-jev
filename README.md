@@ -11,9 +11,9 @@
 </div>
 
 <p align="center">
-  <a href="https://github.com/awesome-jev/awesome-jev"><img src="https://img.shields.io/github/stars/awesome-jev/awesome-jev?style=social" alt="GitHub stars"></a>
-  <a href="https://github.com/awesome-jev/awesome-jev/fork"><img src="https://img.shields.io/github/forks/awesome-jev/awesome-jev?style=social" alt="GitHub forks"></a>
-  <img src="https://img.shields.io/github/last-commit/awesome-jev/awesome-jev" alt="last commit">
+  <a href="https://github.com/hdjekuue/awesome-jev"><img src="https://img.shields.io/github/stars/hdjekuue/awesome-jev?style=social" alt="GitHub stars"></a>
+  <a href="https://github.com/hdjekuue/awesome-jev/fork"><img src="https://img.shields.io/github/forks/hdjekuue/awesome-jev?style=social" alt="GitHub forks"></a>
+  <img src="https://img.shields.io/github/last-commit/hdjekuue/awesome-jev" alt="last commit">
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome"></a>
   <a href="https://github.com/topics/jev"><img src="https://img.shields.io/badge/topic-jev-ff7a45" alt="jev topic"></a>
   <img src="https://img.shields.io/badge/CC0-lightgrey.svg" alt="CC0">
@@ -25,7 +25,7 @@
   <a href="https://vercel.com/ai-gateway/models/jev"><b>AI Gateway</b></a> ·
   <a href="https://discord.gg/typesafe"><b>Discord</b></a> ·
   <a href="https://github.com/topics/jev"><b><code>jev</code> topic</b></a> ·
-  <a href="https://awesome-jev.github.io/awesome-jev/"><b>Website</b></a>
+  <a href="https://hdjekuue.github.io/awesome-jev/"><b>Website</b></a>
 </p>
 
 ---
@@ -34,11 +34,11 @@
 >
 > Every entry below was added by a contributor who wanted their project found. GitHub ranks starred lists higher, and **a star is the single highest-leverage thing you can do for the projects listed here.**
 >
-> <a href="https://github.com/awesome-jev/awesome-jev"><img src="https://img.shields.io/github/stars/awesome-jev/awesome-jev?style=for-the-badge&label=%E2%AD%90%20Star%20%E2%AD%90" alt="Star on GitHub"></a>
+> <a href="https://github.com/hdjekuue/awesome-jev"><img src="https://img.shields.io/github/stars/hdjekuue/awesome-jev?style=for-the-badge&label=%E2%AD%90%20Star%20%E2%AD%90" alt="Star on GitHub"></a>
 >
 > **Milestone: 0 → 100 stars.** As we get close, featured entries get pinned at the top of the README and the website. No pay-to-play, no quotas — just community signal about what's actually worth using.
 >
-> **Built something on Jev?** [Open a PR](CONTRIBUTING.md) (one entry per PR, 3 minutes). Add the [`jev` topic](https://github.com/topics/jev) to your repo and [open an issue](https://github.com/awesome-jev/awesome-jev/issues/new/choose) if you'd rather not — the AI curator will pick it up.
+> **Built something on Jev?** [Open a PR](CONTRIBUTING.md) (one entry per PR, 3 minutes). Add the [`jev` topic](https://github.com/topics/jev) to your repo and [open an issue](https://github.com/hdjekuue/awesome-jev/issues/new/choose) if you'd rather not — the AI curator will pick it up.
 
 ---
 
@@ -126,7 +126,7 @@ That is why the ecosystem above is not a toy list: it is routers that cut infere
 - **I want to know if it's any good** → [📊 Benchmarks, Evals & Calibration](#-benchmarks-evals--calibration)
 - **I'm just starting** → [🧭 Start Here](#-start-here)
 
-> 🤖 **Working with an AI agent?** This list is published as machine-readable data, not just prose. Fetch [`llms.txt`](https://awesome-jev.github.io/awesome-jev/llms.txt) for the index, [`llms-full.txt`](https://awesome-jev.github.io/awesome-jev/llms-full.txt) for every entry as markdown, [`projects.json`](https://awesome-jev.github.io/awesome-jev/projects.json) for structured records, or add it as a skill with [`npx skills add awesome-jev/awesome-jev`](https://skills.sh/awesome-jev/awesome-jev). See [AGENTS.md](AGENTS.md).
+> 🤖 **Working with an AI agent?** This list is published as machine-readable data, not just prose. Fetch [`llms.txt`](https://hdjekuue.github.io/awesome-jev/llms.txt) for the index, [`llms-full.txt`](https://hdjekuue.github.io/awesome-jev/llms-full.txt) for every entry as markdown, [`projects.json`](https://hdjekuue.github.io/awesome-jev/projects.json) for structured records, or add it as a skill with [`npx skills add hdjekuue/awesome-jev`](https://skills.sh/hdjekuue/awesome-jev). See [AGENTS.md](AGENTS.md).
 
 ---
 
@@ -680,7 +680,7 @@ This is not a hand-typed list that rots in six months. It is **one data file, de
 
 **How fresh is the star count?** Refreshed on a schedule by GitHub Actions; the footer carries the exact date.
 
-**Can I use this data in my own tool?** Yes — CC0-1.0, public domain. Fetch [`projects.json`](https://awesome-jev.github.io/awesome-jev/projects.json) or `llms-full.txt` and go.
+**Can I use this data in my own tool?** Yes — CC0-1.0, public domain. Fetch [`projects.json`](https://hdjekuue.github.io/awesome-jev/projects.json) or `llms-full.txt` and go.
 
 ---
 
@@ -691,7 +691,7 @@ This is not a hand-typed list that rots in six months. It is **one data file, de
 <!-- star-history:start -->
 <!-- star-history:end -->
 
-> **Community momentum:** as this list approaches 100 stars, notable entries *may* be pinned at the top of the README and the website — no pay-to-play, no quotas, just a signal about what the community actually values. [Star on GitHub](https://github.com/awesome-jev/awesome-jev) · [Join the TypeSafe Discord](https://discord.gg/typesafe)
+> **Community momentum:** as this list approaches 100 stars, notable entries *may* be pinned at the top of the README and the website — no pay-to-play, no quotas, just a signal about what the community actually values. [Star on GitHub](https://github.com/hdjekuue/awesome-jev) · [Join the TypeSafe Discord](https://discord.gg/typesafe)
 
 <sub>Chart is self-hosted via GitHub Action (`narayann7/star-history-action`) and refreshes every 6h. Previously used `api.star-history.com/svg`, disabled due to the [GitHub stargazers API restriction](https://star-history.com/blog/github-stargazer-api-restriction).</sub>
 
@@ -699,9 +699,9 @@ This is not a hand-typed list that rots in six months. It is **one data file, de
 
 One share is worth ten stars for the builders below.
 
-[![Share on X](https://img.shields.io/badge/Share%20-%20X-000000?style=for-the-badge&logo=x)](https://twitter.com/intent/tweet?text=Awesome%20Jev%20%E2%80%94%20everything%20built%20on%20Jev%2C%20TypeSafe%20AI's%20System%20One%20model.%20Typed%20decisions%2C%20calibrated%20probabilities%2C%20350%2B%20projects%2C%20self-updating.&url=https://github.com/awesome-jev/awesome-jev&hashtags=jev,typesafe,aiagents,llm,awesome)
-[![Share on Reddit](https://img.shields.io/badge/Share%20-%20Reddit-ff4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/submit?url=https://github.com/awesome-jev/awesome-jev&title=Awesome%20Jev%20%E2%80%94%20everything%20built%20on%20Jev)
-[![Share on LinkedIn](https://img.shields.io/badge/Share%20-%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/sharing/share-offsite/?url=https://github.com/awesome-jev/awesome-jev)
+[![Share on X](https://img.shields.io/badge/Share%20-%20X-000000?style=for-the-badge&logo=x)](https://twitter.com/intent/tweet?text=Awesome%20Jev%20%E2%80%94%20everything%20built%20on%20Jev%2C%20TypeSafe%20AI's%20System%20One%20model.%20Typed%20decisions%2C%20calibrated%20probabilities%2C%20350%2B%20projects%2C%20self-updating.&url=https://github.com/hdjekuue/awesome-jev&hashtags=jev,typesafe,aiagents,llm,awesome)
+[![Share on Reddit](https://img.shields.io/badge/Share%20-%20Reddit-ff4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/submit?url=https://github.com/hdjekuue/awesome-jev&title=Awesome%20Jev%20%E2%80%94%20everything%20built%20on%20Jev)
+[![Share on LinkedIn](https://img.shields.io/badge/Share%20-%20LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/sharing/share-offsite/?url=https://github.com/hdjekuue/awesome-jev)
 
 ## 📮 Contributing
 

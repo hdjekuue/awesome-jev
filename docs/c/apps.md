@@ -2,7 +2,7 @@
 
 > End-user tools people actually open every day.
 
-29 entries. Part of [Awesome Jev](https://github.com/awesome-jev/awesome-jev) — refreshed 2026-10-01.
+29 entries. Part of [Awesome Jev](https://github.com/hdjekuue/awesome-jev) — refreshed 2026-10-01.
 
 ---
 ### anishfn/shapeshift

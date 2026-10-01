@@ -1085,6 +1085,26 @@ footer {
   outline-offset: 1px;
 }
 
+/* The result count is nowrap, so on a narrow phone it could not shrink and pushed
+   the whole flex row 52px past the viewport — the widest thing on the page, and
+   the reason scrollWidth exceeded clientWidth at every width under 414px. Below
+   this width the row wraps and the count takes its own ruled line. */
+@media (max-width: 44rem) {
+  .search {
+    flex-wrap: wrap;
+  }
+
+  .search input {
+    flex: 1 1 100%;
+    order: 3;
+  }
+
+  .search-count {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
+
 .search-count {
   font-family: var(--f-mono), var(--f-cjk);
   font-size: var(--t-min);

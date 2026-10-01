@@ -1216,23 +1216,33 @@ footer {
     gap: 0.7rem;
   }
 
-  /* Three ruled language cells do not fit on a 360px phone at the desktop
-     padding, and the row pushed the document 55px wider than the viewport.
-     They shrink instead of overflowing. */
+  /* Three ruled language cells do not fit on a 360px phone at desktop padding, and
+     the row pushed the document wider than the viewport. `white-space: nowrap` is
+     the reason flex could not absorb it: "FRANÇAIS" is as wide as it wants to be.
+     So below this width the switcher becomes an equal three-column grid and the
+     labels are allowed to break. Equal columns keep the ruled frame intact — the
+     vertical rules still land at thirds, which is the point of the treatment. */
   .langs {
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: stretch;
   }
 
   .langs a {
-    padding: 0.4rem 0.6rem;
-    flex: 1 1 auto;
+    padding: 0.45rem 0.3rem;
     justify-content: center;
+    white-space: normal;
+    overflow-wrap: anywhere;
     min-width: 0;
   }
 
   .langs a:first-child {
     border-left: 0;
     padding-left: 0;
+  }
+
+  .langs a:last-child {
+    padding-right: 0;
   }
 }
 

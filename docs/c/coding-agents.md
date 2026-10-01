@@ -69,7 +69,7 @@
 ### itsmostafa/typesafe-mcp
 
 - url: https://github.com/itsmostafa/typesafe-mcp
-- description: Go MCP connector.
+- description: Single-binary Go MCP server and CLI that exposes TypeSafe Jev judgments to Claude Desktop, Claude Code and Codex.
 - stars: 337
 - language: Go
 - license: MIT
@@ -351,7 +351,7 @@
 ### kubet/azdaja
 
 - url: https://github.com/kubet/azdaja
-- description: Recursive language model layer for Claude Code, Codex, Gemini, and OpenCode that keeps full sources in a local evaluator; Jev is an optional leaf for reranking, verification, classification, and semantic joins, with budgeted, checkpointed batches.
+- description: Recursive language-model layer for Claude Code, Codex, Gemini and OpenCode that keeps sources local; Jev is an optional leaf for reranking, verification and semantic joins.
 - stars: 14
 - language: Python
 - license: MIT

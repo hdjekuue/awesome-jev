@@ -250,7 +250,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 ### itsmostafa/typesafe-mcp
 
 - url: https://github.com/itsmostafa/typesafe-mcp
-- description: Go MCP connector.
+- description: Single-binary Go MCP server and CLI that exposes TypeSafe Jev judgments to Claude Desktop, Claude Code and Codex.
 - stars: 337
 - language: Go
 - license: MIT
@@ -532,7 +532,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses.
 ### kubet/azdaja
 
 - url: https://github.com/kubet/azdaja
-- description: Recursive language model layer for Claude Code, Codex, Gemini, and OpenCode that keeps full sources in a local evaluator; Jev is an optional leaf for reranking, verification, classification, and semantic joins, with budgeted, checkpointed batches.
+- description: Recursive language-model layer for Claude Code, Codex, Gemini and OpenCode that keeps sources local; Jev is an optional leaf for reranking, verification and semantic joins.
 - stars: 14
 - language: Python
 - license: MIT
@@ -743,7 +743,7 @@ Per-turn model and tool selection, behind a hard deadline.
 ### xinyao27/jevonian
 
 - url: https://github.com/xinyao27/jevonian
-- description: Local OpenAI, Anthropic, and Responses-compatible proxy that serves one Jev call per turn to answer both the model route and the thinking level for its virtual model jevonian/auto, with code filtering candidates by protocol, context window, effort floor, and spent quota windows first, and pinned models or explicit routes skipping Jev entirely.
+- description: Local OpenAI, Anthropic and Responses-compatible proxy that serves one Jev call per turn to pick both the model route and the thinking level, filtering candidates by context window and quota.
 - stars: 16
 - language: TypeScript
 - license: AGPL-3.0
@@ -1989,7 +1989,7 @@ End-user tools people actually open every day.
 ### valentynkit/jev-skip
 
 - url: https://github.com/valentynkit/jev-skip
-- description: Browser extension that reads the caption track and paints a per-segment sponsor probability on the seek bar before the intro ends, no crowd database; reports 77 percent of SponsorBlock's sponsor seconds caught over 23 videos at $0.0008 a video.
+- description: Browser extension that reads the caption track and paints a per-segment sponsor probability on the seek bar, with no crowd database.
 - stars: 6
 - language: TypeScript
 - license: MIT
@@ -2147,7 +2147,7 @@ Unofficial clients for the languages without a first-party SDK.
 ### Premo-Cloud/typesafe-sdk-java
 
 - url: https://github.com/Premo-Cloud/typesafe-sdk-java
-- description: Java client.
+- description: Unofficial Java client for the TypeSafe System One API, calling Choice, Score and Noul questions over HTTP.
 - stars: 11
 - language: Java
 - license: MIT
@@ -2189,7 +2189,7 @@ Unofficial clients for the languages without a first-party SDK.
 ### joshmn/typesafe-sdk
 
 - url: https://github.com/joshmn/typesafe-sdk
-- description: Ruby client.
+- description: Unofficial Ruby client for the TypeSafe AI API, returning typed answers with probabilities instead of parsed prose.
 - stars: 8
 - language: Ruby
 - license: MIT
@@ -2240,7 +2240,7 @@ Unofficial clients for the languages without a first-party SDK.
 ### Stumble/jev-go
 
 - url: https://github.com/Stumble/jev-go
-- description: Go client for Jev.
+- description: Community Go SDK for TypeSafe Jev / System One, covering typed Choice, Score and Noul questions.
 - stars: 6
 - language: Go
 - license: MIT
@@ -2261,7 +2261,7 @@ Unofficial clients for the languages without a first-party SDK.
 ### alterhq/typesafe-sdk-swift
 
 - url: https://github.com/alterhq/typesafe-sdk-swift
-- description: Swift client.
+- description: Unofficial Swift SDK for the TypeSafe AI API, wrapping typed questions and answers in Swift types.
 - stars: 5
 - language: Swift
 - license: MIT
@@ -2292,7 +2292,7 @@ Unofficial clients for the languages without a first-party SDK.
 ### Hawxy/TypeSafeAI.Net
 
 - url: https://github.com/Hawxy/TypeSafeAI.Net
-- description: .NET SDK.
+- description: Unofficial .NET SDK for the TypeSafe AI platform, usable from any .NET application.
 - stars: 4
 - language: C#
 - license: Apache-2.0
@@ -2800,7 +2800,7 @@ Measure it before you trust it.
 ### yodablocks/jev-orderby-bench
 
 - url: https://github.com/yodablocks/jev-orderby-bench
-- description: Measures whether ORDER BY over a Jev probability is defensible: pairwise inversion, Score ordinality against a human grade, calibration, and wording invariants under a pre-registered gate; passes on 20 Newsgroups topics, fails four of six conditions on Amazon ESCI product relevance, and shows that a 40-row batched state through a DuckDB extension fails the ranking gate one row per request passes.
+- description: Measures whether ORDER BY over a Jev probability is defensible: pairwise inversion, ordinality against a human grade, calibration and wording invariants under a pre-registered gate.
 - stars: 1
 - language: Python
 - license: MIT
@@ -3448,7 +3448,7 @@ Decisions as game mechanics.
 ### hazlema/jev-connect4
 
 - url: https://github.com/hazlema/jev-connect4
-- description: Connect Four with nine swappable query strategies for the same model, every answer graded against engine ground truth in a live inspector, and a match runner that plays 100 games a minute: representation changes alone moved the win rate 52 points.
+- description: Connect Four with nine swappable query strategies for one model, every answer graded against engine ground truth in a live inspector.
 - stars: 1
 - language: TypeScript
 - license: MIT

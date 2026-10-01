@@ -244,7 +244,7 @@
 ### yodablocks/jev-orderby-bench
 
 - url: https://github.com/yodablocks/jev-orderby-bench
-- description: Measures whether ORDER BY over a Jev probability is defensible: pairwise inversion, Score ordinality against a human grade, calibration, and wording invariants under a pre-registered gate; passes on 20 Newsgroups topics, fails four of six conditions on Amazon ESCI product relevance, and shows that a 40-row batched state through a DuckDB extension fails the ranking gate one row per request passes.
+- description: Measures whether ORDER BY over a Jev probability is defensible: pairwise inversion, ordinality against a human grade, calibration and wording invariants under a pre-registered gate.
 - stars: 1
 - language: Python
 - license: MIT

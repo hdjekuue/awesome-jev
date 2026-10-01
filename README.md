@@ -207,7 +207,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses. _(48
 | [jkudish/jev-mcp](https://github.com/jkudish/jev-mcp) | The first MCP server for Jev, and still the most linked. | javascript · mit | 464 | 2026-09-29 |
 | [notque/vexjoy-agent](https://github.com/notque/vexjoy-agent) | Agent toolkit whose `/d` command picks the specialist agent, skill, and pipeline with one Jev call, plus an optional Jev auto-compact plugin. | python · mit | 426 | 2026-09-30 |
 | [TianyuCodings/JevHarness](https://github.com/TianyuCodings/JevHarness) | Has an LLM write a task-specific harness that turns observations into Jev questions, then freezes it and improves it from rewards and full execution traces. | python | 400 | 2026-09-21 |
-| [itsmostafa/typesafe-mcp](https://github.com/itsmostafa/typesafe-mcp) | Go MCP connector. | go · mit | 337 | 2026-09-30 |
+| [itsmostafa/typesafe-mcp](https://github.com/itsmostafa/typesafe-mcp) | Single-binary Go MCP server and CLI that exposes TypeSafe Jev judgments to Claude Desktop, Claude Code and Codex. | go · mit | 337 | 2026-09-30 |
 | [miuuyy/Astra-Ares](https://github.com/miuuyy/Astra-Ares) | Has Jev pick the reasoning effort and how long to hold it for a running Codex task, on a patched Codex CLI built from upstream source. | javascript · mit | 293 | 2026-09-23 |
 | [0xNatoshi/jev-codex-router](https://github.com/0xNatoshi/jev-codex-router) | Picks model, thinking depth, and speed mode for every Codex turn. | javascript · mit · archived | 278 | 2026-09-22 |
 | [kitze/skillbox](https://github.com/kitze/skillbox) | Self-hosted, versioned skills library served over MCP, with Jev recommending which skill to load. | typescript · mit | 255 | 2026-09-19 |
@@ -234,7 +234,7 @@ Routers, tool gates, reviewers, skills and MCP servers for agent harnesses. _(48
 | [anpicasso/hermes-jev-approvals](https://github.com/anpicasso/hermes-jev-approvals) | Approves, denies, or escalates flagged shell commands before they run; vendor-reported speedups. | python · mit | 20 | 2026-09-22 |
 | [mejiasd3v/pi-jev-router](https://github.com/mejiasd3v/pi-jev-router) | Automatic model routing for Pi through the Vercel AI Gateway. | javascript · mit | 16 | 2026-09-22 |
 | [DECRUX9812/typesafe-skill-router](https://github.com/DECRUX9812/typesafe-skill-router) | Names the one skill worth loading before the model call; stdlib only, about a tenth of a cent per turn. | python · mit | 15 | 2026-09-21 |
-| [kubet/azdaja](https://github.com/kubet/azdaja) | Recursive language model layer for Claude Code, Codex, Gemini, and OpenCode that keeps full sources in a local evaluator; Jev is an optional leaf for reranking, verification, classification, and semantic joins, with budgeted, checkpointed batches. | python · mit | 14 | 2026-09-21 |
+| [kubet/azdaja](https://github.com/kubet/azdaja) | Recursive language-model layer for Claude Code, Codex, Gemini and OpenCode that keeps sources local; Jev is an optional leaf for reranking, verification and semantic joins. | python · mit | 14 | 2026-09-21 |
 | [HyunjunJeon/pi-quiet-ask](https://github.com/HyunjunJeon/pi-quiet-ask) | Jev as the Pi coding agent's quiet decision layer. | typescript · mit | 12 | 2026-09-18 |
 | [harshwasan/pi-jev-sentinel](https://github.com/harshwasan/pi-jev-sentinel) | Checks Pi tool calls, tool outputs, and replies for risky actions and prompt injection, with user approvals, context re-checks, secret scrubbing, and optional task pinning. | typescript · mit | 11 | 2026-09-20 |
 | [24601/Augustus](https://github.com/24601/Augustus) | Skill for deciding where a typed judgment belongs at all and what stays in code; a companion to the official skill, not a replacement. | python · mit | 11 | 2026-09-28 |
@@ -261,7 +261,7 @@ Per-turn model and tool selection, behind a hard deadline. _(10 entries)_
 | [juspay/neurolink](https://github.com/juspay/neurolink) | TypeScript AI SDK where decide, via Jev, is a peer of generate and stream: one typed-judgment call routes model choice, prunes context, and picks MCP tools. | typescript · mit | 144 | 2026-09-30 |
 | [nidhi-singh02/agent-router](https://github.com/nidhi-singh02/agent-router) | Picks Cursor, Claude Code, Codex, or OpenCode plus model and effort for a task, then launches it. | typescript · mit | 99 | 2026-09-27 |
 | [yusukebe/hono-jev-router](https://github.com/yusukebe/hono-jev-router) | Route HTTP requests by meaning in Hono. | typescript · mit | 51 | 2026-09-18 |
-| [xinyao27/jevonian](https://github.com/xinyao27/jevonian) | Local OpenAI, Anthropic, and Responses-compatible proxy that serves one Jev call per turn to answer both the model route and the thinking level for its virtual model jevonian/auto, with code filtering candidates by protocol, context window, effort floor, and spent quota windows first, and pinned models or explicit routes skipping Jev entirely. | typescript · agpl-3.0 | 16 | 2026-09-29 |
+| [xinyao27/jevonian](https://github.com/xinyao27/jevonian) | Local OpenAI, Anthropic and Responses-compatible proxy that serves one Jev call per turn to pick both the model route and the thinking level, filtering candidates by context window and quota. | typescript · agpl-3.0 | 16 | 2026-09-29 |
 | [prismhq/jev-router](https://github.com/prismhq/jev-router) | LLM router on top of LiteLLM. | python · mit | 15 | 2026-09-17 |
 | [iamvatsalpatel/tiershift](https://github.com/iamvatsalpatel/tiershift) | Shifts every LLM call to the cheapest model that can handle it, policy in YAML, decision in about 180 ms. | typescript · mit | 4 | 2026-09-28 |
 | [FirasSX914/Janus](https://github.com/FirasSX914/Janus) | Measures on your data when Jev beats other models, then routes accordingly. | python · mit | 3 | 2026-09-18 |
@@ -435,7 +435,7 @@ End-user tools people actually open every day. _(29 entries)_
 | [harshil1712/slidepilot](https://github.com/harshil1712/slidepilot) | Voice-driven auto-advance for Slidev on Cloudflare Agents. | typescript · mit | 9 | 2026-09-22 |
 | [valentynkit/jev.nvim](https://github.com/valentynkit/jev.nvim) | Neovim plugin: ask the buffer a plain-language question, Treesitter splits it into functions, Jev scores each one, and the answers land in quickfix ranked by probability. | lua · mit | 9 | 2026-09-19 |
 | [andrelandgraf/safer-with-jev](https://github.com/andrelandgraf/safer-with-jev) | Neon Function proxy for the Neon AI Gateway with Jev routing in front. | typescript | 6 | 2026-09-18 |
-| [valentynkit/jev-skip](https://github.com/valentynkit/jev-skip) | Browser extension that reads the caption track and paints a per-segment sponsor probability on the seek bar before the intro ends, no crowd database; reports 77 percent of SponsorBlock's sponsor seconds caught over 23 videos at $0.0008 a video. | typescript · mit | 6 | 2026-09-19 |
+| [valentynkit/jev-skip](https://github.com/valentynkit/jev-skip) | Browser extension that reads the caption track and paints a per-segment sponsor probability on the seek bar, with no crowd database. | typescript · mit | 6 | 2026-09-19 |
 | [chris-wozniczek/jev-voice-control](https://github.com/chris-wozniczek/jev-voice-control) | Menu-bar Swift app turning spoken commands into Jev typed decisions and macOS actions. | swift · mit | 5 | 2026-09-21 |
 | [hellogumbo/should-ai-kill-us-all](https://github.com/hellogumbo/should-ai-kill-us-all) | Asks Jev the question every ten minutes, using the actual headlines. | javascript · cc0-1.0 | 4 | 2026-09-18 |
 | [sriganesh/jevibe-check](https://github.com/sriganesh/jevibe-check) | Live tone labels for Bluesky posts and drafts. | javascript · mit | 3 | 2026-09-17 |
@@ -457,21 +457,21 @@ Unofficial clients for the languages without a first-party SDK. _(32 entries)_
 | [kieranklaassen/ruby_llm-typesafe](https://github.com/kieranklaassen/ruby_llm-typesafe) | TypeSafe as a structured-output provider for RubyLLM 2. | ruby · mit | 19 | 2026-09-29 |
 | [Twister915/typesafe-ai](https://github.com/Twister915/typesafe-ai) | Rust client with async and blocking backends and observable retries. | rust · apache-2.0 | 14 | 2026-09-16 |
 | [saibimajdi/typesafeai-dotnet-sdk](https://github.com/saibimajdi/typesafeai-dotnet-sdk) | Community .NET SDK with typed Noul, Choice, and Score questions. | c# · mit | 13 | 2026-09-29 |
-| [Premo-Cloud/typesafe-sdk-java](https://github.com/Premo-Cloud/typesafe-sdk-java) | Java client. | java · mit | 11 | 2026-09-25 |
+| [Premo-Cloud/typesafe-sdk-java](https://github.com/Premo-Cloud/typesafe-sdk-java) | Unofficial Java client for the TypeSafe System One API, calling Choice, Score and Noul questions over HTTP. | java · mit | 11 | 2026-09-25 |
 | [pambrose/jev4k](https://github.com/pambrose/jev4k) | Kotlin DSL and client. | kotlin · apache-2.0 | 11 | 2026-09-28 |
 | [Tangerg/typesafe-sdk-go](https://github.com/Tangerg/typesafe-sdk-go) | Go SDK with no third-party dependencies. | go · mit | 10 | 2026-09-19 |
 | [jomatsu/zod-jev](https://github.com/jomatsu/zod-jev) | Zod 4 schemas with semantic rules: shape checks stay in Zod, meaning checks go to Jev in one request and come back as Zod issues. | typescript · mit | 9 | 2026-09-17 |
-| [joshmn/typesafe-sdk](https://github.com/joshmn/typesafe-sdk) | Ruby client. | ruby · mit | 8 | 2026-09-26 |
+| [joshmn/typesafe-sdk](https://github.com/joshmn/typesafe-sdk) | Unofficial Ruby client for the TypeSafe AI API, returning typed answers with probabilities instead of parsed prose. | ruby · mit | 8 | 2026-09-26 |
 | [inanna-malick/jev-dsl](https://github.com/inanna-malick/jev-dsl) | Haskell DSL with typed packets and inferred answer types. | haskell · mit | 8 | 2026-09-18 |
 | [gilljon/typesafe-ai-rs](https://github.com/gilljon/typesafe-ai-rs) | Independent async and blocking Rust SDK. | rust · mit | 7 | 2026-09-17 |
 | [Gaurav-Gosain/jev-go](https://github.com/Gaurav-Gosain/jev-go) | Go client that returns typed judgments and probabilities. | go · mit | 6 | 2026-09-16 |
 | [jamesward/zio-typesafe-ai](https://github.com/jamesward/zio-typesafe-ai) | Scala client on ZIO. | scala · apache-2.0 | 6 | 2026-09-23 |
-| [Stumble/jev-go](https://github.com/Stumble/jev-go) | Go client for Jev. | go · mit | 6 | 2026-09-18 |
+| [Stumble/jev-go](https://github.com/Stumble/jev-go) | Community Go SDK for TypeSafe Jev / System One, covering typed Choice, Score and Noul questions. | go · mit | 6 | 2026-09-18 |
 | [nshkrdotcom/typesafe_sdk](https://github.com/nshkrdotcom/typesafe_sdk) | Elixir port of the TypeScript AI SDK with a TypeSafe provider. | elixir · mit | 6 | 2026-09-20 |
-| [alterhq/typesafe-sdk-swift](https://github.com/alterhq/typesafe-sdk-swift) | Swift client. | swift · mit | 5 | 2026-09-15 |
+| [alterhq/typesafe-sdk-swift](https://github.com/alterhq/typesafe-sdk-swift) | Unofficial Swift SDK for the TypeSafe AI API, wrapping typed questions and answers in Swift types. | swift · mit | 5 | 2026-09-15 |
 | [zhirschtritt/typesafe-go](https://github.com/zhirschtritt/typesafe-go) | Idiomatic Go SDK for the TypeSafe API. | go · mit | 4 | 2026-09-29 |
 | [Butochnikov/laravel-typesafe-jev](https://github.com/Butochnikov/laravel-typesafe-jev) | Laravel integration with typed responses, async requests, and testing fakes. | php · mit | 4 | 2026-09-17 |
-| [Hawxy/TypeSafeAI.Net](https://github.com/Hawxy/TypeSafeAI.Net) | .NET SDK. | c# · apache-2.0 | 4 | 2026-09-19 |
+| [Hawxy/TypeSafeAI.Net](https://github.com/Hawxy/TypeSafeAI.Net) | Unofficial .NET SDK for the TypeSafe AI platform, usable from any .NET application. | c# · apache-2.0 | 4 | 2026-09-19 |
 | [mateonunez/jod](https://github.com/mateonunez/jod) | Zod-style schemas over Jev: validate the state locally, then project typed answers. | typescript · mit | 4 | 2026-09-17 |
 | [GenieRobot/typesafe-ai-rails](https://github.com/GenieRobot/typesafe-ai-rails) | Rails integration built on the community Ruby gem. | ruby · mit | 4 | 2026-09-16 |
 | [steven-shoemaker/hunch](https://github.com/steven-shoemaker/hunch) | Turns Choice, Score, and Noul questions into Python functions over lists and DataFrames, with deduplication, caching, escalation of unsure rows to an LLM held to the same labels, and a TypeScript port on npm as hunch-jev. | python · mit | 4 | 2026-09-22 |
@@ -533,7 +533,7 @@ Measure it before you trust it. _(27 entries)_
 | [jgridifier/jev-research-eval](https://github.com/jgridifier/jev-research-eval) | Reproducible harness over a pinned jev-ultrafast commit, with baseline and stress suites. | html · noassertion | 3 | 2026-09-17 |
 | [HackSing/jev-report](https://github.com/HackSing/jev-report) | Independent Chinese research report: 52 pages, 50 reproducible tests, 143 traceable data rows. | python · mit | 2 | 2026-09-17 |
 | [hegargarcia/jev-playground](https://github.com/hegargarcia/jev-playground) | Jev against other models in games with explicit states, legal actions, and a measurable outcome. | typescript | 2 | 2026-09-17 |
-| [yodablocks/jev-orderby-bench](https://github.com/yodablocks/jev-orderby-bench) | Measures whether ORDER BY over a Jev probability is defensible: pairwise inversion, Score ordinality against a human grade, calibration, and wording invariants under a pre-registered gate; passes on 20 Newsgroups topics, fails four of six conditions on Amazon ESCI product relevance, and shows that a 40-row batched state through a DuckDB extension fails the ranking gate one row per request passes. | python · mit | 1 | 2026-09-20 |
+| [yodablocks/jev-orderby-bench](https://github.com/yodablocks/jev-orderby-bench) | Measures whether ORDER BY over a Jev probability is defensible: pairwise inversion, ordinality against a human grade, calibration and wording invariants under a pre-registered gate. | python · mit | 1 | 2026-09-20 |
 | [4esv/jev-eval](https://github.com/4esv/jev-eval) | Jev against GPT-5.6 Terra on three labeled tasks: equal on the easy ones, 6.7 points lower on 77-way routing, 5 times faster, 41 to 50 times cheaper. | python | 1 | 2026-09-23 |
 | [themsquared/jev-benchmark](https://github.com/themsquared/jev-benchmark) | Tool-call risk classification with the run-to-run variance reported; every wrong answer came with hedged confidence. | python · apache-2.0 | 1 | 2026-09-24 |
 | [blowxian/jev-fanout-bench](https://github.com/blowxian/jev-fanout-bench) | Measures what a Jev request is billed and how its answers hold up under batching, translation, and rewording, from 3,455 billed requests with public raw logs. | python · mit | 0 | 2026-09-28 |
@@ -610,7 +610,7 @@ Decisions as game mechanics. _(19 entries)_
 | [vishxrad/clashroyale-jev](https://github.com/vishxrad/clashroyale-jev) | Plays Clash Royale with Jev choosing cards and placements from Qwen battlefield vision and local OpenCV hand and elixir recognition. | python | 4 | 2026-09-22 |
 | [phyous/tsai-civ2](https://github.com/phyous/tsai-civ2) | Civilization II in a browser, full-game harness, live action probabilities. | python · noassertion | 3 | 2026-09-18 |
 | [siroccomask/snake-jev](https://github.com/siroccomask/snake-jev) | Snake controlled by parallel Jev assessments, one API call per tick. | python · mit | 3 | 2026-09-19 |
-| [hazlema/jev-connect4](https://github.com/hazlema/jev-connect4) | Connect Four with nine swappable query strategies for the same model, every answer graded against engine ground truth in a live inspector, and a match runner that plays 100 games a minute: representation changes alone moved the win rate 52 points. | typescript · mit | 1 | 2026-09-21 |
+| [hazlema/jev-connect4](https://github.com/hazlema/jev-connect4) | Connect Four with nine swappable query strategies for one model, every answer graded against engine ground truth in a live inspector. | typescript · mit | 1 | 2026-09-21 |
 
 ## 💹 Finance & Trading
 

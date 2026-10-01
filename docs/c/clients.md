@@ -80,7 +80,7 @@
 ### Premo-Cloud/typesafe-sdk-java
 
 - url: https://github.com/Premo-Cloud/typesafe-sdk-java
-- description: Java client.
+- description: Unofficial Java client for the TypeSafe System One API, calling Choice, Score and Noul questions over HTTP.
 - stars: 11
 - language: Java
 - license: MIT
@@ -122,7 +122,7 @@
 ### joshmn/typesafe-sdk
 
 - url: https://github.com/joshmn/typesafe-sdk
-- description: Ruby client.
+- description: Unofficial Ruby client for the TypeSafe AI API, returning typed answers with probabilities instead of parsed prose.
 - stars: 8
 - language: Ruby
 - license: MIT
@@ -173,7 +173,7 @@
 ### Stumble/jev-go
 
 - url: https://github.com/Stumble/jev-go
-- description: Go client for Jev.
+- description: Community Go SDK for TypeSafe Jev / System One, covering typed Choice, Score and Noul questions.
 - stars: 6
 - language: Go
 - license: MIT
@@ -194,7 +194,7 @@
 ### alterhq/typesafe-sdk-swift
 
 - url: https://github.com/alterhq/typesafe-sdk-swift
-- description: Swift client.
+- description: Unofficial Swift SDK for the TypeSafe AI API, wrapping typed questions and answers in Swift types.
 - stars: 5
 - language: Swift
 - license: MIT
@@ -225,7 +225,7 @@
 ### Hawxy/TypeSafeAI.Net
 
 - url: https://github.com/Hawxy/TypeSafeAI.Net
-- description: .NET SDK.
+- description: Unofficial .NET SDK for the TypeSafe AI platform, usable from any .NET application.
 - stars: 4
 - language: C#
 - license: Apache-2.0

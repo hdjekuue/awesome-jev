@@ -1169,8 +1169,8 @@
       "name": "itsmostafa/typesafe-mcp",
       "url": "https://github.com/itsmostafa/typesafe-mcp",
       "kind": "repo",
-      "description": "Go MCP connector.",
-      "descriptionZh": "Go MCP 连接器。",
+      "description": "Single-binary Go MCP server and CLI that exposes TypeSafe Jev judgments to Claude Desktop, Claude Code and Codex.",
+      "descriptionZh": "单二进制 Go MCP 服务器和 CLI，将 TypeSafe Jev 判断开放给 Claude Desktop、Claude Code 和 Codex。",
       "category": "coding-agents",
       "upstreamSection": "Coding agents",
       "language": "Go",
@@ -1191,7 +1191,7 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/itsmostafa/typesafe-mcp",
-      "descriptionFr": "Connecteur MCP en Go."
+      "descriptionFr": "Serveur MCP et CLI Go en binaire unique qui expose les jugements TypeSafe Jev à Claude Desktop, Claude Code et Codex."
     },
     {
       "id": "ekzhang--openjev-sglang",
@@ -1417,7 +1417,8 @@
         "learn how Jev works"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/miuuyy/Astra-Ares"
+      "source": "https://github.com/miuuyy/Astra-Ares",
+      "descriptionFr": "Laisse Jev choisir l'effort de raisonnement et sa durée de maintien pour une tâche Codex en cours, sur un CLI Codex patché compilé depuis la source upstream."
     },
     {
       "id": "heman10x-ngu--openjev-verdict-2-0",
@@ -1449,7 +1450,8 @@
         "run Jev on open models without the vendor"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/Heman10x-NGU/openJev-verdict-2.0"
+      "source": "https://github.com/Heman10x-NGU/openJev-verdict-2.0",
+      "descriptionFr": "Moteur de décision non autorégressif de 151M avec un runtime navigateur WebGPU, annonçant 77,1 % de top-1 et 1,44 % d'erreur de calibration sur son propre benchmark."
     },
     {
       "id": "0xnatoshi--jev-codex-router",
@@ -1481,7 +1483,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/0xNatoshi/jev-codex-router"
+      "source": "https://github.com/0xNatoshi/jev-codex-router",
+      "descriptionFr": "Choisit le modèle, la profondeur de réflexion et le mode de vitesse pour chaque tour de Codex."
     },
     {
       "id": "logan-markewich--jeff",
@@ -1512,7 +1515,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/logan-markewich/jeff"
+      "source": "https://github.com/logan-markewich/jeff",
+      "descriptionFr": "API System One auto-hébergée sur le GLiFormer 400M, avec des benchmarks qui indiquent où elle reste derrière Jev."
     },
     {
       "id": "vinilana--jev-gateway",
@@ -1537,7 +1541,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/vinilana/jev-gateway"
+      "source": "https://github.com/vinilana/jev-gateway",
+      "descriptionFr": "Passerelle locale pour Codex et Claude Code qui envoie la décision \"which tool next\" à Jev et tout le reste à votre modèle habituel."
     },
     {
       "id": "agricidaniel--jev-seo",
@@ -1562,7 +1567,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/AgriciDaniel/jev-seo"
+      "source": "https://github.com/AgriciDaniel/jev-seo",
+      "descriptionFr": "Explore un site, le vérifie par rapport à 52 règles SEO, fait juger chaque page par Jev, et génère des rapports PDF, tableur et Markdown."
     },
     {
       "id": "ferrycorleone--crush-monitor",
@@ -1587,7 +1593,8 @@
         "label data or build a dataset"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/FerryCorleone/crush-monitor"
+      "source": "https://github.com/FerryCorleone/crush-monitor",
+      "descriptionFr": "Lit un journal de discussion localement et étiquette chaque message avec les trois plus probables parmi douze émotions et trente-cinq intentions."
     },
     {
       "id": "typesafe-ai--typesafe-sdk-js",
@@ -1612,7 +1619,8 @@
         "extract structured fields from text"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/typesafe-ai/typesafe-sdk-js"
+      "source": "https://github.com/typesafe-ai/typesafe-sdk-js",
+      "descriptionFr": "Client TypeScript et JavaScript avec des types de réponse inférés à partir de vos questions."
     },
     {
       "id": "typesafe-ai--typesafe-sdk-python",
@@ -1637,7 +1645,8 @@
         "moderate content or detect abuse"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/typesafe-ai/typesafe-sdk-python"
+      "source": "https://github.com/typesafe-ai/typesafe-sdk-python",
+      "descriptionFr": "Client Python, synchrone et asynchrone."
     },
     {
       "id": "kitze--skillbox",
@@ -1662,7 +1671,8 @@
         "run Jev on open models without the vendor"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/kitze/skillbox"
+      "source": "https://github.com/kitze/skillbox",
+      "descriptionFr": "Bibliothèque de skills auto-hébergée et versionnée servie via MCP, avec Jev qui recommande quel skill charger."
     },
     {
       "id": "fbddcz--embodied-jev",
@@ -1687,7 +1697,8 @@
         "run Jev on open models without the vendor"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/FBddcz/embodied-jev"
+      "source": "https://github.com/FBddcz/embodied-jev",
+      "descriptionFr": "Workbench navigateur pour expériences incarnées dans MuJoCo où chaque pas du robot est une décision Jev visible, adossé à un modèle local ou à une API cloud."
     },
     {
       "id": "rokbenko--quackd",
@@ -1719,7 +1730,8 @@
         "run Jev on open models without the vendor"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/rokbenko/quackd"
+      "source": "https://github.com/rokbenko/quackd",
+      "descriptionFr": "Ligne de commande pour robots pilotés par LLM sur sept corps, avec un stepper Jev optionnel qui choisit parmi les appels sans jamais écrire un angle d'articulation."
     },
     {
       "id": "monteduro--killmyidea",
@@ -1744,7 +1756,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/monteduro/killmyidea"
+      "source": "https://github.com/monteduro/killmyidea",
+      "descriptionFr": "Décrivez votre idée de startup ; Jev dit s'il faut l'abandonner, la corriger ou la lancer."
     },
     {
       "id": "niazmorshed2007--jev-review",
@@ -1776,7 +1789,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/NiazMorshed2007/jev-review"
+      "source": "https://github.com/NiazMorshed2007/jev-review",
+      "descriptionFr": "Plugin MCP local-first pour la revue qualité continue par des agents de codage."
     },
     {
       "id": "romanslack--jev-drone",
@@ -1807,7 +1821,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/RomanSlack/jev-drone"
+      "source": "https://github.com/RomanSlack/jev-drone",
+      "descriptionFr": "Drone à caméra seule dans MuJoCo avec Jev dans la boucle à 2,5 Hz."
     },
     {
       "id": "usenotra--notra",
@@ -1839,7 +1854,8 @@
         "rerank search results"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/usenotra/notra"
+      "source": "https://github.com/usenotra/notra",
+      "descriptionFr": "Transforme le travail en contenu, Jev décidant ce qui vaut la peine d'être publié."
     },
     {
       "id": "standardagents--jevpilot",
@@ -1864,7 +1880,8 @@
         "compact or prune agent context"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/standardagents/jevpilot"
+      "source": "https://github.com/standardagents/jevpilot",
+      "descriptionFr": "Simulateur de conduite Three.js où Jev choisit direction et vitesse parmi des trajectoires échantillonnées jusqu'à quatre fois par seconde ; [conduisez-le](https://jevpilot.standardagents.ai)."
     },
     {
       "id": "fstandhartinger--jevbench",
@@ -1893,7 +1910,8 @@
         "score or rank candidates in a pipeline"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/fstandhartinger/jevbench"
+      "source": "https://github.com/fstandhartinger/jevbench",
+      "descriptionFr": "Benchmark pour modèles de décision de classe Jev : rubrique bornée en entrée, réponse typée avec une probabilité par option en sortie, avec expériences en cascade et en comité rapportées séparément."
     },
     {
       "id": "imikerussell--beebots",
@@ -1918,7 +1936,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/imikerussell/beebots"
+      "source": "https://github.com/imikerussell/beebots",
+      "descriptionFr": "Exécute trois bots de trading pilotés par Jev contre les perpetuals OKX avec un tableau de bord en direct, paper trading par défaut et argent réel derrière des flags explicites."
     },
     {
       "id": "togethercomputer--tev1",
@@ -1943,7 +1962,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/togethercomputer/tev1"
+      "source": "https://github.com/togethercomputer/tev1",
+      "descriptionFr": "Recette de données et code d'entraînement qui affine Qwen3.5-4B en modèle de décision à poids ouverts sur Together AI."
     },
     {
       "id": "aowang-ai--jev-trade",
@@ -1973,7 +1993,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/aowang-ai/jev-trade"
+      "source": "https://github.com/aowang-ai/jev-trade",
+      "descriptionFr": "Trader Jev en direct sur Hyperliquid."
     },
     {
       "id": "kshetrajna12--reflex",
@@ -1998,7 +2019,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/kshetrajna12/reflex"
+      "source": "https://github.com/kshetrajna12/reflex",
+      "descriptionFr": "Petit modèle de décision ouvert sur Qwen3.5 : état plus questions typées vers des probabilités calibrées."
     },
     {
       "id": "devmortimer--pi-warden",
@@ -2029,7 +2051,8 @@
         "detect prompt injection or risky commands"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/DevMortimer/pi-warden"
+      "source": "https://github.com/DevMortimer/pi-warden",
+      "descriptionFr": "Garde-fous qui orientent au lieu d'interrompre : appels irréversibles, appels hors tâche, boucles bloquées, affirmations d'achèvement non vérifiées, environ 250 ms chacun."
     },
     {
       "id": "jexp--neo4jev",
@@ -2054,7 +2077,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/jexp/neo4jev"
+      "source": "https://github.com/jexp/neo4jev",
+      "descriptionFr": "Parcourt un graphe Neo4j en classifiant les relations voisines."
     },
     {
       "id": "tamaratran--jev-pruner",
@@ -2079,7 +2103,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/tamaratran/jev-pruner"
+      "source": "https://github.com/tamaratran/jev-pruner",
+      "descriptionFr": "Élague les longues sorties Bash avec Jev après l'exécution de la commande et avant que le modèle ne les voie ; les sorties courtes, les erreurs et les formats structurés passent intacts."
     },
     {
       "id": "y0usaf--pi-jev",
@@ -2110,7 +2135,8 @@
         "detect prompt injection or risky commands"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/y0usaf/pi-jev"
+      "source": "https://github.com/y0usaf/pi-jev",
+      "descriptionFr": "Un contrôle mesuré des appels d'outils plus un outil `jev_ask` pour des réponses typées dans Pi."
     },
     {
       "id": "dorkitude--webctl",
@@ -2135,7 +2161,8 @@
         "run Jev on open models without the vendor"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/dorkitude/webctl"
+      "source": "https://github.com/dorkitude/webctl",
+      "descriptionFr": "Recherche sur le web pour un agent et fait scorer et dédupliquer par Jev les résultats et les fragments de pages, afin que seul le texte pertinent atteigne le modèle."
     },
     {
       "id": "dbreunig--building-with-jev-skill",
@@ -2160,7 +2187,8 @@
         "pick which skill or prompt to load"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/dbreunig/building-with-jev-skill"
+      "source": "https://github.com/dbreunig/building-with-jev-skill",
+      "descriptionFr": "Skill pour écrire et améliorer des programmes qui appellent Jev."
     },
     {
       "id": "uehaj--jev-semgrep",
@@ -2185,7 +2213,8 @@
         "rerank search results"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/uehaj/jev-semgrep"
+      "source": "https://github.com/uehaj/jev-semgrep",
+      "descriptionFr": "Recherche par sens plutôt que par regex : chaque ligne reçoit une probabilité de Jev, et les sens se combinent avec AND, OR et NOT."
     },
     {
       "id": "juspay--neurolink",
@@ -2217,7 +2246,8 @@
         "gate or approve tool calls before they run"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/juspay/neurolink"
+      "source": "https://github.com/juspay/neurolink",
+      "descriptionFr": "SDK d'IA TypeScript où decide, via Jev, est l'égal de generate et stream : un appel de jugement typé oriente le choix du modèle, élague le contexte et sélectionne les outils MCP."
     },
     {
       "id": "wquguru--dasheng",
@@ -2242,7 +2272,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/wquguru/dasheng"
+      "source": "https://github.com/wquguru/dasheng",
+      "descriptionFr": "Lisez l'anglais à voix haute et voyez-le noté : la reconnaissance vocale en continu écoute, Jev juge mot à mot, et le total est calculé arithmétiquement dans le code."
     },
     {
       "id": "supercorp-ai--supercov",
@@ -2274,7 +2305,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/supercorp-ai/supercov"
+      "source": "https://github.com/supercorp-ai/supercov",
+      "descriptionFr": "Signaux de qualité de code et de couverture pour les agents de codage."
     },
     {
       "id": "keltokhy--jgrep",
@@ -2306,7 +2338,8 @@
         "call Jev from the command line"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/keltokhy/jgrep"
+      "source": "https://github.com/keltokhy/jgrep",
+      "descriptionFr": "Affiche les lignes correspondant à une description en anglais courant, en continu depuis `tail -f` avec un plafond de dépenses, et rapporte un F1 de 0,91 sur le spam SMS contre 0,72 pour un grep par mots-clés."
     },
     {
       "id": "yuta-fywoo--jev-gui-delegate",
@@ -2331,7 +2364,8 @@
         "monitor or observe Jev usage and cost"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/YUTA-fywoo/jev-gui-delegate"
+      "source": "https://github.com/YUTA-fywoo/jev-gui-delegate",
+      "descriptionFr": "Exécute une tâche d'interface graphique déléguée pour Codex via la vraie session Chrome ou Windows UI Automation, avec Jev qui choisit le contrôle à chaque étape."
     },
     {
       "id": "socai-io--jev-social",
@@ -2363,7 +2397,8 @@
         "gate or approve tool calls before they run"
       ],
       "firstSeen": "2026-09-20",
-      "source": "https://github.com/socai-io/jev-social"
+      "source": "https://github.com/socai-io/jev-social",
+      "descriptionFr": "Laisse Jev choisir chaque étape de recherche sociale en lecture seule pendant que socai l'exécute dans une vraie session Chrome et diffuse des preuves vérifiables Instagram, TikTok ou LinkedIn dans un rapport."
     },
     {
       "id": "allebee--jevk5",
@@ -2395,7 +2430,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/allebee/jevk5"
+      "source": "https://github.com/allebee/jevk5",
+      "descriptionFr": "Réplique de Qwen3.5 avec poids LoRA distillés, classée deuxième sur 76 systèmes et première parmi les systèmes ouverts sur JevBench v1.4."
     },
     {
       "id": "dicklesworthstone--skillranker",
@@ -2427,7 +2463,8 @@
         "call Jev from the command line"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/Dicklesworthstone/skillranker"
+      "source": "https://github.com/Dicklesworthstone/skillranker",
+      "descriptionFr": "CLI Rust et hooks qui classent les skills installés pour l'étape suivante à partir du contexte live de la session, avec abstention."
     },
     {
       "id": "daseinlabs--open-jev",
@@ -2452,7 +2489,8 @@
         "learn how Jev works"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/daseinlabs/open-jev"
+      "source": "https://github.com/daseinlabs/open-jev",
+      "descriptionFr": "Pré-remplit une fois et note chaque option en un seul passage rembourré sur Gemma 3 4B avec MLX ; joue à Doom depuis le terminal dans la démo."
     },
     {
       "id": "devagrawal09--jev-code",
@@ -2477,7 +2515,8 @@
         "call Jev from the command line"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/devagrawal09/jev-code"
+      "source": "https://github.com/devagrawal09/jev-code",
+      "descriptionFr": "Boîte à outils en ligne de commande à laquelle les agents de codage confient les tâches à fort jugement, avec un workflow Jev typé par requête."
     },
     {
       "id": "devagrawal09--stanley-code",
@@ -2502,7 +2541,8 @@
         "call Jev from the command line"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/devagrawal09/stanley-code"
+      "source": "https://github.com/devagrawal09/stanley-code",
+      "descriptionFr": "CLI de codage où Jev achemine une requête en langage courant vers un workflow déterministe unique, et ce workflow pose à Jev des questions à choix fixe sur les preuves recueillies."
     },
     {
       "id": "mrnugget--jev-shell-history",
@@ -2527,7 +2567,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/mrnugget/jev-shell-history"
+      "source": "https://github.com/mrnugget/jev-shell-history",
+      "descriptionFr": "Suggestions d'historique zsh façon Fish, classées par Jev."
     },
     {
       "id": "savka777--jev-use",
@@ -2559,7 +2600,8 @@
         "voice or realtime decisions"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/savka777/jev-use"
+      "source": "https://github.com/savka777/jev-use",
+      "descriptionFr": "Pilotage vocal et au clavier de macOS : Jev choisit la prochaine action à l'écran depuis l'Accessibility tree, sans captures d'écran."
     },
     {
       "id": "mmastrac--djev",
@@ -2584,7 +2626,8 @@
         "learn how Jev works"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/mmastrac/djev"
+      "source": "https://github.com/mmastrac/djev",
+      "descriptionFr": "Expose `/v1/systemone` sur DiffusionGemma en lisant des réponses typées et des segments de texte depuis un canvas initialisé et figé, sans génération."
     },
     {
       "id": "heman10x-ngu--verdict-open-jev",
@@ -2616,7 +2659,8 @@
         "run Jev on open models without the vendor"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/Heman10x-NGU/Verdict-open-jev"
+      "source": "https://github.com/Heman10x-NGU/Verdict-open-jev",
+      "descriptionFr": "Moteur de décision non autorégressif sur ModernBERT avec incertitude calibrée et terrain de jeu WebGPU dans le navigateur."
     },
     {
       "id": "trungdq88--youtube-sponsor-detection",
@@ -2641,7 +2685,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/trungdq88/youtube-sponsor-detection"
+      "source": "https://github.com/trungdq88/youtube-sponsor-detection",
+      "descriptionFr": "Extension Chrome qui repère les lectures sponsorisées depuis la transcription ou l'audio en direct et les saute ; le code contrôle chaque horodatage, pour moins d'un centime par heure en mode transcription."
     },
     {
       "id": "vinilana--jev-eval-agent",
@@ -2666,7 +2711,8 @@
         "gate or approve tool calls before they run"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/vinilana/jev-eval-agent"
+      "source": "https://github.com/vinilana/jev-eval-agent",
+      "descriptionFr": "Agent assistant personnel avec 100 outils simulés, mesurant le nombre d'étapes nécessaires à un agent piloté par Jev."
     },
     {
       "id": "kevinbadi--jev-voice",
@@ -2691,7 +2737,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/kevinbadi/jev-voice"
+      "source": "https://github.com/kevinbadi/jev-voice",
+      "descriptionFr": "Parlez à macOS : whisper.cpp local transcrit, un appel Jev en éventail choisit l'action et ses arguments typés, puis le code l'exécute."
     },
     {
       "id": "w3cj--jev-chat",
@@ -2716,7 +2763,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/w3cj/jev-chat"
+      "source": "https://github.com/w3cj/jev-chat",
+      "descriptionFr": "Barre de commandes en forme de chat où Jev choisit l'outil, les arguments et la forme de la réponse, et le code construit la réponse à partir des données propres aux outils, donc aucun modèle n'écrit le texte."
     },
     {
       "id": "chetaslua--jevmeter",
@@ -2747,7 +2795,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/ChetasLua/jevmeter"
+      "source": "https://github.com/ChetasLua/jevmeter",
+      "descriptionFr": "Appose une jauge en direct sur n'importe quelle vidéo : chaque phrase notée sur cinq questions, rendue en montage 16:9, un débat entier pour environ deux centimes."
     },
     {
       "id": "ghalebdweikat--winnow",
@@ -2779,7 +2828,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/GhalebDweikat/winnow"
+      "source": "https://github.com/GhalebDweikat/winnow",
+      "descriptionFr": "Évalue chaque résultat d'outil avant son entrée en contexte, pour que la fenêtre se remplisse moins vite au lieu d'être nettoyée ensuite."
     },
     {
       "id": "nidhi-singh02--agent-router",
@@ -2811,7 +2861,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/nidhi-singh02/agent-router"
+      "source": "https://github.com/nidhi-singh02/agent-router",
+      "descriptionFr": "Choisit entre Cursor, Claude Code, Codex ou OpenCode avec modèle et niveau d'effort pour une tâche, puis la lance."
     },
     {
       "id": "fabricioctelles--skills",
@@ -2843,7 +2894,8 @@
         "classify support tickets or messages"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/fabricioctelles/skills"
+      "source": "https://github.com/fabricioctelles/skills",
+      "descriptionFr": "Annuaire d'agent-skills pouvant noter des critères d'évaluation subjectifs avec Jev."
     },
     {
       "id": "openlayer-ai--jevals",
@@ -2875,7 +2927,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/openlayer-ai/jevals"
+      "source": "https://github.com/openlayer-ai/jevals",
+      "descriptionFr": "Exécute les évaluations d'agent, de qualité et de sécurité d'une trace en un seul lot de questions Jev typées au lieu d'appels séparés à un LLM juge."
     },
     {
       "id": "pithings--advocaat",
@@ -2900,7 +2953,8 @@
         "call Jev from a language SDK"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/pithings/advocaat"
+      "source": "https://github.com/pithings/advocaat",
+      "descriptionFr": "Petit client TypeScript pour poser des questions sur vos propres données."
     },
     {
       "id": "ying-kai-liao--jev-browser",
@@ -2931,7 +2985,8 @@
         "gate or approve tool calls before they run"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/Ying-Kai-Liao/jev-browser"
+      "source": "https://github.com/Ying-Kai-Liao/jev-browser",
+      "descriptionFr": "Un LLM planifie, Jev décide ; bibliothèque, CLI et serveur MCP."
     },
     {
       "id": "zwlijay--jev-forge",
@@ -2956,7 +3011,8 @@
         "run Jev on open models without the vendor"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/zwliJay/jev-forge"
+      "source": "https://github.com/zwliJay/jev-forge",
+      "descriptionFr": "Stack complète pour la construction auditable de données, l'entraînement de Qwen3.5-0.8B, l'évaluation figée Mind2Web et OOD, le service local et une base de référence RLCD préliminaire."
     },
     {
       "id": "ellipsis-dev--blink",
@@ -2981,7 +3037,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/ellipsis-dev/blink"
+      "source": "https://github.com/ellipsis-dev/blink",
+      "descriptionFr": "Recherche dans une base de code où Jev note les candidats."
     },
     {
       "id": "akashpriyadarshii--jev-curate",
@@ -3013,7 +3070,8 @@
         "score or rank candidates in a pipeline"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/AkashPriyadarshii/jev-curate"
+      "source": "https://github.com/AkashPriyadarshii/jev-curate",
+      "descriptionFr": "Trie les données d'entraînement Parquet et JSONL à plus de 1 500 lignes par seconde."
     },
     {
       "id": "fazlerocks--jevmail",
@@ -3045,7 +3103,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/fazlerocks/jevmail"
+      "source": "https://github.com/fazlerocks/jevmail",
+      "descriptionFr": "Tri Gmail en lecture seule : trois questions Jev par message le répartissent dans l'une des cinq catégories avec un score d'urgence."
     },
     {
       "id": "giuliosmall--pg-typesafe",
@@ -3070,7 +3129,8 @@
         "label data or build a dataset"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/giuliosmall/pg_typesafe"
+      "source": "https://github.com/giuliosmall/pg_typesafe",
+      "descriptionFr": "Extension PostgreSQL en pré-alpha pour la classification catégorielle avec Jev."
     },
     {
       "id": "realzachi--typesafe-adblock",
@@ -3095,7 +3155,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/realZachi/typesafe-adblock"
+      "source": "https://github.com/realZachi/typesafe-adblock",
+      "descriptionFr": "Extension Chrome qui demande \"is this element an ad?\" pour chaque nœud DOM ; un jouet, et elle l'assume."
     },
     {
       "id": "akashpriyadarshii--jev-seo",
@@ -3127,7 +3188,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/AkashPriyadarshii/jev-seo"
+      "source": "https://github.com/AkashPriyadarshii/jev-seo",
+      "descriptionFr": "CLI Rust et serveur MCP pour des vérifications SEO et GEO sur les résultats DuckDuckGo, notés par Jev."
     },
     {
       "id": "iamunbounded--save-token-jev-clean",
@@ -3152,7 +3214,8 @@
         "run Jev on open models without the vendor"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/IAmUnbounded/save-token-jev-clean"
+      "source": "https://github.com/IAmUnbounded/save-token-jev-clean",
+      "descriptionFr": "Compaction qui demande à Jev quels appels d'outils comptent encore et conserve le reste tel quel, avec des adaptateurs pour Claude Code, Codex, OpenCode et les transcriptions API brutes."
     },
     {
       "id": "sharziki--semdecide",
@@ -3184,7 +3247,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/sharziki/semdecide"
+      "source": "https://github.com/sharziki/semdecide",
+      "descriptionFr": "Décisions sémantiques typées pour les pipelines Unix et la CI."
     },
     {
       "id": "kikoncuo--jevfire",
@@ -3216,7 +3280,8 @@
         "build a game or simulation on Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/kikoncuo/jevfire"
+      "source": "https://github.com/kikoncuo/jevfire",
+      "descriptionFr": "Décisions parallèles pour les LLM CUDA via une API vLLM, avec des exemples d'agents de jeu et des benchmarks."
     },
     {
       "id": "bnsd55--jevmlx",
@@ -3247,7 +3312,8 @@
         "score or rank candidates in a pipeline"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/bnsd55/jevmlx"
+      "source": "https://github.com/bnsd55/jevmlx",
+      "descriptionFr": "Décisions contraintes parallèles pour tout modèle MLX sur Apple Silicon, en une seule passe avant."
     },
     {
       "id": "abovecolin--ha-jev",
@@ -3279,7 +3345,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/AboveColin/HA-Jev"
+      "source": "https://github.com/AboveColin/HA-Jev",
+      "descriptionFr": "Intégration Home Assistant : posez une question sur votre maison, obtenez une probabilité, un choix ou un score sous forme d'entité."
     },
     {
       "id": "eliaalberti--jev-rules",
@@ -3304,7 +3371,8 @@
         "pick which skill or prompt to load"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/EliaAlberti/jev-rules"
+      "source": "https://github.com/EliaAlberti/jev-rules",
+      "descriptionFr": "Évalue vos règles permanentes par rapport à chaque prompt et ne fournit que celles qui s'appliquent, une fois par session."
     },
     {
       "id": "milvus-io--milvus-model",
@@ -3335,7 +3403,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/milvus-io/milvus-model"
+      "source": "https://github.com/milvus-io/milvus-model",
+      "descriptionFr": "Paquet reranker dont l'adaptateur Jev envoie chaque document candidat comme une question Noul en une seule requête, trie selon les probabilités renvoyées et conserve les indices d'origine ; livré dans la version v0.3.4."
     },
     {
       "id": "theooliveira--pi-jev",
@@ -3367,7 +3436,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/TheoOliveira/pi-jev"
+      "source": "https://github.com/TheoOliveira/pi-jev",
+      "descriptionFr": "Routage sémantique d'outils et décisions typées sous forme d'outils Pi."
     },
     {
       "id": "r-ms--mini-jev",
@@ -3392,7 +3462,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/r-ms/mini-jev"
+      "source": "https://github.com/r-ms/mini-jev",
+      "descriptionFr": "Expérience préenregistrée sur un Qwen3-4B figé : lit les logits de la lettre d'option, sans passer par le JSON."
     },
     {
       "id": "kyu1204--jgrep",
@@ -3417,7 +3488,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/kyu1204/jgrep"
+      "source": "https://github.com/kyu1204/jgrep",
+      "descriptionFr": "`--diff` bloque une PR en CI selon une règle écrite en anglais, `--tests` liste les fichiers de test qu'un diff peut affecter, et `jgrep` seul recherche dans le code par ce qu'il fait ; un Noul par chunk, 16 chunks par requête."
     },
     {
       "id": "ikermoel--open-alternative-jev",
@@ -3449,7 +3521,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/ikermoel/open-alternative-jev"
+      "source": "https://github.com/ikermoel/open-alternative-jev",
+      "descriptionFr": "Décisions typées et calibrées depuis tout modèle à poids ouverts en une seule passe avant, sur Hugging Face et vLLM."
     },
     {
       "id": "obie--ruby-decision-model",
@@ -3474,7 +3547,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/obie/ruby_decision_model"
+      "source": "https://github.com/obie/ruby_decision_model",
+      "descriptionFr": "Client Ruby pour modèles de décision avec les fournisseurs OpenRouter et TypeSafe derrière une seule interface, stdlib uniquement."
     },
     {
       "id": "yusukebe--hono-jev-router",
@@ -3499,7 +3573,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/yusukebe/hono-jev-router"
+      "source": "https://github.com/yusukebe/hono-jev-router",
+      "descriptionFr": "Route les requêtes HTTP par leur sens dans Hono."
     },
     {
       "id": "devmortimer--pi-typesafe",
@@ -3524,7 +3599,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/DevMortimer/pi-typesafe"
+      "source": "https://github.com/DevMortimer/pi-typesafe",
+      "descriptionFr": "Outil d'évaluation par lots, terrain de jeu en terminal et API typée pour les auteurs d'extensions Pi."
     },
     {
       "id": "rafalwilinski--vibecheck",
@@ -3549,7 +3625,8 @@
         "moderate content or detect abuse"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/RafalWilinski/vibecheck"
+      "source": "https://github.com/RafalWilinski/vibecheck",
+      "descriptionFr": "Vérifie ton post X avant de le publier."
     },
     {
       "id": "kbhuw--jev-sift",
@@ -3574,7 +3651,8 @@
         "score or rank candidates in a pipeline"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/kbhuw/jev-sift"
+      "source": "https://github.com/kbhuw/jev-sift",
+      "descriptionFr": "Outil MCP qui note un lot de fichiers, d'URL ou d'extraits selon leur pertinence pour que l'agent n'ouvre que l'essentiel."
     },
     {
       "id": "leepokai--jev-guard",
@@ -3606,7 +3684,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/leepokai/jev-guard"
+      "source": "https://github.com/leepokai/jev-guard",
+      "descriptionFr": "Mode auto pour Claude Code, Codex, Cursor, Gemini CLI, Pi et OpenCode : attribue à chaque appel d'outil un score de risque deny, ask ou allow et signale les injections de prompt dans les résultats."
     },
     {
       "id": "brainstormity--jev-moderation-bot",
@@ -3631,7 +3710,8 @@
         "voice or realtime decisions"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/brainstormity/Jev-Moderation-Bot"
+      "source": "https://github.com/brainstormity/Jev-Moderation-Bot",
+      "descriptionFr": "Modération de chat avec des règles modifiables."
     },
     {
       "id": "tacticocc--jevbridge",
@@ -3663,7 +3743,8 @@
         "serve Jev over MCP to any agent"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/tacticocc/Jevbridge"
+      "source": "https://github.com/tacticocc/Jevbridge",
+      "descriptionFr": "Adaptateur ACP et MCP qui associe Jev à n’importe quel LLM pour l’utilisation d’ordinateur et les décisions typées."
     },
     {
       "id": "zhengxuyu--litjev",
@@ -3688,7 +3769,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/zhengxuyu/litjev"
+      "source": "https://github.com/zhengxuyu/litjev",
+      "descriptionFr": "Transforme n’importe quel LLM standard en couche de décision de style Jev."
     },
     {
       "id": "omnijev--playjev",
@@ -3720,7 +3802,8 @@
         "drive a browser or GUI with an agent"
       ],
       "firstSeen": "2026-09-20",
-      "source": "https://github.com/OmniJev/PlayJev"
+      "source": "https://github.com/OmniJev/PlayJev",
+      "descriptionFr": "Joue à dix jeux navigateur à partir de la seule image sur un Qwen3.5-0.8B affiné, une passe avant par coup, avec poids ouverts et démo dans le navigateur."
     },
     {
       "id": "joshuasp--open-jev",
@@ -3745,7 +3828,8 @@
         "extract structured fields from text"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/JoshuaSP/open-jev"
+      "source": "https://github.com/JoshuaSP/open-jev",
+      "descriptionFr": "Inférence JSON typée avec DiffusionGemma, évaluée par rapport à Jev."
     },
     {
       "id": "shantanugoel--ask-jev-skill",
@@ -3770,7 +3854,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/shantanugoel/ask-jev-skill"
+      "source": "https://github.com/shantanugoel/ask-jev-skill",
+      "descriptionFr": "Permet à Hermes et aux agents similaires d’interroger Jev directement."
     },
     {
       "id": "emrickgarrett--onevonejev",
@@ -3795,7 +3880,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/emrickgarrett/OneVOneJev"
+      "source": "https://github.com/emrickgarrett/OneVOneJev",
+      "descriptionFr": "Arène 1v1 quickscope en Three.js."
     },
     {
       "id": "pinecone-io--cultivar",
@@ -3827,7 +3913,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/pinecone-io/cultivar"
+      "source": "https://github.com/pinecone-io/cultivar",
+      "descriptionFr": "CLI de test de skills de Pinecone, avec un backend de notation Jev annoncé environ 30 fois moins cher que le correcteur LLM."
     },
     {
       "id": "iammrduncan--typesafe-ai-benchmark",
@@ -3852,7 +3939,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/iammrduncan/typesafe-ai-benchmark"
+      "source": "https://github.com/iammrduncan/typesafe-ai-benchmark",
+      "descriptionFr": "Passerelle LLM qui imite le format de réponse TypeSafe, utile comme substitut en attendant une clé."
     },
     {
       "id": "hqman--jevscout",
@@ -3877,7 +3965,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/hqman/JevScout"
+      "source": "https://github.com/hqman/JevScout",
+      "descriptionFr": "Skill de recherche d’emploi qui pilote Chrome via CDP et fait noter chaque lien et chaque annonce par Jev."
     },
     {
       "id": "mithalouni--system-one-open",
@@ -3902,7 +3991,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/mithalouni/system-one-open"
+      "source": "https://github.com/mithalouni/system-one-open",
+      "descriptionFr": "Décisions typées et calibrées en une seule passe avant sur Gemma 4 E2B et Gemma 3 270M."
     },
     {
       "id": "alurith--jeff",
@@ -3930,7 +4020,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/Alurith/jeff"
+      "source": "https://github.com/Alurith/jeff",
+      "descriptionFr": "CLI Go en lecture seule qui vérifie les fichiers par rapport à des règles codées telles que les effets de bord cachés et la gestion d'erreurs faible."
     },
     {
       "id": "choxos--jev-reviewer",
@@ -3962,7 +4053,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/choxos/jev-reviewer"
+      "source": "https://github.com/choxos/jev-reviewer",
+      "descriptionFr": "Interroge un rapport d'essai clinique pour des données de revue systématique par voix, texte ou fichier de questions ; chaque réponse est une citation exacte avec son fichier et son emplacement."
     },
     {
       "id": "zadescoxp--jev-trades",
@@ -3992,7 +4084,8 @@
         "learn how Jev works"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/zadescoxp/Jev-Trades"
+      "source": "https://github.com/zadescoxp/Jev-Trades",
+      "descriptionFr": "Bot de trading crypto avec backtesting."
     },
     {
       "id": "devanshbatham--commit-miner",
@@ -4017,7 +4110,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/devanshbatham/commit-miner"
+      "source": "https://github.com/devanshbatham/commit-miner",
+      "descriptionFr": "Classe les diffs et messages de commit : corrections de bugs, corrections de sécurité avec CWEs, types de modifications."
     },
     {
       "id": "zhihz--openjev",
@@ -4042,7 +4136,8 @@
         "run Jev on open models without the vendor"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/zhihz/openjev"
+      "source": "https://github.com/zhihz/openjev",
+      "descriptionFr": "Décisions locales bilingues à partir du contexte, des questions et des réponses candidates."
     },
     {
       "id": "dannote--jev",
@@ -4067,7 +4162,8 @@
         "extract structured fields from text"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/dannote/jev"
+      "source": "https://github.com/dannote/jev",
+      "descriptionFr": "Client Elixir conçu pour OTP : répond à Jev depuis un GenServer et applique un filtrage par motif à la réponse."
     },
     {
       "id": "danrwilloughby--snifftest",
@@ -4099,7 +4195,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/DanRWilloughby/snifftest"
+      "source": "https://github.com/DanRWilloughby/snifftest",
+      "descriptionFr": "Linter de prose pour les marqueurs d'écriture IA : règles comptables plus un modèle de jugement."
     },
     {
       "id": "luantak--is-malicious",
@@ -4131,7 +4228,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/luantak/is-malicious"
+      "source": "https://github.com/luantak/is-malicious",
+      "descriptionFr": "Analyse une base de code pour détecter les comportements cachés ou de vol de données avant exécution ; un rapport vierge n'est pas une preuve, et il le précise."
     },
     {
       "id": "lukstei--slop-grader",
@@ -4163,7 +4261,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-20",
-      "source": "https://github.com/lukstei/slop-grader"
+      "source": "https://github.com/lukstei/slop-grader",
+      "descriptionFr": "Note les fichiers texte et markdown sur le slop IA, la grammaire et la qualité de la documentation technique, et guide un agent IA pour corriger automatiquement les violations."
     },
     {
       "id": "shitianfang--jev-use",
@@ -4195,7 +4294,8 @@
         "drive a browser or GUI with an agent"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/shitianfang/jev-use"
+      "source": "https://github.com/shitianfang/jev-use",
+      "descriptionFr": "Confie à Jev les étapes Claude Code, Codex et pi qui ne nécessitent aucune sortie texte, avec un contrat d'escalade typé pour tout ce qu'il ne doit pas décider."
     },
     {
       "id": "jomatsu--pi-jev-auto-mode",
@@ -4227,7 +4327,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/jomatsu/pi-jev-auto-mode"
+      "source": "https://github.com/jomatsu/pi-jev-auto-mode",
+      "descriptionFr": "Approuve automatiquement les appels bash, write et edit de façon sémantique et refuse par défaut quand il ne peut pas trancher."
     },
     {
       "id": "keeltrace--hermes-jev",
@@ -4252,7 +4353,8 @@
         "run Jev on open models without the vendor"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/keeltrace/hermes-jev"
+      "source": "https://github.com/keeltrace/hermes-jev",
+      "descriptionFr": "Décisions typées, classement, vérification et contrôle d'outils opt-in."
     },
     {
       "id": "chenmingtang830--jevgraph",
@@ -4284,7 +4386,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/chenmingtang830/jevgraph"
+      "source": "https://github.com/chenmingtang830/jevgraph",
+      "descriptionFr": "Analyse localement les PDF, DOCX, PPTX ou texte, puis pose à Jev une question de relation en ensemble fermé par paire d'entités candidate et exporte un graphe avec probabilités par arête et preuves de page vers JSON, CSV ou Neo4j."
     },
     {
       "id": "colliber--duckdb-jev",
@@ -4309,7 +4412,8 @@
         "label data or build a dataset"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/colliber/duckdb-jev"
+      "source": "https://github.com/colliber/duckdb-jev",
+      "descriptionFr": "Extension DuckDB qui pose une question à chaque ligne et renvoie un vrai type SQL."
     },
     {
       "id": "phyous--tsai-sc",
@@ -4334,7 +4438,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/phyous/tsai-sc"
+      "source": "https://github.com/phyous/tsai-sc",
+      "descriptionFr": "Joue à la version shareware originale de StarCraft au clavier et à la souris, avec probabilités d'action enregistrées."
     },
     {
       "id": "lukaske--jev-doom-agent",
@@ -4359,7 +4464,8 @@
         "drive a browser or GUI with an agent"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/lukaske/jev-doom-agent"
+      "source": "https://github.com/lukaske/jev-doom-agent",
+      "descriptionFr": "Agent Doom natif du navigateur avec état spatial structuré et télémétrie de décision en direct."
     },
     {
       "id": "compozy--yoshi",
@@ -4391,7 +4497,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/compozy/yoshi"
+      "source": "https://github.com/compozy/yoshi",
+      "descriptionFr": "Proxy d'élagage de contexte pour Claude Code et Codex, avec des économies mesurées plutôt qu'affirmées."
     },
     {
       "id": "blakestone-x--jev-mcp",
@@ -4416,7 +4523,8 @@
         "score or rank candidates in a pipeline"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/blakestone-x/jev-mcp"
+      "source": "https://github.com/blakestone-x/jev-mcp",
+      "descriptionFr": "Classify, score, check, match et screen, avec un niveau de confiance sur chaque réponse."
     },
     {
       "id": "shiftynick--jev-axi",
@@ -4448,7 +4556,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/shiftynick/jev-axi"
+      "source": "https://github.com/shiftynick/jev-axi",
+      "descriptionFr": "Verbes shell pour les agents et les humains : pick, rate, check, rank, triage, guard."
     },
     {
       "id": "rorshopping--jev-on-a-laptop",
@@ -4473,7 +4582,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/rorshopping/jev-on-a-laptop"
+      "source": "https://github.com/rorshopping/jev-on-a-laptop",
+      "descriptionFr": "Étude des décisions de type Jev sur des modèles standard de 1,5B à 8B sur un ordinateur portable, avec une démo Hugging Face."
     },
     {
       "id": "godsboy--jev-agent-skill-router",
@@ -4505,7 +4615,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/GodsBoy/jev-agent-skill-router"
+      "source": "https://github.com/GodsBoy/jev-agent-skill-router",
+      "descriptionFr": "Routage de compétences sensible à la confiance avec un chemin d'abstention."
     },
     {
       "id": "sorrycc--typesafe-snake",
@@ -4530,7 +4641,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/sorrycc/typesafe-snake"
+      "source": "https://github.com/sorrycc/typesafe-snake",
+      "descriptionFr": "Un Choice par tick ; coups légaux et faits générés en code."
     },
     {
       "id": "chopratejas--invalidate",
@@ -4555,7 +4667,8 @@
         "add Jev to a chat bot or Discord"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/chopratejas/invalidate"
+      "source": "https://github.com/chopratejas/invalidate",
+      "descriptionFr": "Donne à chaque mémoire d'agent stockée un bail et demande à Jev si de nouvelles preuves y mettent fin ; [live demo](https://invalidate-playground.vercel.app)."
     },
     {
       "id": "nasrallah-al--jev-cli",
@@ -4587,7 +4700,8 @@
         "moderate content or detect abuse"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/Nasrallah-AL/jev-cli"
+      "source": "https://github.com/Nasrallah-AL/jev-cli",
+      "descriptionFr": "CLI npm avec la clé dans le trousseau système ; jugements typés depuis le shell."
     },
     {
       "id": "brainwires--jevwire",
@@ -4612,7 +4726,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/Brainwires/jevwire"
+      "source": "https://github.com/Brainwires/jevwire",
+      "descriptionFr": "Serveur MCP, modèle de décision embarquable et plugin à escalade seule qui peut rendre le harnais plus strict mais jamais plus souple."
     },
     {
       "id": "typesafeai--typesafe-playground",
@@ -4637,7 +4752,8 @@
         "build a game or simulation on Jev"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/TypeSafeAI/typesafe-playground"
+      "source": "https://github.com/TypeSafeAI/typesafe-playground",
+      "descriptionFr": "110 cas d'usage, jeux et défis de modèles avec prompts modifiables et comparaisons A/B ; une organisation communautaire, pas le fournisseur, anciennement sous BunsDev."
     },
     {
       "id": "vinilana--live-jev",
@@ -4662,7 +4778,8 @@
         "voice or realtime decisions"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/vinilana/live-jev"
+      "source": "https://github.com/vinilana/live-jev",
+      "descriptionFr": "Voiture en vue de dessus dans le navigateur envoyant quatre questions typées toutes les 200 ms, avec des overrides conditionnés par la confiance dans le code."
     },
     {
       "id": "abdelstark--jev-benchmarks",
@@ -4694,7 +4811,8 @@
         "route between models by task difficulty"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/AbdelStark/jev-benchmarks"
+      "source": "https://github.com/AbdelStark/jev-benchmarks",
+      "descriptionFr": "Évaluation sensible aux probabilités pour modèles de décision typés : calibration, risque sélectif, latence, reproductible."
     },
     {
       "id": "valentynkit--jev-belay",
@@ -4719,7 +4837,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/valentynkit/jev-belay"
+      "source": "https://github.com/valentynkit/jev-belay",
+      "descriptionFr": "Hook d'arrêt qui bloque un \"done\" non vérifié : lit la transcription pour trouver des preuves et, uniquement lorsque des fichiers ont changé sans vérification réussie depuis, dépense un appel Jev à quatre questions ; reste ouvert sur chaque chemin d'erreur."
     },
     {
       "id": "anpicasso--hermes-jev-approvals",
@@ -4744,7 +4863,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-20",
-      "source": "https://github.com/anpicasso/hermes-jev-approvals"
+      "source": "https://github.com/anpicasso/hermes-jev-approvals",
+      "descriptionFr": "Approuve, refuse ou escalade les commandes shell signalées avant leur exécution ; accélérations rapportées par le fournisseur."
     },
     {
       "id": "parth-kp--jev-mail-classifier",
@@ -4769,7 +4889,8 @@
         "moderate content or detect abuse"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/parth-kp/jev-mail-classifier"
+      "source": "https://github.com/parth-kp/jev-mail-classifier",
+      "descriptionFr": "Classification d'inbox pilotée par configuration qui étiquette, déplace, signale et notifie, via TypeSafe directement ou OpenRouter."
     },
     {
       "id": "kieranklaassen--ruby-llm-typesafe",
@@ -4794,7 +4915,8 @@
         "score or rank candidates in a pipeline"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/kieranklaassen/ruby_llm-typesafe"
+      "source": "https://github.com/kieranklaassen/ruby_llm-typesafe",
+      "descriptionFr": "TypeSafe comme fournisseur de sortie structurée pour RubyLLM 2."
     },
     {
       "id": "romaluev--jev-ego",
@@ -4826,7 +4948,8 @@
         "learn how Jev works"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/romaluev/jev-ego"
+      "source": "https://github.com/romaluev/jev-ego",
+      "descriptionFr": "Agent navigateur qui dépense une requête Jev par étape pour choisir l'action."
     },
     {
       "id": "reachjalil--jevlogs",
@@ -4851,7 +4974,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/reachjalil/jevlogs"
+      "source": "https://github.com/reachjalil/jevlogs",
+      "descriptionFr": "Score le signal des logs OpenTelemetry avant de payer pour l'analyse LLM."
     },
     {
       "id": "mejiasd3v--pi-jev-router",
@@ -4876,7 +5000,8 @@
         "call Jev from the command line"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/mejiasd3v/pi-jev-router"
+      "source": "https://github.com/mejiasd3v/pi-jev-router",
+      "descriptionFr": "Routage automatique de modèles pour Pi via Vercel AI Gateway."
     },
     {
       "id": "olanotolu--jevbetter",
@@ -4901,14 +5026,15 @@
         "pick which skill or prompt to load"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/olanotolu/jevbetter"
+      "source": "https://github.com/olanotolu/jevbetter",
+      "descriptionFr": "Un évaluateur en un seul passage plus puissant avec un benchmark direct contre le design de démarrage jevlike."
     },
     {
       "id": "xinyao27--jevonian",
       "name": "xinyao27/jevonian",
       "url": "https://github.com/xinyao27/jevonian",
       "kind": "repo",
-      "description": "Local OpenAI, Anthropic, and Responses-compatible proxy that serves one Jev call per turn to answer both the model route and the thinking level for its virtual model jevonian/auto, with code filtering candidates by protocol, context window, effort floor, and spent quota windows first, and pinned models or explicit routes skipping Jev entirely.",
+      "description": "Local OpenAI, Anthropic and Responses-compatible proxy that serves one Jev call per turn to pick both the model route and the thinking level, filtering candidates by context window and quota.",
       "descriptionZh": "本地 OpenAI、Anthropic 和 Responses 兼容代理，每轮为其虚拟模型 jevonian/auto 发起一次 Jev 调用以确定模型路由和思考级别，代码优先按协议、上下文窗口、effort 下限和已用配额窗口过滤候选，固定模型或显式路由则完全跳过 Jev。",
       "category": "routing",
       "upstreamSection": "Routing and gateways",
@@ -4926,7 +5052,8 @@
         "monitor or observe Jev usage and cost"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/xinyao27/jevonian"
+      "source": "https://github.com/xinyao27/jevonian",
+      "descriptionFr": "Proxy local compatible OpenAI, Anthropic et Responses qui effectue un appel Jev par tour pour choisir à la fois la route du modèle et le niveau de réflexion, en filtrant les candidats par fenêtre de contexte et quota."
     },
     {
       "id": "antoniocoppe--jev-harness",
@@ -4958,7 +5085,8 @@
         "gate or approve tool calls before they run"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/AntonioCoppe/jev-harness"
+      "source": "https://github.com/AntonioCoppe/jev-harness",
+      "descriptionFr": "Seuils de confiance, mode fantôme, recettes et evals ; rapporte Claude CLI à 48.9 s contre Jev à 1.3 s sur la même tâche de filtrage de lignes."
     },
     {
       "id": "ainame--swift-typesafe",
@@ -4983,7 +5111,8 @@
         "score or rank candidates in a pipeline"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/ainame/swift-typesafe"
+      "source": "https://github.com/ainame/swift-typesafe",
+      "descriptionFr": "SDK Swift 6.4 suivant l'API du SDK Python, sur les plateformes Apple et Linux."
     },
     {
       "id": "decrux9812--typesafe-skill-router",
@@ -5015,7 +5144,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/DECRUX9812/typesafe-skill-router"
+      "source": "https://github.com/DECRUX9812/typesafe-skill-router",
+      "descriptionFr": "Désigne l'unique skill à charger avant l'appel au modèle ; stdlib uniquement, environ un dixième de cent par tour."
     },
     {
       "id": "prismhq--jev-router",
@@ -5040,7 +5170,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/prismhq/jev-router"
+      "source": "https://github.com/prismhq/jev-router",
+      "descriptionFr": "Routeur LLM au-dessus de LiteLLM."
     },
     {
       "id": "hev--reranker",
@@ -5065,7 +5196,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/hev/reranker"
+      "source": "https://github.com/hev/reranker",
+      "descriptionFr": "Jev comme reranker calibré : un appel, jusqu'à 30 documents, une probabilité par document."
     },
     {
       "id": "kylemclaren--jevql",
@@ -5093,7 +5225,8 @@
         "serve Jev over MCP to any agent"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/kylemclaren/jevql"
+      "source": "https://github.com/kylemclaren/jevql",
+      "descriptionFr": "SQL sémantique pour PostgreSQL, avec Jev qui répond aux prédicats."
     },
     {
       "id": "joelhooks--pi-fast-jev-compaction",
@@ -5118,15 +5251,16 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/joelhooks/pi-fast-jev-compaction"
+      "source": "https://github.com/joelhooks/pi-fast-jev-compaction",
+      "descriptionFr": "L'idée de compaction verbatim, portée sur Pi."
     },
     {
       "id": "kubet--azdaja",
       "name": "kubet/azdaja",
       "url": "https://github.com/kubet/azdaja",
       "kind": "repo",
-      "description": "Recursive language model layer for Claude Code, Codex, Gemini, and OpenCode that keeps full sources in a local evaluator; Jev is an optional leaf for reranking, verification, classification, and semantic joins, with budgeted, checkpointed batches.",
-      "descriptionZh": "适用于 Claude Code、Codex、Gemini 和 OpenCode 的递归语言模型层，将完整源保留在本地评估器中；Jev 是用于重排、验证、分类和语义连接的可选叶子节点，采用带预算、可设检查点的批处理。",
+      "description": "Recursive language-model layer for Claude Code, Codex, Gemini and OpenCode that keeps sources local; Jev is an optional leaf for reranking, verification and semantic joins.",
+      "descriptionZh": "面向 Claude Code、Codex、Gemini 和 OpenCode 的递归语言模型层，在本地保存数据源；Jev 是用于重排、验证和语义连接的可选叶节点。",
       "category": "coding-agents",
       "upstreamSection": "Coding agents",
       "language": "Python",
@@ -5150,7 +5284,8 @@
         "extract structured fields from text"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/kubet/azdaja"
+      "source": "https://github.com/kubet/azdaja",
+      "descriptionFr": "Couche récursive de modèles de langage pour Claude Code, Codex, Gemini et OpenCode qui conserve les sources en local ; Jev est une feuille optionnelle pour le reranking, la vérification et les jointures sémantiques."
     },
     {
       "id": "genai-craft--openvons",
@@ -5182,7 +5317,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/genai-craft/openvons"
+      "source": "https://github.com/genai-craft/openvons",
+      "descriptionFr": "Couche de décision ouverte répondant à un ensemble fini d'options avec des probabilités réparties entre execute, confirm et reject. Réplique indépendante, sans les poids TypeSafe."
     },
     {
       "id": "kevthetech143--super-jev",
@@ -5207,7 +5343,8 @@
         "add Jev to a chat bot or Discord"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/kevthetech143/super-jev"
+      "source": "https://github.com/kevthetech143/super-jev",
+      "descriptionFr": "Petit harnais reliant les preuves, les jugements Jev, les actions autorisées et les résultats vérifiés."
     },
     {
       "id": "kavehmz--typesafe-playground",
@@ -5232,7 +5369,8 @@
         "build a game or simulation on Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/kavehmz/typesafe-playground"
+      "source": "https://github.com/kavehmz/typesafe-playground",
+      "descriptionFr": "Du routage de support à une simulation de conduite 3D avec entrées de capteurs visibles."
     },
     {
       "id": "tumf--jev-cli",
@@ -5263,7 +5401,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/tumf/jev-cli"
+      "source": "https://github.com/tumf/jev-cli",
+      "descriptionFr": "CLI Python sans dépendances enveloppant Choice, Score et Noul."
     },
     {
       "id": "twister915--typesafe-ai",
@@ -5288,7 +5427,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/Twister915/typesafe-ai"
+      "source": "https://github.com/Twister915/typesafe-ai",
+      "descriptionFr": "Client Rust avec backends asynchrone et bloquant et retries observables."
     },
     {
       "id": "amithgc--local-jev",
@@ -5313,7 +5453,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/amithgc/local-jev"
+      "source": "https://github.com/amithgc/local-jev",
+      "descriptionFr": "Serveur hors ligne compatible avec le point de terminaison System One, vérifié contre le SDK officiel ; rapporte 80,5 pour cent sur les éléments publics de JevBench contre 86,6 pour cent publiés pour l'API hébergée."
     },
     {
       "id": "valentynkit--jev-commit",
@@ -5338,7 +5479,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/valentynkit/jev-commit"
+      "source": "https://github.com/valentynkit/jev-commit",
+      "descriptionFr": "Hook pre-commit : un appel Jev juge si le message de commit correspond au diff stagé, plus les restes de débogage, le travail non mentionné et les identifiants exposés ; avertit sauf en cas de secret, qu'il bloque."
     },
     {
       "id": "saibimajdi--typesafeai-dotnet-sdk",
@@ -5370,7 +5512,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/saibimajdi/typesafeai-dotnet-sdk"
+      "source": "https://github.com/saibimajdi/typesafeai-dotnet-sdk",
+      "descriptionFr": "SDK .NET communautaire avec des questions typées Noul, Choice et Score."
     },
     {
       "id": "hyunjunjeon--pi-quiet-ask",
@@ -5395,7 +5538,8 @@
         "detect prompt injection or risky commands"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/HyunjunJeon/pi-quiet-ask"
+      "source": "https://github.com/HyunjunJeon/pi-quiet-ask",
+      "descriptionFr": "Jev comme couche de décision silencieuse de l'agent de codage Pi."
     },
     {
       "id": "frostney--clean-code-review",
@@ -5427,7 +5571,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/frostney/clean-code-review"
+      "source": "https://github.com/frostney/clean-code-review",
+      "descriptionFr": "Chaque fichier d'une PR jugé selon les règles Clean Code, puis relu par un LLM."
     },
     {
       "id": "huntedman--jevlint",
@@ -5452,7 +5597,8 @@
         "call Jev from the command line"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/huntedman/JevLint"
+      "source": "https://github.com/huntedman/JevLint",
+      "descriptionFr": "Linting sémantique configurable avec des jugements Noul au niveau des fichiers."
     },
     {
       "id": "collapseindex--jev-ultralightspeed",
@@ -5484,7 +5630,8 @@
         "label data or build a dataset"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/collapseindex/jev-ultralightspeed"
+      "source": "https://github.com/collapseindex/jev-ultralightspeed",
+      "descriptionFr": "Regroupe 32 éléments dans une seule requête pour la classification en masse et calibre le seuil de confiance qui envoie les lignes les moins sûres à un humain, avec 533 éléments par seconde rapportés à 89,2 pour cent d'accord avec les étiquettes humaines."
     },
     {
       "id": "manifoldor--xtags",
@@ -5516,7 +5663,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/manifoldor/xtags"
+      "source": "https://github.com/manifoldor/xtags",
+      "descriptionFr": "Étiquette chaque publication de votre timeline X avec ce qu'elle cherche à vous faire faire."
     },
     {
       "id": "taruntomar122--jev-askable-arm",
@@ -5541,7 +5689,8 @@
         "learn how Jev works"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/TarunTomar122/jev-askable-arm"
+      "source": "https://github.com/TarunTomar122/jev-askable-arm",
+      "descriptionFr": "Objectifs en anglais zero-shot sur un bras Franka simulé ; Jev enchaîne des primitives codées en dur."
     },
     {
       "id": "giesn--typesafe-jev-workflow",
@@ -5566,7 +5715,8 @@
         "learn how Jev works"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/GiesN/typesafe-jev-workflow"
+      "source": "https://github.com/GiesN/typesafe-jev-workflow",
+      "descriptionFr": "Démo LangGraph qui envoie un e-mail simulé à Jev et route selon le Choice typé qu'elle renvoie."
     },
     {
       "id": "nyarlathoteppppp--pi-heed",
@@ -5598,7 +5748,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/Nyarlathoteppppp/pi-heed"
+      "source": "https://github.com/Nyarlathoteppppp/pi-heed",
+      "descriptionFr": "Vérifie chaque appel d'outil à effet de bord par rapport à ce qui a été dit plus tôt dans la session, pour que \"review only\" reste valable après compaction."
     },
     {
       "id": "harshwasan--pi-jev-sentinel",
@@ -5623,7 +5774,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-20",
-      "source": "https://github.com/harshwasan/pi-jev-sentinel"
+      "source": "https://github.com/harshwasan/pi-jev-sentinel",
+      "descriptionFr": "Vérifie les appels d'outils Pi, les sorties d'outils et les réponses contre les actions risquées et l'injection de prompt, avec approbations utilisateur, revérifications du contexte, masquage des secrets et épinglage facultatif des tâches."
     },
     {
       "id": "24601--augustus",
@@ -5655,7 +5807,8 @@
         "rerank search results"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/24601/Augustus"
+      "source": "https://github.com/24601/Augustus",
+      "descriptionFr": "Skill pour décider où un jugement typé a sa place et ce qui reste dans le code ; un complément au skill officiel, pas un remplacement."
     },
     {
       "id": "tontoko--jev-browser",
@@ -5687,7 +5840,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/tontoko/jev-browser"
+      "source": "https://github.com/tontoko/jev-browser",
+      "descriptionFr": "Un cœur Jev et Playwright ancré derrière un SDK typé, une CLI persistante et un serveur MCP."
     },
     {
       "id": "doeixd--jev-pref",
@@ -5719,7 +5873,8 @@
         "pick which skill or prompt to load"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/doeixd/jev-pref"
+      "source": "https://github.com/doeixd/jev-pref",
+      "descriptionFr": "Transforme les préférences de votre AGENTS.md en un linter qui s'exécute sur les modifications de code et rend compte à l'agent."
     },
     {
       "id": "nozomi-koborinai--jev-spec",
@@ -5751,7 +5906,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/nozomi-koborinai/jev-spec"
+      "source": "https://github.com/nozomi-koborinai/jev-spec",
+      "descriptionFr": "Vérifie le code par rapport aux exigences d'une spec Markdown à chaque commit et fait échouer le build lorsque les deux divergent."
     },
     {
       "id": "marissafamularo--citation-verifier",
@@ -5781,7 +5937,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/MarissaFamularo/citation-verifier"
+      "source": "https://github.com/MarissaFamularo/citation-verifier",
+      "descriptionFr": "L'article cité soutient-il la phrase qui le cite ? Claude trouve la citation, Jev la note, un humain décide."
     },
     {
       "id": "justinhe16--trade-jev",
@@ -5806,7 +5963,8 @@
         "trade or score financial signals"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/justinhe16/trade-jev"
+      "source": "https://github.com/justinhe16/trade-jev",
+      "descriptionFr": "Évalue Jev en backtest comme trader d'achat, de vente ou de conservation sur des données de carnet d'ordres NQ."
     },
     {
       "id": "abhixhek--jevcal",
@@ -5838,7 +5996,8 @@
         "route between models by task difficulty"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/abhixhek/jevcal"
+      "source": "https://github.com/abhixhek/jevcal",
+      "descriptionFr": "Arrêtez de deviner les seuils : calibrez, seuillez et contrôlez la dérive face à un LLM enseignant."
     },
     {
       "id": "jmanhype--jev-dspy-lab",
@@ -5863,15 +6022,16 @@
         "monitor or observe Jev usage and cost"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/jmanhype/jev-dspy-lab"
+      "source": "https://github.com/jmanhype/jev-dspy-lab",
+      "descriptionFr": "Benchmarks reproductibles de calibration et de risque sélectif pour les décisions Jev dans DSPy."
     },
     {
       "id": "premo-cloud--typesafe-sdk-java",
       "name": "Premo-Cloud/typesafe-sdk-java",
       "url": "https://github.com/Premo-Cloud/typesafe-sdk-java",
       "kind": "repo",
-      "description": "Java client.",
-      "descriptionZh": "Java 客户端。",
+      "description": "Unofficial Java client for the TypeSafe System One API, calling Choice, Score and Noul questions over HTTP.",
+      "descriptionZh": "非官方 TypeSafe System One API Java 客户端，通过 HTTP 调用 Choice、Score 和 Noul 问题。",
       "category": "clients",
       "upstreamSection": "Community clients",
       "language": "Java",
@@ -5895,7 +6055,8 @@
         "add Jev to a chat bot or Discord"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/Premo-Cloud/typesafe-sdk-java"
+      "source": "https://github.com/Premo-Cloud/typesafe-sdk-java",
+      "descriptionFr": "Client Java non officiel pour l'API TypeSafe System One, appelant les questions Choice, Score et Noul via HTTP."
     },
     {
       "id": "pambrose--jev4k",
@@ -5927,7 +6088,8 @@
         "add Jev to a chat bot or Discord"
       ],
       "firstSeen": "2026-09-20",
-      "source": "https://github.com/pambrose/jev4k"
+      "source": "https://github.com/pambrose/jev4k",
+      "descriptionFr": "DSL et client Kotlin."
     },
     {
       "id": "hexyedev--jevpr",
@@ -5957,7 +6119,8 @@
         "route between models by task difficulty"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/HexyeDEV/JevPR"
+      "source": "https://github.com/HexyeDEV/JevPR",
+      "descriptionFr": "Application GitHub qui demande à Jev si une pull request peut être approuvée sans risque ou nécessite un spécialiste, puis convertit le verdict en check run."
     },
     {
       "id": "reachjalil--jev-tree",
@@ -5988,7 +6151,8 @@
         "add Jev to a chat bot or Discord"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/reachjalil/jev-tree"
+      "source": "https://github.com/reachjalil/jev-tree",
+      "descriptionFr": "Choix récursif dans une taxonomie, au-delà de la limite de 255 options."
     },
     {
       "id": "gtaras7--typesafe-jev",
@@ -6013,7 +6177,8 @@
         "learn how Jev works"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/gtaras7/typesafe-jev"
+      "source": "https://github.com/gtaras7/typesafe-jev",
+      "descriptionFr": "Expériences Jev commençant par un banc d’essai local de tri de CV, chacune avec ses résultats mesurés."
     },
     {
       "id": "valentynkit--jev-plays-pokemon-red",
@@ -6038,7 +6203,8 @@
         "learn how Jev works"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/valentynkit/jev-plays-pokemon-red"
+      "source": "https://github.com/valentynkit/jev-plays-pokemon-red",
+      "descriptionFr": "Pokemon Red sur PyBoy : le code gère l’itinéraire et les calculs, Jev ne choisit qu’aux embranchements, et chaque tour de combat enregistre une prédiction faible évaluée par le score de Brier par rapport à ce qu’indique la RAM."
     },
     {
       "id": "zhuyansen--jev-search-rerank-eval",
@@ -6070,7 +6236,8 @@
         "rerank search results"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/zhuyansen/jev-search-rerank-eval"
+      "source": "https://github.com/zhuyansen/jev-search-rerank-eval",
+      "descriptionFr": "Un rerank Jev bat-il la recherche par embeddings ? 9 831 paires évaluées, avec le biais de circularité du juge mesuré."
     },
     {
       "id": "cristianoliveira--jeq",
@@ -6102,7 +6269,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/cristianoliveira/jeq"
+      "source": "https://github.com/cristianoliveira/jeq",
+      "descriptionFr": "Enchaîne et compose des jugements Jev sur JSON et NDJSON avec map, reduce, rank et rate, puis applique la politique via une gate hors ligne explicite."
     },
     {
       "id": "tangerg--typesafe-sdk-go",
@@ -6126,7 +6294,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/Tangerg/typesafe-sdk-go"
+      "source": "https://github.com/Tangerg/typesafe-sdk-go",
+      "descriptionFr": "SDK Go sans dépendances tierces."
     },
     {
       "id": "adarshmishra07--jcm-router",
@@ -6151,7 +6320,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/adarshmishra07/jcm-router"
+      "source": "https://github.com/adarshmishra07/jcm-router",
+      "descriptionFr": "Proxy local qui choisit le modèle et l’effort par message et laisse le chat principal en cache intact."
     },
     {
       "id": "abdelstark--bicameral",
@@ -6180,7 +6350,8 @@
         "detect prompt injection or risky commands"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/AbdelStark/bicameral"
+      "source": "https://github.com/AbdelStark/bicameral",
+      "descriptionFr": "Harnais hybride pour Pi : un LLM écrit le code, les réflexes Jev filtrent chaque appel en allow, confirm, block, warn ou steer."
     },
     {
       "id": "stratonext--software-factory",
@@ -6205,7 +6376,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/stratonext/software-factory"
+      "source": "https://github.com/stratonext/software-factory",
+      "descriptionFr": "Exécute plusieurs agents de codage en local avec Jev comme juge et orchestrateur."
     },
     {
       "id": "wiktorb2004--llama-index-jev",
@@ -6237,7 +6409,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/WiktorB2004/llama-index-jev"
+      "source": "https://github.com/WiktorB2004/llama-index-jev",
+      "descriptionFr": "Reranker et routeur LlamaIndex, moins cher qu'un juge LLM."
     },
     {
       "id": "kylemclaren--jev-search",
@@ -6266,7 +6439,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/kylemclaren/jev-search"
+      "source": "https://github.com/kylemclaren/jev-search",
+      "descriptionFr": "Bloc de registre shadcn/ui : résultats par mots-clés dès la première frappe, reclassés par Jev un instant après, et l'ordre par mots-clés est conservé si l'appel échoue."
     },
     {
       "id": "harshil1712--slidepilot",
@@ -6298,7 +6472,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/harshil1712/slidepilot"
+      "source": "https://github.com/harshil1712/slidepilot",
+      "descriptionFr": "Avancement automatique piloté par la voix pour Slidev sur Cloudflare Agents."
     },
     {
       "id": "valentynkit--jev-nvim",
@@ -6323,7 +6498,8 @@
         "learn how Jev works"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/valentynkit/jev.nvim"
+      "source": "https://github.com/valentynkit/jev.nvim",
+      "descriptionFr": "Plugin Neovim : posez une question en langage naturel au buffer, Treesitter le découpe en fonctions, Jev note chacune d'elles, et les réponses arrivent dans quickfix classées par probabilité."
     },
     {
       "id": "abdelstark--heist-one",
@@ -6355,7 +6531,8 @@
         "build a game or simulation on Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/AbdelStark/heist-one"
+      "source": "https://github.com/AbdelStark/heist-one",
+      "descriptionFr": "Jeu d'infiltration où Jev produit les jugements des gardes et le code déterministe contrôle le monde."
     },
     {
       "id": "anessbelbati--jev-rerank-bench",
@@ -6387,7 +6564,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/anessbelbati/jev-rerank-bench"
+      "source": "https://github.com/anessbelbati/jev-rerank-bench",
+      "descriptionFr": "Jev face à Cohere Rerank, ZeroEntropy et une base de référence chat sur 14 jeux de données, réponses brutes incluses."
     },
     {
       "id": "jomatsu--zod-jev",
@@ -6412,7 +6590,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/jomatsu/zod-jev"
+      "source": "https://github.com/jomatsu/zod-jev",
+      "descriptionFr": "Schémas Zod 4 avec règles sémantiques : les vérifications de forme restent dans Zod, les vérifications de sens partent vers Jev en une seule requête et reviennent comme des Zod issues."
     },
     {
       "id": "ajensenwaud--hermes-jev-plugin",
@@ -6444,7 +6623,8 @@
         "score or rank candidates in a pipeline"
       ],
       "firstSeen": "2026-09-20",
-      "source": "https://github.com/ajensenwaud/hermes-jev-plugin"
+      "source": "https://github.com/ajensenwaud/hermes-jev-plugin",
+      "descriptionFr": "Quatre outils Hermes pour vérifications atomiques, routage et notation par grille ; répertoriés dans le catalogue de plugins Hermes."
     },
     {
       "id": "friedjof--jev-mobile",
@@ -6476,7 +6656,8 @@
         "drive a browser or GUI with an agent"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/friedjof/jev-mobile"
+      "source": "https://github.com/friedjof/jev-mobile",
+      "descriptionFr": "Sous-agent Android via USB exécutant observe, normalize, decide, mutate, verify, avec Jev qui décide."
     },
     {
       "id": "raihankhan-rk--diffjury",
@@ -6501,7 +6682,8 @@
         "compact or prune agent context"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/raihankhan-rk/diffjury"
+      "source": "https://github.com/raihankhan-rk/diffjury",
+      "descriptionFr": "Routeur de risques PR et coach de revue."
     },
     {
       "id": "anisselbd--jev-phishing-bench",
@@ -6526,7 +6708,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/anisselbd/jev-phishing-bench"
+      "source": "https://github.com/anisselbd/jev-phishing-bench",
+      "descriptionFr": "Jev contre Claude Haiku sur 2 000 e-mails de phishing : précision, calibration, latence, coût."
     },
     {
       "id": "sufianetaouil--every",
@@ -6551,15 +6734,16 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/sufianetaouil/every"
+      "source": "https://github.com/sufianetaouil/every",
+      "descriptionFr": "Pose une question oui/non à chaque fonction d'une base de code ; un grep dont le motif est une question."
     },
     {
       "id": "joshmn--typesafe-sdk",
       "name": "joshmn/typesafe-sdk",
       "url": "https://github.com/joshmn/typesafe-sdk",
       "kind": "repo",
-      "description": "Ruby client.",
-      "descriptionZh": "Ruby 客户端。",
+      "description": "Unofficial Ruby client for the TypeSafe AI API, returning typed answers with probabilities instead of parsed prose.",
+      "descriptionZh": "非官方 TypeSafe AI API Ruby 客户端，返回带概率的类型化答案，而不是解析后的散文。",
       "category": "clients",
       "upstreamSection": "Community clients",
       "language": "Ruby",
@@ -6576,7 +6760,8 @@
         "classify support tickets or messages"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/joshmn/typesafe-sdk"
+      "source": "https://github.com/joshmn/typesafe-sdk",
+      "descriptionFr": "Client Ruby non officiel pour l'API TypeSafe AI, renvoyant des réponses typées avec probabilités au lieu de prose analysée."
     },
     {
       "id": "inanna-malick--jev-dsl",
@@ -6601,7 +6786,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/inanna-malick/jev-dsl"
+      "source": "https://github.com/inanna-malick/jev-dsl",
+      "descriptionFr": "DSL Haskell avec paquets typés et types de réponses inférés."
     },
     {
       "id": "hyunjunjeon--jev-judgment",
@@ -6626,7 +6812,8 @@
         "voice or realtime decisions"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/HyunjunJeon/jev-judgment"
+      "source": "https://github.com/HyunjunJeon/jev-judgment",
+      "descriptionFr": "Envoie les jugements fermés d'un agent de codage à Jev au lieu du modèle de chat."
     },
     {
       "id": "keltokhy--jlink",
@@ -6658,7 +6845,8 @@
         "call Jev from the command line"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/keltokhy/jlink"
+      "source": "https://github.com/keltokhy/jlink",
+      "descriptionFr": "Relie les enregistrements de deux jeux de données à partir d'une règle de correspondance écrite en anglais simple, depuis Python, le shell, Stata ou R, et rapporte un F1 de 0.73 contre 0.69 pour la correspondance de chaînes optimisée sur les cessionnaires de brevets NBER vers Compustat."
     },
     {
       "id": "scale-venture-partners--riff",
@@ -6683,7 +6871,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/scale-venture-partners/riff"
+      "source": "https://github.com/scale-venture-partners/riff",
+      "descriptionFr": "Codes de règles façon Ruff pour l'écriture."
     },
     {
       "id": "anxkhn--jevplayspokemon",
@@ -6714,7 +6903,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/anxkhn/JevPlaysPokemon"
+      "source": "https://github.com/anxkhn/JevPlaysPokemon",
+      "descriptionFr": "Pokémon de génération 3 via Showdown et une vraie ROM FireRed."
     },
     {
       "id": "mahlernim--jev-korean-benchmark",
@@ -6739,7 +6929,8 @@
         "monitor or observe Jev usage and cost"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/mahlernim/jev-korean-benchmark"
+      "source": "https://github.com/mahlernim/jev-korean-benchmark",
+      "descriptionFr": "Compréhension du coréen et textes médicaux, avec données d'exécution et de coût."
     },
     {
       "id": "wondertwins--jev-benchmark",
@@ -6764,7 +6955,8 @@
         "learn how Jev works"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/wondertwins/jev-benchmark"
+      "source": "https://github.com/wondertwins/jev-benchmark",
+      "descriptionFr": "Deux benchmarks, échecs et identification de prédateurs, l'un dans le domaine de Jev et l'autre hors domaine, tous deux avec résultats."
     },
     {
       "id": "lbotinelly--jev-little-airways",
@@ -6789,7 +6981,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/lbotinelly/jev-little-airways"
+      "source": "https://github.com/lbotinelly/jev-little-airways",
+      "descriptionFr": "Étude de capacités avec démonstration pour Jev."
     },
     {
       "id": "gilljon--typesafe-ai-rs",
@@ -6820,7 +7013,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/gilljon/typesafe-ai-rs"
+      "source": "https://github.com/gilljon/typesafe-ai-rs",
+      "descriptionFr": "SDK Rust indépendant, asynchrone et bloquant."
     },
     {
       "id": "3clyp50--a0-typesafe-ai",
@@ -6845,7 +7039,8 @@
         "add Jev to a chat bot or Discord"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/3clyp50/a0-typesafe-ai"
+      "source": "https://github.com/3clyp50/a0-typesafe-ai",
+      "descriptionFr": "Outils typés et cartes de probabilités pour Agent Zero."
     },
     {
       "id": "david-lolly--jev-compatible",
@@ -6870,7 +7065,8 @@
         "run Jev on open models without the vendor"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/David-Lolly/Jev-Compatible"
+      "source": "https://github.com/David-Lolly/Jev-Compatible",
+      "descriptionFr": "Passerelle qui transforme un déploiement SGLang ou vLLM existant en service de décision compatible Jev en notant les tokens candidats, sans entraînement ni modification du modèle."
     },
     {
       "id": "akashpriyadarshii--jev-scout",
@@ -6902,7 +7098,8 @@
         "call Jev from the command line"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/AkashPriyadarshii/jev-scout"
+      "source": "https://github.com/AkashPriyadarshii/jev-scout",
+      "descriptionFr": "CLI Rust et serveur MCP qui trouvent des repos et crates réels et maintenus pour une requête en langage naturel, avec notation des candidats par Jev."
     },
     {
       "id": "eugeneboondock--jevsql",
@@ -6934,7 +7131,8 @@
         "score or rank candidates in a pipeline"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/EugeneBoondock/jevsql"
+      "source": "https://github.com/EugeneBoondock/jevsql",
+      "descriptionFr": "SQL avec prédicats en langage naturel sur SQLite : filtrer, classer et catégoriser les lignes par sens, par lots et avec garde-fous de coût."
     },
     {
       "id": "foadsf--jev-for-engineers",
@@ -6966,7 +7164,8 @@
         "learn how Jev works"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/Foadsf/jev-for-engineers"
+      "source": "https://github.com/Foadsf/jev-for-engineers",
+      "descriptionFr": "Huit petits exemples issus du génie mécanique et électrique : routage CAD, tri FEM, criblage DFM, alignement BOM."
     },
     {
       "id": "andrelandgraf--safer-with-jev",
@@ -6991,15 +7190,16 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/andrelandgraf/safer-with-jev"
+      "source": "https://github.com/andrelandgraf/safer-with-jev",
+      "descriptionFr": "Proxy Neon Function pour la Neon AI Gateway avec routage Jev en amont."
     },
     {
       "id": "valentynkit--jev-skip",
       "name": "valentynkit/jev-skip",
       "url": "https://github.com/valentynkit/jev-skip",
       "kind": "repo",
-      "description": "Browser extension that reads the caption track and paints a per-segment sponsor probability on the seek bar before the intro ends, no crowd database; reports 77 percent of SponsorBlock's sponsor seconds caught over 23 videos at $0.0008 a video.",
-      "descriptionZh": "读取字幕轨道并在片头结束前在进度条上绘制每段赞助概率的浏览器扩展，无需众包数据库；在 23 个视频上以每个视频 $0.0008 的成本捕获了 SponsorBlock 77% 的赞助秒数。",
+      "description": "Browser extension that reads the caption track and paints a per-segment sponsor probability on the seek bar, with no crowd database.",
+      "descriptionZh": "读取字幕轨道并在进度条上绘制每段赞助概率的浏览器扩展，无需众包数据库。",
       "category": "apps",
       "upstreamSection": "Applications and extensions",
       "language": "TypeScript",
@@ -7016,7 +7216,8 @@
         "learn how Jev works"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/valentynkit/jev-skip"
+      "source": "https://github.com/valentynkit/jev-skip",
+      "descriptionFr": "Extension de navigateur qui lit la piste de sous-titres et affiche une probabilité de sponsor par segment sur la barre de recherche, sans base de données participative."
     },
     {
       "id": "haseeb-heaven--jev-system-one",
@@ -7041,7 +7242,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/haseeb-heaven/jev-system-one"
+      "source": "https://github.com/haseeb-heaven/jev-system-one",
+      "descriptionFr": "Interface de terminal où OpenAI répond et Jev évalue séparément la pertinence, la fiabilité et la qualité."
     },
     {
       "id": "gaurav-gosain--jev-go",
@@ -7066,7 +7268,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/Gaurav-Gosain/jev-go"
+      "source": "https://github.com/Gaurav-Gosain/jev-go",
+      "descriptionFr": "Client Go qui renvoie des jugements typés et des probabilités."
     },
     {
       "id": "jamesward--zio-typesafe-ai",
@@ -7091,15 +7294,16 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/jamesward/zio-typesafe-ai"
+      "source": "https://github.com/jamesward/zio-typesafe-ai",
+      "descriptionFr": "Client Scala basé sur ZIO."
     },
     {
       "id": "stumble--jev-go",
       "name": "Stumble/jev-go",
       "url": "https://github.com/Stumble/jev-go",
       "kind": "repo",
-      "description": "Go client for Jev.",
-      "descriptionZh": "适用于 Jev 的 Go 客户端。",
+      "description": "Community Go SDK for TypeSafe Jev / System One, covering typed Choice, Score and Noul questions.",
+      "descriptionZh": "面向 TypeSafe Jev / System One 的社区 Go SDK，涵盖类型化的 Choice、Score 和 Noul 问题。",
       "category": "clients",
       "upstreamSection": "Community clients",
       "language": "Go",
@@ -7116,7 +7320,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/Stumble/jev-go"
+      "source": "https://github.com/Stumble/jev-go",
+      "descriptionFr": "SDK Go communautaire pour TypeSafe Jev / System One, couvrant les questions typées Choice, Score et Noul."
     },
     {
       "id": "nshkrdotcom--typesafe-sdk",
@@ -7148,7 +7353,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/nshkrdotcom/typesafe_sdk"
+      "source": "https://github.com/nshkrdotcom/typesafe_sdk",
+      "descriptionFr": "Port Elixir du SDK IA TypeScript avec un fournisseur TypeSafe."
     },
     {
       "id": "bestagentkits--jev-skillful",
@@ -7180,7 +7386,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/bestagentkits/jev-skillful"
+      "source": "https://github.com/bestagentkits/jev-skillful",
+      "descriptionFr": "Routeur par prompt couvrant les skills, les serveurs MCP, les agents et les commandes, qui mesure si l'injection a été utile."
     },
     {
       "id": "noplan-inc--limpet",
@@ -7211,7 +7418,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/noplan-inc/limpet"
+      "source": "https://github.com/noplan-inc/limpet",
+      "descriptionFr": "Hook Stop qui empêche l'agent de s'arrêter trop tôt, évalué selon des règles en langage naturel."
     },
     {
       "id": "suenot--codex-jev-router",
@@ -7236,7 +7444,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/suenot/codex-jev-router"
+      "source": "https://github.com/suenot/codex-jev-router",
+      "descriptionFr": "Utilise Jev pour sélectionner le modèle et l'effort de raisonnement des sous-agents Codex, avec des seuils de confiance et un repli Sol."
     },
     {
       "id": "cephalization--jev-triage",
@@ -7261,7 +7470,8 @@
         "voice or realtime decisions"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/cephalization/jev-triage"
+      "source": "https://github.com/cephalization/jev-triage",
+      "descriptionFr": "Récupère de grands dépôts et trie leurs issues avec des questions Jev typées."
     },
     {
       "id": "kylemclaren--jevpdf",
@@ -7289,7 +7499,8 @@
         "score or rank candidates in a pipeline"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/kylemclaren/jevpdf"
+      "source": "https://github.com/kylemclaren/jevpdf",
+      "descriptionFr": "Recherche dans un PDF par le sens dans le navigateur : pdf.js extrait les lignes localement, Jev répond un Noul par ligne par lots de 16, et les lignes correspondantes s'illuminent page par page, classées par probabilité."
     },
     {
       "id": "query-farm--vgi-typesafe",
@@ -7321,7 +7532,8 @@
         "label data or build a dataset"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/Query-farm/vgi-typesafe"
+      "source": "https://github.com/Query-farm/vgi-typesafe",
+      "descriptionFr": "Worker DuckDB qui expose choice, noul et score comme fonctions table utilisables en jointure latérale en SQL."
     },
     {
       "id": "chris-wozniczek--jev-voice-control",
@@ -7353,7 +7565,8 @@
         "gate or approve tool calls before they run"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/chris-wozniczek/jev-voice-control"
+      "source": "https://github.com/chris-wozniczek/jev-voice-control",
+      "descriptionFr": "Application Swift pour barre de menus qui transforme les commandes vocales en décisions typées Jev et en actions macOS."
     },
     {
       "id": "markjaquith--typesafe-ai-playground",
@@ -7378,7 +7591,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/markjaquith/typesafe-ai-playground"
+      "source": "https://github.com/markjaquith/typesafe-ai-playground",
+      "descriptionFr": "Playground CLI en Rust pour des expériences autour de Jev."
     },
     {
       "id": "replynodes--jev-web-analyzer",
@@ -7410,7 +7624,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-20",
-      "source": "https://github.com/replynodes/jev-web-analyzer"
+      "source": "https://github.com/replynodes/jev-web-analyzer",
+      "descriptionFr": "Convertit une landing page SaaS en Markdown et pose à Jev dix questions Choice bornées sur ce que comprend un visiteur qui découvre, présenté comme une analyse pour fondateurs."
     },
     {
       "id": "y0usaf--typesafe-cli",
@@ -7435,15 +7650,16 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/y0usaf/typesafe-cli"
+      "source": "https://github.com/y0usaf/typesafe-cli",
+      "descriptionFr": "Réponses Noul, choice et score sous forme de nombres depuis le shell."
     },
     {
       "id": "alterhq--typesafe-sdk-swift",
       "name": "alterhq/typesafe-sdk-swift",
       "url": "https://github.com/alterhq/typesafe-sdk-swift",
       "kind": "repo",
-      "description": "Swift client.",
-      "descriptionZh": "Swift 客户端。",
+      "description": "Unofficial Swift SDK for the TypeSafe AI API, wrapping typed questions and answers in Swift types.",
+      "descriptionZh": "非官方 TypeSafe AI API Swift SDK，将类型化问题和答案封装为 Swift 类型。",
       "category": "clients",
       "upstreamSection": "Community clients",
       "language": "Swift",
@@ -7460,7 +7676,8 @@
         "control a phone or mobile app"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/alterhq/typesafe-sdk-swift"
+      "source": "https://github.com/alterhq/typesafe-sdk-swift",
+      "descriptionFr": "SDK Swift non officiel pour l'API TypeSafe AI, encapsulant les questions et réponses typées dans des types Swift."
     },
     {
       "id": "legacybridge-tech--pi-typesafe-jev",
@@ -7485,7 +7702,8 @@
         "classify support tickets or messages"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/legacybridge-tech/pi-typesafe-jev"
+      "source": "https://github.com/legacybridge-tech/pi-typesafe-jev",
+      "descriptionFr": "Extension Pi exposant les jugements Jev sous forme de cinq outils Pi."
     },
     {
       "id": "byk--jev-mcp",
@@ -7510,7 +7728,8 @@
         "classify support tickets or messages"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/BYK/jev-mcp"
+      "source": "https://github.com/BYK/jev-mcp",
+      "descriptionFr": "Serveur MCP axé sur l'évaluation : prototyper une question, l'appliquer à de nombreux éléments, puis mesurer les variantes contre des exemples étiquetés avec un balayage de seuil."
     },
     {
       "id": "ramneet-singh--jevopt",
@@ -7535,7 +7754,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/Ramneet-Singh/jevopt"
+      "source": "https://github.com/Ramneet-Singh/jevopt",
+      "descriptionFr": "Pilote de compilateur C/C++ qui demande à Jev s'il faut inliner chaque site d'appel discrétionnaire, à partir de l'IR LLVM et du source d'origine."
     },
     {
       "id": "iamvatsalpatel--tiershift",
@@ -7567,7 +7787,8 @@
         "monitor or observe Jev usage and cost"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/iamvatsalpatel/tiershift"
+      "source": "https://github.com/iamvatsalpatel/tiershift",
+      "descriptionFr": "Bascule chaque appel LLM vers le modèle le moins cher capable de le traiter, politique en YAML, décision en environ 180 ms."
     },
     {
       "id": "mgaitan--sqlite-jev",
@@ -7592,7 +7813,8 @@
         "classify support tickets or messages"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/mgaitan/sqlite-jev"
+      "source": "https://github.com/mgaitan/sqlite-jev",
+      "descriptionFr": "Ajoute les jugements Jev Noul, Choice et Score à SQLite via une extension C chargeable et un wrapper Python, avec fonctions scalaires et requêtes groupées sur tables virtuelles."
     },
     {
       "id": "caiovicentino--jev-shield",
@@ -7623,7 +7845,8 @@
         "route requests through a gateway or proxy"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/caiovicentino/jev-shield"
+      "source": "https://github.com/caiovicentino/jev-shield",
+      "descriptionFr": "Pare-feu MCP sémantique qui filtre chaque appel d'outil, résultat et description ; annonce 94 % de rappel de blocage à environ 0,00002 $ par contrôle."
     },
     {
       "id": "noelzappy--tripwire",
@@ -7654,7 +7877,8 @@
         "moderate content or detect abuse"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/noelzappy/tripwire"
+      "source": "https://github.com/noelzappy/tripwire",
+      "descriptionFr": "Middleware et proxy pour AI SDK qui exécute sept contrôles Jev sur chaque réponse LLM avant qu'elle ne parvienne à l'utilisateur ; aucun chiffre de précision pour l'instant, et il l'indique clairement."
     },
     {
       "id": "hellogumbo--should-ai-kill-us-all",
@@ -7679,7 +7903,8 @@
         "call Jev from the command line"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/hellogumbo/should-ai-kill-us-all"
+      "source": "https://github.com/hellogumbo/should-ai-kill-us-all",
+      "descriptionFr": "Pose la question à Jev toutes les dix minutes en s'appuyant sur les titres d'actualité réels."
     },
     {
       "id": "vishxrad--clashroyale-jev",
@@ -7704,7 +7929,8 @@
         "learn how Jev works"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/vishxrad/clashroyale-jev"
+      "source": "https://github.com/vishxrad/clashroyale-jev",
+      "descriptionFr": "Joue à Clash Royale avec Jev qui choisit les cartes et les placements à partir de la vision du champ de bataille Qwen et de la reconnaissance locale de la main et de l'élixir par OpenCV."
     },
     {
       "id": "gaurav-gosain--jev-sec-bench",
@@ -7729,7 +7955,8 @@
         "moderate content or detect abuse"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/Gaurav-Gosain/jev-sec-bench"
+      "source": "https://github.com/Gaurav-Gosain/jev-sec-bench",
+      "descriptionFr": "Benchmarks aveugles pour l'injection de prompts et la détection de code vulnérable."
     },
     {
       "id": "tokentrim--jev-agent-failure-benchmark",
@@ -7754,7 +7981,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/TokenTrim/jev-agent-failure-benchmark"
+      "source": "https://github.com/TokenTrim/jev-agent-failure-benchmark",
+      "descriptionFr": "Jev face à un LLM puissant sur le benchmark d'attribution des échecs d'agents Who and When."
     },
     {
       "id": "rinnecoder--jev-behavior-study",
@@ -7779,7 +8007,8 @@
         "learn how Jev works"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/RINNECODER/jev-behavior-study"
+      "source": "https://github.com/RINNECODER/jev-behavior-study",
+      "descriptionFr": "Expériences contrôlées de prompts sur jev-1.13.0, résultats bruts et vérification hors ligne."
     },
     {
       "id": "chenmingtang830--jevarena",
@@ -7810,7 +8039,8 @@
         "monitor or observe Jev usage and cost"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/chenmingtang830/jevarena"
+      "source": "https://github.com/chenmingtang830/jevarena",
+      "descriptionFr": "Arène hébergée qui oppose Jev à un juge adverse que vous connectez et recueille votre vote avant de révéler qui était qui, avec latence, provenance des coûts et confiance autodéclarée ; un vote enregistre une préférence, pas une exactitude vérifiée."
     },
     {
       "id": "jtsang4--jev-cli",
@@ -7840,7 +8070,8 @@
         "score or rank candidates in a pipeline"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/jtsang4/jev-cli"
+      "source": "https://github.com/jtsang4/jev-cli",
+      "descriptionFr": "Questions typées en entrée, réponses JSON structurées en sortie."
     },
     {
       "id": "zhirschtritt--typesafe-go",
@@ -7871,7 +8102,8 @@
         "pick which skill or prompt to load"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/zhirschtritt/typesafe-go"
+      "source": "https://github.com/zhirschtritt/typesafe-go",
+      "descriptionFr": "SDK Go idiomatique pour l'API TypeSafe."
     },
     {
       "id": "butochnikov--laravel-typesafe-jev",
@@ -7896,15 +8128,16 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/Butochnikov/laravel-typesafe-jev"
+      "source": "https://github.com/Butochnikov/laravel-typesafe-jev",
+      "descriptionFr": "Intégration Laravel avec réponses typées, requêtes asynchrones et doublures de test."
     },
     {
       "id": "hawxy--typesafeai-net",
       "name": "Hawxy/TypeSafeAI.Net",
       "url": "https://github.com/Hawxy/TypeSafeAI.Net",
       "kind": "repo",
-      "description": ".NET SDK.",
-      "descriptionZh": ".NET SDK。",
+      "description": "Unofficial .NET SDK for the TypeSafe AI platform, usable from any .NET application.",
+      "descriptionZh": "非官方 TypeSafe AI 平台 .NET SDK，可用于任何 .NET 应用。",
       "category": "clients",
       "upstreamSection": "Community clients",
       "language": "C#",
@@ -7925,7 +8158,8 @@
         "score or rank candidates in a pipeline"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/Hawxy/TypeSafeAI.Net"
+      "source": "https://github.com/Hawxy/TypeSafeAI.Net",
+      "descriptionFr": "SDK .NET non officiel pour la plateforme TypeSafe AI, utilisable depuis toute application .NET."
     },
     {
       "id": "mateonunez--jod",
@@ -7955,7 +8189,8 @@
         "extract structured fields from text"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/mateonunez/jod"
+      "source": "https://github.com/mateonunez/jod",
+      "descriptionFr": "Schémas de style Zod sur Jev : valider l'état localement, puis projeter des réponses typées."
     },
     {
       "id": "genierobot--typesafe-ai-rails",
@@ -7980,7 +8215,8 @@
         "score or rank candidates in a pipeline"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/GenieRobot/typesafe-ai-rails"
+      "source": "https://github.com/GenieRobot/typesafe-ai-rails",
+      "descriptionFr": "Intégration Rails basée sur le gem Ruby communautaire."
     },
     {
       "id": "steven-shoemaker--hunch",
@@ -8011,7 +8247,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/steven-shoemaker/hunch"
+      "source": "https://github.com/steven-shoemaker/hunch",
+      "descriptionFr": "Transforme les questions Choice, Score et Noul en fonctions Python sur des listes et des DataFrames, avec déduplication, mise en cache, escalade des lignes incertaines vers un LLM tenu aux mêmes étiquettes, et un portage TypeScript sur npm sous le nom hunch-jev."
     },
     {
       "id": "samtay32--jev-system-architect",
@@ -8036,7 +8273,8 @@
         "score or rank candidates in a pipeline"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/samtay32/jev-system-architect"
+      "source": "https://github.com/samtay32/jev-system-architect",
+      "descriptionFr": "Repère le jugement flou dans un système et le transforme en petites primitives Choice, Score et Noul."
     },
     {
       "id": "xinwang-nwpu--jev-mobile",
@@ -8064,7 +8302,8 @@
         "drive a browser or GUI with an agent"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/xinwang-nwpu/jev-mobile"
+      "source": "https://github.com/xinwang-nwpu/jev-mobile",
+      "descriptionFr": "Automatisation Android où une seule requête Jev choisit à la fois l'action et l'élément cible dans l'arbre d'accessibilité, exécutée via ADB."
     },
     {
       "id": "allebee--pytest-jev",
@@ -8096,7 +8335,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/allebee/pytest-jev"
+      "source": "https://github.com/allebee/pytest-jev",
+      "descriptionFr": "Plugin Pytest qui demande à Jev si des affirmations en anglais courant sur le texte d'un test sont valides, le tout en une seule requête, et fait échouer le test avec la probabilité de chaque affirmation sauf si Jev est sûr à au moins 80 %."
     },
     {
       "id": "firassx914--janus",
@@ -8128,7 +8368,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/FirasSX914/Janus"
+      "source": "https://github.com/FirasSX914/Janus",
+      "descriptionFr": "Mesure sur vos données quand Jev surpasse les autres modèles, puis route en conséquence."
     },
     {
       "id": "opaielsheikh--typesafe-migration-guard",
@@ -8153,7 +8394,8 @@
         "gate or approve tool calls before they run"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/opaielsheikh/typesafe-migration-guard"
+      "source": "https://github.com/opaielsheikh/typesafe-migration-guard",
+      "descriptionFr": "Examine les migrations de base de données pour en vérifier la sécurité avant leur exécution."
     },
     {
       "id": "ddfeyes--jev-mode",
@@ -8185,7 +8427,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/ddfeyes/jev-mode"
+      "source": "https://github.com/ddfeyes/jev-mode",
+      "descriptionFr": "Triage de tickets et étiquetage de fichiers sur un modèle à jugement typé ; rapporte 78 % de tokens en moins et une précision de 96,1 % contre une référence à 93,7 %."
     },
     {
       "id": "teyhouse--jev-secret-detection",
@@ -8210,7 +8453,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/teyhouse/jev-secret-detection"
+      "source": "https://github.com/teyhouse/jev-secret-detection",
+      "descriptionFr": "Mesure la capacité de Jev à repérer les vrais identifiants dans des extraits de fichiers, avec les cas difficiles en forme de configuration évalués séparément."
     },
     {
       "id": "santos-sanz--jev-audio-beeper",
@@ -8235,7 +8479,8 @@
         "voice or realtime decisions"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/santos-sanz/jev-audio-beeper"
+      "source": "https://github.com/santos-sanz/jev-audio-beeper",
+      "descriptionFr": "Preuve de concept de censure audio à faible latence : les décisions typées de Jev pilotent ffmpeg."
     },
     {
       "id": "sriganesh--jevibe-check",
@@ -8265,7 +8510,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/sriganesh/jevibe-check"
+      "source": "https://github.com/sriganesh/jevibe-check",
+      "descriptionFr": "Étiquettes de ton en direct pour les publications et les brouillons Bluesky."
     },
     {
       "id": "phureewat29--jev-got",
@@ -8290,7 +8536,8 @@
         "extract structured fields from text"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/phureewat29/jev-got"
+      "source": "https://github.com/phureewat29/jev-got",
+      "descriptionFr": "Jeu de rôle Game of Thrones où un modèle narratif écrit chaque scène et Jev répond à cinq questions typées qui pilotent l'en-tête, la bande-son, l'illustration et le prompt suivant."
     },
     {
       "id": "hazlema--jev-riffs",
@@ -8315,7 +8562,8 @@
         "review code or pull requests"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/hazlema/jev-riffs"
+      "source": "https://github.com/hazlema/jev-riffs",
+      "descriptionFr": "Extrait les motifs répétitifs d'une mélodie MIDI, évalue chaque candidat en un seul appel Jev groupé, et surligne et joue le gagnant sur un piano roll ; sur un Lac des cygnes orchestral, le motif principal est le thème du cygne."
     },
     {
       "id": "phyous--tsai-civ2",
@@ -8340,7 +8588,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/phyous/tsai-civ2"
+      "source": "https://github.com/phyous/tsai-civ2",
+      "descriptionFr": "Civilization II dans un navigateur, harnais de jeu complet, probabilités d'action en direct."
     },
     {
       "id": "siroccomask--snake-jev",
@@ -8365,7 +8614,8 @@
         "build a game or simulation on Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/siroccomask/snake-jev"
+      "source": "https://github.com/siroccomask/snake-jev",
+      "descriptionFr": "Snake contrôlé par des évaluations Jev parallèles, un appel API par tick."
     },
     {
       "id": "bitnovus--jev-spam-eval",
@@ -8390,7 +8640,8 @@
         "moderate content or detect abuse"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/bitnovus/jev-spam-eval"
+      "source": "https://github.com/bitnovus/jev-spam-eval",
+      "descriptionFr": "Filtrage anti-spam zero-shot avec des questions Noul face à des références TF-IDF."
     },
     {
       "id": "pistachioaihq--jev-synergy-screening",
@@ -8415,7 +8666,8 @@
         "score or rank candidates in a pipeline"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/PistachioAIHQ/jev-synergy-screening"
+      "source": "https://github.com/PistachioAIHQ/jev-synergy-screening",
+      "descriptionFr": "Questions Choice et Noul évaluées par rapport aux étiquettes de référence ASReview SYNERGY pour la présélection des résumés."
     },
     {
       "id": "jgridifier--jev-research-eval",
@@ -8440,7 +8692,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/jgridifier/jev-research-eval"
+      "source": "https://github.com/jgridifier/jev-research-eval",
+      "descriptionFr": "Harnais reproductible sur un commit jev-ultrafast épinglé, avec suites de référence et de charge."
     },
     {
       "id": "abovecolin--jevclient",
@@ -8472,7 +8725,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/AboveColin/jevclient"
+      "source": "https://github.com/AboveColin/jevclient",
+      "descriptionFr": "Client Python asynchrone, probabilités et choix en sortie, aucun texte à analyser."
     },
     {
       "id": "butochnikov--typesafe-sdk-php",
@@ -8480,7 +8734,7 @@
       "url": "https://github.com/Butochnikov/typesafe-sdk-php",
       "kind": "repo",
       "description": "PHP client with sync calls, Guzzle promises, and PSR-3 logging.",
-      "descriptionZh": null,
+      "descriptionZh": "支持同步调用、Guzzle promises 和 PSR-3 日志记录的 PHP 客户端。",
       "category": "clients",
       "upstreamSection": "Community clients",
       "language": "PHP",
@@ -8497,7 +8751,8 @@
         "label data or build a dataset"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/Butochnikov/typesafe-sdk-php"
+      "source": "https://github.com/Butochnikov/typesafe-sdk-php",
+      "descriptionFr": "Client PHP avec appels synchrones, promesses Guzzle et journalisation PSR-3."
     },
     {
       "id": "metask-ai--metask-jev",
@@ -8505,7 +8760,7 @@
       "url": "https://github.com/metask-ai/metask-jev",
       "kind": "repo",
       "description": "Open-weight typed-decision models on Qwen3.5 with calibrated per-option probabilities in one forward pass; reports 80.1 percent on JevBench against 75.3 for Jev 1.13.",
-      "descriptionZh": null,
+      "descriptionZh": "基于 Qwen3.5 的开放权重类型化决策模型，单次前向传播即可给出经校准的每选项概率，在 JevBench 上得分为 80.1%，超过 Jev 1.13 的 75.3%。",
       "category": "open-models",
       "upstreamSection": "Open models and replicas",
       "language": "Python",
@@ -8522,7 +8777,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/metask-ai/metask-jev"
+      "source": "https://github.com/metask-ai/metask-jev",
+      "descriptionFr": "Modèles de décision typée à poids ouverts sur Qwen3.5 avec probabilités calibrées par option en une seule passe avant ; 80,1 % sur JevBench contre 75,3 pour Jev 1.13."
     },
     {
       "id": "fatwang2--jev-review-action",
@@ -8530,7 +8786,7 @@
       "url": "https://github.com/fatwang2/jev-review-action",
       "kind": "repo",
       "description": "GitHub Action for submission review and PR classification with Jev, no text-generation model in the loop.",
-      "descriptionZh": null,
+      "descriptionZh": "使用 Jev 进行投稿评审和 PR 分类的 GitHub Action，流程中不含文本生成模型。",
       "category": "code-review",
       "upstreamSection": "Code review and quality",
       "language": "JavaScript",
@@ -8554,7 +8810,8 @@
         "route requests through a gateway or proxy"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/fatwang2/jev-review-action"
+      "source": "https://github.com/fatwang2/jev-review-action",
+      "descriptionFr": "GitHub Action pour la révision des soumissions et la classification des PR avec Jev, sans modèle de génération de texte dans la boucle."
     },
     {
       "id": "asfarsadewa--human-compiler",
@@ -8562,7 +8819,7 @@
       "url": "https://github.com/asfarsadewa/human-compiler",
       "kind": "repo",
       "description": "Paste text, get diagnostics, like a compiler for prose.",
-      "descriptionZh": null,
+      "descriptionZh": "粘贴文本即可获得诊断，如同面向散文的编译器。",
       "category": "safety",
       "upstreamSection": "Safety, moderation and verification",
       "language": "TypeScript",
@@ -8579,7 +8836,8 @@
         "moderate content or detect abuse"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/asfarsadewa/human-compiler"
+      "source": "https://github.com/asfarsadewa/human-compiler",
+      "descriptionFr": "Collez du texte, obtenez des diagnostics, comme un compilateur pour la prose."
     },
     {
       "id": "thenewpotato--privacy-facts",
@@ -8587,7 +8845,7 @@
       "url": "https://github.com/thenewpotato/privacy-facts",
       "kind": "repo",
       "description": "Turns privacy policies into nutrition-style labels with plain-language answers, Jev confidence scores, and suggested source clauses.",
-      "descriptionZh": null,
+      "descriptionZh": "将隐私政策转换为营养标签式标识，提供通俗易懂的答案、Jev 置信度分数和建议的原文条款。",
       "category": "apps",
       "upstreamSection": "Applications and extensions",
       "language": "JavaScript",
@@ -8608,7 +8866,8 @@
         "extract structured fields from text"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/thenewpotato/privacy-facts"
+      "source": "https://github.com/thenewpotato/privacy-facts",
+      "descriptionFr": "Transforme les politiques de confidentialité en étiquettes de type nutritionnel avec des réponses en langage clair, des scores de confiance Jev et des clauses sources suggérées."
     },
     {
       "id": "hacksing--jev-report",
@@ -8616,7 +8875,7 @@
       "url": "https://github.com/HackSing/jev-report",
       "kind": "repo",
       "description": "Independent Chinese research report: 52 pages, 50 reproducible tests, 143 traceable data rows.",
-      "descriptionZh": null,
+      "descriptionZh": "独立中文研究报告，共 52 页，含 50 项可复现测试和 143 行可追溯数据。",
       "category": "benchmarks",
       "upstreamSection": "Benchmarks, evals and calibration",
       "language": "Python",
@@ -8639,7 +8898,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/HackSing/jev-report"
+      "source": "https://github.com/HackSing/jev-report",
+      "descriptionFr": "Rapport de recherche chinois indépendant : 52 pages, 50 tests reproductibles, 143 lignes de données traçables."
     },
     {
       "id": "hegargarcia--jev-playground",
@@ -8647,7 +8907,7 @@
       "url": "https://github.com/hegargarcia/jev-playground",
       "kind": "repo",
       "description": "Jev against other models in games with explicit states, legal actions, and a measurable outcome.",
-      "descriptionZh": null,
+      "descriptionZh": "让 Jev 与其他模型在具有明确状态、合法动作和可衡量结果的游戏中对决。",
       "category": "benchmarks",
       "upstreamSection": "Benchmarks, evals and calibration",
       "language": "TypeScript",
@@ -8664,7 +8924,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/hegargarcia/jev-playground"
+      "source": "https://github.com/hegargarcia/jev-playground",
+      "descriptionFr": "Jev face à d'autres modèles dans des jeux aux états explicites, aux actions légales et au résultat mesurable."
     },
     {
       "id": "wustep--jev-playground",
@@ -8672,7 +8933,7 @@
       "url": "https://github.com/wustep/jev-playground",
       "kind": "repo",
       "description": "Can a System One model steer a music composition through typed classify, score, and pick decisions alone.",
-      "descriptionZh": null,
+      "descriptionZh": "验证 System One 模型能否仅通过类型化的 classify、score 和 pick 决策来主导音乐创作。",
       "category": "demos",
       "upstreamSection": "Playgrounds and demos",
       "language": "TypeScript",
@@ -8689,7 +8950,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/wustep/jev-playground"
+      "source": "https://github.com/wustep/jev-playground",
+      "descriptionFr": "Détermine si un modèle System One peut piloter une composition musicale uniquement via des décisions typées classify, score et pick."
     },
     {
       "id": "jexp--watfile",
@@ -8697,7 +8959,7 @@
       "url": "https://github.com/jexp/watfile",
       "kind": "repo",
       "description": "Sorts PDFs and text files into category folders, one Jev Choice per document, with a local Laya backend as the alternative.",
-      "descriptionZh": null,
+      "descriptionZh": "将 PDF 和文本文件归类到分类文件夹，每份文档调用一次 Jev Choice，并以本地 Laya 后端作为替代方案。",
       "category": "cli",
       "upstreamSection": "Command line",
       "language": "Python",
@@ -8721,7 +8983,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/jexp/watfile"
+      "source": "https://github.com/jexp/watfile",
+      "descriptionFr": "Trie les PDF et les fichiers texte dans des dossiers de catégories, à raison d'un Jev Choice par document, avec un backend Laya local comme alternative."
     },
     {
       "id": "abdelstark--s1-rs",
@@ -8729,7 +8992,7 @@
       "url": "https://github.com/AbdelStark/s1-rs",
       "kind": "repo",
       "description": "Turns Rust enums and structs into Choice, Score, and Noul questions with compile-time-checked, confidence-gated answers.",
-      "descriptionZh": null,
+      "descriptionZh": "将 Rust 枚举和结构体转换为 Choice、Score 和 Noul 问题，并提供经编译时检查、按置信度门控的答案。",
       "category": "clients",
       "upstreamSection": "Community clients",
       "language": "Rust",
@@ -8750,7 +9013,8 @@
         "score or rank candidates in a pipeline"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/AbdelStark/s1-rs"
+      "source": "https://github.com/AbdelStark/s1-rs",
+      "descriptionFr": "Transforme les enums et structs Rust en questions Choice, Score et Noul avec des réponses vérifiées à la compilation et conditionnées par la confiance."
     },
     {
       "id": "abdelstark--typesafe-rs",
@@ -8758,7 +9022,7 @@
       "url": "https://github.com/AbdelStark/typesafe-rs",
       "kind": "repo",
       "description": "Latency-first Rust client, on crates.io.",
-      "descriptionZh": null,
+      "descriptionZh": "以低延迟为先的 Rust 客户端，已发布于 crates.io。",
       "category": "clients",
       "upstreamSection": "Community clients",
       "language": "Rust",
@@ -8778,7 +9042,8 @@
         "extract structured fields from text"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/AbdelStark/typesafe-rs"
+      "source": "https://github.com/AbdelStark/typesafe-rs",
+      "descriptionFr": "Client Rust axé sur la latence, disponible sur crates.io."
     },
     {
       "id": "mttrbrts--jev-folio-recursive-classifier",
@@ -8786,7 +9051,7 @@
       "url": "https://github.com/mttrbrts/jev-folio-recursive-classifier",
       "kind": "repo",
       "description": "Classifies OCR'd legal agreements through the FOLIO Document Types ontology with recursive Jev Choices, beam search, confidence-gated leaf stopping, and context-length benchmarking.",
-      "descriptionZh": null,
+      "descriptionZh": "通过 FOLIO Document Types 本体对经 OCR 处理的法律协议进行分类，采用递归 Jev Choices、beam search、置信度门控的叶节点停止和上下文长度基准测试。",
       "category": "search-rag",
       "upstreamSection": "Search, reranking and RAG",
       "language": "Python",
@@ -8803,7 +9068,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-20",
-      "source": "https://github.com/mttrbrts/jev-folio-recursive-classifier"
+      "source": "https://github.com/mttrbrts/jev-folio-recursive-classifier",
+      "descriptionFr": "Classifie les accords juridiques océrisés via l'ontologie FOLIO Document Types avec des Jev Choices récursifs, beam search, arrêt aux feuilles conditionné par la confiance et benchmarking de la longueur de contexte."
     },
     {
       "id": "dansidanutz--fake-real-jev",
@@ -8811,7 +9077,7 @@
       "url": "https://github.com/DansiDanutz/fake-real-jev",
       "kind": "repo",
       "description": "Checks claims against cited excerpts with Jev in an English and Romanian fact-checking site, with a public integration example and a closed-source full application.",
-      "descriptionZh": null,
+      "descriptionZh": "在一个英文与罗马尼亚文事实核查网站中用 Jev 对照引用摘录核查主张，并提供公开集成示例和闭源完整应用。",
       "category": "safety",
       "upstreamSection": "Safety, moderation and verification",
       "language": "JavaScript",
@@ -8834,7 +9100,8 @@
         "moderate content or detect abuse"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/DansiDanutz/fake-real-jev"
+      "source": "https://github.com/DansiDanutz/fake-real-jev",
+      "descriptionFr": "Vérifie les affirmations par rapport aux extraits cités avec Jev dans un site de fact-checking en anglais et en roumain, avec un exemple d'intégration public et une application complète à code source fermé."
     },
     {
       "id": "0xshin0221--openpoke-meets-jev",
@@ -8842,7 +9109,7 @@
       "url": "https://github.com/0xShin0221/openpoke-meets-jev",
       "kind": "repo",
       "description": "OpenPoke fork that moves email screening, a tool-call guardrail, and search reranking onto Jev, with an A/B against the Sonnet call it replaced and an adversarial run on the injection gate.",
-      "descriptionZh": null,
+      "descriptionZh": "将邮件筛选、tool-call guardrail 和搜索重排迁移到 Jev 的 OpenPoke fork，并附带与其替代的 Sonnet 调用的 A/B 对比以及针对注入门控的对抗性运行。",
       "category": "apps",
       "upstreamSection": "Applications and extensions",
       "language": "Python",
@@ -8859,15 +9126,16 @@
         "detect prompt injection or risky commands"
       ],
       "firstSeen": "2026-09-20",
-      "source": "https://github.com/0xShin0221/openpoke-meets-jev"
+      "source": "https://github.com/0xShin0221/openpoke-meets-jev",
+      "descriptionFr": "Fork OpenPoke qui migre le filtrage des e-mails, un garde-fou de tool-call et le reranking de recherche vers Jev, avec un A/B contre l'appel Sonnet remplacé et un run adverse sur le filtre anti-injection."
     },
     {
       "id": "hazlema--jev-connect4",
       "name": "hazlema/jev-connect4",
       "url": "https://github.com/hazlema/jev-connect4",
       "kind": "repo",
-      "description": "Connect Four with nine swappable query strategies for the same model, every answer graded against engine ground truth in a live inspector, and a match runner that plays 100 games a minute: representation changes alone moved the win rate 52 points.",
-      "descriptionZh": null,
+      "description": "Connect Four with nine swappable query strategies for one model, every answer graded against engine ground truth in a live inspector.",
+      "descriptionZh": "采用九种可切换查询策略的 Connect Four 单模型实现，每个答案都在实时检查器中对照引擎标准答案评分。",
       "category": "games",
       "upstreamSection": "Games, robotics and simulation",
       "language": "TypeScript",
@@ -8884,15 +9152,16 @@
         "monitor or observe Jev usage and cost"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/hazlema/jev-connect4"
+      "source": "https://github.com/hazlema/jev-connect4",
+      "descriptionFr": "Puissance 4 avec neuf stratégies de requête interchangeables pour un seul modèle, chaque réponse évaluée par rapport à la vérité terrain du moteur dans un inspecteur en direct."
     },
     {
       "id": "yodablocks--jev-orderby-bench",
       "name": "yodablocks/jev-orderby-bench",
       "url": "https://github.com/yodablocks/jev-orderby-bench",
       "kind": "repo",
-      "description": "Measures whether ORDER BY over a Jev probability is defensible: pairwise inversion, Score ordinality against a human grade, calibration, and wording invariants under a pre-registered gate; passes on 20 Newsgroups topics, fails four of six conditions on Amazon ESCI product relevance, and shows that a 40-row batched state through a DuckDB extension fails the ranking gate one row per request passes.",
-      "descriptionZh": null,
+      "description": "Measures whether ORDER BY over a Jev probability is defensible: pairwise inversion, ordinality against a human grade, calibration and wording invariants under a pre-registered gate.",
+      "descriptionZh": "衡量对 Jev 概率使用 ORDER BY 是否成立：在预注册门控下测试 pairwise inversion、Score 序数性对照人工评分、calibration 和措辞不变性，在 20 Newsgroups 主题上通过，在 Amazon ESCI 商品相关性上六项条件未通过四项，并表明通过 DuckDB 扩展的 40 行批量 state 未通过排名门控而逐请求单行则通过。",
       "category": "benchmarks",
       "upstreamSection": "Benchmarks, evals and calibration",
       "language": "Python",
@@ -8916,7 +9185,8 @@
         "score or rank candidates in a pipeline"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/yodablocks/jev-orderby-bench"
+      "source": "https://github.com/yodablocks/jev-orderby-bench",
+      "descriptionFr": "Mesure si un ORDER BY sur une probabilité Jev est défendable : inversion par paire, ordinalité face à une note humaine, calibration et invariants de formulation sous un seuil pré-enregistré."
     },
     {
       "id": "4esv--jev-eval",
@@ -8924,7 +9194,7 @@
       "url": "https://github.com/4esv/jev-eval",
       "kind": "repo",
       "description": "Jev against GPT-5.6 Terra on three labeled tasks: equal on the easy ones, 6.7 points lower on 77-way routing, 5 times faster, 41 to 50 times cheaper.",
-      "descriptionZh": null,
+      "descriptionZh": "在三个带标签任务上将 Jev 与 GPT-5.6 Terra 对比：在简单任务上持平，在 77 路路由上低 6.7 分，快 5 倍，便宜 41 至 50 倍。",
       "category": "benchmarks",
       "upstreamSection": "Benchmarks, evals and calibration",
       "language": "Python",
@@ -8941,7 +9211,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/4esv/jev-eval"
+      "source": "https://github.com/4esv/jev-eval",
+      "descriptionFr": "Jev face à GPT-5.6 Terra sur trois tâches étiquetées : à égalité sur les plus faciles, 6,7 points en dessous sur le routage à 77 choix, 5 fois plus rapide, 41 à 50 fois moins cher."
     },
     {
       "id": "themsquared--jev-benchmark",
@@ -8949,7 +9220,7 @@
       "url": "https://github.com/themsquared/jev-benchmark",
       "kind": "repo",
       "description": "Tool-call risk classification with the run-to-run variance reported; every wrong answer came with hedged confidence.",
-      "descriptionZh": null,
+      "descriptionZh": "进行 tool-call 风险分类并报告逐次运行方差，每个错误答案都带有保守的置信度。",
       "category": "benchmarks",
       "upstreamSection": "Benchmarks, evals and calibration",
       "language": "Python",
@@ -8973,7 +9244,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-19",
-      "source": "https://github.com/themsquared/jev-benchmark"
+      "source": "https://github.com/themsquared/jev-benchmark",
+      "descriptionFr": "Classification des risques d'appels d'outils avec la variance entre les exécutions rapportée ; chaque mauvaise réponse s'accompagnait d'une confiance nuancée."
     },
     {
       "id": "willprout--magic-8-ball",
@@ -8981,7 +9253,7 @@
       "url": "https://github.com/willprout/magic-8-ball",
       "kind": "repo",
       "description": "Ask a question, one choice over twenty answers picks the reply and shows the click-to-answer latency; [live demo](https://willprout.github.io/magic-8-ball/).",
-      "descriptionZh": null,
+      "descriptionZh": "提出一个问题，一个覆盖二十个答案的 choice 将选择回复并显示从点击到回答的延迟；[live demo](https://willprout.github.io/magic-8-ball/)。",
       "category": "demos",
       "upstreamSection": "Playgrounds and demos",
       "language": "TypeScript",
@@ -8998,7 +9270,8 @@
         "compare Jev with an LLM"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/willprout/magic-8-ball"
+      "source": "https://github.com/willprout/magic-8-ball",
+      "descriptionFr": "Posez une question, un choix parmi vingt réponses sélectionne la réponse et affiche la latence entre le clic et la réponse ; [démo en direct](https://willprout.github.io/magic-8-ball/)."
     },
     {
       "id": "bud-ro--jev-demos",
@@ -9006,7 +9279,7 @@
       "url": "https://github.com/bud-ro/jev-demos",
       "kind": "repo",
       "description": "Demos built to test what Jev is good at.",
-      "descriptionZh": null,
+      "descriptionZh": "用于测试 Jev 擅长领域的演示合集。",
       "category": "demos",
       "upstreamSection": "Playgrounds and demos",
       "language": "Dart",
@@ -9023,7 +9296,8 @@
         "pick which skill or prompt to load"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/bud-ro/jev-demos"
+      "source": "https://github.com/bud-ro/jev-demos",
+      "descriptionFr": "Démos conçues pour tester les points forts de Jev."
     },
     {
       "id": "allebee--jevgrep",
@@ -9031,7 +9305,7 @@
       "url": "https://github.com/allebee/jevgrep",
       "kind": "repo",
       "description": "Filters log lines and other text streams by meaning, one Noul per line in micro-batches, streaming from `tail -f` with grep's flags and exit codes.",
-      "descriptionZh": null,
+      "descriptionZh": "按语义过滤日志行和其他文本流，每行一个 Noul，采用微批量处理，支持从 `tail -f` 流式输入，并兼容 grep 的标志和退出码。",
       "category": "cli",
       "upstreamSection": "Command line",
       "language": "Python",
@@ -9055,7 +9329,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/allebee/jevgrep"
+      "source": "https://github.com/allebee/jevgrep",
+      "descriptionFr": "Filtre les lignes de journaux et autres flux de texte par le sens, un Noul par ligne en micro-lots, en streaming depuis `tail -f` avec les options et les codes de sortie de grep."
     },
     {
       "id": "dommonte--n8n-nodes-typesafe-ai",
@@ -9063,7 +9338,7 @@
       "url": "https://github.com/DomMonte/n8n-nodes-typesafe-ai",
       "kind": "repo",
       "description": "n8n community node for yes/no, choice, and score questions.",
-      "descriptionZh": null,
+      "descriptionZh": "用于 yes/no、choice 和 score 问题的 n8n 社区节点。",
       "category": "clients",
       "upstreamSection": "Community clients",
       "language": "TypeScript",
@@ -9080,7 +9355,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/DomMonte/n8n-nodes-typesafe-ai"
+      "source": "https://github.com/DomMonte/n8n-nodes-typesafe-ai",
+      "descriptionFr": "Nœud communautaire n8n pour les questions oui/non, à choix et à score."
     },
     {
       "id": "kunobi-ninja--kunobi-jev",
@@ -9088,7 +9364,7 @@
       "url": "https://github.com/kunobi-ninja/kunobi-jev",
       "kind": "repo",
       "description": "Rust client for the System One API.",
-      "descriptionZh": null,
+      "descriptionZh": "适用于 System One API 的 Rust 客户端。",
       "category": "clients",
       "upstreamSection": "Community clients",
       "language": "Rust",
@@ -9105,7 +9381,8 @@
         "classify support tickets or messages"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://github.com/kunobi-ninja/kunobi-jev"
+      "source": "https://github.com/kunobi-ninja/kunobi-jev",
+      "descriptionFr": "Client Rust pour l'API System One."
     },
     {
       "id": "imanshu03--jev-browser-use",
@@ -9113,7 +9390,7 @@
       "url": "https://github.com/imanshu03/jev-browser-use",
       "kind": "repo",
       "description": "Runs browser tasks from a plain-language instruction over CDP or Vercel's agent-browser, with Jev selecting operations and targets and code checking confidence before it acts.",
-      "descriptionZh": null,
+      "descriptionZh": "通过 CDP 或 Vercel 的 agent-browser，根据自然语言指令执行浏览器任务，由 Jev 选择操作和目标，代码在执行前检查置信度。",
       "category": "browser",
       "upstreamSection": "Browser and computer use",
       "language": "TypeScript",
@@ -9130,7 +9407,8 @@
         "serve Jev over MCP to any agent"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/imanshu03/jev-browser-use"
+      "source": "https://github.com/imanshu03/jev-browser-use",
+      "descriptionFr": "Exécute des tâches de navigation à partir d'une instruction en langage naturel via CDP ou agent-browser de Vercel, avec Jev qui sélectionne les opérations et les cibles et du code qui vérifie la confiance avant d'agir."
     },
     {
       "id": "daviddl9--jev-router",
@@ -9138,7 +9416,7 @@
       "url": "https://github.com/daviddl9/jev-router",
       "kind": "repo",
       "description": "Jev picks the worker tier for each step in OMP and Pi, keeping planning and review on a strong model and bounded work on cheaper ones.",
-      "descriptionZh": null,
+      "descriptionZh": "Jev 为 OMP 和 Pi 中每个步骤选择 worker 层级，将规划和评审保留在强模型上，将范围明确的工作放在更便宜的模型上。",
       "category": "routing",
       "upstreamSection": "Routing and gateways",
       "language": "TypeScript",
@@ -9155,7 +9433,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/daviddl9/jev-router"
+      "source": "https://github.com/daviddl9/jev-router",
+      "descriptionFr": "Jev choisit le niveau de worker pour chaque étape dans OMP et Pi, en gardant la planification et la révision sur un modèle puissant et le travail borné sur des modèles moins chers."
     },
     {
       "id": "liou666--senseek",
@@ -9163,7 +9442,7 @@
       "url": "https://github.com/liou666/senseek",
       "kind": "repo",
       "description": "Browser extension that searches the page you are reading by meaning, in a Ctrl+F style box, with your own key and no backend.",
-      "descriptionZh": null,
+      "descriptionZh": "按语义搜索正在阅读的页面的浏览器扩展，采用 Ctrl+F 风格的搜索框，使用自备密钥，无后端。",
       "category": "search-rag",
       "upstreamSection": "Search, reranking and RAG",
       "language": "JavaScript",
@@ -9180,7 +9459,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/liou666/senseek"
+      "source": "https://github.com/liou666/senseek",
+      "descriptionFr": "Extension de navigateur qui recherche par le sens dans la page en cours de lecture, dans un champ de type Ctrl+F, avec votre propre clé et sans backend."
     },
     {
       "id": "paulgoodchild--skillscheck",
@@ -9188,7 +9468,7 @@
       "url": "https://github.com/paulgoodchild/SkillsCheck",
       "kind": "repo",
       "description": "Sends an agent skill's text to Jev before installation and returns a verdict with category scores, without loading the skill into the agent's context; the submitted text is not redacted for secrets.",
-      "descriptionZh": null,
+      "descriptionZh": "在安装前将 agent skill 的文本发送给 Jev 并返回带分类评分的判定，且不将其加载到 agent 上下文中；提交的文本不会对敏感信息做脱敏处理。",
       "category": "safety",
       "upstreamSection": "Safety, moderation and verification",
       "language": "JavaScript",
@@ -9205,7 +9485,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/paulgoodchild/SkillsCheck"
+      "source": "https://github.com/paulgoodchild/SkillsCheck",
+      "descriptionFr": "Envoie le texte d'une skill d'agent à Jev avant l'installation et retourne un verdict avec des scores par catégorie, sans charger la skill dans le contexte de l'agent ; le texte soumis n'est pas expurgé de ses secrets."
     },
     {
       "id": "htearih--stopspam-jev-bot",
@@ -9213,7 +9494,7 @@
       "url": "https://github.com/hteariH/stopspam-jev-bot",
       "kind": "repo",
       "description": "Telegram bot that removes spam and scam messages from group chats on calibrated-confidence classification.",
-      "descriptionZh": null,
+      "descriptionZh": "基于校准置信度分类，从群聊中移除垃圾和诈骗消息的 Telegram 机器人。",
       "category": "safety",
       "upstreamSection": "Safety, moderation and verification",
       "language": "Python",
@@ -9230,7 +9511,8 @@
         "benchmark or calibrate Jev"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/hteariH/stopspam-jev-bot"
+      "source": "https://github.com/hteariH/stopspam-jev-bot",
+      "descriptionFr": "Bot Telegram qui supprime les spams et les arnaques des chats de groupe grâce à une classification à confiance calibrée."
     },
     {
       "id": "blowxian--jev-fanout-bench",
@@ -9238,7 +9520,7 @@
       "url": "https://github.com/blowxian/jev-fanout-bench",
       "kind": "repo",
       "description": "Measures what a Jev request is billed and how its answers hold up under batching, translation, and rewording, from 3,455 billed requests with public raw logs.",
-      "descriptionZh": null,
+      "descriptionZh": "基于 3,455 个计费请求及公开原始日志，衡量 Jev 请求的计费情况及其答案在批量处理、翻译和改写下的表现。",
       "category": "benchmarks",
       "upstreamSection": "Benchmarks, evals and calibration",
       "language": "Python",
@@ -9262,7 +9544,8 @@
         "monitor or observe Jev usage and cost"
       ],
       "firstSeen": "2026-09-27",
-      "source": "https://github.com/blowxian/jev-fanout-bench"
+      "source": "https://github.com/blowxian/jev-fanout-bench",
+      "descriptionFr": "Mesure la facturation d'une requête Jev et la tenue de ses réponses face au traitement par lots, à la traduction et à la reformulation, à partir de 3 455 requêtes facturées avec journaux bruts publics."
     },
     {
       "id": "rishi-raj-jain--hn-thread-judge",
@@ -9270,7 +9553,7 @@
       "url": "https://github.com/rishi-raj-jain/hn-thread-judge",
       "kind": "repo",
       "description": "Reads the most-discussed Hacker News threads comment by comment with Jev and reduces each one to a single verdict, served live from Postgres.",
-      "descriptionZh": null,
+      "descriptionZh": "使用 Jev 逐条评论读取 Hacker News 上讨论最热的帖子并将其归纳为单一判定，通过 Postgres 实时提供服务。",
       "category": "demos",
       "upstreamSection": "Playgrounds and demos",
       "language": "TypeScript",
@@ -9294,7 +9577,8 @@
         "judge or verify an agent's output"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/rishi-raj-jain/hn-thread-judge"
+      "source": "https://github.com/rishi-raj-jain/hn-thread-judge",
+      "descriptionFr": "Lit les fils Hacker News les plus discutés commentaire par commentaire avec Jev et réduit chacun à un verdict unique, servi en direct depuis Postgres."
     },
     {
       "id": "bariskisir--jevsharp",
@@ -9302,7 +9586,7 @@
       "url": "https://github.com/bariskisir/JevSharp",
       "kind": "repo",
       "description": ".NET 10 SDK for Jev decisions through TypeSafe, OpenRouter, Vercel AI Gateway, and compatible endpoints.",
-      "descriptionZh": null,
+      "descriptionZh": "通过 TypeSafe、OpenRouter、Vercel AI Gateway 及兼容端点进行 Jev 决策的 .NET 10 SDK。",
       "category": "clients",
       "upstreamSection": "Community clients",
       "language": "C#",
@@ -9319,7 +9603,8 @@
         "run Jev on open models without the vendor"
       ],
       "firstSeen": "2026-09-21",
-      "source": "https://github.com/bariskisir/JevSharp"
+      "source": "https://github.com/bariskisir/JevSharp",
+      "descriptionFr": "SDK .NET 10 pour les décisions Jev via TypeSafe, OpenRouter, Vercel AI Gateway et les endpoints compatibles."
     },
     {
       "id": "introduction",
@@ -9340,7 +9625,8 @@
       "pushedAt": null,
       "intents": [],
       "firstSeen": "2026-09-18",
-      "source": "https://docs.typesafe.ai/introduction"
+      "source": "https://docs.typesafe.ai/introduction",
+      "descriptionFr": "Le modèle mental en deux pages : état plus questions typées en entrée, réponses typées avec probabilités en sortie."
     },
     {
       "id": "quick-start",
@@ -9348,7 +9634,7 @@
       "url": "https://docs.typesafe.ai/introduction/quickstart",
       "kind": "resource",
       "description": "First request in Python, TypeScript, or curl.",
-      "descriptionZh": null,
+      "descriptionZh": "使用 Python、TypeScript 或 curl 发起的第一个请求。",
       "category": "start-here",
       "upstreamSection": "Start here",
       "language": null,
@@ -9361,7 +9647,8 @@
       "pushedAt": null,
       "intents": [],
       "firstSeen": "2026-09-18",
-      "source": "https://docs.typesafe.ai/introduction/quickstart"
+      "source": "https://docs.typesafe.ai/introduction/quickstart",
+      "descriptionFr": "Première requête en Python, TypeScript ou curl."
     },
     {
       "id": "primitives",
@@ -9382,7 +9669,8 @@
       "pushedAt": null,
       "intents": [],
       "firstSeen": "2026-09-18",
-      "source": "https://docs.typesafe.ai/primitives"
+      "source": "https://docs.typesafe.ai/primitives",
+      "descriptionFr": "Choice, Score et Noul, et quand utiliser chacun."
     },
     {
       "id": "state",
@@ -9390,7 +9678,7 @@
       "url": "https://docs.typesafe.ai/concepts/state",
       "kind": "resource",
       "description": "How to package what Jev judges, and why less is more.",
-      "descriptionZh": null,
+      "descriptionZh": "如何封装 Jev 评判的内容，以及为何少即是多。",
       "category": "start-here",
       "upstreamSection": "Start here",
       "language": null,
@@ -9403,7 +9691,8 @@
       "pushedAt": null,
       "intents": [],
       "firstSeen": "2026-09-18",
-      "source": "https://docs.typesafe.ai/concepts/state"
+      "source": "https://docs.typesafe.ai/concepts/state",
+      "descriptionFr": "Comment structurer ce que Jev évalue, et pourquoi moins c'est mieux."
     },
     {
       "id": "api-reference",
@@ -9411,7 +9700,7 @@
       "url": "https://docs.typesafe.ai/api",
       "kind": "resource",
       "description": "The request and response contract.",
-      "descriptionZh": null,
+      "descriptionZh": "请求与响应的契约。",
       "category": "start-here",
       "upstreamSection": "Start here",
       "language": null,
@@ -9424,7 +9713,8 @@
       "pushedAt": null,
       "intents": [],
       "firstSeen": "2026-09-18",
-      "source": "https://docs.typesafe.ai/api"
+      "source": "https://docs.typesafe.ai/api",
+      "descriptionFr": "Le contrat de requête et de réponse."
     },
     {
       "id": "models",
@@ -9432,7 +9722,7 @@
       "url": "https://docs.typesafe.ai/models",
       "kind": "resource",
       "description": "Aliases, current version, price, and rate limits.",
-      "descriptionZh": null,
+      "descriptionZh": "别名、当前版本、价格和速率限制。",
       "category": "start-here",
       "upstreamSection": "Start here",
       "language": null,
@@ -9445,7 +9735,8 @@
       "pushedAt": null,
       "intents": [],
       "firstSeen": "2026-09-18",
-      "source": "https://docs.typesafe.ai/models"
+      "source": "https://docs.typesafe.ai/models",
+      "descriptionFr": "Alias, version actuelle, tarifs et limites de débit."
     },
     {
       "id": "model-jaggedness-jev-1-13",
@@ -9453,7 +9744,7 @@
       "url": "https://docs.typesafe.ai/model-jaggedness/jev-1.13",
       "kind": "resource",
       "description": "Known failure modes, straight from the vendor.",
-      "descriptionZh": null,
+      "descriptionZh": "来自供应商的已知失效模式。",
       "category": "start-here",
       "upstreamSection": "Start here",
       "language": null,
@@ -9466,7 +9757,8 @@
       "pushedAt": null,
       "intents": [],
       "firstSeen": "2026-09-18",
-      "source": "https://docs.typesafe.ai/model-jaggedness/jev-1.13"
+      "source": "https://docs.typesafe.ai/model-jaggedness/jev-1.13",
+      "descriptionFr": "Modes de défaillance connus, directement fournis par le fournisseur."
     },
     {
       "id": "system-one",
@@ -9474,7 +9766,7 @@
       "url": "https://docs.typesafe.ai/concepts/system-one",
       "kind": "resource",
       "description": "What the category means and how it differs from a chat model.",
-      "descriptionZh": null,
+      "descriptionZh": "该类别的含义及其与聊天模型的区别。",
       "category": "start-here",
       "upstreamSection": "Start here",
       "language": null,
@@ -9487,7 +9779,8 @@
       "pushedAt": null,
       "intents": [],
       "firstSeen": "2026-09-18",
-      "source": "https://docs.typesafe.ai/concepts/system-one"
+      "source": "https://docs.typesafe.ai/concepts/system-one",
+      "descriptionFr": "Ce que signifie cette catégorie et en quoi elle diffère d'un modèle de conversation."
     },
     {
       "id": "how-to-build-with-system-one",
@@ -9495,7 +9788,7 @@
       "url": "https://docs.typesafe.ai/concepts/how-to-build-with-system-one",
       "kind": "resource",
       "description": "Decompose a judgment into atomic questions and keep the control flow in code.",
-      "descriptionZh": null,
+      "descriptionZh": "将判断分解为原子问题，并将控制流保留在代码中。",
       "category": "start-here",
       "upstreamSection": "Start here",
       "language": null,
@@ -9508,7 +9801,8 @@
       "pushedAt": null,
       "intents": [],
       "firstSeen": "2026-09-18",
-      "source": "https://docs.typesafe.ai/concepts/how-to-build-with-system-one"
+      "source": "https://docs.typesafe.ai/concepts/how-to-build-with-system-one",
+      "descriptionFr": "Décomposer un jugement en questions atomiques et conserver le flux de contrôle dans le code."
     },
     {
       "id": "confidence",
@@ -9516,7 +9810,7 @@
       "url": "https://docs.typesafe.ai/confidence",
       "kind": "resource",
       "description": "What the confidence field means and how to turn it into act, review, or fall back.",
-      "descriptionZh": null,
+      "descriptionZh": "confidence 字段的含义，以及如何将其转化为执行、复核或回退。",
       "category": "start-here",
       "upstreamSection": "Start here",
       "language": null,
@@ -9529,7 +9823,8 @@
       "pushedAt": null,
       "intents": [],
       "firstSeen": "2026-09-18",
-      "source": "https://docs.typesafe.ai/confidence"
+      "source": "https://docs.typesafe.ai/confidence",
+      "descriptionFr": "Ce que signifie le champ confidence et comment le convertir en action, révision ou repli."
     },
     {
       "id": "patterns",
@@ -9550,7 +9845,8 @@
       "pushedAt": null,
       "intents": [],
       "firstSeen": "2026-09-18",
-      "source": "https://docs.typesafe.ai/patterns"
+      "source": "https://docs.typesafe.ai/patterns",
+      "descriptionFr": "Fan-out spéculatif, routage par confiance, scoring composite, routage par intention."
     },
     {
       "id": "use-case-map",
@@ -9558,7 +9854,7 @@
       "url": "https://docs.typesafe.ai/concepts/use-case-map",
       "kind": "resource",
       "description": "The vendor's own catalogue of where Jev fits and where it does not.",
-      "descriptionZh": null,
+      "descriptionZh": "供应商自有的关于 Jev 适用与不适用场景的目录。",
       "category": "start-here",
       "upstreamSection": "Start here",
       "language": null,
@@ -9571,7 +9867,8 @@
       "pushedAt": null,
       "intents": [],
       "firstSeen": "2026-09-18",
-      "source": "https://docs.typesafe.ai/concepts/use-case-map"
+      "source": "https://docs.typesafe.ai/concepts/use-case-map",
+      "descriptionFr": "Le catalogue du fournisseur indiquant où Jev convient et où il ne convient pas."
     },
     {
       "id": "cookbooks",
@@ -9592,7 +9889,8 @@
       "pushedAt": null,
       "intents": [],
       "firstSeen": "2026-09-18",
-      "source": "https://docs.typesafe.ai/cookbooks/parallel_questions"
+      "source": "https://docs.typesafe.ai/cookbooks/parallel_questions",
+      "descriptionFr": "Recettes pratiques, en commençant par le regroupement de plusieurs questions en une seule requête ; la barre latérale contient les autres."
     },
     {
       "id": "workflow-evals",
@@ -9600,7 +9898,7 @@
       "url": "https://evals.typesafe.ai/",
       "kind": "resource",
       "description": "The vendor's benchmark on four workflows, with the caveats printed on the page.",
-      "descriptionZh": null,
+      "descriptionZh": "该厂商在四个工作流上的基准测试，相关注意事项已列在页面上。",
       "category": "start-here",
       "upstreamSection": "Start here",
       "language": null,
@@ -9613,7 +9911,8 @@
       "pushedAt": null,
       "intents": [],
       "firstSeen": "2026-09-18",
-      "source": "https://evals.typesafe.ai/"
+      "source": "https://evals.typesafe.ai/",
+      "descriptionFr": "Le benchmark du fournisseur sur quatre workflows, avec les réserves indiquées sur la page."
     },
     {
       "id": "llms-txt",
@@ -9621,7 +9920,7 @@
       "url": "https://docs.typesafe.ai/llms.txt",
       "kind": "resource",
       "description": "Every documentation page as plain Markdown, for feeding to an agent.",
-      "descriptionZh": null,
+      "descriptionZh": "所有文档页面均为纯 Markdown 格式，可喂给智能体使用。",
       "category": "start-here",
       "upstreamSection": "Start here",
       "language": null,
@@ -9634,7 +9933,8 @@
       "pushedAt": null,
       "intents": [],
       "firstSeen": "2026-09-18",
-      "source": "https://docs.typesafe.ai/llms.txt"
+      "source": "https://docs.typesafe.ai/llms.txt",
+      "descriptionFr": "Chaque page de documentation en Markdown brut, à fournir à un agent."
     },
     {
       "id": "console",
@@ -9642,7 +9942,7 @@
       "url": "https://console.typesafe.ai/",
       "kind": "resource",
       "description": "Waitlist, API keys, and usage.",
-      "descriptionZh": null,
+      "descriptionZh": "等候名单、API keys 和用量。",
       "category": "start-here",
       "upstreamSection": "Start here",
       "language": null,
@@ -9655,7 +9955,8 @@
       "pushedAt": null,
       "intents": [],
       "firstSeen": "2026-09-18",
-      "source": "https://console.typesafe.ai/"
+      "source": "https://console.typesafe.ai/",
+      "descriptionFr": "Liste d'attente, clés API et utilisation."
     },
     {
       "id": "agent-skill",
@@ -9663,7 +9964,7 @@
       "url": "https://docs.typesafe.ai/agent-skill",
       "kind": "resource",
       "description": "How to install the official skill in Claude Code, Cursor, and friends.",
-      "descriptionZh": null,
+      "descriptionZh": "如何在 Claude Code、Cursor 等工具中安装官方 skill。",
       "category": "official",
       "upstreamSection": "Official SDKs and framework support",
       "language": null,
@@ -9680,7 +9981,8 @@
         "pick which skill or prompt to load"
       ],
       "firstSeen": "2026-09-18",
-      "source": "https://docs.typesafe.ai/agent-skill"
+      "source": "https://docs.typesafe.ai/agent-skill",
+      "descriptionFr": "Comment installer le skill officiel dans Claude Code, Cursor et les outils associés."
     }
   ]
 }

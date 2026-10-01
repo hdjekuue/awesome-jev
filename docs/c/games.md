@@ -184,7 +184,7 @@
 ### hazlema/jev-connect4
 
 - url: https://github.com/hazlema/jev-connect4
-- description: Connect Four with nine swappable query strategies for the same model, every answer graded against engine ground truth in a live inspector, and a match runner that plays 100 games a minute: representation changes alone moved the win rate 52 points.
+- description: Connect Four with nine swappable query strategies for one model, every answer graded against engine ground truth in a live inspector.
 - stars: 1
 - language: TypeScript
 - license: MIT

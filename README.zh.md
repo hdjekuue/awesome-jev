@@ -165,21 +165,21 @@ if (res.answers.risk.choice === "block" && res.answers.risk.confidence > 0.8) {
 | 项目 | 说明 | 语言 / 许可 | ⭐ | 更新 |
 | --- | --- | --- | --- | --- |
 | [Introduction](https://docs.typesafe.ai/introduction) | 两页讲清心智模型：state + typed questions 进，typed answers + probabilities 出 | official | — | — |
-| [Quick start](https://docs.typesafe.ai/introduction/quickstart) | First request in Python, TypeScript, or curl. | official | — | — |
+| [Quick start](https://docs.typesafe.ai/introduction/quickstart) | 使用 Python、TypeScript 或 curl 发起的第一个请求。 | official | — | — |
 | [Primitives](https://docs.typesafe.ai/primitives) | Choice、Score、Noul 三种问题类型各自返回什么 | official | — | — |
-| [State](https://docs.typesafe.ai/concepts/state) | How to package what Jev judges, and why less is more. | official | — | — |
-| [API reference](https://docs.typesafe.ai/api) | The request and response contract. | official | — | — |
-| [Models](https://docs.typesafe.ai/models) | Aliases, current version, price, and rate limits. | official | — | — |
-| [Model jaggedness: jev-1.13](https://docs.typesafe.ai/model-jaggedness/jev-1.13) | Known failure modes, straight from the vendor. | official | — | — |
-| [System One](https://docs.typesafe.ai/concepts/system-one) | What the category means and how it differs from a chat model. | official | — | — |
-| [How to build with System One](https://docs.typesafe.ai/concepts/how-to-build-with-system-one) | Decompose a judgment into atomic questions and keep the control flow in code. | official | — | — |
-| [Confidence](https://docs.typesafe.ai/confidence) | What the confidence field means and how to turn it into act, review, or fall back. | official | — | — |
+| [State](https://docs.typesafe.ai/concepts/state) | 如何封装 Jev 评判的内容，以及为何少即是多。 | official | — | — |
+| [API reference](https://docs.typesafe.ai/api) | 请求与响应的契约。 | official | — | — |
+| [Models](https://docs.typesafe.ai/models) | 别名、当前版本、价格和速率限制。 | official | — | — |
+| [Model jaggedness: jev-1.13](https://docs.typesafe.ai/model-jaggedness/jev-1.13) | 来自供应商的已知失效模式。 | official | — | — |
+| [System One](https://docs.typesafe.ai/concepts/system-one) | 该类别的含义及其与聊天模型的区别。 | official | — | — |
+| [How to build with System One](https://docs.typesafe.ai/concepts/how-to-build-with-system-one) | 将判断分解为原子问题，并将控制流保留在代码中。 | official | — | — |
+| [Confidence](https://docs.typesafe.ai/confidence) | confidence 字段的含义，以及如何将其转化为执行、复核或回退。 | official | — | — |
 | [Patterns](https://docs.typesafe.ai/patterns) | 投机式 fan-out、置信度门控路由、组合打分、意图路由 | official | — | — |
-| [Use-case map](https://docs.typesafe.ai/concepts/use-case-map) | The vendor's own catalogue of where Jev fits and where it does not. | official | — | — |
+| [Use-case map](https://docs.typesafe.ai/concepts/use-case-map) | 供应商自有的关于 Jev 适用与不适用场景的目录。 | official | — | — |
 | [Cookbooks](https://docs.typesafe.ai/cookbooks/parallel_questions) | 可复现配方：并行提问、重排、护栏、引用校验、抽取、层次化分类 | official | — | — |
-| [Workflow evals](https://evals.typesafe.ai/) | The vendor's benchmark on four workflows, with the caveats printed on the page. | official | — | — |
-| [llms.txt](https://docs.typesafe.ai/llms.txt) | Every documentation page as plain Markdown, for feeding to an agent. | official | — | — |
-| [Console](https://console.typesafe.ai/) | Waitlist, API keys, and usage. | official | — | — |
+| [Workflow evals](https://evals.typesafe.ai/) | 该厂商在四个工作流上的基准测试，相关注意事项已列在页面上。 | official | — | — |
+| [llms.txt](https://docs.typesafe.ai/llms.txt) | 所有文档页面均为纯 Markdown 格式，可喂给智能体使用。 | official | — | — |
+| [Console](https://console.typesafe.ai/) | 等候名单、API keys 和用量。 | official | — | — |
 
 ## 🏛️ 官方 SDK 与框架支持
 
@@ -193,7 +193,7 @@ TypeSafe AI 官方维护，以及原生集成 Jev 的框架。 _(7 项)_
 | [typesafe-ai/system-one-adapter-python](https://github.com/typesafe-ai/system-one-adapter-python) | 官方 TypeSafeClient 替代实现，底层走 OpenAI/Anthropic 等 LLM，用来和对话模型做 Jev 对照实验 | official · python · mit | 363 | 2026-09-22 |
 | [typesafe-ai/typesafe-sdk-js](https://github.com/typesafe-ai/typesafe-sdk-js) | 官方 TypeScript/JavaScript 客户端，答案类型由问题自动推导（npm install @typesafe-ai/sdk） | official · typescript · mit | 259 | 2026-09-15 |
 | [typesafe-ai/typesafe-sdk-python](https://github.com/typesafe-ai/typesafe-sdk-python) | 官方同步 + 异步 Python 客户端（pip install typesafe-sdk） | official · python · mit | 256 | 2026-09-26 |
-| [Agent skill](https://docs.typesafe.ai/agent-skill) | How to install the official skill in Claude Code, Cursor, and friends. | official | — | — |
+| [Agent skill](https://docs.typesafe.ai/agent-skill) | 如何在 Claude Code、Cursor 等工具中安装官方 skill。 | official | — | — |
 
 ## 🤖 编码智能体
 
@@ -207,7 +207,7 @@ TypeSafe AI 官方维护，以及原生集成 Jev 的框架。 _(7 项)_
 | [jkudish/jev-mcp](https://github.com/jkudish/jev-mcp) | 首个面向 Jev 的 MCP 服务器，至今仍是被链接最多的。 | javascript · mit | 464 | 2026-09-29 |
 | [notque/vexjoy-agent](https://github.com/notque/vexjoy-agent) | 智能体工具包，其 `/d` 命令通过一次 Jev 调用选择专家智能体、skill 和 pipeline，并附带可选的 Jev auto-compact 插件。 | python · mit | 426 | 2026-09-30 |
 | [TianyuCodings/JevHarness](https://github.com/TianyuCodings/JevHarness) | 让 LLM 编写任务专用的 harness，将观测转化为 Jev 问题，然后将其冻结，并根据奖励和完整执行轨迹进行改进。 | python | 400 | 2026-09-21 |
-| [itsmostafa/typesafe-mcp](https://github.com/itsmostafa/typesafe-mcp) | Go MCP 连接器。 | go · mit | 337 | 2026-09-30 |
+| [itsmostafa/typesafe-mcp](https://github.com/itsmostafa/typesafe-mcp) | 单二进制 Go MCP 服务器和 CLI，将 TypeSafe Jev 判断开放给 Claude Desktop、Claude Code 和 Codex。 | go · mit | 337 | 2026-09-30 |
 | [miuuyy/Astra-Ares](https://github.com/miuuyy/Astra-Ares) | 让 Jev 为正在运行的 Codex 任务选择推理强度及保持时长，基于上游源码构建的补丁版 Codex CLI 运行。 | javascript · mit | 293 | 2026-09-23 |
 | [0xNatoshi/jev-codex-router](https://github.com/0xNatoshi/jev-codex-router) | 为每一轮 Codex 对话选择模型、思考深度和速度模式。 | javascript · mit · archived | 278 | 2026-09-22 |
 | [kitze/skillbox](https://github.com/kitze/skillbox) | 通过 MCP 提供的自托管版本化技能库，由 Jev 推荐加载哪个技能。 | typescript · mit | 255 | 2026-09-19 |
@@ -234,7 +234,7 @@ TypeSafe AI 官方维护，以及原生集成 Jev 的框架。 _(7 项)_
 | [anpicasso/hermes-jev-approvals](https://github.com/anpicasso/hermes-jev-approvals) | 在标记的 shell 命令运行前批准、拒绝或升级处理；加速效果由厂商报告。 | python · mit | 20 | 2026-09-22 |
 | [mejiasd3v/pi-jev-router](https://github.com/mejiasd3v/pi-jev-router) | 通过 Vercel AI Gateway 为 Pi 提供自动模型路由。 | javascript · mit | 16 | 2026-09-22 |
 | [DECRUX9812/typesafe-skill-router](https://github.com/DECRUX9812/typesafe-skill-router) | 在模型调用前命名唯一值得加载的 skill，仅使用 stdlib，每轮约十分之一美分。 | python · mit | 15 | 2026-09-21 |
-| [kubet/azdaja](https://github.com/kubet/azdaja) | 适用于 Claude Code、Codex、Gemini 和 OpenCode 的递归语言模型层，将完整源保留在本地评估器中；Jev 是用于重排、验证、分类和语义连接的可选叶子节点，采用带预算、可设检查点的批处理。 | python · mit | 14 | 2026-09-21 |
+| [kubet/azdaja](https://github.com/kubet/azdaja) | 面向 Claude Code、Codex、Gemini 和 OpenCode 的递归语言模型层，在本地保存数据源；Jev 是用于重排、验证和语义连接的可选叶节点。 | python · mit | 14 | 2026-09-21 |
 | [HyunjunJeon/pi-quiet-ask](https://github.com/HyunjunJeon/pi-quiet-ask) | 作为 Pi 编程智能体静默决策层的 Jev。 | typescript · mit | 12 | 2026-09-18 |
 | [harshwasan/pi-jev-sentinel](https://github.com/harshwasan/pi-jev-sentinel) | 检查Pi工具调用、工具输出和回复中的风险操作与提示注入，支持用户审批、上下文复查、密钥擦除和可选任务固定。 | typescript · mit | 11 | 2026-09-20 |
 | [24601/Augustus](https://github.com/24601/Augustus) | 用于决定类型化判断应放在何处以及哪些内容应保留在代码中的Skill，是官方Skill的补充而非替代。 | python · mit | 11 | 2026-09-28 |
@@ -265,7 +265,7 @@ TypeSafe AI 官方维护，以及原生集成 Jev 的框架。 _(7 项)_
 | [prismhq/jev-router](https://github.com/prismhq/jev-router) | 构建于 LiteLLM 之上的 LLM 路由器。 | python · mit | 15 | 2026-09-17 |
 | [iamvatsalpatel/tiershift](https://github.com/iamvatsalpatel/tiershift) | 将每个 LLM 调用转移到能处理它的最便宜模型，策略用 YAML 配置，决策耗时约 180 ms。 | typescript · mit | 4 | 2026-09-28 |
 | [FirasSX914/Janus](https://github.com/FirasSX914/Janus) | 在你的数据上衡量 Jev 何时优于其他模型，然后据此路由。 | python · mit | 3 | 2026-09-18 |
-| [daviddl9/jev-router](https://github.com/daviddl9/jev-router) | Jev picks the worker tier for each step in OMP and Pi, keeping planning and review on a strong model and bounded work on cheaper ones. | typescript · noassertion | 0 | 2026-09-21 |
+| [daviddl9/jev-router](https://github.com/daviddl9/jev-router) | Jev 为 OMP 和 Pi 中每个步骤选择 worker 层级，将规划和评审保留在强模型上，将范围明确的工作放在更便宜的模型上。 | typescript · noassertion | 0 | 2026-09-21 |
 
 ## 🗜️ 上下文与压缩
 
@@ -306,7 +306,7 @@ TypeSafe AI 官方维护，以及原生集成 Jev 的框架。 _(7 项)_
 | [cephalization/jev-triage](https://github.com/cephalization/jev-triage) | 拉取大型仓库并使用类型化 Jev questions 对其 issues 进行分类。 | typescript · mit | 5 | 2026-09-29 |
 | [Ramneet-Singh/jevopt](https://github.com/Ramneet-Singh/jevopt) | C/C++ 编译器驱动，根据 LLVM IR 和原始源码让 Jev 判断每个可选调用点是否内联。 | python · gpl-3.0 | 4 | 2026-09-21 |
 | [allebee/pytest-jev](https://github.com/allebee/pytest-jev) | Pytest 插件，通过单次请求询问 Jev 关于测试文本的纯英文断言是否成立，除非 Jev 的确信度至少为 80%，否则以每个断言的概率使测试失败。 | python · mit | 3 | 2026-09-21 |
-| [fatwang2/jev-review-action](https://github.com/fatwang2/jev-review-action) | GitHub Action for submission review and PR classification with Jev, no text-generation model in the loop. | javascript · mit | 2 | 2026-09-20 |
+| [fatwang2/jev-review-action](https://github.com/fatwang2/jev-review-action) | 使用 Jev 进行投稿评审和 PR 分类的 GitHub Action，流程中不含文本生成模型。 | javascript · mit | 2 | 2026-09-20 |
 
 ## 🌐 浏览器与计算机操作
 
@@ -327,7 +327,7 @@ Jev 选操作与 DOM 元素，小模型只负责写字。 _(14 项)_
 | [hqman/JevScout](https://github.com/hqman/JevScout) | 通过 CDP 驱动 Chrome 并让 Jev 为每个链接和职位信息打分的求职技能。 | python | 38 | 2026-09-18 |
 | [romaluev/jev-ego](https://github.com/romaluev/jev-ego) | 每个步骤消耗一次 Jev 请求以选择操作的浏览器代理。 | typescript · noassertion | 17 | 2026-09-17 |
 | [tontoko/jev-browser](https://github.com/tontoko/jev-browser) | 在类型化SDK、持久化CLI和MCP服务器背后的统一的有依据Jev和Playwright核心。 | javascript · apache-2.0 | 11 | 2026-09-30 |
-| [imanshu03/jev-browser-use](https://github.com/imanshu03/jev-browser-use) | Runs browser tasks from a plain-language instruction over CDP or Vercel's agent-browser, with Jev selecting operations and targets and code checking confidence before it acts. | typescript | 0 | 2026-09-27 |
+| [imanshu03/jev-browser-use](https://github.com/imanshu03/jev-browser-use) | 通过 CDP 或 Vercel 的 agent-browser，根据自然语言指令执行浏览器任务，由 Jev 选择操作和目标，代码在执行前检查置信度。 | typescript | 0 | 2026-09-27 |
 
 ## 📱 移动端与桌面自动化
 
@@ -357,8 +357,8 @@ Jev 选操作与 DOM 元素，小模型只负责写字。 _(14 项)_
 | [kylemclaren/jev-search](https://github.com/kylemclaren/jev-search) | 一个 shadcn/ui 注册块：首次按键即显示关键词命中，稍后由 Jev 重新排序，若调用失败则保留关键词顺序。 | typescript · mit | 9 | 2026-09-23 |
 | [AkashPriyadarshii/jev-scout](https://github.com/AkashPriyadarshii/jev-scout) | 为自然语言请求查找真实可维护的 repo 和 crate 的 Rust CLI 和 MCP 服务器，由 Jev 对候选结果评分。 | rust · mit | 6 | 2026-09-30 |
 | [kylemclaren/jevpdf](https://github.com/kylemclaren/jevpdf) | 在浏览器中按语义搜索 PDF：pdf.js 在本地提取文本行，Jev 以每批 16 行的方式逐行回答一个 Noul，匹配行按概率排名逐页高亮显示。 | typescript · mit | 5 | 2026-09-23 |
-| [mttrbrts/jev-folio-recursive-classifier](https://github.com/mttrbrts/jev-folio-recursive-classifier) | Classifies OCR'd legal agreements through the FOLIO Document Types ontology with recursive Jev Choices, beam search, confidence-gated leaf stopping, and context-length benchmarking. | python · apache-2.0 | 1 | 2026-09-19 |
-| [liou666/senseek](https://github.com/liou666/senseek) | Browser extension that searches the page you are reading by meaning, in a Ctrl+F style box, with your own key and no backend. | javascript | 0 | 2026-09-21 |
+| [mttrbrts/jev-folio-recursive-classifier](https://github.com/mttrbrts/jev-folio-recursive-classifier) | 通过 FOLIO Document Types 本体对经 OCR 处理的法律协议进行分类，采用递归 Jev Choices、beam search、置信度门控的叶节点停止和上下文长度基准测试。 | python · apache-2.0 | 1 | 2026-09-19 |
+| [liou666/senseek](https://github.com/liou666/senseek) | 按语义搜索正在阅读的页面的浏览器扩展，采用 Ctrl+F 风格的搜索框，使用自备密钥，无后端。 | javascript | 0 | 2026-09-21 |
 
 ## 🛡️ 安全、审核与校验
 
@@ -376,10 +376,10 @@ Jev 选操作与 DOM 元素，小模型只负责写字。 _(14 项)_
 | [noelzappy/tripwire](https://github.com/noelzappy/tripwire) | 在用户看到每个 LLM 响应之前运行七项 Jev 检查的 AI SDK 中间件和代理；暂无准确率数据，并已如实说明。 | typescript · mit | 4 | 2026-09-18 |
 | [teyhouse/jev-secret-detection](https://github.com/teyhouse/jev-secret-detection) | 衡量 Jev 在文件片段中发现真实凭证的能力，其中难以区分的 config 形态用例单独评分。 | python | 3 | 2026-09-18 |
 | [santos-sanz/jev-audio-beeper](https://github.com/santos-sanz/jev-audio-beeper) | 低延迟音频审查概念验证：Jev 类型化决策驱动 ffmpeg。 | typescript | 3 | 2026-09-17 |
-| [asfarsadewa/human-compiler](https://github.com/asfarsadewa/human-compiler) | Paste text, get diagnostics, like a compiler for prose. | typescript · mit | 2 | 2026-09-17 |
-| [DansiDanutz/fake-real-jev](https://github.com/DansiDanutz/fake-real-jev) | Checks claims against cited excerpts with Jev in an English and Romanian fact-checking site, with a public integration example and a closed-source full application. | javascript · mit | 1 | 2026-09-26 |
-| [paulgoodchild/SkillsCheck](https://github.com/paulgoodchild/SkillsCheck) | Sends an agent skill's text to Jev before installation and returns a verdict with category scores, without loading the skill into the agent's context; the submitted text is not redacted for secrets. | javascript | 0 | 2026-09-21 |
-| [hteariH/stopspam-jev-bot](https://github.com/hteariH/stopspam-jev-bot) | Telegram bot that removes spam and scam messages from group chats on calibrated-confidence classification. | python | 0 | 2026-09-21 |
+| [asfarsadewa/human-compiler](https://github.com/asfarsadewa/human-compiler) | 粘贴文本即可获得诊断，如同面向散文的编译器。 | typescript · mit | 2 | 2026-09-17 |
+| [DansiDanutz/fake-real-jev](https://github.com/DansiDanutz/fake-real-jev) | 在一个英文与罗马尼亚文事实核查网站中用 Jev 对照引用摘录核查主张，并提供公开集成示例和闭源完整应用。 | javascript · mit | 1 | 2026-09-26 |
+| [paulgoodchild/SkillsCheck](https://github.com/paulgoodchild/SkillsCheck) | 在安装前将 agent skill 的文本发送给 Jev 并返回带分类评分的判定，且不将其加载到 agent 上下文中；提交的文本不会对敏感信息做脱敏处理。 | javascript | 0 | 2026-09-21 |
+| [hteariH/stopspam-jev-bot](https://github.com/hteariH/stopspam-jev-bot) | 基于校准置信度分类，从群聊中移除垃圾和诈骗消息的 Telegram 机器人。 | python | 0 | 2026-09-21 |
 
 ## 🗄️ 数据与运维
 
@@ -435,14 +435,14 @@ Jev 选操作与 DOM 元素，小模型只负责写字。 _(14 项)_
 | [harshil1712/slidepilot](https://github.com/harshil1712/slidepilot) | 为 Cloudflare Agents 上运行的 Slidev 提供语音驱动的自动翻页。 | typescript · mit | 9 | 2026-09-22 |
 | [valentynkit/jev.nvim](https://github.com/valentynkit/jev.nvim) | Neovim 插件：用自然语言向缓冲区提问，Treesitter 将其拆分为函数，Jev 为每个函数打分，答案按概率排序后进入 quickfix。 | lua · mit | 9 | 2026-09-19 |
 | [andrelandgraf/safer-with-jev](https://github.com/andrelandgraf/safer-with-jev) | 带有 Jev 路由前置的 Neon AI Gateway 用 Neon Function 代理。 | typescript | 6 | 2026-09-18 |
-| [valentynkit/jev-skip](https://github.com/valentynkit/jev-skip) | 读取字幕轨道并在片头结束前在进度条上绘制每段赞助概率的浏览器扩展，无需众包数据库；在 23 个视频上以每个视频 $0.0008 的成本捕获了 SponsorBlock 77% 的赞助秒数。 | typescript · mit | 6 | 2026-09-19 |
+| [valentynkit/jev-skip](https://github.com/valentynkit/jev-skip) | 读取字幕轨道并在进度条上绘制每段赞助概率的浏览器扩展，无需众包数据库。 | typescript · mit | 6 | 2026-09-19 |
 | [chris-wozniczek/jev-voice-control](https://github.com/chris-wozniczek/jev-voice-control) | 将语音命令转换为 Jev 类型化决策和 macOS 操作的菜单栏 Swift 应用。 | swift · mit | 5 | 2026-09-21 |
 | [hellogumbo/should-ai-kill-us-all](https://github.com/hellogumbo/should-ai-kill-us-all) | 每十分钟使用真实头条新闻向 Jev 提出该问题。 | javascript · cc0-1.0 | 4 | 2026-09-18 |
 | [sriganesh/jevibe-check](https://github.com/sriganesh/jevibe-check) | 为 Bluesky 帖子和草稿提供实时语气标签。 | javascript · mit | 3 | 2026-09-17 |
 | [phureewat29/jev-got](https://github.com/phureewat29/jev-got) | Game of Thrones 角色扮演，故事模型编写每个场景，Jev 回答五个类型化问题以驱动标题、配乐、插画和下一个提示。 | typescript | 3 | 2026-09-19 |
 | [hazlema/jev-riffs](https://github.com/hazlema/jev-riffs) | 从 MIDI 旋律中挖掘重复动机，在一次批量 Jev 调用中为每个候选评分，并在钢琴卷帘上高亮并播放优胜者；在管弦乐 Swan Lake 中，排名第一的动机是天鹅主题。 | typescript · mit | 3 | 2026-09-25 |
-| [thenewpotato/privacy-facts](https://github.com/thenewpotato/privacy-facts) | Turns privacy policies into nutrition-style labels with plain-language answers, Jev confidence scores, and suggested source clauses. | javascript · mit | 2 | 2026-09-18 |
-| [0xShin0221/openpoke-meets-jev](https://github.com/0xShin0221/openpoke-meets-jev) | OpenPoke fork that moves email screening, a tool-call guardrail, and search reranking onto Jev, with an A/B against the Sonnet call it replaced and an adversarial run on the injection gate. | python · mit | 1 | 2026-09-20 |
+| [thenewpotato/privacy-facts](https://github.com/thenewpotato/privacy-facts) | 将隐私政策转换为营养标签式标识，提供通俗易懂的答案、Jev 置信度分数和建议的原文条款。 | javascript · mit | 2 | 2026-09-18 |
+| [0xShin0221/openpoke-meets-jev](https://github.com/0xShin0221/openpoke-meets-jev) | 将邮件筛选、tool-call guardrail 和搜索重排迁移到 Jev 的 OpenPoke fork，并附带与其替代的 Sonnet 调用的 A/B 对比以及针对注入门控的对抗性运行。 | python · mit | 1 | 2026-09-20 |
 
 ## 🧩 SDK 与社区客户端
 
@@ -457,31 +457,31 @@ Jev 选操作与 DOM 元素，小模型只负责写字。 _(14 项)_
 | [kieranklaassen/ruby_llm-typesafe](https://github.com/kieranklaassen/ruby_llm-typesafe) | 作为 RubyLLM 2 结构化输出提供者的 TypeSafe。 | ruby · mit | 19 | 2026-09-29 |
 | [Twister915/typesafe-ai](https://github.com/Twister915/typesafe-ai) | TypeSafe AI 官网、waitlist 与产品总览 | rust · apache-2.0 | 14 | 2026-09-16 |
 | [saibimajdi/typesafeai-dotnet-sdk](https://github.com/saibimajdi/typesafeai-dotnet-sdk) | 提供类型化 Noul、Choice 和 Score 问答的社区 .NET SDK。 | c# · mit | 13 | 2026-09-29 |
-| [Premo-Cloud/typesafe-sdk-java](https://github.com/Premo-Cloud/typesafe-sdk-java) | Java 客户端。 | java · mit | 11 | 2026-09-25 |
+| [Premo-Cloud/typesafe-sdk-java](https://github.com/Premo-Cloud/typesafe-sdk-java) | 非官方 TypeSafe System One API Java 客户端，通过 HTTP 调用 Choice、Score 和 Noul 问题。 | java · mit | 11 | 2026-09-25 |
 | [pambrose/jev4k](https://github.com/pambrose/jev4k) | Kotlin DSL 和客户端。 | kotlin · apache-2.0 | 11 | 2026-09-28 |
 | [Tangerg/typesafe-sdk-go](https://github.com/Tangerg/typesafe-sdk-go) | 无第三方依赖的 Go SDK。 | go · mit | 10 | 2026-09-19 |
 | [jomatsu/zod-jev](https://github.com/jomatsu/zod-jev) | 带语义规则的 Zod 4 模式：形状检查保留在 Zod 中，含义检查通过一次请求发送给 Jev 并作为 Zod issues 返回。 | typescript · mit | 9 | 2026-09-17 |
-| [joshmn/typesafe-sdk](https://github.com/joshmn/typesafe-sdk) | Ruby 客户端。 | ruby · mit | 8 | 2026-09-26 |
+| [joshmn/typesafe-sdk](https://github.com/joshmn/typesafe-sdk) | 非官方 TypeSafe AI API Ruby 客户端，返回带概率的类型化答案，而不是解析后的散文。 | ruby · mit | 8 | 2026-09-26 |
 | [inanna-malick/jev-dsl](https://github.com/inanna-malick/jev-dsl) | 带类型化数据包和推断答案类型的 Haskell DSL。 | haskell · mit | 8 | 2026-09-18 |
 | [gilljon/typesafe-ai-rs](https://github.com/gilljon/typesafe-ai-rs) | 独立的异步和阻塞式 Rust SDK。 | rust · mit | 7 | 2026-09-17 |
 | [Gaurav-Gosain/jev-go](https://github.com/Gaurav-Gosain/jev-go) | 返回类型化判断和概率的 Go 客户端。 | go · mit | 6 | 2026-09-16 |
 | [jamesward/zio-typesafe-ai](https://github.com/jamesward/zio-typesafe-ai) | 基于 ZIO 的 Scala 客户端。 | scala · apache-2.0 | 6 | 2026-09-23 |
-| [Stumble/jev-go](https://github.com/Stumble/jev-go) | 适用于 Jev 的 Go 客户端。 | go · mit | 6 | 2026-09-18 |
+| [Stumble/jev-go](https://github.com/Stumble/jev-go) | 面向 TypeSafe Jev / System One 的社区 Go SDK，涵盖类型化的 Choice、Score 和 Noul 问题。 | go · mit | 6 | 2026-09-18 |
 | [nshkrdotcom/typesafe_sdk](https://github.com/nshkrdotcom/typesafe_sdk) | 带有 TypeSafe provider 的 TypeScript AI SDK 的 Elixir 移植版。 | elixir · mit | 6 | 2026-09-20 |
-| [alterhq/typesafe-sdk-swift](https://github.com/alterhq/typesafe-sdk-swift) | Swift 客户端。 | swift · mit | 5 | 2026-09-15 |
+| [alterhq/typesafe-sdk-swift](https://github.com/alterhq/typesafe-sdk-swift) | 非官方 TypeSafe AI API Swift SDK，将类型化问题和答案封装为 Swift 类型。 | swift · mit | 5 | 2026-09-15 |
 | [zhirschtritt/typesafe-go](https://github.com/zhirschtritt/typesafe-go) | 面向 TypeSafe API 的惯用 Go SDK。 | go · mit | 4 | 2026-09-29 |
 | [Butochnikov/laravel-typesafe-jev](https://github.com/Butochnikov/laravel-typesafe-jev) | 集成 Laravel，提供类型化响应、异步请求和测试替身。 | php · mit | 4 | 2026-09-17 |
-| [Hawxy/TypeSafeAI.Net](https://github.com/Hawxy/TypeSafeAI.Net) | .NET SDK。 | c# · apache-2.0 | 4 | 2026-09-19 |
+| [Hawxy/TypeSafeAI.Net](https://github.com/Hawxy/TypeSafeAI.Net) | 非官方 TypeSafe AI 平台 .NET SDK，可用于任何 .NET 应用。 | c# · apache-2.0 | 4 | 2026-09-19 |
 | [mateonunez/jod](https://github.com/mateonunez/jod) | 基于 Jev 的 Zod 风格 schema，先在本地验证状态，再投射类型化答案。 | typescript · mit | 4 | 2026-09-17 |
 | [GenieRobot/typesafe-ai-rails](https://github.com/GenieRobot/typesafe-ai-rails) | 基于社区 Ruby gem 构建的 Rails 集成。 | ruby · mit | 4 | 2026-09-16 |
 | [steven-shoemaker/hunch](https://github.com/steven-shoemaker/hunch) | 将 Choice、Score 和 Noul 问题转换为处理列表和 DataFrames 的 Python 函数，支持去重、缓存、将不确定行升级到受相同标签约束的 LLM，并在 npm 上提供 TypeScript 移植版 hunch-jev。 | python · mit | 4 | 2026-09-22 |
 | [AboveColin/jevclient](https://github.com/AboveColin/jevclient) | 异步 Python 客户端，直接输出概率和选项，无需解析文本。 | python · mit | 3 | 2026-09-21 |
-| [Butochnikov/typesafe-sdk-php](https://github.com/Butochnikov/typesafe-sdk-php) | PHP client with sync calls, Guzzle promises, and PSR-3 logging. | php · mit | 3 | 2026-09-17 |
-| [AbdelStark/s1-rs](https://github.com/AbdelStark/s1-rs) | Turns Rust enums and structs into Choice, Score, and Noul questions with compile-time-checked, confidence-gated answers. | rust · mit | 2 | 2026-09-16 |
-| [AbdelStark/typesafe-rs](https://github.com/AbdelStark/typesafe-rs) | Latency-first Rust client, on crates.io. | rust · mit | 2 | 2026-09-16 |
-| [DomMonte/n8n-nodes-typesafe-ai](https://github.com/DomMonte/n8n-nodes-typesafe-ai) | n8n community node for yes/no, choice, and score questions. | typescript · mit | 1 | 2026-09-21 |
-| [kunobi-ninja/kunobi-jev](https://github.com/kunobi-ninja/kunobi-jev) | Rust client for the System One API. | rust · apache-2.0 | 1 | 2026-09-24 |
-| [bariskisir/JevSharp](https://github.com/bariskisir/JevSharp) | .NET 10 SDK for Jev decisions through TypeSafe, OpenRouter, Vercel AI Gateway, and compatible endpoints. | c# · mit | 0 | 2026-09-24 |
+| [Butochnikov/typesafe-sdk-php](https://github.com/Butochnikov/typesafe-sdk-php) | 支持同步调用、Guzzle promises 和 PSR-3 日志记录的 PHP 客户端。 | php · mit | 3 | 2026-09-17 |
+| [AbdelStark/s1-rs](https://github.com/AbdelStark/s1-rs) | 将 Rust 枚举和结构体转换为 Choice、Score 和 Noul 问题，并提供经编译时检查、按置信度门控的答案。 | rust · mit | 2 | 2026-09-16 |
+| [AbdelStark/typesafe-rs](https://github.com/AbdelStark/typesafe-rs) | 以低延迟为先的 Rust 客户端，已发布于 crates.io。 | rust · mit | 2 | 2026-09-16 |
+| [DomMonte/n8n-nodes-typesafe-ai](https://github.com/DomMonte/n8n-nodes-typesafe-ai) | 用于 yes/no、choice 和 score 问题的 n8n 社区节点。 | typescript · mit | 1 | 2026-09-21 |
+| [kunobi-ninja/kunobi-jev](https://github.com/kunobi-ninja/kunobi-jev) | 适用于 System One API 的 Rust 客户端。 | rust · apache-2.0 | 1 | 2026-09-24 |
+| [bariskisir/JevSharp](https://github.com/bariskisir/JevSharp) | 通过 TypeSafe、OpenRouter、Vercel AI Gateway 及兼容端点进行 Jev 决策的 .NET 10 SDK。 | c# · mit | 0 | 2026-09-24 |
 
 ## ⌨️ 命令行
 
@@ -501,8 +501,8 @@ Jev 选操作与 DOM 元素，小模型只负责写字。 _(14 项)_
 | [sufianetaouil/every](https://github.com/sufianetaouil/every) | 向代码库中每个函数询问是否问题；模式为问题的 grep。 | python · mit | 8 | 2026-09-17 |
 | [y0usaf/typesafe-cli](https://github.com/y0usaf/typesafe-cli) | 从 shell 以数字形式返回 Noul、choice 和 score 答案。 | typescript · mit | 5 | 2026-09-19 |
 | [jtsang4/jev-cli](https://github.com/jtsang4/jev-cli) | 输入类型化问题，输出结构化 JSON 答案。 | typescript · mit | 4 | 2026-09-18 |
-| [jexp/watfile](https://github.com/jexp/watfile) | Sorts PDFs and text files into category folders, one Jev Choice per document, with a local Laya backend as the alternative. | python | 2 | 2026-09-21 |
-| [allebee/jevgrep](https://github.com/allebee/jevgrep) | Filters log lines and other text streams by meaning, one Noul per line in micro-batches, streaming from `tail -f` with grep's flags and exit codes. | python · mit | 1 | 2026-09-21 |
+| [jexp/watfile](https://github.com/jexp/watfile) | 将 PDF 和文本文件归类到分类文件夹，每份文档调用一次 Jev Choice，并以本地 Laya 后端作为替代方案。 | python | 2 | 2026-09-21 |
+| [allebee/jevgrep](https://github.com/allebee/jevgrep) | 按语义过滤日志行和其他文本流，每行一个 Noul，采用微批量处理，支持从 `tail -f` 流式输入，并兼容 grep 的标志和退出码。 | python · mit | 1 | 2026-09-21 |
 
 ## 📊 基准、评测与校准
 
@@ -531,12 +531,12 @@ Jev 选操作与 DOM 元素，小模型只负责写字。 _(14 项)_
 | [bitnovus/jev-spam-eval](https://github.com/bitnovus/jev-spam-eval) | 使用 Noul 问题进行零样本垃圾邮件过滤，并与 TF-IDF 基线对比。 | jupyter notebook · mit | 3 | 2026-09-18 |
 | [PistachioAIHQ/jev-synergy-screening](https://github.com/PistachioAIHQ/jev-synergy-screening) | 使用 Choice 和 Noul 问题按 ASReview SYNERGY 金标进行摘要筛选评分。 | python | 3 | 2026-09-16 |
 | [jgridifier/jev-research-eval](https://github.com/jgridifier/jev-research-eval) | 基于固定 jev-ultrafast 提交的可复现测试框架，包含基线和压力测试套件。 | html · noassertion | 3 | 2026-09-17 |
-| [HackSing/jev-report](https://github.com/HackSing/jev-report) | Independent Chinese research report: 52 pages, 50 reproducible tests, 143 traceable data rows. | python · mit | 2 | 2026-09-17 |
-| [hegargarcia/jev-playground](https://github.com/hegargarcia/jev-playground) | Jev against other models in games with explicit states, legal actions, and a measurable outcome. | typescript | 2 | 2026-09-17 |
-| [yodablocks/jev-orderby-bench](https://github.com/yodablocks/jev-orderby-bench) | Measures whether ORDER BY over a Jev probability is defensible: pairwise inversion, Score ordinality against a human grade, calibration, and wording invariants under a pre-registered gate; passes on 20 Newsgroups topics, fails four of six conditions on Amazon ESCI product relevance, and shows that a 40-row batched state through a DuckDB extension fails the ranking gate one row per request passes. | python · mit | 1 | 2026-09-20 |
-| [4esv/jev-eval](https://github.com/4esv/jev-eval) | Jev against GPT-5.6 Terra on three labeled tasks: equal on the easy ones, 6.7 points lower on 77-way routing, 5 times faster, 41 to 50 times cheaper. | python | 1 | 2026-09-23 |
-| [themsquared/jev-benchmark](https://github.com/themsquared/jev-benchmark) | Tool-call risk classification with the run-to-run variance reported; every wrong answer came with hedged confidence. | python · apache-2.0 | 1 | 2026-09-24 |
-| [blowxian/jev-fanout-bench](https://github.com/blowxian/jev-fanout-bench) | Measures what a Jev request is billed and how its answers hold up under batching, translation, and rewording, from 3,455 billed requests with public raw logs. | python · mit | 0 | 2026-09-28 |
+| [HackSing/jev-report](https://github.com/HackSing/jev-report) | 独立中文研究报告，共 52 页，含 50 项可复现测试和 143 行可追溯数据。 | python · mit | 2 | 2026-09-17 |
+| [hegargarcia/jev-playground](https://github.com/hegargarcia/jev-playground) | 让 Jev 与其他模型在具有明确状态、合法动作和可衡量结果的游戏中对决。 | typescript | 2 | 2026-09-17 |
+| [yodablocks/jev-orderby-bench](https://github.com/yodablocks/jev-orderby-bench) | 衡量对 Jev 概率使用 ORDER BY 是否成立：在预注册门控下测试 pairwise inversion、Score 序数性对照人工评分、calibration 和措辞不变性，在 20 Newsgroups 主题上通过，在 Amazon ESCI 商品相关性上六项条件未通过四项，并表明通过 DuckDB 扩展的 40 行批量 state 未通过排名门控而逐请求单行则通过。 | python · mit | 1 | 2026-09-20 |
+| [4esv/jev-eval](https://github.com/4esv/jev-eval) | 在三个带标签任务上将 Jev 与 GPT-5.6 Terra 对比：在简单任务上持平，在 77 路路由上低 6.7 分，快 5 倍，便宜 41 至 50 倍。 | python | 1 | 2026-09-23 |
+| [themsquared/jev-benchmark](https://github.com/themsquared/jev-benchmark) | 进行 tool-call 风险分类并报告逐次运行方差，每个错误答案都带有保守的置信度。 | python · apache-2.0 | 1 | 2026-09-24 |
+| [blowxian/jev-fanout-bench](https://github.com/blowxian/jev-fanout-bench) | 基于 3,455 个计费请求及公开原始日志，衡量 Jev 请求的计费情况及其答案在批量处理、翻译和改写下的表现。 | python · mit | 0 | 2026-09-28 |
 
 ## 🧠 开源模型与复刻
 
@@ -584,7 +584,7 @@ Jev 选操作与 DOM 元素，小模型只负责写字。 _(14 项)_
 | [genai-craft/openvons](https://github.com/genai-craft/openvons) | 用概率回答有限选项集的开放决策层，概率分为 execute、confirm 和 reject。独立复刻，而非 TypeSafe 权重。 | python · noassertion | 14 | 2026-09-21 |
 | [amithgc/local-jev](https://github.com/amithgc/local-jev) | 与 System One endpoint 线路兼容的离线服务器，已对照官方 SDK 验证；在 JevBench 公开条目上得分为 80.5%，托管 API 公布的分数为 86.6%。 | python · mit | 13 | 2026-09-21 |
 | [David-Lolly/Jev-Compatible](https://github.com/David-Lolly/Jev-Compatible) | 通过对候选 token 评分，将现有 SGLang 或 vLLM 部署转换为 Jev 兼容决策服务的网关，无需训练且无需更改模型。 | python | 6 | 2026-09-21 |
-| [metask-ai/metask-jev](https://github.com/metask-ai/metask-jev) | Open-weight typed-decision models on Qwen3.5 with calibrated per-option probabilities in one forward pass; reports 80.1 percent on JevBench against 75.3 for Jev 1.13. | python | 2 | 2026-09-22 |
+| [metask-ai/metask-jev](https://github.com/metask-ai/metask-jev) | 基于 Qwen3.5 的开放权重类型化决策模型，单次前向传播即可给出经校准的每选项概率，在 JevBench 上得分为 80.1%，超过 Jev 1.13 的 75.3%。 | python | 2 | 2026-09-22 |
 
 ## 🎮 游戏、机器人与仿真
 
@@ -610,7 +610,7 @@ Jev 选操作与 DOM 元素，小模型只负责写字。 _(14 项)_
 | [vishxrad/clashroyale-jev](https://github.com/vishxrad/clashroyale-jev) | 用 Jev 根据 Qwen 战场视觉和本地 OpenCV 手牌与圣水识别选择卡牌和放置位置来玩 Clash Royale。 | python | 4 | 2026-09-22 |
 | [phyous/tsai-civ2](https://github.com/phyous/tsai-civ2) | 在浏览器中运行的 Civilization II，完整游戏测试框架，实时动作概率。 | python · noassertion | 3 | 2026-09-18 |
 | [siroccomask/snake-jev](https://github.com/siroccomask/snake-jev) | 由并行 Jev 评估控制的 Snake，每个 tick 一次 API 调用。 | python · mit | 3 | 2026-09-19 |
-| [hazlema/jev-connect4](https://github.com/hazlema/jev-connect4) | Connect Four with nine swappable query strategies for the same model, every answer graded against engine ground truth in a live inspector, and a match runner that plays 100 games a minute: representation changes alone moved the win rate 52 points. | typescript · mit | 1 | 2026-09-21 |
+| [hazlema/jev-connect4](https://github.com/hazlema/jev-connect4) | 采用九种可切换查询策略的 Connect Four 单模型实现，每个答案都在实时检查器中对照引擎标准答案评分。 | typescript · mit | 1 | 2026-09-21 |
 
 ## 💹 金融与交易
 
@@ -638,10 +638,10 @@ Jev 选操作与 DOM 元素，小模型只负责写字。 _(14 项)_
 | [haseeb-heaven/jev-system-one](https://github.com/haseeb-heaven/jev-system-one) | 由 OpenAI 回答、Jev 分别对相关性、可靠性和质量评分的终端界面。 | python · mit | 6 | 2026-09-17 |
 | [markjaquith/typesafe-ai-playground](https://github.com/markjaquith/typesafe-ai-playground) | 用于围绕 Jev 进行实验的 Rust CLI playground。 | rust · mit | 5 | 2026-09-22 |
 | [replynodes/jev-web-analyzer](https://github.com/replynodes/jev-web-analyzer) | 将 SaaS 落地页转换为 Markdown，并向 Jev 提出十个有界 Choice 问题以了解首次访问者的理解情况，以创始人拆解形式呈现。 | typescript · apache-2.0 | 5 | 2026-09-28 |
-| [wustep/jev-playground](https://github.com/wustep/jev-playground) | Can a System One model steer a music composition through typed classify, score, and pick decisions alone. | typescript | 2 | 2026-09-26 |
-| [willprout/magic-8-ball](https://github.com/willprout/magic-8-ball) | Ask a question, one choice over twenty answers picks the reply and shows the click-to-answer latency; [live demo](https://willprout.github.io/magic-8-ball/). | typescript | 1 | 2026-09-18 |
-| [bud-ro/jev-demos](https://github.com/bud-ro/jev-demos) | Demos built to test what Jev is good at. | dart | 1 | 2026-09-18 |
-| [rishi-raj-jain/hn-thread-judge](https://github.com/rishi-raj-jain/hn-thread-judge) | Reads the most-discussed Hacker News threads comment by comment with Jev and reduces each one to a single verdict, served live from Postgres. | typescript | 0 | 2026-09-21 |
+| [wustep/jev-playground](https://github.com/wustep/jev-playground) | 验证 System One 模型能否仅通过类型化的 classify、score 和 pick 决策来主导音乐创作。 | typescript | 2 | 2026-09-26 |
+| [willprout/magic-8-ball](https://github.com/willprout/magic-8-ball) | 提出一个问题，一个覆盖二十个答案的 choice 将选择回复并显示从点击到回答的延迟；[live demo](https://willprout.github.io/magic-8-ball/)。 | typescript | 1 | 2026-09-18 |
+| [bud-ro/jev-demos](https://github.com/bud-ro/jev-demos) | 用于测试 Jev 擅长领域的演示合集。 | dart | 1 | 2026-09-18 |
+| [rishi-raj-jain/hn-thread-judge](https://github.com/rishi-raj-jain/hn-thread-judge) | 使用 Jev 逐条评论读取 Hacker News 上讨论最热的帖子并将其归纳为单一判定，通过 Postgres 实时提供服务。 | typescript | 0 | 2026-09-21 |
 
 <!-- entries:end -->
 

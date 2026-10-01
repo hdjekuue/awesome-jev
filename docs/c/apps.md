@@ -219,7 +219,7 @@
 ### valentynkit/jev-skip
 
 - url: https://github.com/valentynkit/jev-skip
-- description: Browser extension that reads the caption track and paints a per-segment sponsor probability on the seek bar before the intro ends, no crowd database; reports 77 percent of SponsorBlock's sponsor seconds caught over 23 videos at $0.0008 a video.
+- description: Browser extension that reads the caption track and paints a per-segment sponsor probability on the seek bar, with no crowd database.
 - stars: 6
 - language: TypeScript
 - license: MIT

@@ -60,7 +60,7 @@
 ### xinyao27/jevonian
 
 - url: https://github.com/xinyao27/jevonian
-- description: Local OpenAI, Anthropic, and Responses-compatible proxy that serves one Jev call per turn to answer both the model route and the thinking level for its virtual model jevonian/auto, with code filtering candidates by protocol, context window, effort floor, and spent quota windows first, and pinned models or explicit routes skipping Jev entirely.
+- description: Local OpenAI, Anthropic and Responses-compatible proxy that serves one Jev call per turn to pick both the model route and the thinking level, filtering candidates by context window and quota.
 - stars: 16
 - language: TypeScript
 - license: AGPL-3.0

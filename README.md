@@ -689,6 +689,10 @@ This is not a hand-typed list that rots in six months. It is **one data file, de
 ## ⭐ Star History & Community Growth
 
 <!-- star-history:start -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/star-history/star-history-dark.svg">
+  <img alt="Star history" src="assets/star-history/star-history-light.svg">
+</picture>
 <!-- star-history:end -->
 
 > **Community momentum:** as this list approaches 100 stars, notable entries *may* be pinned at the top of the README and the website — no pay-to-play, no quotas, just a signal about what the community actually values. [Star on GitHub](https://github.com/hdjekuue/awesome-jev) · [Join the TypeSafe Discord](https://discord.gg/typesafe)

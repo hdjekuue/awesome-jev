@@ -32,7 +32,29 @@ node scripts/curate.mjs            # free-AI health audit or PR triage → curat
 node scripts/build-readme.mjs      # render the three READMEs (--check in CI)
 node site/build.mjs                # render docs/ + machine-readable exports
 node scripts/import-seed.mjs <projects.json>   # re-seed from a community CC0 dump
+node scripts/check-workflows.mjs   # parse every workflow, flag block-scalar breakage
+node scripts/check-translations.mjs # exercise the per-entry translation gate
 ```
+
+## Running the free-model tooling locally
+
+`opencode.json` deliberately contains **no `provider` block**. opencode already ships
+the `opencode` (Zen) provider pointing at `https://opencode.ai/zen/v1` with the public
+key, and the `*-free` models need no credentials. Re-declaring the provider by hand —
+baseUrl, `openai-completions` api, `x-opencode-*` headers — made every call fail with
+`Invalid URL` on opencode 2.x.
+
+```bash
+# what is free right now
+node scripts/translate.mjs --models
+
+# one-off call with a different free model
+opencode run --model opencode/<id> --agent curator < prompt.txt
+```
+
+The free endpoints are withdrawn and rate-limited without warning. `translate.mjs`
+detects `Model unavailable` / 429 and stops the run rather than retrying hundreds of
+times; re-run it and it resumes exactly where it stopped.
 
 ## Entry schema
 

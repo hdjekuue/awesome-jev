@@ -1,0 +1,13 @@
+# Generated files are compared byte-for-byte in CI. Without this, a Windows
+# checkout would rewrite LF as CRLF and the site build would always look stale.
+# 生成文件在 CI 中按字节比对；若不固定 LF，Windows 检出后会被改成 CRLF，
+# 导致站点校验永远失败。
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.sig binary

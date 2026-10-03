@@ -136,7 +136,7 @@ Tout ce qui suit est généré à partir de [`data/entries.json`](data/entries.j
 
 <!-- entries:start -->
 
-<!-- 352 entries · 335 repos · 93,460 stars · 21 languages · updated 2026-10-01 -->
+<!-- 352 entries · 335 repos · 93,460 stars · 21 languages · updated 2026-10-03 -->
 
 - [🧭 Pour commencer](#-pour-commencer) — 16
 - [🏛️ SDK officiels et support framework](#-sdk-officiels-et-support-framework) — 7

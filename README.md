@@ -136,7 +136,7 @@ Everything below is generated from [`data/entries.json`](data/entries.json). Sta
 
 <!-- entries:start -->
 
-<!-- 352 entries · 335 repos · 93,460 stars · 21 languages · updated 2026-10-01 -->
+<!-- 352 entries · 335 repos · 93,460 stars · 21 languages · updated 2026-10-03 -->
 
 - [🧭 Start Here](#-start-here) — 16
 - [🏛️ Official SDKs & Framework Support](#-official-sdks-framework-support) — 7

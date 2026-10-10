@@ -136,7 +136,7 @@ if (res.answers.risk.choice === "block" && res.answers.risk.confidence > 0.8) {
 
 <!-- entries:start -->
 
-<!-- 352 entries · 335 repos · 93,460 stars · 21 languages · updated 2026-10-01 -->
+<!-- 352 entries · 335 repos · 93,460 stars · 21 languages · updated 2026-10-10 -->
 
 - [🧭 入门与心智模型](#-入门与心智模型) — 16
 - [🏛️ 官方 SDK 与框架支持](#-官方-sdk-与框架支持) — 7

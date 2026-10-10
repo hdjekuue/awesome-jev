@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-01",
+  "updatedAt": "2026-10-10",
   "entries": [
     {
       "id": "browser-use--jev-ultrafast",
@@ -26,7 +26,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/browser-use/jev-ultrafast",
-      "descriptionFr": "Une seule requête sélectionne à la fois l'opération et l'élément cible depuis une table DOM indexée ; un petit LLM écrit uniquement du texte typé. Trajet de Zürich à Londres réservé en 7,1 secondes."
+      "descriptionFr": "Une seule requête sélectionne à la fois l'opération et l'élément cible depuis une table DOM indexée ; un petit LLM écrit uniquement du texte typé. Trajet de Zürich à Londres réservé en 7,1 secondes.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "jaredpalmer--kev",
@@ -56,7 +58,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/jaredpalmer/kev",
-      "descriptionFr": "Adaptateur LoRA et tête de lecture sur Qwen2.5-0.5B qui répond à de nombreuses questions typées en un seul prefill ; entraînement en moins de deux heures sur un MacBook, ECE hors échantillon de 0,065, utilise le format wire TypeSafe."
+      "descriptionFr": "Adaptateur LoRA et tête de lecture sur Qwen2.5-0.5B qui répond à de nombreuses questions typées en un seul prefill ; entraînement en moins de deux heures sur un MacBook, ECE hors échantillon de 0,065, utilise le format wire TypeSafe.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "tamaratran--fast-jev-compaction",
@@ -82,7 +86,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/tamaratran/fast-jev-compaction",
-      "descriptionFr": "Remplace le résumé de compaction par des décisions Jev : chaque appel d'outil et résultat est noté en une seule requête, les éléments obsolètes sont supprimés, tout ce qui est conservé reste verbatim."
+      "descriptionFr": "Remplace le résumé de compaction par des décisions Jev : chaque appel d'outil et résultat est noté en une seule requête, les éléments obsolètes sont supprimés, tout ce qui est conservé reste verbatim.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "vercel--eve",
@@ -115,7 +121,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/vercel/eve",
-      "descriptionFr": "Framework d'agents de Vercel ; Jev est le juge typé dans son étape evaluate."
+      "descriptionFr": "Framework d'agents de Vercel ; Jev est le juge typé dans son étape evaluate.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "theoleecj--semif",
@@ -141,7 +149,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/TheoLeeCJ/SemIf",
-      "descriptionFr": "Ifs sémantiques issus de modèles ouverts sur une seule 3090 ; la réplique indépendante la plus étoilée, anciennement openjev."
+      "descriptionFr": "Ifs sémantiques issus de modèles ouverts sur une seule 3090 ; la réplique indépendante la plus étoilée, anciennement openjev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "jarrodwatts--jev-trader",
@@ -167,7 +177,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/jarrodwatts/jev-trader",
-      "descriptionFr": "Une décision de trading à chaque bloc Monad, sur Kuru MON-USDC, environ 300 ms chacune."
+      "descriptionFr": "Une décision de trading à chaque bloc Monad, sur Kuru MON-USDC, environ 300 ms chacune.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "typesafe-ai--skills",
@@ -193,7 +205,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/typesafe-ai/skills",
-      "descriptionFr": "Skills d’agent pour concevoir des questions, construire des workflows et les évaluer."
+      "descriptionFr": "Skills d’agent pour concevoir des questions, construire des workflows et les évaluer.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "tianyucodings--nanojev",
@@ -219,7 +233,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/TianyuCodings/NanoJev",
-      "descriptionFr": "Réplique 0.6B avec décisions parallèles, candidats dynamiques et pipeline d’entraînement de bout en bout."
+      "descriptionFr": "Réplique 0.6B avec décisions parallèles, candidats dynamiques et pipeline d’entraînement de bout en bout.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "dzhng--jevgrep",
@@ -252,7 +268,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/dzhng/jevgrep",
-      "descriptionFr": "Trouve les fichiers, déclarations et extraits verbatim dont un agent de codage a besoin en demandant à Jev quelles déclarations répondent à une question en langage simple sur le repo."
+      "descriptionFr": "Trouve les fichiers, déclarations et extraits verbatim dont un agent de codage a besoin en demandant à Jev quelles déclarations répondent à une question en langage simple sur le repo.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "nicobailon--pi-mcp-adapter",
@@ -285,7 +303,9 @@
       ],
       "firstSeen": "2026-09-20",
       "source": "https://github.com/nicobailon/pi-mcp-adapter",
-      "descriptionFr": "Évaluation typée et recherche sémantique opt-in sur les résultats d’outils MCP, derrière une liste d’autorisation de sortie de données par serveur."
+      "descriptionFr": "Évaluation typée et recherche sémantique opt-in sur les résultats d’outils MCP, derrière une liste d’autorisation de sortie de données par serveur.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "vinnylarouge--jevlike",
@@ -311,7 +331,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/vinnylarouge/jevlike",
-      "descriptionFr": "Scorer d'options ouvert qui lit les logits des candidats au lieu de générer du JSON."
+      "descriptionFr": "Scorer d'options ouvert qui lit les logits des candidats au lieu de générer du JSON.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "awlevin--typesafe-computer-use",
@@ -344,7 +366,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/awlevin/typesafe-computer-use",
-      "descriptionFr": "Fait de l'OCR sur l'écran, classifie l'action suivante, clique ; environ $0.0002 par étape sur macOS."
+      "descriptionFr": "Fait de l'OCR sur l'écran, classifie l'action suivante, clique ; environ $0.0002 par étape sur macOS.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "ollaya-dev--ollaya",
@@ -377,7 +401,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/ollaya-dev/ollaya",
-      "descriptionFr": "Télécharge et sert des modèles de décision ouverts tels que Laya, kev et JevK5 derrière un endpoint local compatible TypeSafe, comme Ollama sert les LLM."
+      "descriptionFr": "Télécharge et sert des modèles de décision ouverts tels que Laya, kev et JevK5 derrière un endpoint local compatible TypeSafe, comme Ollama sert les LLM.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "mapika--decider",
@@ -403,7 +429,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/Mapika/decider",
-      "descriptionFr": "Décisions typées en une passe, affinées à partir de Qwen3.5-2B."
+      "descriptionFr": "Décisions typées en une passe, affinées à partir de Qwen3.5-2B.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "nokia-applied-research--anyjev",
@@ -436,7 +464,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/nokia-applied-research/AnyJev",
-      "descriptionFr": "Transforme un modèle ouvert Hugging Face en endpoint de décision calibré servi via vLLM, sans fine-tuning aux deux premiers niveaux."
+      "descriptionFr": "Transforme un modèle ouvert Hugging Face en endpoint de décision calibré servi via vLLM, sans fine-tuning aux deux premiers niveaux.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "kerpopule--hermes-jev-skills",
@@ -462,7 +492,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/kerpopule/hermes-jev-skills",
-      "descriptionFr": "Confie les petites décisions d'un agent à Jev : quel modèle répond au tour, quelles skills charger, quels passages comptent, quels tours survivent à la compaction."
+      "descriptionFr": "Confie les petites décisions d'un agent à Jev : quel modèle répond au tour, quelles skills charger, quels passages comptent, quels tours survivent à la compaction.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "vercel-labs--ai-cli",
@@ -488,7 +520,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/vercel-labs/ai-cli",
-      "descriptionFr": "Le Vercel AI SDK dans votre terminal, avec un chemin evaluate qui s'exécute sur Jev."
+      "descriptionFr": "Le Vercel AI SDK dans votre terminal, avec un chemin evaluate qui s'exécute sur Jev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "wfzyx--von",
@@ -521,7 +555,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/wfzyx/von",
-      "descriptionFr": "Modèle de décision ouvert non autorégressif annoncé à moins de 15 ms en local, comme alternative directe à Jev."
+      "descriptionFr": "Modèle de décision ouvert non autorégressif annoncé à moins de 15 ms en local, comme alternative directe à Jev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "rizzo-ai-academy--rizzo-flow",
@@ -547,7 +583,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/Rizzo-AI-Academy/rizzo-flow",
-      "descriptionFr": "Interprétation local-first de l'idée System One : état non structuré en entrée, décisions probabilistes typées en sortie, sans générer de token."
+      "descriptionFr": "Interprétation local-first de l'idée System One : état non structuré en entrée, décisions probabilistes typées en sortie, sans générer de token.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "anishfn--shapeshift",
@@ -573,7 +611,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/anishfn/shapeshift",
-      "descriptionFr": "Transforme une zone de texte en carte correspondante pendant la frappe, jugée par un seul appel Jev parallèle, avec un repli par mot-clé quand aucune clé n'est définie."
+      "descriptionFr": "Transforme une zone de texte en carte correspondante pendant la frappe, jugée par un seul appel Jev parallèle, avec un repli par mot-clé quand aucune clé n'est définie.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "wy-coliney--jev-browser-use",
@@ -599,7 +639,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/wy-coliney/jev-browser-use",
-      "descriptionFr": "Skill et plugin Codex où Jev gère la navigation, les clics et le défilement tandis que Codex conserve la saisie et la vérification ; annonce des étapes de navigateur 5 à 10 fois plus rapides."
+      "descriptionFr": "Skill et plugin Codex où Jev gère la navigation, les clics et le défilement tandis que Codex conserve la saisie et la vérification ; annonce des étapes de navigateur 5 à 10 fois plus rapides.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "devagrawal09--jev-review",
@@ -631,7 +673,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/devagrawal09/jev-review",
-      "descriptionFr": "Workflow de revue de code par étapes avec un tableau de bord local."
+      "descriptionFr": "Workflow de revue de code par étapes avec un tableau de bord local.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "thruwire--foreman",
@@ -657,7 +701,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/thruwire/foreman",
-      "descriptionFr": "Supervise une usine logicielle d'agents, Jev prenant les décisions de validation et de rejet."
+      "descriptionFr": "Supervise une usine logicielle d'agents, Jev prenant les décisions de validation et de rejet.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "sac-y--jev-cu",
@@ -683,7 +729,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/Sac-Y/Jev-cu",
-      "descriptionFr": "Utilisation d'ordinateur Codex où Jev choisit l'élément, l'action, l'achèvement et le risque à partir du texte à l'écran, sans envoi de captures d'écran ; readme en chinois."
+      "descriptionFr": "Utilisation d'ordinateur Codex où Jev choisit l'élément, l'action, l'achèvement et le risque à partir du texte à l'écran, sans envoi de captures d'écran ; readme en chinois.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "featherless-ai--simple-jev",
@@ -709,7 +757,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/featherless-ai/simple-jev",
-      "descriptionFr": "Lit les logits du token suivant depuis n'importe quel modèle Hugging Face pour les questions de choix, d'évaluation et de support ; API de démonstration publique sans clé."
+      "descriptionFr": "Lit les logits du token suivant depuis n'importe quel modèle Hugging Face pour les questions de choix, d'évaluation et de support ; API de démonstration publique sans clé.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "rmalde--minecraft-agent",
@@ -735,7 +785,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/rmalde/minecraft-agent",
-      "descriptionFr": "Tue le dragon sur un serveur vanilla avec un modèle de pointe pour la planification et Jev sélectionnant chaque action du joueur ; la partie enregistrée a nécessité 131 décisions Jev et 35 appels au planificateur."
+      "descriptionFr": "Tue le dragon sur un serveur vanilla avec un modèle de pointe pour la planification et Jev sélectionnant chaque action du joueur ; la partie enregistrée a nécessité 131 décisions Jev et 35 appels au planificateur.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "liuziyu77--valen",
@@ -761,7 +813,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/Liuziyu77/Valen",
-      "descriptionFr": "Modèle de décision multimodal basé sur Qwen3.5 qui évalue les candidats face aux images et à la vidéo ainsi qu'au texte, avec code d'entraînement et poids ouverts."
+      "descriptionFr": "Modèle de décision multimodal basé sur Qwen3.5 qui évalue les candidats face aux images et à la vidéo ainsi qu'au texte, avec code d'entraînement et poids ouverts.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "razorback16--openjev",
@@ -787,7 +841,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/razorback16/openjev",
-      "descriptionFr": "Serveur de décision compatible Jev basé sur DiffusionGemma 26B via vLLM, images incluses, hébergé gratuitement sur [Codiv](https://codiv.ai)."
+      "descriptionFr": "Serveur de décision compatible Jev basé sur DiffusionGemma 26B via vLLM, images incluses, hébergé gratuitement sur [Codiv](https://codiv.ai).",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "gargpratyush--jev-router",
@@ -813,7 +869,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/gargpratyush/jev-router",
-      "descriptionFr": "Achemine chaque tâche vers le modèle Claude le moins cher capable de la traiter."
+      "descriptionFr": "Achemine chaque tâche vers le modèle Claude le moins cher capable de la traiter.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "superagents-lab--jev-search",
@@ -839,7 +897,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/superagents-lab/jev-search",
-      "descriptionFr": "Sélection des sources, compréhension des requêtes et classement de pertinence pour la recherche web."
+      "descriptionFr": "Sélection des sources, compréhension des requêtes et classement de pertinence pour la recherche web.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "kyotofin--tax-doc-classifier",
@@ -865,7 +925,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/kyotofin/tax-doc-classifier",
-      "descriptionFr": "Une requête par page choisit parmi 261 formulaires IRS et sept types de page ; rapporte 100 pour cent sur son corpus à $0.001 par page, 34 fois moins cher que le pipeline LLM remplacé."
+      "descriptionFr": "Une requête par page choisit parmi 261 formulaires IRS et sept types de page ; rapporte 100 pour cent sur son corpus à $0.001 par page, 34 fois moins cher que le pipeline LLM remplacé.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "jkudish--jev-mcp",
@@ -891,7 +953,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/jkudish/jev-mcp",
-      "descriptionFr": "Premier serveur MCP pour Jev, et toujours le plus lié."
+      "descriptionFr": "Premier serveur MCP pour Jev, et toujours le plus lié.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "notque--vexjoy-agent",
@@ -924,7 +988,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/notque/vexjoy-agent",
-      "descriptionFr": "Boîte à outils d'agents dont la commande `/d` choisit l'agent spécialiste, la skill et le pipeline en un seul appel Jev, plus un plugin optionnel Jev auto-compact."
+      "descriptionFr": "Boîte à outils d'agents dont la commande `/d` choisit l'agent spécialiste, la skill et le pipeline en un seul appel Jev, plus un plugin optionnel Jev auto-compact.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "droidrun--mobile-jev",
@@ -950,7 +1016,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/droidrun/mobile-jev",
-      "descriptionFr": "La même boucle sur un vrai téléphone Android ; neuf actions Uber en 21 secondes dans la démo."
+      "descriptionFr": "La même boucle sur un vrai téléphone Android ; neuf actions Uber en 21 secondes dans la démo.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "fhshaik--typesafe-mario",
@@ -976,7 +1044,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/fhshaik/typesafe-mario",
-      "descriptionFr": "Joue à Super Mario Bros. à partir de l'état structuré de l'émulateur ; Jev choisit directement l'entrée de la manette NES."
+      "descriptionFr": "Joue à Super Mario Bros. à partir de l'état structuré de l'émulateur ; Jev choisit directement l'entrée de la manette NES.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "tianyucodings--jevharness",
@@ -1002,7 +1072,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/TianyuCodings/JevHarness",
-      "descriptionFr": "Fait écrire par un LLM un harness spécifique à la tâche qui transforme les observations en questions Jev, puis le fige et l'améliore à partir des récompenses et des traces d'exécution complètes."
+      "descriptionFr": "Fait écrire par un LLM un harness spécifique à la tâche qui transforme les observations en questions Jev, puis le fige et l'améliore à partir des récompenses et des traces d'exécution complètes.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "dabit3--jev-experiments",
@@ -1028,7 +1100,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/dabit3/jev-experiments",
-      "descriptionFr": "Assortiment de petites expériences Jev de Nader Dabit."
+      "descriptionFr": "Assortiment de petites expériences Jev de Nader Dabit.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "realzachi--pg-jev",
@@ -1054,7 +1128,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/realZachi/pg-jev",
-      "descriptionFr": "Extension PostgreSQL qui répond aux questions en langage courant sur vos tables."
+      "descriptionFr": "Extension PostgreSQL qui répond aux questions en langage courant sur vos tables.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "yinsongxu--llm2jev",
@@ -1084,7 +1160,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/Yinsongxu/LLM2Jev",
-      "descriptionFr": "Adapte les modèles de langage locaux aux questions Choice, Score et Noul définies à l'exécution et renvoie des réponses typées avec probabilités."
+      "descriptionFr": "Adapte les modèles de langage locaux aux questions Choice, Score et Noul définies à l'exécution et renvoie des réponses typées avec probabilités.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "moritzkremb--jev-voice-browser",
@@ -1110,7 +1188,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/moritzkremb/jev-voice-browser",
-      "descriptionFr": "Intention et cible décidées à chaque mot prononcé en environ 300 ms, souvent avant la fin de la phrase."
+      "descriptionFr": "Intention et cible décidées à chaque mot prononcé en environ 300 ms, souvent avant la fin de la phrase.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "typesafe-ai--system-one-adapter-python",
@@ -1136,7 +1216,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/typesafe-ai/system-one-adapter-python",
-      "descriptionFr": "Même interface `TypeSafeClient` adossée à une API LLM, pour comparer Jev à un modèle de chat sur des questions identiques."
+      "descriptionFr": "Même interface `TypeSafeClient` adossée à une API LLM, pour comparer Jev à un modèle de chat sur des questions identiques.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "kitze--unclutter",
@@ -1162,7 +1244,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/kitze/unclutter",
-      "descriptionFr": "Extension de navigateur qui supprime l'encombrement des pages grâce à des règles de modèles réutilisables."
+      "descriptionFr": "Extension de navigateur qui supprime l'encombrement des pages grâce à des règles de modèles réutilisables.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "itsmostafa--typesafe-mcp",
@@ -1191,7 +1275,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/itsmostafa/typesafe-mcp",
-      "descriptionFr": "Serveur MCP et CLI Go en binaire unique qui expose les jugements TypeSafe Jev à Claude Desktop, Claude Code et Codex."
+      "descriptionFr": "Serveur MCP et CLI Go en binaire unique qui expose les jugements TypeSafe Jev à Claude Desktop, Claude Code et Codex.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "ekzhang--openjev-sglang",
@@ -1222,7 +1308,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/ekzhang/openjev-sglang",
-      "descriptionFr": "Point de terminaison d'API compatible Jev sur SGLang, prefill uniquement."
+      "descriptionFr": "Point de terminaison d'API compatible Jev sur SGLang, prefill uniquement.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "malevrigns--agent-jev",
@@ -1248,7 +1336,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/malevrigns/agent-jev",
-      "descriptionFr": "Modèle de décision basé sur Qwen3-0.6B qui répond sans décoder de tokens, avec 79,25 % de top-1 sur le benchmark public Typed Decisions."
+      "descriptionFr": "Modèle de décision basé sur Qwen3-0.6B qui répond sans décoder de tokens, avec 79,25 % de top-1 sur le benchmark public Typed Decisions.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "lakeday-org--perch",
@@ -1281,7 +1371,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/lakeday-org/perch",
-      "descriptionFr": "Linting sémantique : règles en langage courant, chaque fichier évalué par Jev, exécution en local ou en CI."
+      "descriptionFr": "Linting sémantique : règles en langage courant, chaque fichier évalué par Jev, exécution en local ou en CI.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "hr98w--jev-visual",
@@ -1307,7 +1399,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/hr98w/jev-visual",
-      "descriptionFr": "Variante éducative d'inférence visuelle sur Apple Silicon : contexte partagé, notation directe des candidats."
+      "descriptionFr": "Variante éducative d'inférence visuelle sur Apple Silicon : contexte partagé, notation directe des candidats.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "billionsbobby--jevrouter",
@@ -1333,7 +1427,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/BillionsBobby/JevRouter",
-      "descriptionFr": "Modèles, subagents, skills, outils MCP et CLI réunis en un seul ensemble de candidats ; Jev choisit, le routeur applique les permissions et le risque ; 44 % de bons appels d'outils dans les cinq premiers contre 24 pour DeepSeek sur Toolathlon."
+      "descriptionFr": "Modèles, subagents, skills, outils MCP et CLI réunis en un seul ensemble de candidats ; Jev choisit, le routeur applique les permissions et le risque ; 44 % de bons appels d'outils dans les cinq premiers contre 24 pour DeepSeek sur Toolathlon.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "sutro-sh--jev-align",
@@ -1366,7 +1462,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/sutro-sh/jev-align",
-      "descriptionFr": "Trouve les exemples dont une fonction Jev est la moins sûre, vous demande de les annoter et améliore la fonction avec GEPA."
+      "descriptionFr": "Trouve les exemples dont une fonction Jev est la moins sûre, vous demande de les annoter et améliore la fonction avec GEPA.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "jkudish--jev-browser",
@@ -1392,7 +1490,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/jkudish/jev-browser",
-      "descriptionFr": "Le premier agent navigateur communautaire basé sur Jev, avec un GIF de démonstration."
+      "descriptionFr": "Le premier agent navigateur communautaire basé sur Jev, avec un GIF de démonstration.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "miuuyy--astra-ares",
@@ -1418,7 +1518,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/miuuyy/Astra-Ares",
-      "descriptionFr": "Laisse Jev choisir l'effort de raisonnement et sa durée de maintien pour une tâche Codex en cours, sur un CLI Codex patché compilé depuis la source upstream."
+      "descriptionFr": "Laisse Jev choisir l'effort de raisonnement et sa durée de maintien pour une tâche Codex en cours, sur un CLI Codex patché compilé depuis la source upstream.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "heman10x-ngu--openjev-verdict-2-0",
@@ -1451,7 +1553,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/Heman10x-NGU/openJev-verdict-2.0",
-      "descriptionFr": "Moteur de décision non autorégressif de 151M avec un runtime navigateur WebGPU, annonçant 77,1 % de top-1 et 1,44 % d'erreur de calibration sur son propre benchmark."
+      "descriptionFr": "Moteur de décision non autorégressif de 151M avec un runtime navigateur WebGPU, annonçant 77,1 % de top-1 et 1,44 % d'erreur de calibration sur son propre benchmark.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "0xnatoshi--jev-codex-router",
@@ -1484,7 +1588,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/0xNatoshi/jev-codex-router",
-      "descriptionFr": "Choisit le modèle, la profondeur de réflexion et le mode de vitesse pour chaque tour de Codex."
+      "descriptionFr": "Choisit le modèle, la profondeur de réflexion et le mode de vitesse pour chaque tour de Codex.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "logan-markewich--jeff",
@@ -1516,7 +1622,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/logan-markewich/jeff",
-      "descriptionFr": "API System One auto-hébergée sur le GLiFormer 400M, avec des benchmarks qui indiquent où elle reste derrière Jev."
+      "descriptionFr": "API System One auto-hébergée sur le GLiFormer 400M, avec des benchmarks qui indiquent où elle reste derrière Jev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "vinilana--jev-gateway",
@@ -1542,7 +1650,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/vinilana/jev-gateway",
-      "descriptionFr": "Passerelle locale pour Codex et Claude Code qui envoie la décision \"which tool next\" à Jev et tout le reste à votre modèle habituel."
+      "descriptionFr": "Passerelle locale pour Codex et Claude Code qui envoie la décision \"which tool next\" à Jev et tout le reste à votre modèle habituel.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "agricidaniel--jev-seo",
@@ -1568,7 +1678,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/AgriciDaniel/jev-seo",
-      "descriptionFr": "Explore un site, le vérifie par rapport à 52 règles SEO, fait juger chaque page par Jev, et génère des rapports PDF, tableur et Markdown."
+      "descriptionFr": "Explore un site, le vérifie par rapport à 52 règles SEO, fait juger chaque page par Jev, et génère des rapports PDF, tableur et Markdown.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "ferrycorleone--crush-monitor",
@@ -1594,7 +1706,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/FerryCorleone/crush-monitor",
-      "descriptionFr": "Lit un journal de discussion localement et étiquette chaque message avec les trois plus probables parmi douze émotions et trente-cinq intentions."
+      "descriptionFr": "Lit un journal de discussion localement et étiquette chaque message avec les trois plus probables parmi douze émotions et trente-cinq intentions.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "typesafe-ai--typesafe-sdk-js",
@@ -1620,7 +1734,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/typesafe-ai/typesafe-sdk-js",
-      "descriptionFr": "Client TypeScript et JavaScript avec des types de réponse inférés à partir de vos questions."
+      "descriptionFr": "Client TypeScript et JavaScript avec des types de réponse inférés à partir de vos questions.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "typesafe-ai--typesafe-sdk-python",
@@ -1646,7 +1762,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/typesafe-ai/typesafe-sdk-python",
-      "descriptionFr": "Client Python, synchrone et asynchrone."
+      "descriptionFr": "Client Python, synchrone et asynchrone.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "kitze--skillbox",
@@ -1672,7 +1790,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/kitze/skillbox",
-      "descriptionFr": "Bibliothèque de skills auto-hébergée et versionnée servie via MCP, avec Jev qui recommande quel skill charger."
+      "descriptionFr": "Bibliothèque de skills auto-hébergée et versionnée servie via MCP, avec Jev qui recommande quel skill charger.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "fbddcz--embodied-jev",
@@ -1698,7 +1818,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/FBddcz/embodied-jev",
-      "descriptionFr": "Workbench navigateur pour expériences incarnées dans MuJoCo où chaque pas du robot est une décision Jev visible, adossé à un modèle local ou à une API cloud."
+      "descriptionFr": "Workbench navigateur pour expériences incarnées dans MuJoCo où chaque pas du robot est une décision Jev visible, adossé à un modèle local ou à une API cloud.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "rokbenko--quackd",
@@ -1731,7 +1853,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/rokbenko/quackd",
-      "descriptionFr": "Ligne de commande pour robots pilotés par LLM sur sept corps, avec un stepper Jev optionnel qui choisit parmi les appels sans jamais écrire un angle d'articulation."
+      "descriptionFr": "Ligne de commande pour robots pilotés par LLM sur sept corps, avec un stepper Jev optionnel qui choisit parmi les appels sans jamais écrire un angle d'articulation.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "monteduro--killmyidea",
@@ -1757,7 +1881,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/monteduro/killmyidea",
-      "descriptionFr": "Décrivez votre idée de startup ; Jev dit s'il faut l'abandonner, la corriger ou la lancer."
+      "descriptionFr": "Décrivez votre idée de startup ; Jev dit s'il faut l'abandonner, la corriger ou la lancer.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "niazmorshed2007--jev-review",
@@ -1790,7 +1916,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/NiazMorshed2007/jev-review",
-      "descriptionFr": "Plugin MCP local-first pour la revue qualité continue par des agents de codage."
+      "descriptionFr": "Plugin MCP local-first pour la revue qualité continue par des agents de codage.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "romanslack--jev-drone",
@@ -1822,7 +1950,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/RomanSlack/jev-drone",
-      "descriptionFr": "Drone à caméra seule dans MuJoCo avec Jev dans la boucle à 2,5 Hz."
+      "descriptionFr": "Drone à caméra seule dans MuJoCo avec Jev dans la boucle à 2,5 Hz.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "usenotra--notra",
@@ -1855,7 +1985,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/usenotra/notra",
-      "descriptionFr": "Transforme le travail en contenu, Jev décidant ce qui vaut la peine d'être publié."
+      "descriptionFr": "Transforme le travail en contenu, Jev décidant ce qui vaut la peine d'être publié.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "standardagents--jevpilot",
@@ -1881,7 +2013,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/standardagents/jevpilot",
-      "descriptionFr": "Simulateur de conduite Three.js où Jev choisit direction et vitesse parmi des trajectoires échantillonnées jusqu'à quatre fois par seconde ; [conduisez-le](https://jevpilot.standardagents.ai)."
+      "descriptionFr": "Simulateur de conduite Three.js où Jev choisit direction et vitesse parmi des trajectoires échantillonnées jusqu'à quatre fois par seconde ; [conduisez-le](https://jevpilot.standardagents.ai).",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "fstandhartinger--jevbench",
@@ -1911,7 +2045,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/fstandhartinger/jevbench",
-      "descriptionFr": "Benchmark pour modèles de décision de classe Jev : rubrique bornée en entrée, réponse typée avec une probabilité par option en sortie, avec expériences en cascade et en comité rapportées séparément."
+      "descriptionFr": "Benchmark pour modèles de décision de classe Jev : rubrique bornée en entrée, réponse typée avec une probabilité par option en sortie, avec expériences en cascade et en comité rapportées séparément.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "imikerussell--beebots",
@@ -1937,7 +2073,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/imikerussell/beebots",
-      "descriptionFr": "Exécute trois bots de trading pilotés par Jev contre les perpetuals OKX avec un tableau de bord en direct, paper trading par défaut et argent réel derrière des flags explicites."
+      "descriptionFr": "Exécute trois bots de trading pilotés par Jev contre les perpetuals OKX avec un tableau de bord en direct, paper trading par défaut et argent réel derrière des flags explicites.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "togethercomputer--tev1",
@@ -1963,7 +2101,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/togethercomputer/tev1",
-      "descriptionFr": "Recette de données et code d'entraînement qui affine Qwen3.5-4B en modèle de décision à poids ouverts sur Together AI."
+      "descriptionFr": "Recette de données et code d'entraînement qui affine Qwen3.5-4B en modèle de décision à poids ouverts sur Together AI.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "aowang-ai--jev-trade",
@@ -1994,7 +2134,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/aowang-ai/jev-trade",
-      "descriptionFr": "Trader Jev en direct sur Hyperliquid."
+      "descriptionFr": "Trader Jev en direct sur Hyperliquid.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "kshetrajna12--reflex",
@@ -2020,7 +2162,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/kshetrajna12/reflex",
-      "descriptionFr": "Petit modèle de décision ouvert sur Qwen3.5 : état plus questions typées vers des probabilités calibrées."
+      "descriptionFr": "Petit modèle de décision ouvert sur Qwen3.5 : état plus questions typées vers des probabilités calibrées.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "devmortimer--pi-warden",
@@ -2052,7 +2196,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/DevMortimer/pi-warden",
-      "descriptionFr": "Garde-fous qui orientent au lieu d'interrompre : appels irréversibles, appels hors tâche, boucles bloquées, affirmations d'achèvement non vérifiées, environ 250 ms chacun."
+      "descriptionFr": "Garde-fous qui orientent au lieu d'interrompre : appels irréversibles, appels hors tâche, boucles bloquées, affirmations d'achèvement non vérifiées, environ 250 ms chacun.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "jexp--neo4jev",
@@ -2078,7 +2224,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/jexp/neo4jev",
-      "descriptionFr": "Parcourt un graphe Neo4j en classifiant les relations voisines."
+      "descriptionFr": "Parcourt un graphe Neo4j en classifiant les relations voisines.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "tamaratran--jev-pruner",
@@ -2104,7 +2252,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/tamaratran/jev-pruner",
-      "descriptionFr": "Élague les longues sorties Bash avec Jev après l'exécution de la commande et avant que le modèle ne les voie ; les sorties courtes, les erreurs et les formats structurés passent intacts."
+      "descriptionFr": "Élague les longues sorties Bash avec Jev après l'exécution de la commande et avant que le modèle ne les voie ; les sorties courtes, les erreurs et les formats structurés passent intacts.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "y0usaf--pi-jev",
@@ -2136,7 +2286,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/y0usaf/pi-jev",
-      "descriptionFr": "Un contrôle mesuré des appels d'outils plus un outil `jev_ask` pour des réponses typées dans Pi."
+      "descriptionFr": "Un contrôle mesuré des appels d'outils plus un outil `jev_ask` pour des réponses typées dans Pi.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "dorkitude--webctl",
@@ -2162,7 +2314,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/dorkitude/webctl",
-      "descriptionFr": "Recherche sur le web pour un agent et fait scorer et dédupliquer par Jev les résultats et les fragments de pages, afin que seul le texte pertinent atteigne le modèle."
+      "descriptionFr": "Recherche sur le web pour un agent et fait scorer et dédupliquer par Jev les résultats et les fragments de pages, afin que seul le texte pertinent atteigne le modèle.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "dbreunig--building-with-jev-skill",
@@ -2188,7 +2342,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/dbreunig/building-with-jev-skill",
-      "descriptionFr": "Skill pour écrire et améliorer des programmes qui appellent Jev."
+      "descriptionFr": "Skill pour écrire et améliorer des programmes qui appellent Jev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "uehaj--jev-semgrep",
@@ -2214,7 +2370,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/uehaj/jev-semgrep",
-      "descriptionFr": "Recherche par sens plutôt que par regex : chaque ligne reçoit une probabilité de Jev, et les sens se combinent avec AND, OR et NOT."
+      "descriptionFr": "Recherche par sens plutôt que par regex : chaque ligne reçoit une probabilité de Jev, et les sens se combinent avec AND, OR et NOT.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "juspay--neurolink",
@@ -2247,7 +2405,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/juspay/neurolink",
-      "descriptionFr": "SDK d'IA TypeScript où decide, via Jev, est l'égal de generate et stream : un appel de jugement typé oriente le choix du modèle, élague le contexte et sélectionne les outils MCP."
+      "descriptionFr": "SDK d'IA TypeScript où decide, via Jev, est l'égal de generate et stream : un appel de jugement typé oriente le choix du modèle, élague le contexte et sélectionne les outils MCP.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "wquguru--dasheng",
@@ -2273,7 +2433,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/wquguru/dasheng",
-      "descriptionFr": "Lisez l'anglais à voix haute et voyez-le noté : la reconnaissance vocale en continu écoute, Jev juge mot à mot, et le total est calculé arithmétiquement dans le code."
+      "descriptionFr": "Lisez l'anglais à voix haute et voyez-le noté : la reconnaissance vocale en continu écoute, Jev juge mot à mot, et le total est calculé arithmétiquement dans le code.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "supercorp-ai--supercov",
@@ -2306,7 +2468,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/supercorp-ai/supercov",
-      "descriptionFr": "Signaux de qualité de code et de couverture pour les agents de codage."
+      "descriptionFr": "Signaux de qualité de code et de couverture pour les agents de codage.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "keltokhy--jgrep",
@@ -2339,7 +2503,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/keltokhy/jgrep",
-      "descriptionFr": "Affiche les lignes correspondant à une description en anglais courant, en continu depuis `tail -f` avec un plafond de dépenses, et rapporte un F1 de 0,91 sur le spam SMS contre 0,72 pour un grep par mots-clés."
+      "descriptionFr": "Affiche les lignes correspondant à une description en anglais courant, en continu depuis `tail -f` avec un plafond de dépenses, et rapporte un F1 de 0,91 sur le spam SMS contre 0,72 pour un grep par mots-clés.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "yuta-fywoo--jev-gui-delegate",
@@ -2365,7 +2531,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/YUTA-fywoo/jev-gui-delegate",
-      "descriptionFr": "Exécute une tâche d'interface graphique déléguée pour Codex via la vraie session Chrome ou Windows UI Automation, avec Jev qui choisit le contrôle à chaque étape."
+      "descriptionFr": "Exécute une tâche d'interface graphique déléguée pour Codex via la vraie session Chrome ou Windows UI Automation, avec Jev qui choisit le contrôle à chaque étape.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "socai-io--jev-social",
@@ -2398,7 +2566,9 @@
       ],
       "firstSeen": "2026-09-20",
       "source": "https://github.com/socai-io/jev-social",
-      "descriptionFr": "Laisse Jev choisir chaque étape de recherche sociale en lecture seule pendant que socai l'exécute dans une vraie session Chrome et diffuse des preuves vérifiables Instagram, TikTok ou LinkedIn dans un rapport."
+      "descriptionFr": "Laisse Jev choisir chaque étape de recherche sociale en lecture seule pendant que socai l'exécute dans une vraie session Chrome et diffuse des preuves vérifiables Instagram, TikTok ou LinkedIn dans un rapport.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "allebee--jevk5",
@@ -2431,7 +2601,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/allebee/jevk5",
-      "descriptionFr": "Réplique de Qwen3.5 avec poids LoRA distillés, classée deuxième sur 76 systèmes et première parmi les systèmes ouverts sur JevBench v1.4."
+      "descriptionFr": "Réplique de Qwen3.5 avec poids LoRA distillés, classée deuxième sur 76 systèmes et première parmi les systèmes ouverts sur JevBench v1.4.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "dicklesworthstone--skillranker",
@@ -2464,7 +2636,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/Dicklesworthstone/skillranker",
-      "descriptionFr": "CLI Rust et hooks qui classent les skills installés pour l'étape suivante à partir du contexte live de la session, avec abstention."
+      "descriptionFr": "CLI Rust et hooks qui classent les skills installés pour l'étape suivante à partir du contexte live de la session, avec abstention.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "daseinlabs--open-jev",
@@ -2490,7 +2664,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/daseinlabs/open-jev",
-      "descriptionFr": "Pré-remplit une fois et note chaque option en un seul passage rembourré sur Gemma 3 4B avec MLX ; joue à Doom depuis le terminal dans la démo."
+      "descriptionFr": "Pré-remplit une fois et note chaque option en un seul passage rembourré sur Gemma 3 4B avec MLX ; joue à Doom depuis le terminal dans la démo.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "devagrawal09--jev-code",
@@ -2516,7 +2692,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/devagrawal09/jev-code",
-      "descriptionFr": "Boîte à outils en ligne de commande à laquelle les agents de codage confient les tâches à fort jugement, avec un workflow Jev typé par requête."
+      "descriptionFr": "Boîte à outils en ligne de commande à laquelle les agents de codage confient les tâches à fort jugement, avec un workflow Jev typé par requête.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "devagrawal09--stanley-code",
@@ -2542,7 +2720,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/devagrawal09/stanley-code",
-      "descriptionFr": "CLI de codage où Jev achemine une requête en langage courant vers un workflow déterministe unique, et ce workflow pose à Jev des questions à choix fixe sur les preuves recueillies."
+      "descriptionFr": "CLI de codage où Jev achemine une requête en langage courant vers un workflow déterministe unique, et ce workflow pose à Jev des questions à choix fixe sur les preuves recueillies.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "mrnugget--jev-shell-history",
@@ -2568,7 +2748,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/mrnugget/jev-shell-history",
-      "descriptionFr": "Suggestions d'historique zsh façon Fish, classées par Jev."
+      "descriptionFr": "Suggestions d'historique zsh façon Fish, classées par Jev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "savka777--jev-use",
@@ -2601,7 +2783,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/savka777/jev-use",
-      "descriptionFr": "Pilotage vocal et au clavier de macOS : Jev choisit la prochaine action à l'écran depuis l'Accessibility tree, sans captures d'écran."
+      "descriptionFr": "Pilotage vocal et au clavier de macOS : Jev choisit la prochaine action à l'écran depuis l'Accessibility tree, sans captures d'écran.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "mmastrac--djev",
@@ -2627,7 +2811,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/mmastrac/djev",
-      "descriptionFr": "Expose `/v1/systemone` sur DiffusionGemma en lisant des réponses typées et des segments de texte depuis un canvas initialisé et figé, sans génération."
+      "descriptionFr": "Expose `/v1/systemone` sur DiffusionGemma en lisant des réponses typées et des segments de texte depuis un canvas initialisé et figé, sans génération.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "heman10x-ngu--verdict-open-jev",
@@ -2660,7 +2846,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/Heman10x-NGU/Verdict-open-jev",
-      "descriptionFr": "Moteur de décision non autorégressif sur ModernBERT avec incertitude calibrée et terrain de jeu WebGPU dans le navigateur."
+      "descriptionFr": "Moteur de décision non autorégressif sur ModernBERT avec incertitude calibrée et terrain de jeu WebGPU dans le navigateur.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "trungdq88--youtube-sponsor-detection",
@@ -2686,7 +2874,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/trungdq88/youtube-sponsor-detection",
-      "descriptionFr": "Extension Chrome qui repère les lectures sponsorisées depuis la transcription ou l'audio en direct et les saute ; le code contrôle chaque horodatage, pour moins d'un centime par heure en mode transcription."
+      "descriptionFr": "Extension Chrome qui repère les lectures sponsorisées depuis la transcription ou l'audio en direct et les saute ; le code contrôle chaque horodatage, pour moins d'un centime par heure en mode transcription.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "vinilana--jev-eval-agent",
@@ -2712,7 +2902,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/vinilana/jev-eval-agent",
-      "descriptionFr": "Agent assistant personnel avec 100 outils simulés, mesurant le nombre d'étapes nécessaires à un agent piloté par Jev."
+      "descriptionFr": "Agent assistant personnel avec 100 outils simulés, mesurant le nombre d'étapes nécessaires à un agent piloté par Jev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "kevinbadi--jev-voice",
@@ -2738,7 +2930,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/kevinbadi/jev-voice",
-      "descriptionFr": "Parlez à macOS : whisper.cpp local transcrit, un appel Jev en éventail choisit l'action et ses arguments typés, puis le code l'exécute."
+      "descriptionFr": "Parlez à macOS : whisper.cpp local transcrit, un appel Jev en éventail choisit l'action et ses arguments typés, puis le code l'exécute.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "w3cj--jev-chat",
@@ -2764,7 +2958,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/w3cj/jev-chat",
-      "descriptionFr": "Barre de commandes en forme de chat où Jev choisit l'outil, les arguments et la forme de la réponse, et le code construit la réponse à partir des données propres aux outils, donc aucun modèle n'écrit le texte."
+      "descriptionFr": "Barre de commandes en forme de chat où Jev choisit l'outil, les arguments et la forme de la réponse, et le code construit la réponse à partir des données propres aux outils, donc aucun modèle n'écrit le texte.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "chetaslua--jevmeter",
@@ -2796,7 +2992,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/ChetasLua/jevmeter",
-      "descriptionFr": "Appose une jauge en direct sur n'importe quelle vidéo : chaque phrase notée sur cinq questions, rendue en montage 16:9, un débat entier pour environ deux centimes."
+      "descriptionFr": "Appose une jauge en direct sur n'importe quelle vidéo : chaque phrase notée sur cinq questions, rendue en montage 16:9, un débat entier pour environ deux centimes.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "ghalebdweikat--winnow",
@@ -2829,7 +3027,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/GhalebDweikat/winnow",
-      "descriptionFr": "Évalue chaque résultat d'outil avant son entrée en contexte, pour que la fenêtre se remplisse moins vite au lieu d'être nettoyée ensuite."
+      "descriptionFr": "Évalue chaque résultat d'outil avant son entrée en contexte, pour que la fenêtre se remplisse moins vite au lieu d'être nettoyée ensuite.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "nidhi-singh02--agent-router",
@@ -2862,7 +3062,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/nidhi-singh02/agent-router",
-      "descriptionFr": "Choisit entre Cursor, Claude Code, Codex ou OpenCode avec modèle et niveau d'effort pour une tâche, puis la lance."
+      "descriptionFr": "Choisit entre Cursor, Claude Code, Codex ou OpenCode avec modèle et niveau d'effort pour une tâche, puis la lance.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "fabricioctelles--skills",
@@ -2895,7 +3097,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/fabricioctelles/skills",
-      "descriptionFr": "Annuaire d'agent-skills pouvant noter des critères d'évaluation subjectifs avec Jev."
+      "descriptionFr": "Annuaire d'agent-skills pouvant noter des critères d'évaluation subjectifs avec Jev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "openlayer-ai--jevals",
@@ -2928,7 +3132,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/openlayer-ai/jevals",
-      "descriptionFr": "Exécute les évaluations d'agent, de qualité et de sécurité d'une trace en un seul lot de questions Jev typées au lieu d'appels séparés à un LLM juge."
+      "descriptionFr": "Exécute les évaluations d'agent, de qualité et de sécurité d'une trace en un seul lot de questions Jev typées au lieu d'appels séparés à un LLM juge.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "pithings--advocaat",
@@ -2954,7 +3160,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/pithings/advocaat",
-      "descriptionFr": "Petit client TypeScript pour poser des questions sur vos propres données."
+      "descriptionFr": "Petit client TypeScript pour poser des questions sur vos propres données.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "ying-kai-liao--jev-browser",
@@ -2986,7 +3194,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/Ying-Kai-Liao/jev-browser",
-      "descriptionFr": "Un LLM planifie, Jev décide ; bibliothèque, CLI et serveur MCP."
+      "descriptionFr": "Un LLM planifie, Jev décide ; bibliothèque, CLI et serveur MCP.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "zwlijay--jev-forge",
@@ -3012,7 +3222,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/zwliJay/jev-forge",
-      "descriptionFr": "Stack complète pour la construction auditable de données, l'entraînement de Qwen3.5-0.8B, l'évaluation figée Mind2Web et OOD, le service local et une base de référence RLCD préliminaire."
+      "descriptionFr": "Stack complète pour la construction auditable de données, l'entraînement de Qwen3.5-0.8B, l'évaluation figée Mind2Web et OOD, le service local et une base de référence RLCD préliminaire.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "ellipsis-dev--blink",
@@ -3038,7 +3250,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/ellipsis-dev/blink",
-      "descriptionFr": "Recherche dans une base de code où Jev note les candidats."
+      "descriptionFr": "Recherche dans une base de code où Jev note les candidats.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "akashpriyadarshii--jev-curate",
@@ -3071,7 +3285,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/AkashPriyadarshii/jev-curate",
-      "descriptionFr": "Trie les données d'entraînement Parquet et JSONL à plus de 1 500 lignes par seconde."
+      "descriptionFr": "Trie les données d'entraînement Parquet et JSONL à plus de 1 500 lignes par seconde.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "fazlerocks--jevmail",
@@ -3104,7 +3320,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/fazlerocks/jevmail",
-      "descriptionFr": "Tri Gmail en lecture seule : trois questions Jev par message le répartissent dans l'une des cinq catégories avec un score d'urgence."
+      "descriptionFr": "Tri Gmail en lecture seule : trois questions Jev par message le répartissent dans l'une des cinq catégories avec un score d'urgence.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "giuliosmall--pg-typesafe",
@@ -3130,7 +3348,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/giuliosmall/pg_typesafe",
-      "descriptionFr": "Extension PostgreSQL en pré-alpha pour la classification catégorielle avec Jev."
+      "descriptionFr": "Extension PostgreSQL en pré-alpha pour la classification catégorielle avec Jev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "realzachi--typesafe-adblock",
@@ -3156,7 +3376,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/realZachi/typesafe-adblock",
-      "descriptionFr": "Extension Chrome qui demande \"is this element an ad?\" pour chaque nœud DOM ; un jouet, et elle l'assume."
+      "descriptionFr": "Extension Chrome qui demande \"is this element an ad?\" pour chaque nœud DOM ; un jouet, et elle l'assume.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "akashpriyadarshii--jev-seo",
@@ -3189,7 +3411,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/AkashPriyadarshii/jev-seo",
-      "descriptionFr": "CLI Rust et serveur MCP pour des vérifications SEO et GEO sur les résultats DuckDuckGo, notés par Jev."
+      "descriptionFr": "CLI Rust et serveur MCP pour des vérifications SEO et GEO sur les résultats DuckDuckGo, notés par Jev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "iamunbounded--save-token-jev-clean",
@@ -3215,7 +3439,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/IAmUnbounded/save-token-jev-clean",
-      "descriptionFr": "Compaction qui demande à Jev quels appels d'outils comptent encore et conserve le reste tel quel, avec des adaptateurs pour Claude Code, Codex, OpenCode et les transcriptions API brutes."
+      "descriptionFr": "Compaction qui demande à Jev quels appels d'outils comptent encore et conserve le reste tel quel, avec des adaptateurs pour Claude Code, Codex, OpenCode et les transcriptions API brutes.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "sharziki--semdecide",
@@ -3248,7 +3474,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/sharziki/semdecide",
-      "descriptionFr": "Décisions sémantiques typées pour les pipelines Unix et la CI."
+      "descriptionFr": "Décisions sémantiques typées pour les pipelines Unix et la CI.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "kikoncuo--jevfire",
@@ -3281,7 +3509,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/kikoncuo/jevfire",
-      "descriptionFr": "Décisions parallèles pour les LLM CUDA via une API vLLM, avec des exemples d'agents de jeu et des benchmarks."
+      "descriptionFr": "Décisions parallèles pour les LLM CUDA via une API vLLM, avec des exemples d'agents de jeu et des benchmarks.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "bnsd55--jevmlx",
@@ -3313,7 +3543,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/bnsd55/jevmlx",
-      "descriptionFr": "Décisions contraintes parallèles pour tout modèle MLX sur Apple Silicon, en une seule passe avant."
+      "descriptionFr": "Décisions contraintes parallèles pour tout modèle MLX sur Apple Silicon, en une seule passe avant.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "abovecolin--ha-jev",
@@ -3346,7 +3578,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/AboveColin/HA-Jev",
-      "descriptionFr": "Intégration Home Assistant : posez une question sur votre maison, obtenez une probabilité, un choix ou un score sous forme d'entité."
+      "descriptionFr": "Intégration Home Assistant : posez une question sur votre maison, obtenez une probabilité, un choix ou un score sous forme d'entité.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "eliaalberti--jev-rules",
@@ -3372,7 +3606,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/EliaAlberti/jev-rules",
-      "descriptionFr": "Évalue vos règles permanentes par rapport à chaque prompt et ne fournit que celles qui s'appliquent, une fois par session."
+      "descriptionFr": "Évalue vos règles permanentes par rapport à chaque prompt et ne fournit que celles qui s'appliquent, une fois par session.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "milvus-io--milvus-model",
@@ -3404,7 +3640,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/milvus-io/milvus-model",
-      "descriptionFr": "Paquet reranker dont l'adaptateur Jev envoie chaque document candidat comme une question Noul en une seule requête, trie selon les probabilités renvoyées et conserve les indices d'origine ; livré dans la version v0.3.4."
+      "descriptionFr": "Paquet reranker dont l'adaptateur Jev envoie chaque document candidat comme une question Noul en une seule requête, trie selon les probabilités renvoyées et conserve les indices d'origine ; livré dans la version v0.3.4.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "theooliveira--pi-jev",
@@ -3437,7 +3675,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/TheoOliveira/pi-jev",
-      "descriptionFr": "Routage sémantique d'outils et décisions typées sous forme d'outils Pi."
+      "descriptionFr": "Routage sémantique d'outils et décisions typées sous forme d'outils Pi.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "r-ms--mini-jev",
@@ -3463,7 +3703,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/r-ms/mini-jev",
-      "descriptionFr": "Expérience préenregistrée sur un Qwen3-4B figé : lit les logits de la lettre d'option, sans passer par le JSON."
+      "descriptionFr": "Expérience préenregistrée sur un Qwen3-4B figé : lit les logits de la lettre d'option, sans passer par le JSON.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "kyu1204--jgrep",
@@ -3489,7 +3731,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/kyu1204/jgrep",
-      "descriptionFr": "`--diff` bloque une PR en CI selon une règle écrite en anglais, `--tests` liste les fichiers de test qu'un diff peut affecter, et `jgrep` seul recherche dans le code par ce qu'il fait ; un Noul par chunk, 16 chunks par requête."
+      "descriptionFr": "`--diff` bloque une PR en CI selon une règle écrite en anglais, `--tests` liste les fichiers de test qu'un diff peut affecter, et `jgrep` seul recherche dans le code par ce qu'il fait ; un Noul par chunk, 16 chunks par requête.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "ikermoel--open-alternative-jev",
@@ -3522,7 +3766,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/ikermoel/open-alternative-jev",
-      "descriptionFr": "Décisions typées et calibrées depuis tout modèle à poids ouverts en une seule passe avant, sur Hugging Face et vLLM."
+      "descriptionFr": "Décisions typées et calibrées depuis tout modèle à poids ouverts en une seule passe avant, sur Hugging Face et vLLM.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "obie--ruby-decision-model",
@@ -3548,7 +3794,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/obie/ruby_decision_model",
-      "descriptionFr": "Client Ruby pour modèles de décision avec les fournisseurs OpenRouter et TypeSafe derrière une seule interface, stdlib uniquement."
+      "descriptionFr": "Client Ruby pour modèles de décision avec les fournisseurs OpenRouter et TypeSafe derrière une seule interface, stdlib uniquement.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "yusukebe--hono-jev-router",
@@ -3574,7 +3822,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/yusukebe/hono-jev-router",
-      "descriptionFr": "Route les requêtes HTTP par leur sens dans Hono."
+      "descriptionFr": "Route les requêtes HTTP par leur sens dans Hono.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "devmortimer--pi-typesafe",
@@ -3600,7 +3850,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/DevMortimer/pi-typesafe",
-      "descriptionFr": "Outil d'évaluation par lots, terrain de jeu en terminal et API typée pour les auteurs d'extensions Pi."
+      "descriptionFr": "Outil d'évaluation par lots, terrain de jeu en terminal et API typée pour les auteurs d'extensions Pi.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "rafalwilinski--vibecheck",
@@ -3626,7 +3878,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/RafalWilinski/vibecheck",
-      "descriptionFr": "Vérifie ton post X avant de le publier."
+      "descriptionFr": "Vérifie ton post X avant de le publier.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "kbhuw--jev-sift",
@@ -3652,7 +3906,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/kbhuw/jev-sift",
-      "descriptionFr": "Outil MCP qui note un lot de fichiers, d'URL ou d'extraits selon leur pertinence pour que l'agent n'ouvre que l'essentiel."
+      "descriptionFr": "Outil MCP qui note un lot de fichiers, d'URL ou d'extraits selon leur pertinence pour que l'agent n'ouvre que l'essentiel.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "leepokai--jev-guard",
@@ -3685,7 +3941,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/leepokai/jev-guard",
-      "descriptionFr": "Mode auto pour Claude Code, Codex, Cursor, Gemini CLI, Pi et OpenCode : attribue à chaque appel d'outil un score de risque deny, ask ou allow et signale les injections de prompt dans les résultats."
+      "descriptionFr": "Mode auto pour Claude Code, Codex, Cursor, Gemini CLI, Pi et OpenCode : attribue à chaque appel d'outil un score de risque deny, ask ou allow et signale les injections de prompt dans les résultats.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "brainstormity--jev-moderation-bot",
@@ -3711,7 +3969,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/brainstormity/Jev-Moderation-Bot",
-      "descriptionFr": "Modération de chat avec des règles modifiables."
+      "descriptionFr": "Modération de chat avec des règles modifiables.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "tacticocc--jevbridge",
@@ -3744,7 +4004,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/tacticocc/Jevbridge",
-      "descriptionFr": "Adaptateur ACP et MCP qui associe Jev à n’importe quel LLM pour l’utilisation d’ordinateur et les décisions typées."
+      "descriptionFr": "Adaptateur ACP et MCP qui associe Jev à n’importe quel LLM pour l’utilisation d’ordinateur et les décisions typées.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "zhengxuyu--litjev",
@@ -3770,7 +4032,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/zhengxuyu/litjev",
-      "descriptionFr": "Transforme n’importe quel LLM standard en couche de décision de style Jev."
+      "descriptionFr": "Transforme n’importe quel LLM standard en couche de décision de style Jev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "omnijev--playjev",
@@ -3803,7 +4067,9 @@
       ],
       "firstSeen": "2026-09-20",
       "source": "https://github.com/OmniJev/PlayJev",
-      "descriptionFr": "Joue à dix jeux navigateur à partir de la seule image sur un Qwen3.5-0.8B affiné, une passe avant par coup, avec poids ouverts et démo dans le navigateur."
+      "descriptionFr": "Joue à dix jeux navigateur à partir de la seule image sur un Qwen3.5-0.8B affiné, une passe avant par coup, avec poids ouverts et démo dans le navigateur.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "joshuasp--open-jev",
@@ -3829,7 +4095,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/JoshuaSP/open-jev",
-      "descriptionFr": "Inférence JSON typée avec DiffusionGemma, évaluée par rapport à Jev."
+      "descriptionFr": "Inférence JSON typée avec DiffusionGemma, évaluée par rapport à Jev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "shantanugoel--ask-jev-skill",
@@ -3855,7 +4123,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/shantanugoel/ask-jev-skill",
-      "descriptionFr": "Permet à Hermes et aux agents similaires d’interroger Jev directement."
+      "descriptionFr": "Permet à Hermes et aux agents similaires d’interroger Jev directement.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "emrickgarrett--onevonejev",
@@ -3881,7 +4151,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/emrickgarrett/OneVOneJev",
-      "descriptionFr": "Arène 1v1 quickscope en Three.js."
+      "descriptionFr": "Arène 1v1 quickscope en Three.js.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "pinecone-io--cultivar",
@@ -3914,7 +4186,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/pinecone-io/cultivar",
-      "descriptionFr": "CLI de test de skills de Pinecone, avec un backend de notation Jev annoncé environ 30 fois moins cher que le correcteur LLM."
+      "descriptionFr": "CLI de test de skills de Pinecone, avec un backend de notation Jev annoncé environ 30 fois moins cher que le correcteur LLM.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "iammrduncan--typesafe-ai-benchmark",
@@ -3940,7 +4214,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/iammrduncan/typesafe-ai-benchmark",
-      "descriptionFr": "Passerelle LLM qui imite le format de réponse TypeSafe, utile comme substitut en attendant une clé."
+      "descriptionFr": "Passerelle LLM qui imite le format de réponse TypeSafe, utile comme substitut en attendant une clé.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "hqman--jevscout",
@@ -3966,7 +4242,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/hqman/JevScout",
-      "descriptionFr": "Skill de recherche d’emploi qui pilote Chrome via CDP et fait noter chaque lien et chaque annonce par Jev."
+      "descriptionFr": "Skill de recherche d’emploi qui pilote Chrome via CDP et fait noter chaque lien et chaque annonce par Jev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "mithalouni--system-one-open",
@@ -3992,7 +4270,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/mithalouni/system-one-open",
-      "descriptionFr": "Décisions typées et calibrées en une seule passe avant sur Gemma 4 E2B et Gemma 3 270M."
+      "descriptionFr": "Décisions typées et calibrées en une seule passe avant sur Gemma 4 E2B et Gemma 3 270M.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "alurith--jeff",
@@ -4021,7 +4301,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/Alurith/jeff",
-      "descriptionFr": "CLI Go en lecture seule qui vérifie les fichiers par rapport à des règles codées telles que les effets de bord cachés et la gestion d'erreurs faible."
+      "descriptionFr": "CLI Go en lecture seule qui vérifie les fichiers par rapport à des règles codées telles que les effets de bord cachés et la gestion d'erreurs faible.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "choxos--jev-reviewer",
@@ -4054,7 +4336,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/choxos/jev-reviewer",
-      "descriptionFr": "Interroge un rapport d'essai clinique pour des données de revue systématique par voix, texte ou fichier de questions ; chaque réponse est une citation exacte avec son fichier et son emplacement."
+      "descriptionFr": "Interroge un rapport d'essai clinique pour des données de revue systématique par voix, texte ou fichier de questions ; chaque réponse est une citation exacte avec son fichier et son emplacement.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "zadescoxp--jev-trades",
@@ -4085,7 +4369,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/zadescoxp/Jev-Trades",
-      "descriptionFr": "Bot de trading crypto avec backtesting."
+      "descriptionFr": "Bot de trading crypto avec backtesting.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "devanshbatham--commit-miner",
@@ -4111,7 +4397,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/devanshbatham/commit-miner",
-      "descriptionFr": "Classe les diffs et messages de commit : corrections de bugs, corrections de sécurité avec CWEs, types de modifications."
+      "descriptionFr": "Classe les diffs et messages de commit : corrections de bugs, corrections de sécurité avec CWEs, types de modifications.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "zhihz--openjev",
@@ -4137,7 +4425,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/zhihz/openjev",
-      "descriptionFr": "Décisions locales bilingues à partir du contexte, des questions et des réponses candidates."
+      "descriptionFr": "Décisions locales bilingues à partir du contexte, des questions et des réponses candidates.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "dannote--jev",
@@ -4163,7 +4453,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/dannote/jev",
-      "descriptionFr": "Client Elixir conçu pour OTP : répond à Jev depuis un GenServer et applique un filtrage par motif à la réponse."
+      "descriptionFr": "Client Elixir conçu pour OTP : répond à Jev depuis un GenServer et applique un filtrage par motif à la réponse.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "danrwilloughby--snifftest",
@@ -4196,7 +4488,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/DanRWilloughby/snifftest",
-      "descriptionFr": "Linter de prose pour les marqueurs d'écriture IA : règles comptables plus un modèle de jugement."
+      "descriptionFr": "Linter de prose pour les marqueurs d'écriture IA : règles comptables plus un modèle de jugement.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "luantak--is-malicious",
@@ -4229,7 +4523,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/luantak/is-malicious",
-      "descriptionFr": "Analyse une base de code pour détecter les comportements cachés ou de vol de données avant exécution ; un rapport vierge n'est pas une preuve, et il le précise."
+      "descriptionFr": "Analyse une base de code pour détecter les comportements cachés ou de vol de données avant exécution ; un rapport vierge n'est pas une preuve, et il le précise.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "lukstei--slop-grader",
@@ -4262,7 +4558,9 @@
       ],
       "firstSeen": "2026-09-20",
       "source": "https://github.com/lukstei/slop-grader",
-      "descriptionFr": "Note les fichiers texte et markdown sur le slop IA, la grammaire et la qualité de la documentation technique, et guide un agent IA pour corriger automatiquement les violations."
+      "descriptionFr": "Note les fichiers texte et markdown sur le slop IA, la grammaire et la qualité de la documentation technique, et guide un agent IA pour corriger automatiquement les violations.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "shitianfang--jev-use",
@@ -4295,7 +4593,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/shitianfang/jev-use",
-      "descriptionFr": "Confie à Jev les étapes Claude Code, Codex et pi qui ne nécessitent aucune sortie texte, avec un contrat d'escalade typé pour tout ce qu'il ne doit pas décider."
+      "descriptionFr": "Confie à Jev les étapes Claude Code, Codex et pi qui ne nécessitent aucune sortie texte, avec un contrat d'escalade typé pour tout ce qu'il ne doit pas décider.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "jomatsu--pi-jev-auto-mode",
@@ -4328,7 +4628,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/jomatsu/pi-jev-auto-mode",
-      "descriptionFr": "Approuve automatiquement les appels bash, write et edit de façon sémantique et refuse par défaut quand il ne peut pas trancher."
+      "descriptionFr": "Approuve automatiquement les appels bash, write et edit de façon sémantique et refuse par défaut quand il ne peut pas trancher.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "keeltrace--hermes-jev",
@@ -4354,7 +4656,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/keeltrace/hermes-jev",
-      "descriptionFr": "Décisions typées, classement, vérification et contrôle d'outils opt-in."
+      "descriptionFr": "Décisions typées, classement, vérification et contrôle d'outils opt-in.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "chenmingtang830--jevgraph",
@@ -4387,7 +4691,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/chenmingtang830/jevgraph",
-      "descriptionFr": "Analyse localement les PDF, DOCX, PPTX ou texte, puis pose à Jev une question de relation en ensemble fermé par paire d'entités candidate et exporte un graphe avec probabilités par arête et preuves de page vers JSON, CSV ou Neo4j."
+      "descriptionFr": "Analyse localement les PDF, DOCX, PPTX ou texte, puis pose à Jev une question de relation en ensemble fermé par paire d'entités candidate et exporte un graphe avec probabilités par arête et preuves de page vers JSON, CSV ou Neo4j.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "colliber--duckdb-jev",
@@ -4413,7 +4719,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/colliber/duckdb-jev",
-      "descriptionFr": "Extension DuckDB qui pose une question à chaque ligne et renvoie un vrai type SQL."
+      "descriptionFr": "Extension DuckDB qui pose une question à chaque ligne et renvoie un vrai type SQL.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "phyous--tsai-sc",
@@ -4439,7 +4747,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/phyous/tsai-sc",
-      "descriptionFr": "Joue à la version shareware originale de StarCraft au clavier et à la souris, avec probabilités d'action enregistrées."
+      "descriptionFr": "Joue à la version shareware originale de StarCraft au clavier et à la souris, avec probabilités d'action enregistrées.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "lukaske--jev-doom-agent",
@@ -4465,7 +4775,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/lukaske/jev-doom-agent",
-      "descriptionFr": "Agent Doom natif du navigateur avec état spatial structuré et télémétrie de décision en direct."
+      "descriptionFr": "Agent Doom natif du navigateur avec état spatial structuré et télémétrie de décision en direct.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "compozy--yoshi",
@@ -4498,7 +4810,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/compozy/yoshi",
-      "descriptionFr": "Proxy d'élagage de contexte pour Claude Code et Codex, avec des économies mesurées plutôt qu'affirmées."
+      "descriptionFr": "Proxy d'élagage de contexte pour Claude Code et Codex, avec des économies mesurées plutôt qu'affirmées.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "blakestone-x--jev-mcp",
@@ -4524,7 +4838,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/blakestone-x/jev-mcp",
-      "descriptionFr": "Classify, score, check, match et screen, avec un niveau de confiance sur chaque réponse."
+      "descriptionFr": "Classify, score, check, match et screen, avec un niveau de confiance sur chaque réponse.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "shiftynick--jev-axi",
@@ -4557,7 +4873,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/shiftynick/jev-axi",
-      "descriptionFr": "Verbes shell pour les agents et les humains : pick, rate, check, rank, triage, guard."
+      "descriptionFr": "Verbes shell pour les agents et les humains : pick, rate, check, rank, triage, guard.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "rorshopping--jev-on-a-laptop",
@@ -4583,7 +4901,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/rorshopping/jev-on-a-laptop",
-      "descriptionFr": "Étude des décisions de type Jev sur des modèles standard de 1,5B à 8B sur un ordinateur portable, avec une démo Hugging Face."
+      "descriptionFr": "Étude des décisions de type Jev sur des modèles standard de 1,5B à 8B sur un ordinateur portable, avec une démo Hugging Face.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "godsboy--jev-agent-skill-router",
@@ -4616,7 +4936,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/GodsBoy/jev-agent-skill-router",
-      "descriptionFr": "Routage de compétences sensible à la confiance avec un chemin d'abstention."
+      "descriptionFr": "Routage de compétences sensible à la confiance avec un chemin d'abstention.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "sorrycc--typesafe-snake",
@@ -4642,7 +4964,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/sorrycc/typesafe-snake",
-      "descriptionFr": "Un Choice par tick ; coups légaux et faits générés en code."
+      "descriptionFr": "Un Choice par tick ; coups légaux et faits générés en code.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "chopratejas--invalidate",
@@ -4668,7 +4992,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/chopratejas/invalidate",
-      "descriptionFr": "Donne à chaque mémoire d'agent stockée un bail et demande à Jev si de nouvelles preuves y mettent fin ; [live demo](https://invalidate-playground.vercel.app)."
+      "descriptionFr": "Donne à chaque mémoire d'agent stockée un bail et demande à Jev si de nouvelles preuves y mettent fin ; [live demo](https://invalidate-playground.vercel.app).",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "nasrallah-al--jev-cli",
@@ -4701,7 +5027,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/Nasrallah-AL/jev-cli",
-      "descriptionFr": "CLI npm avec la clé dans le trousseau système ; jugements typés depuis le shell."
+      "descriptionFr": "CLI npm avec la clé dans le trousseau système ; jugements typés depuis le shell.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "brainwires--jevwire",
@@ -4727,7 +5055,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/Brainwires/jevwire",
-      "descriptionFr": "Serveur MCP, modèle de décision embarquable et plugin à escalade seule qui peut rendre le harnais plus strict mais jamais plus souple."
+      "descriptionFr": "Serveur MCP, modèle de décision embarquable et plugin à escalade seule qui peut rendre le harnais plus strict mais jamais plus souple.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "typesafeai--typesafe-playground",
@@ -4753,7 +5083,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/TypeSafeAI/typesafe-playground",
-      "descriptionFr": "110 cas d'usage, jeux et défis de modèles avec prompts modifiables et comparaisons A/B ; une organisation communautaire, pas le fournisseur, anciennement sous BunsDev."
+      "descriptionFr": "110 cas d'usage, jeux et défis de modèles avec prompts modifiables et comparaisons A/B ; une organisation communautaire, pas le fournisseur, anciennement sous BunsDev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "vinilana--live-jev",
@@ -4779,7 +5111,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/vinilana/live-jev",
-      "descriptionFr": "Voiture en vue de dessus dans le navigateur envoyant quatre questions typées toutes les 200 ms, avec des overrides conditionnés par la confiance dans le code."
+      "descriptionFr": "Voiture en vue de dessus dans le navigateur envoyant quatre questions typées toutes les 200 ms, avec des overrides conditionnés par la confiance dans le code.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "abdelstark--jev-benchmarks",
@@ -4812,7 +5146,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/AbdelStark/jev-benchmarks",
-      "descriptionFr": "Évaluation sensible aux probabilités pour modèles de décision typés : calibration, risque sélectif, latence, reproductible."
+      "descriptionFr": "Évaluation sensible aux probabilités pour modèles de décision typés : calibration, risque sélectif, latence, reproductible.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "valentynkit--jev-belay",
@@ -4838,7 +5174,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/valentynkit/jev-belay",
-      "descriptionFr": "Hook d'arrêt qui bloque un \"done\" non vérifié : lit la transcription pour trouver des preuves et, uniquement lorsque des fichiers ont changé sans vérification réussie depuis, dépense un appel Jev à quatre questions ; reste ouvert sur chaque chemin d'erreur."
+      "descriptionFr": "Hook d'arrêt qui bloque un \"done\" non vérifié : lit la transcription pour trouver des preuves et, uniquement lorsque des fichiers ont changé sans vérification réussie depuis, dépense un appel Jev à quatre questions ; reste ouvert sur chaque chemin d'erreur.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "anpicasso--hermes-jev-approvals",
@@ -4864,7 +5202,9 @@
       ],
       "firstSeen": "2026-09-20",
       "source": "https://github.com/anpicasso/hermes-jev-approvals",
-      "descriptionFr": "Approuve, refuse ou escalade les commandes shell signalées avant leur exécution ; accélérations rapportées par le fournisseur."
+      "descriptionFr": "Approuve, refuse ou escalade les commandes shell signalées avant leur exécution ; accélérations rapportées par le fournisseur.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "parth-kp--jev-mail-classifier",
@@ -4890,7 +5230,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/parth-kp/jev-mail-classifier",
-      "descriptionFr": "Classification d'inbox pilotée par configuration qui étiquette, déplace, signale et notifie, via TypeSafe directement ou OpenRouter."
+      "descriptionFr": "Classification d'inbox pilotée par configuration qui étiquette, déplace, signale et notifie, via TypeSafe directement ou OpenRouter.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "kieranklaassen--ruby-llm-typesafe",
@@ -4916,7 +5258,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/kieranklaassen/ruby_llm-typesafe",
-      "descriptionFr": "TypeSafe comme fournisseur de sortie structurée pour RubyLLM 2."
+      "descriptionFr": "TypeSafe comme fournisseur de sortie structurée pour RubyLLM 2.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "romaluev--jev-ego",
@@ -4949,7 +5293,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/romaluev/jev-ego",
-      "descriptionFr": "Agent navigateur qui dépense une requête Jev par étape pour choisir l'action."
+      "descriptionFr": "Agent navigateur qui dépense une requête Jev par étape pour choisir l'action.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "reachjalil--jevlogs",
@@ -4975,7 +5321,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/reachjalil/jevlogs",
-      "descriptionFr": "Score le signal des logs OpenTelemetry avant de payer pour l'analyse LLM."
+      "descriptionFr": "Score le signal des logs OpenTelemetry avant de payer pour l'analyse LLM.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "mejiasd3v--pi-jev-router",
@@ -5001,7 +5349,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/mejiasd3v/pi-jev-router",
-      "descriptionFr": "Routage automatique de modèles pour Pi via Vercel AI Gateway."
+      "descriptionFr": "Routage automatique de modèles pour Pi via Vercel AI Gateway.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "olanotolu--jevbetter",
@@ -5027,7 +5377,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/olanotolu/jevbetter",
-      "descriptionFr": "Un évaluateur en un seul passage plus puissant avec un benchmark direct contre le design de démarrage jevlike."
+      "descriptionFr": "Un évaluateur en un seul passage plus puissant avec un benchmark direct contre le design de démarrage jevlike.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "xinyao27--jevonian",
@@ -5053,7 +5405,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/xinyao27/jevonian",
-      "descriptionFr": "Proxy local compatible OpenAI, Anthropic et Responses qui effectue un appel Jev par tour pour choisir à la fois la route du modèle et le niveau de réflexion, en filtrant les candidats par fenêtre de contexte et quota."
+      "descriptionFr": "Proxy local compatible OpenAI, Anthropic et Responses qui effectue un appel Jev par tour pour choisir à la fois la route du modèle et le niveau de réflexion, en filtrant les candidats par fenêtre de contexte et quota.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "antoniocoppe--jev-harness",
@@ -5086,7 +5440,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/AntonioCoppe/jev-harness",
-      "descriptionFr": "Seuils de confiance, mode fantôme, recettes et evals ; rapporte Claude CLI à 48.9 s contre Jev à 1.3 s sur la même tâche de filtrage de lignes."
+      "descriptionFr": "Seuils de confiance, mode fantôme, recettes et evals ; rapporte Claude CLI à 48.9 s contre Jev à 1.3 s sur la même tâche de filtrage de lignes.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "ainame--swift-typesafe",
@@ -5112,7 +5468,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/ainame/swift-typesafe",
-      "descriptionFr": "SDK Swift 6.4 suivant l'API du SDK Python, sur les plateformes Apple et Linux."
+      "descriptionFr": "SDK Swift 6.4 suivant l'API du SDK Python, sur les plateformes Apple et Linux.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "decrux9812--typesafe-skill-router",
@@ -5145,7 +5503,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/DECRUX9812/typesafe-skill-router",
-      "descriptionFr": "Désigne l'unique skill à charger avant l'appel au modèle ; stdlib uniquement, environ un dixième de cent par tour."
+      "descriptionFr": "Désigne l'unique skill à charger avant l'appel au modèle ; stdlib uniquement, environ un dixième de cent par tour.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "prismhq--jev-router",
@@ -5171,7 +5531,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/prismhq/jev-router",
-      "descriptionFr": "Routeur LLM au-dessus de LiteLLM."
+      "descriptionFr": "Routeur LLM au-dessus de LiteLLM.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "hev--reranker",
@@ -5197,7 +5559,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/hev/reranker",
-      "descriptionFr": "Jev comme reranker calibré : un appel, jusqu'à 30 documents, une probabilité par document."
+      "descriptionFr": "Jev comme reranker calibré : un appel, jusqu'à 30 documents, une probabilité par document.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "kylemclaren--jevql",
@@ -5226,7 +5590,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/kylemclaren/jevql",
-      "descriptionFr": "SQL sémantique pour PostgreSQL, avec Jev qui répond aux prédicats."
+      "descriptionFr": "SQL sémantique pour PostgreSQL, avec Jev qui répond aux prédicats.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "joelhooks--pi-fast-jev-compaction",
@@ -5252,7 +5618,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/joelhooks/pi-fast-jev-compaction",
-      "descriptionFr": "L'idée de compaction verbatim, portée sur Pi."
+      "descriptionFr": "L'idée de compaction verbatim, portée sur Pi.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "kubet--azdaja",
@@ -5285,7 +5653,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/kubet/azdaja",
-      "descriptionFr": "Couche récursive de modèles de langage pour Claude Code, Codex, Gemini et OpenCode qui conserve les sources en local ; Jev est une feuille optionnelle pour le reranking, la vérification et les jointures sémantiques."
+      "descriptionFr": "Couche récursive de modèles de langage pour Claude Code, Codex, Gemini et OpenCode qui conserve les sources en local ; Jev est une feuille optionnelle pour le reranking, la vérification et les jointures sémantiques.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "genai-craft--openvons",
@@ -5318,7 +5688,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/genai-craft/openvons",
-      "descriptionFr": "Couche de décision ouverte répondant à un ensemble fini d'options avec des probabilités réparties entre execute, confirm et reject. Réplique indépendante, sans les poids TypeSafe."
+      "descriptionFr": "Couche de décision ouverte répondant à un ensemble fini d'options avec des probabilités réparties entre execute, confirm et reject. Réplique indépendante, sans les poids TypeSafe.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "kevthetech143--super-jev",
@@ -5344,7 +5716,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/kevthetech143/super-jev",
-      "descriptionFr": "Petit harnais reliant les preuves, les jugements Jev, les actions autorisées et les résultats vérifiés."
+      "descriptionFr": "Petit harnais reliant les preuves, les jugements Jev, les actions autorisées et les résultats vérifiés.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "kavehmz--typesafe-playground",
@@ -5370,7 +5744,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/kavehmz/typesafe-playground",
-      "descriptionFr": "Du routage de support à une simulation de conduite 3D avec entrées de capteurs visibles."
+      "descriptionFr": "Du routage de support à une simulation de conduite 3D avec entrées de capteurs visibles.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "tumf--jev-cli",
@@ -5402,7 +5778,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/tumf/jev-cli",
-      "descriptionFr": "CLI Python sans dépendances enveloppant Choice, Score et Noul."
+      "descriptionFr": "CLI Python sans dépendances enveloppant Choice, Score et Noul.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "twister915--typesafe-ai",
@@ -5428,7 +5806,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/Twister915/typesafe-ai",
-      "descriptionFr": "Client Rust avec backends asynchrone et bloquant et retries observables."
+      "descriptionFr": "Client Rust avec backends asynchrone et bloquant et retries observables.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "amithgc--local-jev",
@@ -5454,7 +5834,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/amithgc/local-jev",
-      "descriptionFr": "Serveur hors ligne compatible avec le point de terminaison System One, vérifié contre le SDK officiel ; rapporte 80,5 pour cent sur les éléments publics de JevBench contre 86,6 pour cent publiés pour l'API hébergée."
+      "descriptionFr": "Serveur hors ligne compatible avec le point de terminaison System One, vérifié contre le SDK officiel ; rapporte 80,5 pour cent sur les éléments publics de JevBench contre 86,6 pour cent publiés pour l'API hébergée.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "valentynkit--jev-commit",
@@ -5480,7 +5862,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/valentynkit/jev-commit",
-      "descriptionFr": "Hook pre-commit : un appel Jev juge si le message de commit correspond au diff stagé, plus les restes de débogage, le travail non mentionné et les identifiants exposés ; avertit sauf en cas de secret, qu'il bloque."
+      "descriptionFr": "Hook pre-commit : un appel Jev juge si le message de commit correspond au diff stagé, plus les restes de débogage, le travail non mentionné et les identifiants exposés ; avertit sauf en cas de secret, qu'il bloque.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "saibimajdi--typesafeai-dotnet-sdk",
@@ -5513,7 +5897,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/saibimajdi/typesafeai-dotnet-sdk",
-      "descriptionFr": "SDK .NET communautaire avec des questions typées Noul, Choice et Score."
+      "descriptionFr": "SDK .NET communautaire avec des questions typées Noul, Choice et Score.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "hyunjunjeon--pi-quiet-ask",
@@ -5539,7 +5925,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/HyunjunJeon/pi-quiet-ask",
-      "descriptionFr": "Jev comme couche de décision silencieuse de l'agent de codage Pi."
+      "descriptionFr": "Jev comme couche de décision silencieuse de l'agent de codage Pi.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "frostney--clean-code-review",
@@ -5572,7 +5960,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/frostney/clean-code-review",
-      "descriptionFr": "Chaque fichier d'une PR jugé selon les règles Clean Code, puis relu par un LLM."
+      "descriptionFr": "Chaque fichier d'une PR jugé selon les règles Clean Code, puis relu par un LLM.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "huntedman--jevlint",
@@ -5598,7 +5988,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/huntedman/JevLint",
-      "descriptionFr": "Linting sémantique configurable avec des jugements Noul au niveau des fichiers."
+      "descriptionFr": "Linting sémantique configurable avec des jugements Noul au niveau des fichiers.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "collapseindex--jev-ultralightspeed",
@@ -5631,7 +6023,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/collapseindex/jev-ultralightspeed",
-      "descriptionFr": "Regroupe 32 éléments dans une seule requête pour la classification en masse et calibre le seuil de confiance qui envoie les lignes les moins sûres à un humain, avec 533 éléments par seconde rapportés à 89,2 pour cent d'accord avec les étiquettes humaines."
+      "descriptionFr": "Regroupe 32 éléments dans une seule requête pour la classification en masse et calibre le seuil de confiance qui envoie les lignes les moins sûres à un humain, avec 533 éléments par seconde rapportés à 89,2 pour cent d'accord avec les étiquettes humaines.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "manifoldor--xtags",
@@ -5664,7 +6058,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/manifoldor/xtags",
-      "descriptionFr": "Étiquette chaque publication de votre timeline X avec ce qu'elle cherche à vous faire faire."
+      "descriptionFr": "Étiquette chaque publication de votre timeline X avec ce qu'elle cherche à vous faire faire.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "taruntomar122--jev-askable-arm",
@@ -5690,7 +6086,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/TarunTomar122/jev-askable-arm",
-      "descriptionFr": "Objectifs en anglais zero-shot sur un bras Franka simulé ; Jev enchaîne des primitives codées en dur."
+      "descriptionFr": "Objectifs en anglais zero-shot sur un bras Franka simulé ; Jev enchaîne des primitives codées en dur.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "giesn--typesafe-jev-workflow",
@@ -5716,7 +6114,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/GiesN/typesafe-jev-workflow",
-      "descriptionFr": "Démo LangGraph qui envoie un e-mail simulé à Jev et route selon le Choice typé qu'elle renvoie."
+      "descriptionFr": "Démo LangGraph qui envoie un e-mail simulé à Jev et route selon le Choice typé qu'elle renvoie.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "nyarlathoteppppp--pi-heed",
@@ -5749,7 +6149,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/Nyarlathoteppppp/pi-heed",
-      "descriptionFr": "Vérifie chaque appel d'outil à effet de bord par rapport à ce qui a été dit plus tôt dans la session, pour que \"review only\" reste valable après compaction."
+      "descriptionFr": "Vérifie chaque appel d'outil à effet de bord par rapport à ce qui a été dit plus tôt dans la session, pour que \"review only\" reste valable après compaction.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "harshwasan--pi-jev-sentinel",
@@ -5775,7 +6177,9 @@
       ],
       "firstSeen": "2026-09-20",
       "source": "https://github.com/harshwasan/pi-jev-sentinel",
-      "descriptionFr": "Vérifie les appels d'outils Pi, les sorties d'outils et les réponses contre les actions risquées et l'injection de prompt, avec approbations utilisateur, revérifications du contexte, masquage des secrets et épinglage facultatif des tâches."
+      "descriptionFr": "Vérifie les appels d'outils Pi, les sorties d'outils et les réponses contre les actions risquées et l'injection de prompt, avec approbations utilisateur, revérifications du contexte, masquage des secrets et épinglage facultatif des tâches.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "24601--augustus",
@@ -5808,7 +6212,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/24601/Augustus",
-      "descriptionFr": "Skill pour décider où un jugement typé a sa place et ce qui reste dans le code ; un complément au skill officiel, pas un remplacement."
+      "descriptionFr": "Skill pour décider où un jugement typé a sa place et ce qui reste dans le code ; un complément au skill officiel, pas un remplacement.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "tontoko--jev-browser",
@@ -5841,7 +6247,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/tontoko/jev-browser",
-      "descriptionFr": "Un cœur Jev et Playwright ancré derrière un SDK typé, une CLI persistante et un serveur MCP."
+      "descriptionFr": "Un cœur Jev et Playwright ancré derrière un SDK typé, une CLI persistante et un serveur MCP.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "doeixd--jev-pref",
@@ -5874,7 +6282,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/doeixd/jev-pref",
-      "descriptionFr": "Transforme les préférences de votre AGENTS.md en un linter qui s'exécute sur les modifications de code et rend compte à l'agent."
+      "descriptionFr": "Transforme les préférences de votre AGENTS.md en un linter qui s'exécute sur les modifications de code et rend compte à l'agent.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "nozomi-koborinai--jev-spec",
@@ -5907,7 +6317,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/nozomi-koborinai/jev-spec",
-      "descriptionFr": "Vérifie le code par rapport aux exigences d'une spec Markdown à chaque commit et fait échouer le build lorsque les deux divergent."
+      "descriptionFr": "Vérifie le code par rapport aux exigences d'une spec Markdown à chaque commit et fait échouer le build lorsque les deux divergent.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "marissafamularo--citation-verifier",
@@ -5938,7 +6350,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/MarissaFamularo/citation-verifier",
-      "descriptionFr": "L'article cité soutient-il la phrase qui le cite ? Claude trouve la citation, Jev la note, un humain décide."
+      "descriptionFr": "L'article cité soutient-il la phrase qui le cite ? Claude trouve la citation, Jev la note, un humain décide.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "justinhe16--trade-jev",
@@ -5964,7 +6378,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/justinhe16/trade-jev",
-      "descriptionFr": "Évalue Jev en backtest comme trader d'achat, de vente ou de conservation sur des données de carnet d'ordres NQ."
+      "descriptionFr": "Évalue Jev en backtest comme trader d'achat, de vente ou de conservation sur des données de carnet d'ordres NQ.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "abhixhek--jevcal",
@@ -5997,7 +6413,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/abhixhek/jevcal",
-      "descriptionFr": "Arrêtez de deviner les seuils : calibrez, seuillez et contrôlez la dérive face à un LLM enseignant."
+      "descriptionFr": "Arrêtez de deviner les seuils : calibrez, seuillez et contrôlez la dérive face à un LLM enseignant.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "jmanhype--jev-dspy-lab",
@@ -6023,7 +6441,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/jmanhype/jev-dspy-lab",
-      "descriptionFr": "Benchmarks reproductibles de calibration et de risque sélectif pour les décisions Jev dans DSPy."
+      "descriptionFr": "Benchmarks reproductibles de calibration et de risque sélectif pour les décisions Jev dans DSPy.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "premo-cloud--typesafe-sdk-java",
@@ -6056,7 +6476,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/Premo-Cloud/typesafe-sdk-java",
-      "descriptionFr": "Client Java non officiel pour l'API TypeSafe System One, appelant les questions Choice, Score et Noul via HTTP."
+      "descriptionFr": "Client Java non officiel pour l'API TypeSafe System One, appelant les questions Choice, Score et Noul via HTTP.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "pambrose--jev4k",
@@ -6089,7 +6511,9 @@
       ],
       "firstSeen": "2026-09-20",
       "source": "https://github.com/pambrose/jev4k",
-      "descriptionFr": "DSL et client Kotlin."
+      "descriptionFr": "DSL et client Kotlin.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "hexyedev--jevpr",
@@ -6120,7 +6544,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/HexyeDEV/JevPR",
-      "descriptionFr": "Application GitHub qui demande à Jev si une pull request peut être approuvée sans risque ou nécessite un spécialiste, puis convertit le verdict en check run."
+      "descriptionFr": "Application GitHub qui demande à Jev si une pull request peut être approuvée sans risque ou nécessite un spécialiste, puis convertit le verdict en check run.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "reachjalil--jev-tree",
@@ -6152,7 +6578,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/reachjalil/jev-tree",
-      "descriptionFr": "Choix récursif dans une taxonomie, au-delà de la limite de 255 options."
+      "descriptionFr": "Choix récursif dans une taxonomie, au-delà de la limite de 255 options.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "gtaras7--typesafe-jev",
@@ -6178,7 +6606,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/gtaras7/typesafe-jev",
-      "descriptionFr": "Expériences Jev commençant par un banc d’essai local de tri de CV, chacune avec ses résultats mesurés."
+      "descriptionFr": "Expériences Jev commençant par un banc d’essai local de tri de CV, chacune avec ses résultats mesurés.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "valentynkit--jev-plays-pokemon-red",
@@ -6204,7 +6634,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/valentynkit/jev-plays-pokemon-red",
-      "descriptionFr": "Pokemon Red sur PyBoy : le code gère l’itinéraire et les calculs, Jev ne choisit qu’aux embranchements, et chaque tour de combat enregistre une prédiction faible évaluée par le score de Brier par rapport à ce qu’indique la RAM."
+      "descriptionFr": "Pokemon Red sur PyBoy : le code gère l’itinéraire et les calculs, Jev ne choisit qu’aux embranchements, et chaque tour de combat enregistre une prédiction faible évaluée par le score de Brier par rapport à ce qu’indique la RAM.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "zhuyansen--jev-search-rerank-eval",
@@ -6237,7 +6669,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/zhuyansen/jev-search-rerank-eval",
-      "descriptionFr": "Un rerank Jev bat-il la recherche par embeddings ? 9 831 paires évaluées, avec le biais de circularité du juge mesuré."
+      "descriptionFr": "Un rerank Jev bat-il la recherche par embeddings ? 9 831 paires évaluées, avec le biais de circularité du juge mesuré.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "cristianoliveira--jeq",
@@ -6270,7 +6704,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/cristianoliveira/jeq",
-      "descriptionFr": "Enchaîne et compose des jugements Jev sur JSON et NDJSON avec map, reduce, rank et rate, puis applique la politique via une gate hors ligne explicite."
+      "descriptionFr": "Enchaîne et compose des jugements Jev sur JSON et NDJSON avec map, reduce, rank et rate, puis applique la politique via une gate hors ligne explicite.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "tangerg--typesafe-sdk-go",
@@ -6295,7 +6731,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/Tangerg/typesafe-sdk-go",
-      "descriptionFr": "SDK Go sans dépendances tierces."
+      "descriptionFr": "SDK Go sans dépendances tierces.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "adarshmishra07--jcm-router",
@@ -6321,7 +6759,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/adarshmishra07/jcm-router",
-      "descriptionFr": "Proxy local qui choisit le modèle et l’effort par message et laisse le chat principal en cache intact."
+      "descriptionFr": "Proxy local qui choisit le modèle et l’effort par message et laisse le chat principal en cache intact.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "abdelstark--bicameral",
@@ -6351,7 +6791,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/AbdelStark/bicameral",
-      "descriptionFr": "Harnais hybride pour Pi : un LLM écrit le code, les réflexes Jev filtrent chaque appel en allow, confirm, block, warn ou steer."
+      "descriptionFr": "Harnais hybride pour Pi : un LLM écrit le code, les réflexes Jev filtrent chaque appel en allow, confirm, block, warn ou steer.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "stratonext--software-factory",
@@ -6377,7 +6819,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/stratonext/software-factory",
-      "descriptionFr": "Exécute plusieurs agents de codage en local avec Jev comme juge et orchestrateur."
+      "descriptionFr": "Exécute plusieurs agents de codage en local avec Jev comme juge et orchestrateur.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "wiktorb2004--llama-index-jev",
@@ -6410,7 +6854,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/WiktorB2004/llama-index-jev",
-      "descriptionFr": "Reranker et routeur LlamaIndex, moins cher qu'un juge LLM."
+      "descriptionFr": "Reranker et routeur LlamaIndex, moins cher qu'un juge LLM.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "kylemclaren--jev-search",
@@ -6440,7 +6886,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/kylemclaren/jev-search",
-      "descriptionFr": "Bloc de registre shadcn/ui : résultats par mots-clés dès la première frappe, reclassés par Jev un instant après, et l'ordre par mots-clés est conservé si l'appel échoue."
+      "descriptionFr": "Bloc de registre shadcn/ui : résultats par mots-clés dès la première frappe, reclassés par Jev un instant après, et l'ordre par mots-clés est conservé si l'appel échoue.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "harshil1712--slidepilot",
@@ -6473,7 +6921,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/harshil1712/slidepilot",
-      "descriptionFr": "Avancement automatique piloté par la voix pour Slidev sur Cloudflare Agents."
+      "descriptionFr": "Avancement automatique piloté par la voix pour Slidev sur Cloudflare Agents.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "valentynkit--jev-nvim",
@@ -6499,7 +6949,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/valentynkit/jev.nvim",
-      "descriptionFr": "Plugin Neovim : posez une question en langage naturel au buffer, Treesitter le découpe en fonctions, Jev note chacune d'elles, et les réponses arrivent dans quickfix classées par probabilité."
+      "descriptionFr": "Plugin Neovim : posez une question en langage naturel au buffer, Treesitter le découpe en fonctions, Jev note chacune d'elles, et les réponses arrivent dans quickfix classées par probabilité.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "abdelstark--heist-one",
@@ -6532,7 +6984,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/AbdelStark/heist-one",
-      "descriptionFr": "Jeu d'infiltration où Jev produit les jugements des gardes et le code déterministe contrôle le monde."
+      "descriptionFr": "Jeu d'infiltration où Jev produit les jugements des gardes et le code déterministe contrôle le monde.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "anessbelbati--jev-rerank-bench",
@@ -6565,7 +7019,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/anessbelbati/jev-rerank-bench",
-      "descriptionFr": "Jev face à Cohere Rerank, ZeroEntropy et une base de référence chat sur 14 jeux de données, réponses brutes incluses."
+      "descriptionFr": "Jev face à Cohere Rerank, ZeroEntropy et une base de référence chat sur 14 jeux de données, réponses brutes incluses.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "jomatsu--zod-jev",
@@ -6591,7 +7047,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/jomatsu/zod-jev",
-      "descriptionFr": "Schémas Zod 4 avec règles sémantiques : les vérifications de forme restent dans Zod, les vérifications de sens partent vers Jev en une seule requête et reviennent comme des Zod issues."
+      "descriptionFr": "Schémas Zod 4 avec règles sémantiques : les vérifications de forme restent dans Zod, les vérifications de sens partent vers Jev en une seule requête et reviennent comme des Zod issues.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "ajensenwaud--hermes-jev-plugin",
@@ -6624,7 +7082,9 @@
       ],
       "firstSeen": "2026-09-20",
       "source": "https://github.com/ajensenwaud/hermes-jev-plugin",
-      "descriptionFr": "Quatre outils Hermes pour vérifications atomiques, routage et notation par grille ; répertoriés dans le catalogue de plugins Hermes."
+      "descriptionFr": "Quatre outils Hermes pour vérifications atomiques, routage et notation par grille ; répertoriés dans le catalogue de plugins Hermes.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "friedjof--jev-mobile",
@@ -6657,7 +7117,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/friedjof/jev-mobile",
-      "descriptionFr": "Sous-agent Android via USB exécutant observe, normalize, decide, mutate, verify, avec Jev qui décide."
+      "descriptionFr": "Sous-agent Android via USB exécutant observe, normalize, decide, mutate, verify, avec Jev qui décide.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "raihankhan-rk--diffjury",
@@ -6683,7 +7145,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/raihankhan-rk/diffjury",
-      "descriptionFr": "Routeur de risques PR et coach de revue."
+      "descriptionFr": "Routeur de risques PR et coach de revue.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "anisselbd--jev-phishing-bench",
@@ -6709,7 +7173,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/anisselbd/jev-phishing-bench",
-      "descriptionFr": "Jev contre Claude Haiku sur 2 000 e-mails de phishing : précision, calibration, latence, coût."
+      "descriptionFr": "Jev contre Claude Haiku sur 2 000 e-mails de phishing : précision, calibration, latence, coût.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "sufianetaouil--every",
@@ -6735,7 +7201,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/sufianetaouil/every",
-      "descriptionFr": "Pose une question oui/non à chaque fonction d'une base de code ; un grep dont le motif est une question."
+      "descriptionFr": "Pose une question oui/non à chaque fonction d'une base de code ; un grep dont le motif est une question.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "joshmn--typesafe-sdk",
@@ -6761,7 +7229,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/joshmn/typesafe-sdk",
-      "descriptionFr": "Client Ruby non officiel pour l'API TypeSafe AI, renvoyant des réponses typées avec probabilités au lieu de prose analysée."
+      "descriptionFr": "Client Ruby non officiel pour l'API TypeSafe AI, renvoyant des réponses typées avec probabilités au lieu de prose analysée.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "inanna-malick--jev-dsl",
@@ -6787,7 +7257,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/inanna-malick/jev-dsl",
-      "descriptionFr": "DSL Haskell avec paquets typés et types de réponses inférés."
+      "descriptionFr": "DSL Haskell avec paquets typés et types de réponses inférés.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "hyunjunjeon--jev-judgment",
@@ -6813,7 +7285,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/HyunjunJeon/jev-judgment",
-      "descriptionFr": "Envoie les jugements fermés d'un agent de codage à Jev au lieu du modèle de chat."
+      "descriptionFr": "Envoie les jugements fermés d'un agent de codage à Jev au lieu du modèle de chat.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "keltokhy--jlink",
@@ -6846,7 +7320,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/keltokhy/jlink",
-      "descriptionFr": "Relie les enregistrements de deux jeux de données à partir d'une règle de correspondance écrite en anglais simple, depuis Python, le shell, Stata ou R, et rapporte un F1 de 0.73 contre 0.69 pour la correspondance de chaînes optimisée sur les cessionnaires de brevets NBER vers Compustat."
+      "descriptionFr": "Relie les enregistrements de deux jeux de données à partir d'une règle de correspondance écrite en anglais simple, depuis Python, le shell, Stata ou R, et rapporte un F1 de 0.73 contre 0.69 pour la correspondance de chaînes optimisée sur les cessionnaires de brevets NBER vers Compustat.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "scale-venture-partners--riff",
@@ -6872,7 +7348,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/scale-venture-partners/riff",
-      "descriptionFr": "Codes de règles façon Ruff pour l'écriture."
+      "descriptionFr": "Codes de règles façon Ruff pour l'écriture.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "anxkhn--jevplayspokemon",
@@ -6904,7 +7382,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/anxkhn/JevPlaysPokemon",
-      "descriptionFr": "Pokémon de génération 3 via Showdown et une vraie ROM FireRed."
+      "descriptionFr": "Pokémon de génération 3 via Showdown et une vraie ROM FireRed.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "mahlernim--jev-korean-benchmark",
@@ -6930,7 +7410,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/mahlernim/jev-korean-benchmark",
-      "descriptionFr": "Compréhension du coréen et textes médicaux, avec données d'exécution et de coût."
+      "descriptionFr": "Compréhension du coréen et textes médicaux, avec données d'exécution et de coût.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "wondertwins--jev-benchmark",
@@ -6956,7 +7438,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/wondertwins/jev-benchmark",
-      "descriptionFr": "Deux benchmarks, échecs et identification de prédateurs, l'un dans le domaine de Jev et l'autre hors domaine, tous deux avec résultats."
+      "descriptionFr": "Deux benchmarks, échecs et identification de prédateurs, l'un dans le domaine de Jev et l'autre hors domaine, tous deux avec résultats.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "lbotinelly--jev-little-airways",
@@ -6982,7 +7466,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/lbotinelly/jev-little-airways",
-      "descriptionFr": "Étude de capacités avec démonstration pour Jev."
+      "descriptionFr": "Étude de capacités avec démonstration pour Jev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "gilljon--typesafe-ai-rs",
@@ -7014,7 +7500,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/gilljon/typesafe-ai-rs",
-      "descriptionFr": "SDK Rust indépendant, asynchrone et bloquant."
+      "descriptionFr": "SDK Rust indépendant, asynchrone et bloquant.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "3clyp50--a0-typesafe-ai",
@@ -7040,7 +7528,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/3clyp50/a0-typesafe-ai",
-      "descriptionFr": "Outils typés et cartes de probabilités pour Agent Zero."
+      "descriptionFr": "Outils typés et cartes de probabilités pour Agent Zero.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "david-lolly--jev-compatible",
@@ -7066,7 +7556,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/David-Lolly/Jev-Compatible",
-      "descriptionFr": "Passerelle qui transforme un déploiement SGLang ou vLLM existant en service de décision compatible Jev en notant les tokens candidats, sans entraînement ni modification du modèle."
+      "descriptionFr": "Passerelle qui transforme un déploiement SGLang ou vLLM existant en service de décision compatible Jev en notant les tokens candidats, sans entraînement ni modification du modèle.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "akashpriyadarshii--jev-scout",
@@ -7099,7 +7591,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/AkashPriyadarshii/jev-scout",
-      "descriptionFr": "CLI Rust et serveur MCP qui trouvent des repos et crates réels et maintenus pour une requête en langage naturel, avec notation des candidats par Jev."
+      "descriptionFr": "CLI Rust et serveur MCP qui trouvent des repos et crates réels et maintenus pour une requête en langage naturel, avec notation des candidats par Jev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "eugeneboondock--jevsql",
@@ -7132,7 +7626,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/EugeneBoondock/jevsql",
-      "descriptionFr": "SQL avec prédicats en langage naturel sur SQLite : filtrer, classer et catégoriser les lignes par sens, par lots et avec garde-fous de coût."
+      "descriptionFr": "SQL avec prédicats en langage naturel sur SQLite : filtrer, classer et catégoriser les lignes par sens, par lots et avec garde-fous de coût.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "foadsf--jev-for-engineers",
@@ -7165,7 +7661,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/Foadsf/jev-for-engineers",
-      "descriptionFr": "Huit petits exemples issus du génie mécanique et électrique : routage CAD, tri FEM, criblage DFM, alignement BOM."
+      "descriptionFr": "Huit petits exemples issus du génie mécanique et électrique : routage CAD, tri FEM, criblage DFM, alignement BOM.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "andrelandgraf--safer-with-jev",
@@ -7191,7 +7689,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/andrelandgraf/safer-with-jev",
-      "descriptionFr": "Proxy Neon Function pour la Neon AI Gateway avec routage Jev en amont."
+      "descriptionFr": "Proxy Neon Function pour la Neon AI Gateway avec routage Jev en amont.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "valentynkit--jev-skip",
@@ -7217,7 +7717,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/valentynkit/jev-skip",
-      "descriptionFr": "Extension de navigateur qui lit la piste de sous-titres et affiche une probabilité de sponsor par segment sur la barre de recherche, sans base de données participative."
+      "descriptionFr": "Extension de navigateur qui lit la piste de sous-titres et affiche une probabilité de sponsor par segment sur la barre de recherche, sans base de données participative.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "haseeb-heaven--jev-system-one",
@@ -7243,7 +7745,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/haseeb-heaven/jev-system-one",
-      "descriptionFr": "Interface de terminal où OpenAI répond et Jev évalue séparément la pertinence, la fiabilité et la qualité."
+      "descriptionFr": "Interface de terminal où OpenAI répond et Jev évalue séparément la pertinence, la fiabilité et la qualité.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "gaurav-gosain--jev-go",
@@ -7269,7 +7773,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/Gaurav-Gosain/jev-go",
-      "descriptionFr": "Client Go qui renvoie des jugements typés et des probabilités."
+      "descriptionFr": "Client Go qui renvoie des jugements typés et des probabilités.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "jamesward--zio-typesafe-ai",
@@ -7295,7 +7801,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/jamesward/zio-typesafe-ai",
-      "descriptionFr": "Client Scala basé sur ZIO."
+      "descriptionFr": "Client Scala basé sur ZIO.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "stumble--jev-go",
@@ -7321,7 +7829,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/Stumble/jev-go",
-      "descriptionFr": "SDK Go communautaire pour TypeSafe Jev / System One, couvrant les questions typées Choice, Score et Noul."
+      "descriptionFr": "SDK Go communautaire pour TypeSafe Jev / System One, couvrant les questions typées Choice, Score et Noul.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "nshkrdotcom--typesafe-sdk",
@@ -7354,7 +7864,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/nshkrdotcom/typesafe_sdk",
-      "descriptionFr": "Port Elixir du SDK IA TypeScript avec un fournisseur TypeSafe."
+      "descriptionFr": "Port Elixir du SDK IA TypeScript avec un fournisseur TypeSafe.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "bestagentkits--jev-skillful",
@@ -7387,7 +7899,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/bestagentkits/jev-skillful",
-      "descriptionFr": "Routeur par prompt couvrant les skills, les serveurs MCP, les agents et les commandes, qui mesure si l'injection a été utile."
+      "descriptionFr": "Routeur par prompt couvrant les skills, les serveurs MCP, les agents et les commandes, qui mesure si l'injection a été utile.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "noplan-inc--limpet",
@@ -7419,7 +7933,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/noplan-inc/limpet",
-      "descriptionFr": "Hook Stop qui empêche l'agent de s'arrêter trop tôt, évalué selon des règles en langage naturel."
+      "descriptionFr": "Hook Stop qui empêche l'agent de s'arrêter trop tôt, évalué selon des règles en langage naturel.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "suenot--codex-jev-router",
@@ -7445,7 +7961,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/suenot/codex-jev-router",
-      "descriptionFr": "Utilise Jev pour sélectionner le modèle et l'effort de raisonnement des sous-agents Codex, avec des seuils de confiance et un repli Sol."
+      "descriptionFr": "Utilise Jev pour sélectionner le modèle et l'effort de raisonnement des sous-agents Codex, avec des seuils de confiance et un repli Sol.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "cephalization--jev-triage",
@@ -7471,7 +7989,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/cephalization/jev-triage",
-      "descriptionFr": "Récupère de grands dépôts et trie leurs issues avec des questions Jev typées."
+      "descriptionFr": "Récupère de grands dépôts et trie leurs issues avec des questions Jev typées.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "kylemclaren--jevpdf",
@@ -7500,7 +8020,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/kylemclaren/jevpdf",
-      "descriptionFr": "Recherche dans un PDF par le sens dans le navigateur : pdf.js extrait les lignes localement, Jev répond un Noul par ligne par lots de 16, et les lignes correspondantes s'illuminent page par page, classées par probabilité."
+      "descriptionFr": "Recherche dans un PDF par le sens dans le navigateur : pdf.js extrait les lignes localement, Jev répond un Noul par ligne par lots de 16, et les lignes correspondantes s'illuminent page par page, classées par probabilité.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "query-farm--vgi-typesafe",
@@ -7533,7 +8055,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/Query-farm/vgi-typesafe",
-      "descriptionFr": "Worker DuckDB qui expose choice, noul et score comme fonctions table utilisables en jointure latérale en SQL."
+      "descriptionFr": "Worker DuckDB qui expose choice, noul et score comme fonctions table utilisables en jointure latérale en SQL.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "chris-wozniczek--jev-voice-control",
@@ -7566,7 +8090,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/chris-wozniczek/jev-voice-control",
-      "descriptionFr": "Application Swift pour barre de menus qui transforme les commandes vocales en décisions typées Jev et en actions macOS."
+      "descriptionFr": "Application Swift pour barre de menus qui transforme les commandes vocales en décisions typées Jev et en actions macOS.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "markjaquith--typesafe-ai-playground",
@@ -7592,7 +8118,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/markjaquith/typesafe-ai-playground",
-      "descriptionFr": "Playground CLI en Rust pour des expériences autour de Jev."
+      "descriptionFr": "Playground CLI en Rust pour des expériences autour de Jev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "replynodes--jev-web-analyzer",
@@ -7625,7 +8153,9 @@
       ],
       "firstSeen": "2026-09-20",
       "source": "https://github.com/replynodes/jev-web-analyzer",
-      "descriptionFr": "Convertit une landing page SaaS en Markdown et pose à Jev dix questions Choice bornées sur ce que comprend un visiteur qui découvre, présenté comme une analyse pour fondateurs."
+      "descriptionFr": "Convertit une landing page SaaS en Markdown et pose à Jev dix questions Choice bornées sur ce que comprend un visiteur qui découvre, présenté comme une analyse pour fondateurs.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "y0usaf--typesafe-cli",
@@ -7651,7 +8181,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/y0usaf/typesafe-cli",
-      "descriptionFr": "Réponses Noul, choice et score sous forme de nombres depuis le shell."
+      "descriptionFr": "Réponses Noul, choice et score sous forme de nombres depuis le shell.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "alterhq--typesafe-sdk-swift",
@@ -7677,7 +8209,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/alterhq/typesafe-sdk-swift",
-      "descriptionFr": "SDK Swift non officiel pour l'API TypeSafe AI, encapsulant les questions et réponses typées dans des types Swift."
+      "descriptionFr": "SDK Swift non officiel pour l'API TypeSafe AI, encapsulant les questions et réponses typées dans des types Swift.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "legacybridge-tech--pi-typesafe-jev",
@@ -7703,7 +8237,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/legacybridge-tech/pi-typesafe-jev",
-      "descriptionFr": "Extension Pi exposant les jugements Jev sous forme de cinq outils Pi."
+      "descriptionFr": "Extension Pi exposant les jugements Jev sous forme de cinq outils Pi.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "byk--jev-mcp",
@@ -7729,7 +8265,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/BYK/jev-mcp",
-      "descriptionFr": "Serveur MCP axé sur l'évaluation : prototyper une question, l'appliquer à de nombreux éléments, puis mesurer les variantes contre des exemples étiquetés avec un balayage de seuil."
+      "descriptionFr": "Serveur MCP axé sur l'évaluation : prototyper une question, l'appliquer à de nombreux éléments, puis mesurer les variantes contre des exemples étiquetés avec un balayage de seuil.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "ramneet-singh--jevopt",
@@ -7755,7 +8293,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/Ramneet-Singh/jevopt",
-      "descriptionFr": "Pilote de compilateur C/C++ qui demande à Jev s'il faut inliner chaque site d'appel discrétionnaire, à partir de l'IR LLVM et du source d'origine."
+      "descriptionFr": "Pilote de compilateur C/C++ qui demande à Jev s'il faut inliner chaque site d'appel discrétionnaire, à partir de l'IR LLVM et du source d'origine.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "iamvatsalpatel--tiershift",
@@ -7788,7 +8328,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/iamvatsalpatel/tiershift",
-      "descriptionFr": "Bascule chaque appel LLM vers le modèle le moins cher capable de le traiter, politique en YAML, décision en environ 180 ms."
+      "descriptionFr": "Bascule chaque appel LLM vers le modèle le moins cher capable de le traiter, politique en YAML, décision en environ 180 ms.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "mgaitan--sqlite-jev",
@@ -7814,7 +8356,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/mgaitan/sqlite-jev",
-      "descriptionFr": "Ajoute les jugements Jev Noul, Choice et Score à SQLite via une extension C chargeable et un wrapper Python, avec fonctions scalaires et requêtes groupées sur tables virtuelles."
+      "descriptionFr": "Ajoute les jugements Jev Noul, Choice et Score à SQLite via une extension C chargeable et un wrapper Python, avec fonctions scalaires et requêtes groupées sur tables virtuelles.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "caiovicentino--jev-shield",
@@ -7846,7 +8390,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/caiovicentino/jev-shield",
-      "descriptionFr": "Pare-feu MCP sémantique qui filtre chaque appel d'outil, résultat et description ; annonce 94 % de rappel de blocage à environ 0,00002 $ par contrôle."
+      "descriptionFr": "Pare-feu MCP sémantique qui filtre chaque appel d'outil, résultat et description ; annonce 94 % de rappel de blocage à environ 0,00002 $ par contrôle.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "noelzappy--tripwire",
@@ -7878,7 +8424,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/noelzappy/tripwire",
-      "descriptionFr": "Middleware et proxy pour AI SDK qui exécute sept contrôles Jev sur chaque réponse LLM avant qu'elle ne parvienne à l'utilisateur ; aucun chiffre de précision pour l'instant, et il l'indique clairement."
+      "descriptionFr": "Middleware et proxy pour AI SDK qui exécute sept contrôles Jev sur chaque réponse LLM avant qu'elle ne parvienne à l'utilisateur ; aucun chiffre de précision pour l'instant, et il l'indique clairement.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "hellogumbo--should-ai-kill-us-all",
@@ -7904,7 +8452,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/hellogumbo/should-ai-kill-us-all",
-      "descriptionFr": "Pose la question à Jev toutes les dix minutes en s'appuyant sur les titres d'actualité réels."
+      "descriptionFr": "Pose la question à Jev toutes les dix minutes en s'appuyant sur les titres d'actualité réels.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "vishxrad--clashroyale-jev",
@@ -7930,7 +8480,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/vishxrad/clashroyale-jev",
-      "descriptionFr": "Joue à Clash Royale avec Jev qui choisit les cartes et les placements à partir de la vision du champ de bataille Qwen et de la reconnaissance locale de la main et de l'élixir par OpenCV."
+      "descriptionFr": "Joue à Clash Royale avec Jev qui choisit les cartes et les placements à partir de la vision du champ de bataille Qwen et de la reconnaissance locale de la main et de l'élixir par OpenCV.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "gaurav-gosain--jev-sec-bench",
@@ -7956,7 +8508,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/Gaurav-Gosain/jev-sec-bench",
-      "descriptionFr": "Benchmarks aveugles pour l'injection de prompts et la détection de code vulnérable."
+      "descriptionFr": "Benchmarks aveugles pour l'injection de prompts et la détection de code vulnérable.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "tokentrim--jev-agent-failure-benchmark",
@@ -7982,7 +8536,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/TokenTrim/jev-agent-failure-benchmark",
-      "descriptionFr": "Jev face à un LLM puissant sur le benchmark d'attribution des échecs d'agents Who and When."
+      "descriptionFr": "Jev face à un LLM puissant sur le benchmark d'attribution des échecs d'agents Who and When.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "rinnecoder--jev-behavior-study",
@@ -8008,7 +8564,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/RINNECODER/jev-behavior-study",
-      "descriptionFr": "Expériences contrôlées de prompts sur jev-1.13.0, résultats bruts et vérification hors ligne."
+      "descriptionFr": "Expériences contrôlées de prompts sur jev-1.13.0, résultats bruts et vérification hors ligne.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "chenmingtang830--jevarena",
@@ -8040,7 +8598,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/chenmingtang830/jevarena",
-      "descriptionFr": "Arène hébergée qui oppose Jev à un juge adverse que vous connectez et recueille votre vote avant de révéler qui était qui, avec latence, provenance des coûts et confiance autodéclarée ; un vote enregistre une préférence, pas une exactitude vérifiée."
+      "descriptionFr": "Arène hébergée qui oppose Jev à un juge adverse que vous connectez et recueille votre vote avant de révéler qui était qui, avec latence, provenance des coûts et confiance autodéclarée ; un vote enregistre une préférence, pas une exactitude vérifiée.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "jtsang4--jev-cli",
@@ -8071,7 +8631,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/jtsang4/jev-cli",
-      "descriptionFr": "Questions typées en entrée, réponses JSON structurées en sortie."
+      "descriptionFr": "Questions typées en entrée, réponses JSON structurées en sortie.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "zhirschtritt--typesafe-go",
@@ -8103,7 +8665,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/zhirschtritt/typesafe-go",
-      "descriptionFr": "SDK Go idiomatique pour l'API TypeSafe."
+      "descriptionFr": "SDK Go idiomatique pour l'API TypeSafe.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "butochnikov--laravel-typesafe-jev",
@@ -8129,7 +8693,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/Butochnikov/laravel-typesafe-jev",
-      "descriptionFr": "Intégration Laravel avec réponses typées, requêtes asynchrones et doublures de test."
+      "descriptionFr": "Intégration Laravel avec réponses typées, requêtes asynchrones et doublures de test.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "hawxy--typesafeai-net",
@@ -8159,7 +8725,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/Hawxy/TypeSafeAI.Net",
-      "descriptionFr": "SDK .NET non officiel pour la plateforme TypeSafe AI, utilisable depuis toute application .NET."
+      "descriptionFr": "SDK .NET non officiel pour la plateforme TypeSafe AI, utilisable depuis toute application .NET.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "mateonunez--jod",
@@ -8190,7 +8758,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/mateonunez/jod",
-      "descriptionFr": "Schémas de style Zod sur Jev : valider l'état localement, puis projeter des réponses typées."
+      "descriptionFr": "Schémas de style Zod sur Jev : valider l'état localement, puis projeter des réponses typées.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "genierobot--typesafe-ai-rails",
@@ -8216,7 +8786,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/GenieRobot/typesafe-ai-rails",
-      "descriptionFr": "Intégration Rails basée sur le gem Ruby communautaire."
+      "descriptionFr": "Intégration Rails basée sur le gem Ruby communautaire.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "steven-shoemaker--hunch",
@@ -8248,7 +8820,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/steven-shoemaker/hunch",
-      "descriptionFr": "Transforme les questions Choice, Score et Noul en fonctions Python sur des listes et des DataFrames, avec déduplication, mise en cache, escalade des lignes incertaines vers un LLM tenu aux mêmes étiquettes, et un portage TypeScript sur npm sous le nom hunch-jev."
+      "descriptionFr": "Transforme les questions Choice, Score et Noul en fonctions Python sur des listes et des DataFrames, avec déduplication, mise en cache, escalade des lignes incertaines vers un LLM tenu aux mêmes étiquettes, et un portage TypeScript sur npm sous le nom hunch-jev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "samtay32--jev-system-architect",
@@ -8274,7 +8848,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/samtay32/jev-system-architect",
-      "descriptionFr": "Repère le jugement flou dans un système et le transforme en petites primitives Choice, Score et Noul."
+      "descriptionFr": "Repère le jugement flou dans un système et le transforme en petites primitives Choice, Score et Noul.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "xinwang-nwpu--jev-mobile",
@@ -8303,7 +8879,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/xinwang-nwpu/jev-mobile",
-      "descriptionFr": "Automatisation Android où une seule requête Jev choisit à la fois l'action et l'élément cible dans l'arbre d'accessibilité, exécutée via ADB."
+      "descriptionFr": "Automatisation Android où une seule requête Jev choisit à la fois l'action et l'élément cible dans l'arbre d'accessibilité, exécutée via ADB.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "allebee--pytest-jev",
@@ -8336,7 +8914,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/allebee/pytest-jev",
-      "descriptionFr": "Plugin Pytest qui demande à Jev si des affirmations en anglais courant sur le texte d'un test sont valides, le tout en une seule requête, et fait échouer le test avec la probabilité de chaque affirmation sauf si Jev est sûr à au moins 80 %."
+      "descriptionFr": "Plugin Pytest qui demande à Jev si des affirmations en anglais courant sur le texte d'un test sont valides, le tout en une seule requête, et fait échouer le test avec la probabilité de chaque affirmation sauf si Jev est sûr à au moins 80 %.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "firassx914--janus",
@@ -8369,7 +8949,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/FirasSX914/Janus",
-      "descriptionFr": "Mesure sur vos données quand Jev surpasse les autres modèles, puis route en conséquence."
+      "descriptionFr": "Mesure sur vos données quand Jev surpasse les autres modèles, puis route en conséquence.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "opaielsheikh--typesafe-migration-guard",
@@ -8395,7 +8977,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/opaielsheikh/typesafe-migration-guard",
-      "descriptionFr": "Examine les migrations de base de données pour en vérifier la sécurité avant leur exécution."
+      "descriptionFr": "Examine les migrations de base de données pour en vérifier la sécurité avant leur exécution.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "ddfeyes--jev-mode",
@@ -8428,7 +9012,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/ddfeyes/jev-mode",
-      "descriptionFr": "Triage de tickets et étiquetage de fichiers sur un modèle à jugement typé ; rapporte 78 % de tokens en moins et une précision de 96,1 % contre une référence à 93,7 %."
+      "descriptionFr": "Triage de tickets et étiquetage de fichiers sur un modèle à jugement typé ; rapporte 78 % de tokens en moins et une précision de 96,1 % contre une référence à 93,7 %.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "teyhouse--jev-secret-detection",
@@ -8454,7 +9040,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/teyhouse/jev-secret-detection",
-      "descriptionFr": "Mesure la capacité de Jev à repérer les vrais identifiants dans des extraits de fichiers, avec les cas difficiles en forme de configuration évalués séparément."
+      "descriptionFr": "Mesure la capacité de Jev à repérer les vrais identifiants dans des extraits de fichiers, avec les cas difficiles en forme de configuration évalués séparément.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "santos-sanz--jev-audio-beeper",
@@ -8480,7 +9068,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/santos-sanz/jev-audio-beeper",
-      "descriptionFr": "Preuve de concept de censure audio à faible latence : les décisions typées de Jev pilotent ffmpeg."
+      "descriptionFr": "Preuve de concept de censure audio à faible latence : les décisions typées de Jev pilotent ffmpeg.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "sriganesh--jevibe-check",
@@ -8511,7 +9101,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/sriganesh/jevibe-check",
-      "descriptionFr": "Étiquettes de ton en direct pour les publications et les brouillons Bluesky."
+      "descriptionFr": "Étiquettes de ton en direct pour les publications et les brouillons Bluesky.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "phureewat29--jev-got",
@@ -8537,7 +9129,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/phureewat29/jev-got",
-      "descriptionFr": "Jeu de rôle Game of Thrones où un modèle narratif écrit chaque scène et Jev répond à cinq questions typées qui pilotent l'en-tête, la bande-son, l'illustration et le prompt suivant."
+      "descriptionFr": "Jeu de rôle Game of Thrones où un modèle narratif écrit chaque scène et Jev répond à cinq questions typées qui pilotent l'en-tête, la bande-son, l'illustration et le prompt suivant.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "hazlema--jev-riffs",
@@ -8563,7 +9157,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/hazlema/jev-riffs",
-      "descriptionFr": "Extrait les motifs répétitifs d'une mélodie MIDI, évalue chaque candidat en un seul appel Jev groupé, et surligne et joue le gagnant sur un piano roll ; sur un Lac des cygnes orchestral, le motif principal est le thème du cygne."
+      "descriptionFr": "Extrait les motifs répétitifs d'une mélodie MIDI, évalue chaque candidat en un seul appel Jev groupé, et surligne et joue le gagnant sur un piano roll ; sur un Lac des cygnes orchestral, le motif principal est le thème du cygne.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "phyous--tsai-civ2",
@@ -8589,7 +9185,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/phyous/tsai-civ2",
-      "descriptionFr": "Civilization II dans un navigateur, harnais de jeu complet, probabilités d'action en direct."
+      "descriptionFr": "Civilization II dans un navigateur, harnais de jeu complet, probabilités d'action en direct.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "siroccomask--snake-jev",
@@ -8615,7 +9213,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/siroccomask/snake-jev",
-      "descriptionFr": "Snake contrôlé par des évaluations Jev parallèles, un appel API par tick."
+      "descriptionFr": "Snake contrôlé par des évaluations Jev parallèles, un appel API par tick.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "bitnovus--jev-spam-eval",
@@ -8641,7 +9241,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/bitnovus/jev-spam-eval",
-      "descriptionFr": "Filtrage anti-spam zero-shot avec des questions Noul face à des références TF-IDF."
+      "descriptionFr": "Filtrage anti-spam zero-shot avec des questions Noul face à des références TF-IDF.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "pistachioaihq--jev-synergy-screening",
@@ -8667,7 +9269,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/PistachioAIHQ/jev-synergy-screening",
-      "descriptionFr": "Questions Choice et Noul évaluées par rapport aux étiquettes de référence ASReview SYNERGY pour la présélection des résumés."
+      "descriptionFr": "Questions Choice et Noul évaluées par rapport aux étiquettes de référence ASReview SYNERGY pour la présélection des résumés.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "jgridifier--jev-research-eval",
@@ -8693,7 +9297,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/jgridifier/jev-research-eval",
-      "descriptionFr": "Harnais reproductible sur un commit jev-ultrafast épinglé, avec suites de référence et de charge."
+      "descriptionFr": "Harnais reproductible sur un commit jev-ultrafast épinglé, avec suites de référence et de charge.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "abovecolin--jevclient",
@@ -8726,7 +9332,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/AboveColin/jevclient",
-      "descriptionFr": "Client Python asynchrone, probabilités et choix en sortie, aucun texte à analyser."
+      "descriptionFr": "Client Python asynchrone, probabilités et choix en sortie, aucun texte à analyser.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "butochnikov--typesafe-sdk-php",
@@ -8752,7 +9360,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/Butochnikov/typesafe-sdk-php",
-      "descriptionFr": "Client PHP avec appels synchrones, promesses Guzzle et journalisation PSR-3."
+      "descriptionFr": "Client PHP avec appels synchrones, promesses Guzzle et journalisation PSR-3.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "metask-ai--metask-jev",
@@ -8778,7 +9388,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/metask-ai/metask-jev",
-      "descriptionFr": "Modèles de décision typée à poids ouverts sur Qwen3.5 avec probabilités calibrées par option en une seule passe avant ; 80,1 % sur JevBench contre 75,3 pour Jev 1.13."
+      "descriptionFr": "Modèles de décision typée à poids ouverts sur Qwen3.5 avec probabilités calibrées par option en une seule passe avant ; 80,1 % sur JevBench contre 75,3 pour Jev 1.13.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "fatwang2--jev-review-action",
@@ -8811,7 +9423,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/fatwang2/jev-review-action",
-      "descriptionFr": "GitHub Action pour la révision des soumissions et la classification des PR avec Jev, sans modèle de génération de texte dans la boucle."
+      "descriptionFr": "GitHub Action pour la révision des soumissions et la classification des PR avec Jev, sans modèle de génération de texte dans la boucle.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "asfarsadewa--human-compiler",
@@ -8837,7 +9451,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/asfarsadewa/human-compiler",
-      "descriptionFr": "Collez du texte, obtenez des diagnostics, comme un compilateur pour la prose."
+      "descriptionFr": "Collez du texte, obtenez des diagnostics, comme un compilateur pour la prose.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "thenewpotato--privacy-facts",
@@ -8867,7 +9483,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/thenewpotato/privacy-facts",
-      "descriptionFr": "Transforme les politiques de confidentialité en étiquettes de type nutritionnel avec des réponses en langage clair, des scores de confiance Jev et des clauses sources suggérées."
+      "descriptionFr": "Transforme les politiques de confidentialité en étiquettes de type nutritionnel avec des réponses en langage clair, des scores de confiance Jev et des clauses sources suggérées.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "hacksing--jev-report",
@@ -8899,7 +9517,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/HackSing/jev-report",
-      "descriptionFr": "Rapport de recherche chinois indépendant : 52 pages, 50 tests reproductibles, 143 lignes de données traçables."
+      "descriptionFr": "Rapport de recherche chinois indépendant : 52 pages, 50 tests reproductibles, 143 lignes de données traçables.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "hegargarcia--jev-playground",
@@ -8925,7 +9545,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/hegargarcia/jev-playground",
-      "descriptionFr": "Jev face à d'autres modèles dans des jeux aux états explicites, aux actions légales et au résultat mesurable."
+      "descriptionFr": "Jev face à d'autres modèles dans des jeux aux états explicites, aux actions légales et au résultat mesurable.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "wustep--jev-playground",
@@ -8951,7 +9573,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/wustep/jev-playground",
-      "descriptionFr": "Détermine si un modèle System One peut piloter une composition musicale uniquement via des décisions typées classify, score et pick."
+      "descriptionFr": "Détermine si un modèle System One peut piloter une composition musicale uniquement via des décisions typées classify, score et pick.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "jexp--watfile",
@@ -8984,7 +9608,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/jexp/watfile",
-      "descriptionFr": "Trie les PDF et les fichiers texte dans des dossiers de catégories, à raison d'un Jev Choice par document, avec un backend Laya local comme alternative."
+      "descriptionFr": "Trie les PDF et les fichiers texte dans des dossiers de catégories, à raison d'un Jev Choice par document, avec un backend Laya local comme alternative.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "abdelstark--s1-rs",
@@ -9014,7 +9640,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/AbdelStark/s1-rs",
-      "descriptionFr": "Transforme les enums et structs Rust en questions Choice, Score et Noul avec des réponses vérifiées à la compilation et conditionnées par la confiance."
+      "descriptionFr": "Transforme les enums et structs Rust en questions Choice, Score et Noul avec des réponses vérifiées à la compilation et conditionnées par la confiance.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "abdelstark--typesafe-rs",
@@ -9043,7 +9671,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/AbdelStark/typesafe-rs",
-      "descriptionFr": "Client Rust axé sur la latence, disponible sur crates.io."
+      "descriptionFr": "Client Rust axé sur la latence, disponible sur crates.io.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "mttrbrts--jev-folio-recursive-classifier",
@@ -9069,7 +9699,9 @@
       ],
       "firstSeen": "2026-09-20",
       "source": "https://github.com/mttrbrts/jev-folio-recursive-classifier",
-      "descriptionFr": "Classifie les accords juridiques océrisés via l'ontologie FOLIO Document Types avec des Jev Choices récursifs, beam search, arrêt aux feuilles conditionné par la confiance et benchmarking de la longueur de contexte."
+      "descriptionFr": "Classifie les accords juridiques océrisés via l'ontologie FOLIO Document Types avec des Jev Choices récursifs, beam search, arrêt aux feuilles conditionné par la confiance et benchmarking de la longueur de contexte.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "dansidanutz--fake-real-jev",
@@ -9101,7 +9733,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/DansiDanutz/fake-real-jev",
-      "descriptionFr": "Vérifie les affirmations par rapport aux extraits cités avec Jev dans un site de fact-checking en anglais et en roumain, avec un exemple d'intégration public et une application complète à code source fermé."
+      "descriptionFr": "Vérifie les affirmations par rapport aux extraits cités avec Jev dans un site de fact-checking en anglais et en roumain, avec un exemple d'intégration public et une application complète à code source fermé.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "0xshin0221--openpoke-meets-jev",
@@ -9127,7 +9761,9 @@
       ],
       "firstSeen": "2026-09-20",
       "source": "https://github.com/0xShin0221/openpoke-meets-jev",
-      "descriptionFr": "Fork OpenPoke qui migre le filtrage des e-mails, un garde-fou de tool-call et le reranking de recherche vers Jev, avec un A/B contre l'appel Sonnet remplacé et un run adverse sur le filtre anti-injection."
+      "descriptionFr": "Fork OpenPoke qui migre le filtrage des e-mails, un garde-fou de tool-call et le reranking de recherche vers Jev, avec un A/B contre l'appel Sonnet remplacé et un run adverse sur le filtre anti-injection.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "hazlema--jev-connect4",
@@ -9153,7 +9789,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/hazlema/jev-connect4",
-      "descriptionFr": "Puissance 4 avec neuf stratégies de requête interchangeables pour un seul modèle, chaque réponse évaluée par rapport à la vérité terrain du moteur dans un inspecteur en direct."
+      "descriptionFr": "Puissance 4 avec neuf stratégies de requête interchangeables pour un seul modèle, chaque réponse évaluée par rapport à la vérité terrain du moteur dans un inspecteur en direct.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "yodablocks--jev-orderby-bench",
@@ -9186,7 +9824,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/yodablocks/jev-orderby-bench",
-      "descriptionFr": "Mesure si un ORDER BY sur une probabilité Jev est défendable : inversion par paire, ordinalité face à une note humaine, calibration et invariants de formulation sous un seuil pré-enregistré."
+      "descriptionFr": "Mesure si un ORDER BY sur une probabilité Jev est défendable : inversion par paire, ordinalité face à une note humaine, calibration et invariants de formulation sous un seuil pré-enregistré.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "4esv--jev-eval",
@@ -9212,7 +9852,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/4esv/jev-eval",
-      "descriptionFr": "Jev face à GPT-5.6 Terra sur trois tâches étiquetées : à égalité sur les plus faciles, 6,7 points en dessous sur le routage à 77 choix, 5 fois plus rapide, 41 à 50 fois moins cher."
+      "descriptionFr": "Jev face à GPT-5.6 Terra sur trois tâches étiquetées : à égalité sur les plus faciles, 6,7 points en dessous sur le routage à 77 choix, 5 fois plus rapide, 41 à 50 fois moins cher.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "themsquared--jev-benchmark",
@@ -9245,7 +9887,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/themsquared/jev-benchmark",
-      "descriptionFr": "Classification des risques d'appels d'outils avec la variance entre les exécutions rapportée ; chaque mauvaise réponse s'accompagnait d'une confiance nuancée."
+      "descriptionFr": "Classification des risques d'appels d'outils avec la variance entre les exécutions rapportée ; chaque mauvaise réponse s'accompagnait d'une confiance nuancée.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "willprout--magic-8-ball",
@@ -9271,7 +9915,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/willprout/magic-8-ball",
-      "descriptionFr": "Posez une question, un choix parmi vingt réponses sélectionne la réponse et affiche la latence entre le clic et la réponse ; [démo en direct](https://willprout.github.io/magic-8-ball/)."
+      "descriptionFr": "Posez une question, un choix parmi vingt réponses sélectionne la réponse et affiche la latence entre le clic et la réponse ; [démo en direct](https://willprout.github.io/magic-8-ball/).",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "bud-ro--jev-demos",
@@ -9297,7 +9943,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/bud-ro/jev-demos",
-      "descriptionFr": "Démos conçues pour tester les points forts de Jev."
+      "descriptionFr": "Démos conçues pour tester les points forts de Jev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "allebee--jevgrep",
@@ -9330,7 +9978,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/allebee/jevgrep",
-      "descriptionFr": "Filtre les lignes de journaux et autres flux de texte par le sens, un Noul par ligne en micro-lots, en streaming depuis `tail -f` avec les options et les codes de sortie de grep."
+      "descriptionFr": "Filtre les lignes de journaux et autres flux de texte par le sens, un Noul par ligne en micro-lots, en streaming depuis `tail -f` avec les options et les codes de sortie de grep.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "dommonte--n8n-nodes-typesafe-ai",
@@ -9356,7 +10006,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/DomMonte/n8n-nodes-typesafe-ai",
-      "descriptionFr": "Nœud communautaire n8n pour les questions oui/non, à choix et à score."
+      "descriptionFr": "Nœud communautaire n8n pour les questions oui/non, à choix et à score.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "kunobi-ninja--kunobi-jev",
@@ -9382,7 +10034,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/kunobi-ninja/kunobi-jev",
-      "descriptionFr": "Client Rust pour l'API System One."
+      "descriptionFr": "Client Rust pour l'API System One.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "imanshu03--jev-browser-use",
@@ -9408,7 +10062,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/imanshu03/jev-browser-use",
-      "descriptionFr": "Exécute des tâches de navigation à partir d'une instruction en langage naturel via CDP ou agent-browser de Vercel, avec Jev qui sélectionne les opérations et les cibles et du code qui vérifie la confiance avant d'agir."
+      "descriptionFr": "Exécute des tâches de navigation à partir d'une instruction en langage naturel via CDP ou agent-browser de Vercel, avec Jev qui sélectionne les opérations et les cibles et du code qui vérifie la confiance avant d'agir.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "daviddl9--jev-router",
@@ -9434,7 +10090,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/daviddl9/jev-router",
-      "descriptionFr": "Jev choisit le niveau de worker pour chaque étape dans OMP et Pi, en gardant la planification et la révision sur un modèle puissant et le travail borné sur des modèles moins chers."
+      "descriptionFr": "Jev choisit le niveau de worker pour chaque étape dans OMP et Pi, en gardant la planification et la révision sur un modèle puissant et le travail borné sur des modèles moins chers.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "liou666--senseek",
@@ -9460,7 +10118,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/liou666/senseek",
-      "descriptionFr": "Extension de navigateur qui recherche par le sens dans la page en cours de lecture, dans un champ de type Ctrl+F, avec votre propre clé et sans backend."
+      "descriptionFr": "Extension de navigateur qui recherche par le sens dans la page en cours de lecture, dans un champ de type Ctrl+F, avec votre propre clé et sans backend.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "paulgoodchild--skillscheck",
@@ -9486,7 +10146,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/paulgoodchild/SkillsCheck",
-      "descriptionFr": "Envoie le texte d'une skill d'agent à Jev avant l'installation et retourne un verdict avec des scores par catégorie, sans charger la skill dans le contexte de l'agent ; le texte soumis n'est pas expurgé de ses secrets."
+      "descriptionFr": "Envoie le texte d'une skill d'agent à Jev avant l'installation et retourne un verdict avec des scores par catégorie, sans charger la skill dans le contexte de l'agent ; le texte soumis n'est pas expurgé de ses secrets.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "htearih--stopspam-jev-bot",
@@ -9512,7 +10174,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/hteariH/stopspam-jev-bot",
-      "descriptionFr": "Bot Telegram qui supprime les spams et les arnaques des chats de groupe grâce à une classification à confiance calibrée."
+      "descriptionFr": "Bot Telegram qui supprime les spams et les arnaques des chats de groupe grâce à une classification à confiance calibrée.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "blowxian--jev-fanout-bench",
@@ -9545,7 +10209,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/blowxian/jev-fanout-bench",
-      "descriptionFr": "Mesure la facturation d'une requête Jev et la tenue de ses réponses face au traitement par lots, à la traduction et à la reformulation, à partir de 3 455 requêtes facturées avec journaux bruts publics."
+      "descriptionFr": "Mesure la facturation d'une requête Jev et la tenue de ses réponses face au traitement par lots, à la traduction et à la reformulation, à partir de 3 455 requêtes facturées avec journaux bruts publics.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "rishi-raj-jain--hn-thread-judge",
@@ -9578,7 +10244,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/rishi-raj-jain/hn-thread-judge",
-      "descriptionFr": "Lit les fils Hacker News les plus discutés commentaire par commentaire avec Jev et réduit chacun à un verdict unique, servi en direct depuis Postgres."
+      "descriptionFr": "Lit les fils Hacker News les plus discutés commentaire par commentaire avec Jev et réduit chacun à un verdict unique, servi en direct depuis Postgres.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "bariskisir--jevsharp",
@@ -9604,7 +10272,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/bariskisir/JevSharp",
-      "descriptionFr": "SDK .NET 10 pour les décisions Jev via TypeSafe, OpenRouter, Vercel AI Gateway et les endpoints compatibles."
+      "descriptionFr": "SDK .NET 10 pour les décisions Jev via TypeSafe, OpenRouter, Vercel AI Gateway et les endpoints compatibles.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "introduction",

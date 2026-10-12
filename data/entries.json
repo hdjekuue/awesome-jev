@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-01",
+  "updatedAt": "2026-10-12",
   "entries": [
     {
       "id": "browser-use--jev-ultrafast",
@@ -26,7 +26,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/browser-use/jev-ultrafast",
-      "descriptionFr": "Une seule requête sélectionne à la fois l'opération et l'élément cible depuis une table DOM indexée ; un petit LLM écrit uniquement du texte typé. Trajet de Zürich à Londres réservé en 7,1 secondes."
+      "descriptionFr": "Une seule requête sélectionne à la fois l'opération et l'élément cible depuis une table DOM indexée ; un petit LLM écrit uniquement du texte typé. Trajet de Zürich à Londres réservé en 7,1 secondes.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "jaredpalmer--kev",
@@ -56,7 +58,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/jaredpalmer/kev",
-      "descriptionFr": "Adaptateur LoRA et tête de lecture sur Qwen2.5-0.5B qui répond à de nombreuses questions typées en un seul prefill ; entraînement en moins de deux heures sur un MacBook, ECE hors échantillon de 0,065, utilise le format wire TypeSafe."
+      "descriptionFr": "Adaptateur LoRA et tête de lecture sur Qwen2.5-0.5B qui répond à de nombreuses questions typées en un seul prefill ; entraînement en moins de deux heures sur un MacBook, ECE hors échantillon de 0,065, utilise le format wire TypeSafe.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "tamaratran--fast-jev-compaction",
@@ -82,7 +86,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/tamaratran/fast-jev-compaction",
-      "descriptionFr": "Remplace le résumé de compaction par des décisions Jev : chaque appel d'outil et résultat est noté en une seule requête, les éléments obsolètes sont supprimés, tout ce qui est conservé reste verbatim."
+      "descriptionFr": "Remplace le résumé de compaction par des décisions Jev : chaque appel d'outil et résultat est noté en une seule requête, les éléments obsolètes sont supprimés, tout ce qui est conservé reste verbatim.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "vercel--eve",
@@ -115,7 +121,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/vercel/eve",
-      "descriptionFr": "Framework d'agents de Vercel ; Jev est le juge typé dans son étape evaluate."
+      "descriptionFr": "Framework d'agents de Vercel ; Jev est le juge typé dans son étape evaluate.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "theoleecj--semif",
@@ -141,7 +149,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/TheoLeeCJ/SemIf",
-      "descriptionFr": "Ifs sémantiques issus de modèles ouverts sur une seule 3090 ; la réplique indépendante la plus étoilée, anciennement openjev."
+      "descriptionFr": "Ifs sémantiques issus de modèles ouverts sur une seule 3090 ; la réplique indépendante la plus étoilée, anciennement openjev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "jarrodwatts--jev-trader",
@@ -167,7 +177,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/jarrodwatts/jev-trader",
-      "descriptionFr": "Une décision de trading à chaque bloc Monad, sur Kuru MON-USDC, environ 300 ms chacune."
+      "descriptionFr": "Une décision de trading à chaque bloc Monad, sur Kuru MON-USDC, environ 300 ms chacune.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "typesafe-ai--skills",
@@ -193,7 +205,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/typesafe-ai/skills",
-      "descriptionFr": "Skills d’agent pour concevoir des questions, construire des workflows et les évaluer."
+      "descriptionFr": "Skills d’agent pour concevoir des questions, construire des workflows et les évaluer.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "tianyucodings--nanojev",
@@ -219,7 +233,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/TianyuCodings/NanoJev",
-      "descriptionFr": "Réplique 0.6B avec décisions parallèles, candidats dynamiques et pipeline d’entraînement de bout en bout."
+      "descriptionFr": "Réplique 0.6B avec décisions parallèles, candidats dynamiques et pipeline d’entraînement de bout en bout.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "dzhng--jevgrep",

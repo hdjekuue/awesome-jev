@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-01",
+  "updatedAt": "2026-10-14",
   "entries": [
     {
       "id": "browser-use--jev-ultrafast",
@@ -26,7 +26,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/browser-use/jev-ultrafast",
-      "descriptionFr": "Une seule requête sélectionne à la fois l'opération et l'élément cible depuis une table DOM indexée ; un petit LLM écrit uniquement du texte typé. Trajet de Zürich à Londres réservé en 7,1 secondes."
+      "descriptionFr": "Une seule requête sélectionne à la fois l'opération et l'élément cible depuis une table DOM indexée ; un petit LLM écrit uniquement du texte typé. Trajet de Zürich à Londres réservé en 7,1 secondes.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "jaredpalmer--kev",
@@ -56,7 +58,9 @@
       ],
       "firstSeen": "2026-09-19",
       "source": "https://github.com/jaredpalmer/kev",
-      "descriptionFr": "Adaptateur LoRA et tête de lecture sur Qwen2.5-0.5B qui répond à de nombreuses questions typées en un seul prefill ; entraînement en moins de deux heures sur un MacBook, ECE hors échantillon de 0,065, utilise le format wire TypeSafe."
+      "descriptionFr": "Adaptateur LoRA et tête de lecture sur Qwen2.5-0.5B qui répond à de nombreuses questions typées en un seul prefill ; entraînement en moins de deux heures sur un MacBook, ECE hors échantillon de 0,065, utilise le format wire TypeSafe.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "tamaratran--fast-jev-compaction",
@@ -82,7 +86,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/tamaratran/fast-jev-compaction",
-      "descriptionFr": "Remplace le résumé de compaction par des décisions Jev : chaque appel d'outil et résultat est noté en une seule requête, les éléments obsolètes sont supprimés, tout ce qui est conservé reste verbatim."
+      "descriptionFr": "Remplace le résumé de compaction par des décisions Jev : chaque appel d'outil et résultat est noté en une seule requête, les éléments obsolètes sont supprimés, tout ce qui est conservé reste verbatim.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "vercel--eve",
@@ -115,7 +121,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/vercel/eve",
-      "descriptionFr": "Framework d'agents de Vercel ; Jev est le juge typé dans son étape evaluate."
+      "descriptionFr": "Framework d'agents de Vercel ; Jev est le juge typé dans son étape evaluate.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "theoleecj--semif",
@@ -141,7 +149,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/TheoLeeCJ/SemIf",
-      "descriptionFr": "Ifs sémantiques issus de modèles ouverts sur une seule 3090 ; la réplique indépendante la plus étoilée, anciennement openjev."
+      "descriptionFr": "Ifs sémantiques issus de modèles ouverts sur une seule 3090 ; la réplique indépendante la plus étoilée, anciennement openjev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "jarrodwatts--jev-trader",
@@ -167,7 +177,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/jarrodwatts/jev-trader",
-      "descriptionFr": "Une décision de trading à chaque bloc Monad, sur Kuru MON-USDC, environ 300 ms chacune."
+      "descriptionFr": "Une décision de trading à chaque bloc Monad, sur Kuru MON-USDC, environ 300 ms chacune.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "typesafe-ai--skills",
@@ -193,7 +205,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/typesafe-ai/skills",
-      "descriptionFr": "Skills d’agent pour concevoir des questions, construire des workflows et les évaluer."
+      "descriptionFr": "Skills d’agent pour concevoir des questions, construire des workflows et les évaluer.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "tianyucodings--nanojev",
@@ -219,7 +233,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/TianyuCodings/NanoJev",
-      "descriptionFr": "Réplique 0.6B avec décisions parallèles, candidats dynamiques et pipeline d’entraînement de bout en bout."
+      "descriptionFr": "Réplique 0.6B avec décisions parallèles, candidats dynamiques et pipeline d’entraînement de bout en bout.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "dzhng--jevgrep",
@@ -252,7 +268,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/dzhng/jevgrep",
-      "descriptionFr": "Trouve les fichiers, déclarations et extraits verbatim dont un agent de codage a besoin en demandant à Jev quelles déclarations répondent à une question en langage simple sur le repo."
+      "descriptionFr": "Trouve les fichiers, déclarations et extraits verbatim dont un agent de codage a besoin en demandant à Jev quelles déclarations répondent à une question en langage simple sur le repo.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "nicobailon--pi-mcp-adapter",
@@ -285,7 +303,9 @@
       ],
       "firstSeen": "2026-09-20",
       "source": "https://github.com/nicobailon/pi-mcp-adapter",
-      "descriptionFr": "Évaluation typée et recherche sémantique opt-in sur les résultats d’outils MCP, derrière une liste d’autorisation de sortie de données par serveur."
+      "descriptionFr": "Évaluation typée et recherche sémantique opt-in sur les résultats d’outils MCP, derrière une liste d’autorisation de sortie de données par serveur.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "vinnylarouge--jevlike",
@@ -311,7 +331,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/vinnylarouge/jevlike",
-      "descriptionFr": "Scorer d'options ouvert qui lit les logits des candidats au lieu de générer du JSON."
+      "descriptionFr": "Scorer d'options ouvert qui lit les logits des candidats au lieu de générer du JSON.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "awlevin--typesafe-computer-use",
@@ -344,7 +366,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/awlevin/typesafe-computer-use",
-      "descriptionFr": "Fait de l'OCR sur l'écran, classifie l'action suivante, clique ; environ $0.0002 par étape sur macOS."
+      "descriptionFr": "Fait de l'OCR sur l'écran, classifie l'action suivante, clique ; environ $0.0002 par étape sur macOS.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "ollaya-dev--ollaya",
@@ -377,7 +401,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/ollaya-dev/ollaya",
-      "descriptionFr": "Télécharge et sert des modèles de décision ouverts tels que Laya, kev et JevK5 derrière un endpoint local compatible TypeSafe, comme Ollama sert les LLM."
+      "descriptionFr": "Télécharge et sert des modèles de décision ouverts tels que Laya, kev et JevK5 derrière un endpoint local compatible TypeSafe, comme Ollama sert les LLM.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "mapika--decider",
@@ -403,7 +429,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/Mapika/decider",
-      "descriptionFr": "Décisions typées en une passe, affinées à partir de Qwen3.5-2B."
+      "descriptionFr": "Décisions typées en une passe, affinées à partir de Qwen3.5-2B.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "nokia-applied-research--anyjev",
@@ -436,7 +464,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/nokia-applied-research/AnyJev",
-      "descriptionFr": "Transforme un modèle ouvert Hugging Face en endpoint de décision calibré servi via vLLM, sans fine-tuning aux deux premiers niveaux."
+      "descriptionFr": "Transforme un modèle ouvert Hugging Face en endpoint de décision calibré servi via vLLM, sans fine-tuning aux deux premiers niveaux.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "kerpopule--hermes-jev-skills",
@@ -462,7 +492,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/kerpopule/hermes-jev-skills",
-      "descriptionFr": "Confie les petites décisions d'un agent à Jev : quel modèle répond au tour, quelles skills charger, quels passages comptent, quels tours survivent à la compaction."
+      "descriptionFr": "Confie les petites décisions d'un agent à Jev : quel modèle répond au tour, quelles skills charger, quels passages comptent, quels tours survivent à la compaction.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "vercel-labs--ai-cli",
@@ -488,7 +520,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/vercel-labs/ai-cli",
-      "descriptionFr": "Le Vercel AI SDK dans votre terminal, avec un chemin evaluate qui s'exécute sur Jev."
+      "descriptionFr": "Le Vercel AI SDK dans votre terminal, avec un chemin evaluate qui s'exécute sur Jev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "wfzyx--von",
@@ -521,7 +555,9 @@
       ],
       "firstSeen": "2026-09-18",
       "source": "https://github.com/wfzyx/von",
-      "descriptionFr": "Modèle de décision ouvert non autorégressif annoncé à moins de 15 ms en local, comme alternative directe à Jev."
+      "descriptionFr": "Modèle de décision ouvert non autorégressif annoncé à moins de 15 ms en local, comme alternative directe à Jev.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "rizzo-ai-academy--rizzo-flow",
@@ -547,7 +583,9 @@
       ],
       "firstSeen": "2026-09-21",
       "source": "https://github.com/Rizzo-AI-Academy/rizzo-flow",
-      "descriptionFr": "Interprétation local-first de l'idée System One : état non structuré en entrée, décisions probabilistes typées en sortie, sans générer de token."
+      "descriptionFr": "Interprétation local-first de l'idée System One : état non structuré en entrée, décisions probabilistes typées en sortie, sans générer de token.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "anishfn--shapeshift",
@@ -573,7 +611,9 @@
       ],
       "firstSeen": "2026-09-27",
       "source": "https://github.com/anishfn/shapeshift",
-      "descriptionFr": "Transforme une zone de texte en carte correspondante pendant la frappe, jugée par un seul appel Jev parallèle, avec un repli par mot-clé quand aucune clé n'est définie."
+      "descriptionFr": "Transforme une zone de texte en carte correspondante pendant la frappe, jugée par un seul appel Jev parallèle, avec un repli par mot-clé quand aucune clé n'est définie.",
+      "stale": true,
+      "staleReason": "repo-not-found"
     },
     {
       "id": "wy-coliney--jev-browser-use",

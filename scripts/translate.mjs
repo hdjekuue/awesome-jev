@@ -34,6 +34,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const DATA = path.join(ROOT, 'data', 'entries.json');
 const ZEN_MODELS_URL = 'https://opencode.ai/zen/v1/models';
+import { discoverKiloFreeModels, runKiloModel, approvalGatedAgent } from './lib/opencode-free.mjs';
 
 // Latest-first. Live discovery prepends whatever Zen is currently serving for free.
 const STATIC_FREE_FALLBACK = [
@@ -136,12 +137,36 @@ async function resolveOpencode() {
   OPENCODE_SHELL = true;
 }
 
+
+/* ---------------------------------------------------------- kilo fallback */
+// Second free rail: the Kilo CLI free catalog, used when OpenCode's Zen free
+// tier is exhausted on runner IPs. The build agent is defined inline (Kilo
+// registers agents from config content) and stays approval-gated.
+let kiloIdsCache;
+async function kiloCandidates() {
+  if (!kiloIdsCache) {
+    try {
+      kiloIdsCache = (await discoverKiloFreeModels()).map((r) => r.fullID);
+    } catch (e) {
+      console.warn(`[translate] kilo fallback unavailable (${e.message}); opencode rail only`);
+      kiloIdsCache = [];
+    }
+  }
+  return kiloIdsCache;
+}
+
+function runKilo(modelId, prompt, timeoutMs) {
+  return runKiloModel(modelId, prompt, { agent: 'build', cwd: ROOT, timeoutMs, config: approvalGatedAgent('build') })
+    .catch((e) => { console.warn(`[translate] ${modelId} kilo run failed: ${e.message}`); return { out: '', err: '' }; });
+}
+
 /**
  * The prompt goes in over stdin, not argv. Descriptions contain `<`, `>`, `&`
  * and quotes, which a shell would mangle on Windows and which collide with the
  * argument parser elsewhere. stdin keeps the payload byte-exact.
  */
 function runModel(model, prompt, timeoutMs) {
+  if (model.startsWith('kilo/')) return runKilo(model, prompt, timeoutMs);
   return new Promise((resolve) => {
     const child = spawn(OPENCODE_BIN, [...OPENCODE_ARGS, 'run', '--model', `opencode/${model}`, '--agent', 'build'], {
       cwd: ROOT,
@@ -225,7 +250,8 @@ function acceptable(text, source) {
 async function main() {
   await resolveOpencode();
   const opts = parseArgs();
-  const models = await fetchFreeModels();
+  const ocModels = await fetchFreeModels();
+  const models = [...ocModels, ...(await kiloCandidates())];
 
   if (opts.list) {
     console.log(JSON.stringify({ models }, null, 2));

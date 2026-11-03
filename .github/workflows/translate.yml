@@ -42,7 +42,7 @@ jobs:
       - name: Install opencode
         run: |
           set -e
-          npm install -g @opencode/cli
+          npm install -g @opencode/cli @kilocode/cli
           opencode --version
 
       - name: Show the free models in play

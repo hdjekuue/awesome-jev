@@ -47,7 +47,7 @@ jobs:
         if: github.event_name != 'issue_comment'
         run: |
           set -e
-          npm install -g @opencode/cli
+          npm install -g @opencode/cli @kilocode/cli
           opencode --version
 
       - name: Free models in play
@@ -73,7 +73,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -e
-          npm install -g @opencode/cli
+          npm install -g @opencode/cli @kilocode/cli
           node scripts/curate.mjs
           N="${{ github.event.issue.number }}"
           MARK="<!-- curator:ai-review -->"

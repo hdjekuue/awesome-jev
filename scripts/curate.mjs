@@ -32,6 +32,7 @@ const ROOT = path.resolve(__dirname, '..');
 const REPORT = path.join(ROOT, 'curator-report.md');
 const COMMENT = path.join(ROOT, 'review-comment.md');
 const ZEN_MODELS_URL = 'https://opencode.ai/zen/v1/models';
+import { discoverKiloFreeModels, runKiloModel, APPROVAL_GATED_PERMISSION } from './lib/opencode-free.mjs';
 
 const args = process.argv.slice(2);
 const DRY = args.includes('--dry-run');
@@ -93,6 +94,7 @@ async function freeModels() {
 }
 
 function runModel(model, prompt, agent, timeoutMs) {
+  if (model.startsWith('kilo/')) return runKilo(model, prompt, agent, timeoutMs);
   return new Promise((resolve) => {
     const child = spawn(OC_BIN, ['run', '--model', `opencode/${model}`, '--agent', agent], {
       cwd: ROOT,
@@ -108,6 +110,35 @@ function runModel(model, prompt, agent, timeoutMs) {
     child.stdin.on('error', () => {});
     child.stdin.end(prompt, 'utf8');
   });
+}
+
+
+/* ------------------------------------------------------------ kilo fallback */
+// Second free rail: the Kilo CLI free catalog. Used when OpenCode's Zen free
+// tier is exhausted on runner IPs (the same failure the deepseek tracker saw).
+let kiloIdsCache;
+async function kiloCandidates() {
+  if (!kiloIdsCache) {
+    try {
+      kiloIdsCache = (await discoverKiloFreeModels()).map((r) => r.fullID);
+    } catch (e) {
+      console.warn(`[curate] kilo fallback unavailable (${e.message}); opencode rail only`);
+      kiloIdsCache = [];
+    }
+  }
+  return kiloIdsCache;
+}
+
+function kiloAgentSpec(name) {
+  const src = fs.readFileSync(path.join(ROOT, '.opencode', 'agent', name + '.md'), 'utf8');
+  const parts = src.split(/^---\r?\n/m);
+  const body = (parts.length >= 3 ? parts.slice(2).join('---') : src).trim();
+  return { [name]: { mode: 'primary', prompt: body, permission: APPROVAL_GATED_PERMISSION } };
+}
+
+function runKilo(modelId, prompt, agent, timeoutMs) {
+  return runKiloModel(modelId, prompt, { agent, cwd: ROOT, timeoutMs, config: { agent: kiloAgentSpec(agent) } })
+    .catch((e) => { console.warn(`[curate] ${modelId} kilo run failed: ${e.message}`); return ''; });
 }
 
 /* ------------------------------------------------------- deterministic facts */
@@ -303,7 +334,7 @@ function extractFile(raw, filename) {
 
 async function main() {
   await resolveOpencode();
-  const models = await freeModels();
+  let models = await freeModels();
   if (LIST) { console.log(JSON.stringify({ models }, null, 2)); return; }
 
   const db = loadEntries();
@@ -322,6 +353,8 @@ async function main() {
 
   const isTriage = Boolean(pr || issue);
   const prompt = isTriage ? triagePrompt(factLines, pr, issue) : healthPrompt(db, factLines, models.length);
+  const kiloIds = await kiloCandidates();
+  models = [...models, ...kiloIds];
 
   let raw = '';
   let used = null;

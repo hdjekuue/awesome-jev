@@ -354,11 +354,11 @@ async function main() {
   const isTriage = Boolean(pr || issue);
   const prompt = isTriage ? triagePrompt(factLines, pr, issue) : healthPrompt(db, factLines, models.length);
   const kiloIds = await kiloCandidates();
-  models = [...models, ...kiloIds];
+  models = [...models.slice(0, 5), ...kiloIds];
 
   let raw = '';
   let used = null;
-  for (const model of models.slice(0, 5)) {
+  for (const model of models) {
     raw = await runModel(model, prompt, 'curator', 240000);
     if (raw.trim().length > 200) { used = model; break; }
     console.warn(`[curate] ${model} returned nothing usable, trying next`);

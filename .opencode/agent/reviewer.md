@@ -1,13 +1,14 @@
 ---
 description: Second AI reviewer — independent gate for Awesome Jev curator PRs. Emits APPROVE / REQUEST_CHANGES / CLOSE.
 mode: primary
-model: opencode/deepseek-v4-flash-free
 temperature: 0.1
-permissions:
+permission:
   read: allow
   grep: allow
   glob: allow
   bash: allow
+
+  shell: allow
   webfetch: allow
   websearch: allow
   task: allow

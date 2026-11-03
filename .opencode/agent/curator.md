@@ -1,13 +1,14 @@
 ---
 description: Awesome Jev curator — health audit and PR/Issue triage for a self-updating directory of projects built on Jev (TypeSafe AI System One)
 mode: primary
-model: opencode/muse-spark-1.3-contributor-free
 temperature: 0.2
-permissions:
+permission:
   read: allow
   grep: allow
   glob: allow
   bash: allow
+
+  shell: allow
   edit: allow
   webfetch: allow
   websearch: allow
